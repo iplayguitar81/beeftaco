@@ -164,7 +164,6 @@ return [
         willvincent\Rateable\RateableServiceProvider::class,
         'AdamWathan\EloquentOAuthL5\EloquentOAuthServiceProvider',
         Stevebauman\Location\LocationServiceProvider::class,
-        'Torann\GeoIP\GeoIPServiceProvider',
 
     ],
 
@@ -217,7 +216,6 @@ return [
         'Excel' => 'Maatwebsite\Excel\Facades\Excel',
         'SocialAuth' => 'AdamWathan\EloquentOAuth\Facades\OAuth',
         'Location' => 'Stevebauman\Location\Facades\Location',
-        'GeoIP' => 'Torann\GeoIP\GeoIPFacade',
         'Image' => Intervention\Image\Facades\Image::class,
 
 
