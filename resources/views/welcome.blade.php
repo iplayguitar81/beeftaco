@@ -19,7 +19,7 @@
     <article class="text-center">
 
 
-        <h1 class="main-article-titles" style="font-family: Pacifico, cursive;">
+        <h1 class="main-article-titles" style="font-family: FabFelt;">
             <a href="{{ route('posts.show', [$item->id, str_slug($item->title)]) }}">{{ $item->title }}</a>
         </h1>
         <p class="subheader-main" style="font-family: Boogaloo, cursive; font-size:2em;">{{ $item->subHead}}</p>
