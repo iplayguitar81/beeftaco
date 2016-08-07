@@ -640,7 +640,7 @@ div.article-texterson2 p:first-letter{color:#E63C4D;font-size:1.7em;text-shadow:
 /* <!-- Way to do it with fonts from dropbox if need be not satisfied with Google fonts.  be ware some fonts are persnickety....--> */
     @font-face {
          font-family: 'FabFelt';
-         src: url("https://dl.dropboxusercontent.com/s/e0x8cw1pczwvz90/fabfeltscript-bold.woff2"); !important }
+         src: url("https://dl.dropboxusercontent.com/s/k8npl4s74b7af0r/bauhaus93.ttf"); !important }
  </style>
 </head>
 <body>
