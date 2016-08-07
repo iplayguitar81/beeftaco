@@ -35,6 +35,7 @@
         <br/>
         <div class="center-block text-center">
        <div class="article-texterson2"> {!! ($post->body) !!} </div>
+            @if($post->images > 0)
             <div class="container">
                 <h2 style="font-family: Pacifico, cursive;font-size:2em;line-height:1.2em;color:#E63C4D;text-align:center;">Article Gallery</h2>
                     <br/>
@@ -60,7 +61,7 @@
                 </ul>
 
             </div>
-
+                @endif
                     </div>
 
     </article>
@@ -89,7 +90,7 @@
         </div>
     </div>
         <br/>
-<h2 class="text-center" style="font-family: Pacifico, cursive;font-size:2em;line-height:1.2em;color:#E63C4D;text-align:center;" >Bowtie User Ratings</h2>
+<h2 class="text-center" style="font-family: Pacifico, cursive;font-size:2em;line-height:1.2em;color:#E63C4D;text-align:center;" >Trailblazers Fans User Ratings</h2>
 
         <div class="row">
             @foreach($post_ratings as $rating)
