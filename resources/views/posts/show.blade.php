@@ -35,7 +35,7 @@
         <br/>
         <div class="center-block text-center">
        <div class="article-texterson2"> {!! ($post->body) !!} </div>
-            @if($post->images > 0)
+            @if(empty($post->images))
             <div class="container">
                 <h2 style="font-family: Pacifico, cursive;font-size:2em;line-height:1.2em;color:#E63C4D;text-align:center;">Article Gallery</h2>
                     <br/>
