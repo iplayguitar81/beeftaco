@@ -31,11 +31,11 @@ use willvincent\Rateable\Rating;
 use willvincent\Rateable\Rateable;
 Route::get('/', function () {
 
-    $location = GeoIP::getLocation();
+
     $posts = Post::orderBy('created_at', 'desc')->paginate(3);
     $users = User::all();
     $ratings =Rating::all();
-    return view('welcome', compact('posts', 'users','ratings','location'));
+    return view('welcome', compact('posts', 'users','ratings'));
 });
 
 //social login package establish authorize route......
