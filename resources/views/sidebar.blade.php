@@ -7,13 +7,13 @@
 <div class="tab-content">
     <div id="home" class="tab-pane fade in active">
         <h3>Like Us On Facebook!</h3>
-        <div class="fb-page" data-href="https://www.facebook.com/bowtiesoft/" data-tabs="timeline" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><div class="fb-xfbml-parse-ignore"><blockquote cite="https://www.facebook.com/bowtiesoft/"><a href="https://www.facebook.com/bowtiesoft/">Bowtie Software &amp; Web Development</a></blockquote></div></div>
+        {{--<div class="fb-page" data-href="https://www.facebook.com/bowtiesoft/" data-tabs="timeline" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><div class="fb-xfbml-parse-ignore"><blockquote cite="https://www.facebook.com/bowtiesoft/"><a href="https://www.facebook.com/bowtiesoft/">Bowtie Software &amp; Web Development</a></blockquote></div></div>--}}
     </div>
 
     <div id="menu1" class="tab-pane fade">
         <h3>Twitter</h3>
 
-        <a class="twitter-timeline" href="https://twitter.com/bowtiesoftware">Tweets by bowtiesoftware</a> <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+        {{--<a class="twitter-timeline" href="https://twitter.com/bowtiesoftware">Tweets by bowtiesoftware</a> <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>--}}
 
     </div>
 
