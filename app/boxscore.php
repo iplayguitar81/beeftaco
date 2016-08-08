@@ -14,10 +14,10 @@ class boxscore extends Model
     protected $table = 'boxscores';
 
     /**
-    * The database primary key value.
-    *
-    * @var string
-    */
+     * The database primary key value.
+     *
+     * @var string
+     */
     protected $primaryKey = 'id';
 
     /**
