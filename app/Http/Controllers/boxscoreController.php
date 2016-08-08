@@ -22,9 +22,10 @@ class boxscoreController extends Controller
      */
     public function index()
     {
+        $user=Auth::id();
         $boxscores = boxscore::paginate(15);
 
-        return view('boxscores.index', compact('boxscores'));
+        return view('boxscores.index', compact('boxscores', 'user'));
     }
 
     /**
