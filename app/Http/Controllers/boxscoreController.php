@@ -77,6 +77,61 @@ class boxscoreController extends Controller
         return view('boxscore.edit', compact('boxscore'));
     }
 
+
+    public function file_upload()
+    {
+
+
+        return view('boxscores.file_upload');
+
+    }
+
+
+    public function statsUploadCsv()
+    {
+        $rules = array(
+//            'title' => 'required',
+//            'subHead' => 'required',
+//            'body' => 'required'
+
+        );
+
+
+        $validator = Validator::make(Input::all(), $rules);
+        // process the form
+        if ($validator->fails())
+        {
+            return Redirect::route(('boxscores.file_upload'))->withErrors($validator);
+        }
+        else
+        {
+
+            try {
+                $csv_file =Excel::load(Input::file('csv-file'))->get();
+
+
+                foreach($csv_file as $csv)
+                {
+                    $title=$csv->title;
+                    $subhead=$csv->subhead;
+                    $body =$csv->body;
+                    $imgpath =$csv->imgpath;
+
+                    $csv_import = new Post(['user_id'=> Auth::user()->id,'title' => $title,'subHead' => $subhead,'body' => $body,'imgPath' => $imgpath ]);
+                    $csv_import->save();
+                }
+
+
+                \Session::flash('success', 'Post uploaded successfully.');
+                return redirect(route('posts.index',compact('results')));
+            } catch (\Exception $e) {
+                \Session::flash('error', $e->getMessage());
+                return redirect(route('posts.index'));
+            }
+        }
+    }
+
+
     /**
      * Update the specified resource in storage.
      *
