@@ -129,6 +129,9 @@ Route::get('/posts/file_upload', ['as' => 'posts.file_upload', 'uses'=>'PostsCon
 Route::get('/posts/file_export', ['as' => 'posts.file_export', 'uses'=>'PostsController@file_export']);
 
 
+Route::get('/boxscores/file_upload', ['as' => 'boxscores.file_upload', 'uses'=>'boxscoreController@file_upload']);
+
+
 
 Route::post('/posts/file_upload', 'PostsController@postUploadCsv');
 Route::post('/posts/file_upload', 'PostsController@postUploadCsv');
