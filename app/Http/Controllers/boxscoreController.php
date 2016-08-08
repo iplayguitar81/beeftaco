@@ -19,9 +19,9 @@ class boxscoreController extends Controller
      */
     public function index()
     {
-        $boxscore = boxscore::paginate(15);
+        $boxscores = boxscore::paginate(15);
 
-        return view('boxscore.index', compact('boxscore'));
+        return view('boxscores.index', compact('boxscores'));
     }
 
     /**
@@ -41,7 +41,7 @@ class boxscoreController extends Controller
      */
     public function store(Request $request)
     {
-        
+
         boxscore::create($request->all());
 
         Session::flash('flash_message', 'boxscore added!');
@@ -86,7 +86,7 @@ class boxscoreController extends Controller
      */
     public function update($id, Request $request)
     {
-        
+
         $boxscore = boxscore::findOrFail($id);
         $boxscore->update($request->all());
 
