@@ -9,6 +9,7 @@ use App\boxscore;
 use Illuminate\Http\Request;
 use Carbon\Carbon;
 use Session;
+use Validator;
 
 class boxscoreController extends Controller
 {
