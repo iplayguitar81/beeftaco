@@ -11,6 +11,7 @@
 |
 */
 use App\Post;
+use App\boxscore;
 use Intervention\Image\Facades\Image;
 use App\User;
 use AdamWathan\EloquentOAuth\Facades\OAuth;
@@ -50,7 +51,7 @@ Route::get('github/login', function(){
         $user->name = $userDetails->full_name;
 
         $user->save();
-      //  dd($userDetails);
+        //  dd($userDetails);
     });
     return Redirect::intended();
 
@@ -146,7 +147,7 @@ Route::get('/posts/post_rating', ['as' => 'posts.post_rating','uses'=>'PostsCont
 
 
 Route::group(['middleware' => ['web']], function () {
-	Route::resource('posts', 'PostsController');
+    Route::resource('posts', 'PostsController');
 
 
 
@@ -164,6 +165,8 @@ Route::get('/show_user/{id}', ['as' => 'posts.show_user', 'uses'=>'PostsControll
 
 
 Route::resource('posts', 'PostsController');
+
+Route::resource('boxscores', 'boxscoreController');
 
 Route::auth();
 
