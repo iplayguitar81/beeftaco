@@ -11,6 +11,7 @@ use Carbon\Carbon;
 use Session;
 use Validator;
 use Illuminate\Support\Facades\Input;
+use Maatwebsite\Excel\Facades\Excel;
 
 class boxscoreController extends Controller
 {
