@@ -126,8 +126,12 @@ Route::get('/posts/test_slides','PostsController@test_slides');
 
 Route::get('/posts/file_upload', ['as' => 'posts.file_upload', 'uses'=>'PostsController@file_upload']);
 
+
+
+
 Route::get('/posts/file_export', ['as' => 'posts.file_export', 'uses'=>'PostsController@file_export']);
 
+Route::get('/boxscores/file_upload', ['as' => 'boxscores.file_upload', 'uses'=>'boxscoreController@file_upload']);
 
 Route::get('/boxscores/file_upload', ['as' => 'boxscores.file_upload', 'uses'=>'boxscoreController@file_upload']);
 
