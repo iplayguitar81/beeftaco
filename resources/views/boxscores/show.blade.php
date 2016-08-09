@@ -16,21 +16,7 @@
     <article class="center-block">
         <h1 class="article-title-show" style="font-family: Pacifico, cursive;font-size:4em;line-height:1.2em;text-align:center;">{{ $boxscore->gamestring }}</h1>
         <p class="subheader-main" style="text-align:center;font-family: Boogaloo, cursive; font-size:3em;">{{ $boxscore->datey}}</p>
-        {{--<p class="uk-article-meta" style="text-align:center;">--}}
-            {{--Written by <?--}}
-            {{--//below is one way to get the name of the author.....--}}
-            {{--?>--}}
 
-           {{--@if($post->user_id != null)--}}
-            {{--<? $author = App\User::find($post->user_id)->name; ?>--}}
-
-            {{--{{$author}}--}}
-            {{--@endif--}}
-            {{--@foreach($records as $record)--}}
-            {{--{{$record->name}}--}}
-            {{--@endforeach--}}
-            {{--on {{ $post->created_at->format('M dS Y') }}--}}
-        {{--</p>--}}
         <p class="uk-article-lead"></p>
         <br/>
         <div class="center-block text-center">
