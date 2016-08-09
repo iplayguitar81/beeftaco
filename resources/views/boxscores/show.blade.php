@@ -33,9 +33,11 @@
                 {{-- */ $win_or_loss ="" /* --}}
             @endif
 
-
+{{--This is where I need to add the boxscore recap stuff.....--}}
 
             @endif
+
+
 
 
 
