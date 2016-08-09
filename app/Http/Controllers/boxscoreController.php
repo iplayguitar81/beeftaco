@@ -575,7 +575,7 @@ class boxscoreController extends Controller
 
                     #$csv_import = new Post(['user_id'=> Auth::user()->id,'title' => $title,'subHead' => $subhead,'body' => $body,'imgPath' => $imgpath ]);
 
-                    $csv_import = new boxscore(['game_string' => $game_string,'datey' => $datey,'dashy_date' => $dashy_date,'afname' => $afname,'hfname' => $hfname,]);
+                    $csv_import = new boxscore(['game_string' => $game_string,'datey' => $datey,'dashy_date' => $dashy_date,'afname' => $afname,'hfname' => $hfname]);
                     $csv_import->save();
                 }
 
