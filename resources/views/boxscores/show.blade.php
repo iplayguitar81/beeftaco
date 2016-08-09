@@ -7,7 +7,7 @@
         js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.6&appId=409035349261019";
         fjs.parentNode.insertBefore(js, fjs);
     }(document, 'script', 'facebook-jssdk'));</script>
-@section('title', $post->title)
+@section('title', $boxscore->game_string)
 @section('content')
 
 <div class="row">
