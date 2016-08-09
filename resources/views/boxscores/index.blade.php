@@ -34,7 +34,7 @@
             <tr>
                 {{--<td>{{ $x }}</td>--}}
                 <td><a href="{{ route('boxscores.show', [$item->id, str_slug($item->game_string)]) }}">{{ $item->game_string }}</a> <span class="pull-left"><br/>
-                        {{--{{' Game images: '. $item->images()->count() }}--}}
+
                     </span></td><td>{{ $item->datey->format('M dS Y') }}</td><td>
 
                     {{strip_tags(str_limit($item->body, 20))}}
