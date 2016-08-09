@@ -580,6 +580,7 @@ class boxscoreController extends Controller
                 }
 
 
+
                 \Session::flash('success', 'Post uploaded successfully.');
                 return redirect(route('boxscores.index',compact('results')));
             } catch (\Exception $e) {
