@@ -2,7 +2,7 @@
 @section('content')
 @section('title', 'Blog')
 <div class="col-md-12">
-    <h1>Posts &nbsp;&nbsp;&nbsp;</h1>
+    <h1>Boxscores</h1>
 
 
 
