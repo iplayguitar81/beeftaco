@@ -22,8 +22,18 @@
         @if($boxscore->h_initials =='POR')
             {{-- */ $home_or_away = $boxscore->afname."<span class='box_total_h2'> ".$boxscore->atotal."</span><br/>at<br/> portland trail blazers <span class='box_total_h2'>".$boxscore->htotal."</span>" /* --}}
 
-
+            @if ($boxscore->htotal > $boxscore->atotal )
+                {{-- */ $win_or_loss ="<span class='win_loss_box_show_win'>W</span>" /* --}}
+                @else
+                {{-- */ $win_or_loss ="" /* --}}
+            @endif
+            @if ($boxscore->htotal < $boxscore->atotal )
+                {{-- */ $win_or_loss ="<span class='win_loss_box_show_loss'>L</span>" /* --}}
             @else
+                {{-- */ $win_or_loss ="" /* --}}
+            @endif
+
+        @else
 
             @endif
 
