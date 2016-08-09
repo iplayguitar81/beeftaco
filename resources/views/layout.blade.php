@@ -684,8 +684,7 @@ div.article-texterson2 p:first-letter{color:#E63C4D;font-size:1.7em;text-shadow:
         <div class="collapse navbar-collapse" id="myNavbar">
             <ul class="nav navbar-nav">
                 <li class="active"><a href="{{url('/')}}">Home</a></li>
-                <li><a href="{{url('/posts')}}">Blog</a></li>
-                <li><a href="{{url('#')}}">Portfolio</a></li>
+                <li><a href="{{url('/posts')}}">News</a></li>
                 <li><a href="{{url('/contact')}}">Contact</a></li>
             </ul>
 
@@ -746,9 +745,7 @@ div.article-texterson2 p:first-letter{color:#E63C4D;font-size:1.7em;text-shadow:
             {{--<li class="uk-active">--}}
                 {{--<a href="{{url('/')}}" >Home</a>--}}
             {{--</li>--}}
-            {{--<li>--}}
-                {{--<a href="#">Portfolio</a>--}}
-            {{--</li>--}}
+
             {{--<li>--}}
                 {{--<a href="{{url('/posts')}}">Blog</a>--}}
             {{--</li>--}}
