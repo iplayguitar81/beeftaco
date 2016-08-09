@@ -51,7 +51,7 @@
             {{--This is where I need to add the boxscore recap stuff.....--}}
 
     @endif
-        <div class='box_score'><h2 class='story_h2'><span class='article_title'>{{$home_or_away}}</span><br/><span class='box_arena_h2'>{{$boxscore->arena}} | </span><span class='box_start_date_h2'>Insert Date</span><br/>{{$win_or_loss}}</h2>
+        <div class='box_score'><h2 class='story_h2'><span class='article_title'>{{{$home_or_away}}}</span><br/><span class='box_arena_h2'>{{$boxscore->arena}} | </span><span class='box_start_date_h2'>Insert Date</span><br/>{{$win_or_loss}}</h2>
 
         {{--This is where I need to add Starter stuff and DRY logic.....--}}
 
