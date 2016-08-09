@@ -20,7 +20,7 @@
         <p class="uk-article-lead"></p>
         <br/>
         <div class="center-block text-center">
-       <div class="article-texterson2"> {!! ($post->body) !!} </div>
+
 
         </div>
 
