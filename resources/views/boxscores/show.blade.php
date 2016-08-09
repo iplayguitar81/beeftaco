@@ -14,7 +14,7 @@
     <div class="col-md-12">
 
     <article class="center-block">
-        <h1 class="article-title-show" style="font-family: Pacifico, cursive;font-size:4em;line-height:1.2em;text-align:center;">{{ $boxscore->gamestring }}</h1>
+        <h1 class="article-title-show" style="font-family: Pacifico, cursive;font-size:4em;line-height:1.2em;text-align:center;">{{ $boxscore->game_string }}</h1>
         <p class="subheader-main" style="text-align:center;font-family: Boogaloo, cursive; font-size:3em;">{{ $boxscore->datey}}</p>
 
         <p class="uk-article-lead"></p>
