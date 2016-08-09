@@ -22,7 +22,7 @@
     <table class="table">
         <thead>
         <tr>
-            <th>{{ trans('boxscores.title') }}</th><th>{{ trans('boxscores.subhead') }}</th><th>Date</th><th>{{ trans('boxscores.body') }}</th><th>Image</th>@can('isAdmin')<th>Actions</th>@endcan
+            <th>{{ trans('boxscores.game_string') }}</th><th>{{ trans('boxscores.datey') }}</th><th>Date</th><th>{{ trans('boxscores.body') }}</th><th>Image</th>@can('isAdmin')<th>Actions</th>@endcan
         </tr>
         </thead>
         <tbody>
