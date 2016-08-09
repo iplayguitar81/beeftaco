@@ -24,7 +24,7 @@
         <tr>
             {{--<th>{{ trans('boxscores.game_string') }}</th>--}}
             {{--<th>{{ trans('boxscores.datey') }}</th>--}}
-            <th>Game URL</th><th>Date</th>@can('isAdmin')<th>Actions</th>@endcan
+            <th>Game URL</th><th>Date</th>@can('isAdmin')@endcan
         </tr>
         </thead>
         <tbody>
