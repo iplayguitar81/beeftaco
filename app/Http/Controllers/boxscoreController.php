@@ -580,7 +580,7 @@ class boxscoreController extends Controller
                     $csv_import->save();
                 }
                     \Session::flash('success','Game uploaded successfully.');
-                return redirect(route('boxscores.index',compact('results')));
+                return redirect(route('boxscores.index', compact('results')));
             } catch (\Exception $e) {
                 \Session::flash('error', $e->getMessage());
                 return redirect(route('boxscores.index'));
