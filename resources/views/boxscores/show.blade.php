@@ -53,6 +53,12 @@
     @endif
 
 
+        {{--This is where I need to add Starter stuff and DRY logic.....--}}
+
+
+        {{-- */ $away_total_to =$boxscore->ap1_to.$boxscore->ap2_to.$boxscore->ap3_to.$boxscore->ap4_to.$boxscore->ap5_to.$boxscore->ap6_to.$boxscore->ap7_to.$boxscore->ap8_to.$boxscore->ap9_to.$boxscore->ap10_to.$boxscore->ap11_to.$boxscore->ap12_to.$boxscore->ap13_to /* --}}
+
+
 
         <p class="uk-article-lead"></p>
         <br/>
