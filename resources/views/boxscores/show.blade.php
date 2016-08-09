@@ -39,7 +39,7 @@
 
 @if($boxscore->a_initials="POR")
 
-            {{-- */ $home_or_away = "portland trail blazers <span class='box_total_h2'> ".$boxscore->atotal."</span><br/>at<br/> portland trail blazers <span class='box_total_h2'>".$boxscore->atotal."</span>" /* --}}
+            {{-- */ $home_or_away = "portland trail blazers <span class='box_total_h2'> ".$boxscore->atotal."</span><br/>at<br/> portland trail blazers <span class='box_total_h2'>".$boxscore->atotal."</span><br/>at</br> ".$boxscore->hfname. " <span class='box_total_h2'>".$boxscore->htotal."</span>  /* --}}
 
     @endif
 
