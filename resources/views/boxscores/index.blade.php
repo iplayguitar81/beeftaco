@@ -10,9 +10,9 @@
         <div class="panel panel-success pull-right"> <div class="panel-heading">
                 <h3 class="panel-title">Welcome {{Auth::user()->name}}</h3> </div>
             <div class="panel-body">
-                <a href="{{ url('/boxscores/create') }}" class="btn btn-primary btn-sm">Add New Post</a>
+                {{--<a href="{{ url('/boxscores/create') }}" class="btn btn-primary btn-sm">Add New Post</a>--}}
                 &nbsp;
-                <a href="{{ url('/boxscores/file_upload') }}" class="btn btn-success btn-sm">Import CSV Posts</a>
+                <a href="{{ url('/boxscores/file_upload') }}" class="btn btn-success btn-sm">Import Game Stats CSV</a>
                 &nbsp;
                 <a href="{{ url('/boxscores/file_export') }}" class="btn btn-warning btn-sm">Export Excel All Posts</a>
 
