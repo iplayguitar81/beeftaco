@@ -36,7 +36,7 @@
                 <td><a href="{{ route('boxscores.show', [$item->id, str_slug($item->game_string)]) }}">{{ $item->game_string }}</a> <span class="pull-left"><br/>
                         {{--{{'SOMEDAY- -> Game images: '. $item->images()->count() }}--}}
 
-                        {{-- */ $game_date = strtotime($item->datey); $game_date=date("m DD Y", $game_date); /* --}}
+                        {{-- */ $game_date = strtotime($item->datey); $game_date=date("M d Y", $game_date); /* --}}
                     </span></td><td>{{ $game_date }}</td><td>
 
                     {{strip_tags(str_limit($item->body, 20))}}
