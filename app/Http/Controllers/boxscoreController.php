@@ -14,6 +14,9 @@ use Illuminate\Support\Facades\Input;
 use Maatwebsite\Excel\Facades\Excel;
 use Auth;
 
+use \App;
+use Illuminate\Support\Facades\DB;
+
 class boxscoreController extends Controller
 {
     /**
