@@ -14,55 +14,29 @@
     <div class="col-md-12">
 
     <article class="center-block">
-        <h1 class="article-title-show" style="font-family: Pacifico, cursive;font-size:4em;line-height:1.2em;text-align:center;">{{ $post->title }}</h1>
-        <p class="subheader-main" style="text-align:center;font-family: Boogaloo, cursive; font-size:3em;">{{ $post->subHead}}</p>
-        <p class="uk-article-meta" style="text-align:center;">
-            Written by <?
-            //below is one way to get the name of the author.....
-            ?>
+        <h1 class="article-title-show" style="font-family: Pacifico, cursive;font-size:4em;line-height:1.2em;text-align:center;">{{ $boxscore->gamestring }}</h1>
+        <p class="subheader-main" style="text-align:center;font-family: Boogaloo, cursive; font-size:3em;">{{ $boxscore->datey}}</p>
+        {{--<p class="uk-article-meta" style="text-align:center;">--}}
+            {{--Written by <?--}}
+            {{--//below is one way to get the name of the author.....--}}
+            {{--?>--}}
 
-           @if($post->user_id != null)
-            <? $author = App\User::find($post->user_id)->name; ?>
+           {{--@if($post->user_id != null)--}}
+            {{--<? $author = App\User::find($post->user_id)->name; ?>--}}
 
-            {{$author}}
-            @endif
+            {{--{{$author}}--}}
+            {{--@endif--}}
             {{--@foreach($records as $record)--}}
             {{--{{$record->name}}--}}
             {{--@endforeach--}}
-            on {{ $post->created_at->format('M dS Y') }}
-        </p>
-        <p class="uk-article-lead"><img class="img-responsive center-block" src='{{"../../images/". $post->imgPath}}'></p>
+            {{--on {{ $post->created_at->format('M dS Y') }}--}}
+        {{--</p>--}}
+        <p class="uk-article-lead"></p>
         <br/>
         <div class="center-block text-center">
        <div class="article-texterson2"> {!! ($post->body) !!} </div>
-            @if(empty($post->images))
-            <div class="container">
-                <h2 style="font-family: Pacifico, cursive;font-size:2em;line-height:1.2em;color:#E63C4D;text-align:center;">Article Gallery</h2>
-                    <br/>
-                {{--<div class="customNavigation">--}}
-                {{--<a class="btn prev btn-danger">Previous</a>--}}
-                {{--<a class="btn next btn-danger">Next</a>--}}
-                {{--</div>--}}
-                <ul class="owl-carousel">
-                    @foreach($post->images as $image)
 
-                        {{--*/ @ $pathy =$image->file_path  /*--}}
-
-                        {{--*/ @ list($width, $height) = getimagesize($pathy) /*--}}
-
-                        {{--*/ @ $dimensions =$width.'x'.$height  /*--}}
-
-                        {{--*/ $thumb_path= substr($image->file_path, 7);/*--}}
-                        <li class="owl-trick">
-                            <a href="{{url($image->file_path)}}" data-size="{{$dimensions}}" data-title="{{$image->caption}}">
-                                <img class="img-responsive" src="{{url('images/thmb-'.$thumb_path)}}" alt="1"></a></li>
-                    @endforeach
-
-                </ul>
-
-            </div>
-                @endif
-                    </div>
+        </div>
 
     </article>
                 </div>
@@ -73,105 +47,105 @@
 
         </div>
 </div>
-<div class="row">
-        <br/>
-    <div class="col-md-12 text-center">
-        <input id="input-id" type="text" class="rating" name="starRate" data-size="md" readonly="true" value="{{$rating_avg}}" diabled="true" >
-        <span style="text-align:center;font-family: Boogaloo, cursive; font-size:2em;"> Overall Average Article Rating: {{round($rating_avg,2)}}/5 Stars</span>
+{{--<div class="row">--}}
+        {{--<br/>--}}
+    {{--<div class="col-md-12 text-center">--}}
+        {{--<input id="input-id" type="text" class="rating" name="starRate" data-size="md" readonly="true" value="{{$rating_avg}}" diabled="true" >--}}
+        {{--<span style="text-align:center;font-family: Boogaloo, cursive; font-size:2em;"> Overall Average Article Rating: {{round($rating_avg,2)}}/5 Stars</span>--}}
         {{--*/ @ $hide_rating_form = false; /*--}}
-        <p>Number of Ratings: {{$rating_count}}</p>
+        {{--<p>Number of Ratings: {{$rating_count}}</p>--}}
 
-        @can('loggedIn')
-            @if( $hide_rating_form == false)
+        {{--@can('loggedIn')--}}
+            {{--@if( $hide_rating_form == false)--}}
                 {{--<div class="alert-warning"><p class="text-center">You have already rated this article!  :D We assure you your rating has been figured into the total score!</p></div>--}}
 
-            @endif
-        @endcan
-        </div>
-    </div>
+            {{--@endif--}}
+        {{--@endcan--}}
+        {{--</div>--}}
+    {{--</div>--}}
         <br/>
-<h2 class="text-center" style="font-family: Pacifico, cursive;font-size:2em;line-height:1.2em;color:#E63C4D;text-align:center;" >Trailblazers Fans User Ratings</h2>
+{{--<h2 class="text-center" style="font-family: Pacifico, cursive;font-size:2em;line-height:1.2em;color:#E63C4D;text-align:center;" >Trailblazers Fans User Ratings</h2>--}}
 
-        <div class="row">
-            @foreach($post_ratings as $rating)
+        {{--<div class="row">--}}
+            {{--@foreach($post_ratings as $rating)--}}
                 {{--*/ @ $rate_pct_reviewer = (($rating->rating/5)*100); /*--}}
 
-        @if(Auth::user())
-             @if($rating->user_id== Auth::user()->id || $post->user_id== Auth::user()->id)
+        {{--@if(Auth::user())--}}
+             {{--@if($rating->user_id== Auth::user()->id || $post->user_id== Auth::user()->id)--}}
                 {{--*/ @ $hide_rating_form = true; /*--}}
-                @endif
-        @endif
-            <? $author = App\User::find($rating->user_id)->name; ?>
+                {{--@endif--}}
+        {{--@endif--}}
+            {{--<? $author = App\User::find($rating->user_id)->name; ?>--}}
 
-                    <div class="col-md-2 col-md-offset-1"><? $avatar = App\User::find($rating->user_id)->avatar; ?>
+                    {{--<div class="col-md-2 col-md-offset-1"><? $avatar = App\User::find($rating->user_id)->avatar; ?>--}}
 
-                        @if(empty($avatar))
-                           <p> <img src="{{url('images/default-user-img.png')}}" class="img-circle avatar" alt="user profile image"></p>
+                        {{--@if(empty($avatar))--}}
+                           {{--<p> <img src="{{url('images/default-user-img.png')}}" class="img-circle avatar" alt="user profile image"></p>--}}
 
-                        @else
+                        {{--@else--}}
 
-                            <p><img src="{{$avatar}}" class="img-circle avatar" alt="user profile image"></p>
+                            {{--<p><img src="{{$avatar}}" class="img-circle avatar" alt="user profile image"></p>--}}
 
-                        @endif
-                        <p>rated by <a href="{{ url('/show_user/' . $rating->user_id) }}"> <b>{{$author}}</b></a></p>
-
-
-                        <span class="text-muted time">{{$rating->created_at->format('M dS Y')}}</span>
-
-                    </div>
-
-                    <div class="col-md-6"><p>{{$rating->rate_message}}</p></div>
-                    <div class="col-md-2 offset-1">
-
-                            <p>{{round($rating->rating,2)}}/5 Stars</p>
-                            <div class="rating2"><div class="stars"></div><div class="back" style="width:{{$rate_pct_reviewer}}%;"></div></div>
-
-                    </div>
-                </div>
-<hr>
-    <br/>
-
-        @endforeach
+                        {{--@endif--}}
+                        {{--<p>rated by <a href="{{ url('/show_user/' . $rating->user_id) }}"> <b>{{$author}}</b></a></p>--}}
 
 
+                        {{--<span class="text-muted time">{{$rating->created_at->format('M dS Y')}}</span>--}}
 
-        @can('loggedIn')
-@if( $hide_rating_form == false)
+                    {{--</div>--}}
 
-        <h2>Rate this article!!!</h2>
-        <hr>
+                    {{--<div class="col-md-6"><p>{{$rating->rate_message}}</p></div>--}}
+                    {{--<div class="col-md-2 offset-1">--}}
 
-        {!! Form::open(array('url'=>'/posts/{id}/{title}')) !!}
+                            {{--<p>{{round($rating->rating,2)}}/5 Stars</p>--}}
+                            {{--<div class="rating2"><div class="stars"></div><div class="back" style="width:{{$rate_pct_reviewer}}%;"></div></div>--}}
+
+                    {{--</div>--}}
+                {{--</div>--}}
+{{--<hr>--}}
+    {{--<br/>--}}
+
+        {{--@endforeach--}}
+
+
+
+        {{--@can('loggedIn')--}}
+{{--@if( $hide_rating_form == false)--}}
+
+        {{--<h2>Rate this article!!!</h2>--}}
+        {{--<hr>--}}
+
+        {{--{!! Form::open(array('url'=>'/posts/{id}/{title}')) !!}--}}
         {{--echo Form::open(array('url' => 'foo/bar', 'files' => true))--}}
-<div class="form-group center-block">
-        <div class="rate-width text-center">
-        <input id="input-id2" type="text" class="rating" name="starRate" data-size="md" >
-            </div>
-</div>
+{{--<div class="form-group center-block">--}}
+        {{--<div class="rate-width text-center">--}}
+        {{--<input id="input-id2" type="text" class="rating" name="starRate" data-size="md" >--}}
+            {{--</div>--}}
+{{--</div>--}}
         {{--{!! Form::open(['url' => '/posts', 'class' => '', 'files' =>true]) !!}--}}
         {{--{{ Form::selectRange('userRate', 1, 5) }}--}}
 
-        <div class="form-group">
-            {!! Form::label('userRateMsg', 'Please Leave Comments With Your Rating', ['class' => '']) !!}
+        {{--<div class="form-group">--}}
+            {{--{!! Form::label('userRateMsg', 'Please Leave Comments With Your Rating', ['class' => '']) !!}--}}
 
-            {!! Form::hidden('post_id', $post->id, ['class' => 'form-control']) !!}
-            <div class="">
-                {!! Form::textarea('', null, ['class' => 'form-control', 'name'=>'userRateMsg', 'id'=>'userRateMsg']) !!}
-                {!! $errors->first('userRateMsg', '<p class="uk-alert-danger">:message</p>') !!}
-            </div>
-        </div>
-        <br/>
-        <br/>
+            {{--{!! Form::hidden('post_id', $post->id, ['class' => 'form-control']) !!}--}}
+            {{--<div class="">--}}
+                {{--{!! Form::textarea('', null, ['class' => 'form-control', 'name'=>'userRateMsg', 'id'=>'userRateMsg']) !!}--}}
+                {{--{!! $errors->first('userRateMsg', '<p class="uk-alert-danger">:message</p>') !!}--}}
+            {{--</div>--}}
+        {{--</div>--}}
+        {{--<br/>--}}
+        {{--<br/>--}}
 
-        {!! Form::submit('Rate This Article', ['class' => 'btn btn-success form-control']) !!}
+        {{--{!! Form::submit('Rate This Article', ['class' => 'btn btn-success form-control']) !!}--}}
 
-        {!! Form::close() !!}
+        {{--{!! Form::close() !!}--}}
 
-        @else
+        {{--@else--}}
 
 
-        @endif
-        @endcan
+        {{--@endif--}}
+        {{--@endcan--}}
 
         <br/>
 
@@ -180,9 +154,9 @@
 
         <br/>
 
-    <a href="{{url('posts')}}">
+    <a href="{{url('boxscores')}}">
 
-        <button type="submit" class="btn btn-primary center-block btn-md">Back to All Posts</button>
+        <button type="submit" class="btn btn-primary center-block btn-md">Back to All Boxscores</button>
     </a>
    &nbsp;
     <a href="{{url('/')}}">
