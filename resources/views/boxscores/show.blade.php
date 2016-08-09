@@ -33,7 +33,7 @@
                 {{-- */ $win_or_loss ="" /* --}}
             @endif
 
-        @else
+
 
             @endif
 
