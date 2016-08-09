@@ -1029,7 +1029,7 @@ class boxscoreController extends Controller
                         'hometto' => $hometto,
                         'hometpf' => $hometpf,
                         'awaytto' => $awaytto,
-                        'awaytpf' => $awaytpf, ]);
+                        'awaytpf' => $awaytpf ]);
                     $csv_import->save();
                 }
 
