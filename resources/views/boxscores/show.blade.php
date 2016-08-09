@@ -20,6 +20,7 @@
         <p class="subheader-main" style="text-align:center;font-family: Boogaloo, cursive; font-size:3em;">{{ $game_date}}</p>
 
         @if($boxscore->h_initials =='POR')
+            {{-- */ $home_or_away = $boxscore->afname."<span class='box_total_h2'> ".$boxscore->atotal."</span><br/>at<br/> portland trail blazers <span class='box_total_h2'>".$boxscore->htotal."</span>" /* --}}
 
 
             @else
