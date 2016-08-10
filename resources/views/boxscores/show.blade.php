@@ -95,6 +95,10 @@
         @if($boxscore->ap6_starter == '1')
 
             {{-- */  $astart_class6='starter' /* --}}
+
+            @php
+                $astart_class6='starter';
+            @endphp
         @else
 
         @endif
