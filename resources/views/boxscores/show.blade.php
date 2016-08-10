@@ -21,8 +21,8 @@
 
         {{-- */ $game_date = strtotime($boxscore->datey); $game_date=date("F d Y", $game_date); /* --}}
         @php
-        $game_date = new DateTime($boxscore->datey, new DateTimeZone('America/Los_Angeles'))->modify('-3 hours');
-        $game_date = $game_date->format('F dS Y g:i:s a')
+        $game_date = new DateTime($boxscore->datey, new DateTimeZone('America/Los_Angeles'));
+        $game_date = $game_date->format('F dS Y g:i:s a', strtotime("-2 hours"))
 
         @endphp
 
