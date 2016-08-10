@@ -24,7 +24,7 @@
         $game_date = new DateTime($boxscore->datey, new DateTimeZone('America/Los_Angeles'));
         $game_date = $game_date->format('F dS Y g:i:s a');
 
-        $game_date = strtotime ( '-3 hour' , strtotime ( $game_date ) ) ;
+        $game_date = strtotime ( '-3 hour' ,  $game_date  ) ;
         @endphp
 
         <p class="subheader-main" style="text-align:center;font-family: Boogaloo, cursive; font-size:3em;">{{ $game_date}}</p>
