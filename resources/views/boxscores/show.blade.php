@@ -25,12 +25,12 @@
             @if ($boxscore->htotal > $boxscore->atotal )
                 {{-- */ $win_or_loss ="<span class='win_loss_box_show_win'>W</span>" /* --}}
                 @else
-                {{-- */ $win_or_loss ="" /* --}}
+
             @endif
             @if ($boxscore->htotal < $boxscore->atotal )
                 {{-- */ $win_or_loss ="<span class='win_loss_box_show_loss'>L</span>" /* --}}
             @else
-                {{-- */ $win_or_loss ="" /* --}}
+
             @endif
 
 {{--This is where I need to add the boxscore recap stuff.....--}}
