@@ -147,6 +147,95 @@
         @endif
 
 
+        @if($boxscore->hp1_starter == '1')
+
+            {{-- */  $hstart_class1='starter' /* --}}
+        @else
+
+        @endif
+        @if($boxscore->hp2_starter == '1')
+
+            {{-- */  $hstart_class2='starter' /* --}}
+        @else
+
+        @endif
+
+        @if($boxscore->hp3_starter == '1')
+
+            {{-- */  $hstart_class3='starter' /* --}}
+        @else
+
+        @endif
+
+        @if($boxscore->hp4_starter == '1')
+
+            {{-- */  $hstart_class4='starter' /* --}}
+        @else
+
+        @endif
+
+        @if($boxscore->hp5_starter == '1')
+
+            {{-- */  $hstart_class5='starter' /* --}}
+        @else
+
+        @endif
+
+        @if($boxscore->hp6_starter == '1')
+
+            {{-- */  $hstart_class6='starter' /* --}}
+        @else
+
+        @endif
+
+        @if($boxscore->hp7_starter == '1')
+
+            {{-- */  $hstart_class7='starter' /* --}}
+        @else
+
+        @endif
+
+        @if($boxscore->hp8_starter == '1')
+
+            {{-- */  $hstart_class8='starter' /* --}}
+        @else
+
+        @endif
+
+        @if($boxscore->hp9_starter == '1')
+
+            {{-- */  $hstart_class9='starter' /* --}}
+        @else
+
+        @endif
+
+        @if($boxscore->hp10_starter == '1')
+
+            {{-- */  $hstart_class10='starter' /* --}}
+        @else
+
+        @endif
+        @if($boxscore->hp11_starter == '1')
+
+            {{-- */  $hstart_class11='starter' /* --}}
+        @else
+
+        @endif
+        @if($boxscore->hp12_starter == '1')
+
+            {{-- */  $hstart_class12='starter' /* --}}
+        @else
+
+        @endif
+
+        @if($boxscore->hp13_starter == '1')
+
+            {{-- */  $hstart_class13='starter' /* --}}
+        @else
+
+        @endif
+
+
         {{-- */ $away_total_to =$boxscore->ap1_to.$boxscore->ap2_to.$boxscore->ap3_to.$boxscore->ap4_to.$boxscore->ap5_to.$boxscore->ap6_to.$boxscore->ap7_to.$boxscore->ap8_to.$boxscore->ap9_to.$boxscore->ap10_to.$boxscore->ap11_to.$boxscore->ap12_to.$boxscore->ap13_to /* --}}
         {{-- */ $home_total_to =$boxscore->hp1_to.$boxscore->hp2_to.$boxscore->hp3_to.$boxscore->hp4_to.$boxscore->hp5_to.$boxscore->hp6_to.$boxscore->hp7_to.$boxscore->hp8_to.$boxscore->hp9_to.$boxscore->hp10_to.$boxscore->hp11_to.$boxscore->hp12_to.$boxscore->hp13_to /* --}}
 
