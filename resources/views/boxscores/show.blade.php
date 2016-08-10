@@ -56,7 +56,7 @@
             @endif
 
 @if($boxscore->a_initials=="POR")
-            {{-- */ $home_or_away = "portland trail blazers <span class='box_total_h2'> ".$boxscore->atotal."</span><br/>at<br/>".$boxscore->hfname ."<span class='box_total_h2'>".$boxscore->htotal."</span><span class='box_total_h2'>".$boxscore->htotal."</span>"  /* --}}
+            {{-- */ $home_or_away = "portland trail blazers <span class='box_total_h2'> ".$boxscore->atotal."</span><br/>at<br/>".$boxscore->hfname ."<span class='box_total_h2'>".$boxscore->htotal."</span>"  /* --}}
 
             @if ($boxscore->atotal > $boxscore->htotal )
                 {{-- */ $win_or_loss ="<span class='win_loss_box_show_win'>W</span>" /* --}}
