@@ -137,7 +137,22 @@
             @endphp
         @endif
 
-        @if($boxscore->hp1_starter == '1')
+
+        @if($boxscore->ap10_starter == '1')
+
+            @php
+                $astart_class10='starter';
+            @endphp
+        @else
+            @php
+                $astart_class10='not';
+            @endphp
+        @endif
+
+
+
+
+    @if($boxscore->hp1_starter == '1')
 
             {{-- */  $hstart_class1='starter' /* --}}
         @else
