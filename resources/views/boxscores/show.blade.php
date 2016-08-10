@@ -100,7 +100,7 @@
                 $astart_class6='starter';
             @endphp
         @else
-
+            $astart_class6='not';
         @endif
 
         @if($boxscore->ap7_starter == '1')
