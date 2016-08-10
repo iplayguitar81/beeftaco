@@ -283,7 +283,13 @@
         <div class='box_score'><h2 class='story_h2'><span class='article_title'>{!! $home_or_away !!}</span><br/><span class='box_arena_h2'>{{$boxscore->arena}} | </span><span class='box_start_date_h2'>Insert Date</span><br/>{!! $win_or_loss !!}</h2></div>
 
         <table id='last_game_period_box'>
-            <tr><th>&nbsp;</th><th>&nbsp;</th><th>1</th><th>2</th><th>3</th><th>4</th><th>T</th></tr>
+            <tr><th>&nbsp;</th><th>&nbsp;</th><th>1</th><th>2</th><th>3</th><th>4</th>@if ($boxscore->aq5 == 0 || $boxscore->aq5 == '') @else <th>OT1</th>@endif
+                @if ($boxscore->aq6 == 0 ) @else <th>OT2</th>@endif
+                @if ($boxscore->aq7 == 0 ) @else <th>OT3</th>@endif
+                @if ($boxscore->aq8 == 0 ) @else <th>OT4</th>@endif
+                @if ($boxscore->aq9 == 0 ) @else <th>OT5</th>@endif
+                @if ($boxscore->aq10 == 0 ) @else <th>OT6</th>@endif
+                <th colspan="2">T</th>
             <tr><td class='logo_box' ></td><td>{{$boxscore->a_initials}}</td><td>{{$boxscore->aq1}}</td><td>{{$boxscore->aq2}}</td><td>{{$boxscore->aq3}}</td><td>{{$boxscore->aq4}}</td><td>{{$boxscore->atotal}}</td></tr>
             <tr><td class='logo_box' ></td><td>{{$boxscore->h_initials}}</td><td>{{$boxscore->hq1}}</td><td>{{$boxscore->hq2}}</td><td>{{$boxscore->hq3}}</td><td>{{$boxscore->hq4}}</td><td>{{$boxscore->htotal}}</td></tr>
 
