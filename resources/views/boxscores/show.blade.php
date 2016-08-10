@@ -330,6 +330,9 @@ $test_to= $ap1_to .
 
         </table>
 
+        <br/>
+        <br/>
+
         <table id='boxscore_away'>
             <tr style='border: 1px inset #000;'><th style='border: 1px inset #000;' colspan='19'>{{ $boxscore->afname }} <span class='digit_box_total'>{{ $boxscore->atotal }}</span></th></tr>
             <tr style='border: 1px inset #000;font-weight:800;'><td style='border: 1px inset #000;'>PLAYER</td><td style='border: 1px inset #000;'>MIN</td><td style='border: 1px inset #000;'>PTS</td><td style='border: 1px inset #000;'>FGM-A</td><td style='border: 1px inset #000;' class='hide_box_column'>3PM-A</td><td style='border: 1px inset #000;'>FTM-A</td><td style='border: 1px inset #000;' class='hide_box_column'>O-REB</td><td style='border: 1px inset #000;' class='hide_box_column'>D-REB</td><td style='border: 1px inset #000;'>REB</td><td style='border: 1px inset #000;'>AST</td><td style='border: 1px inset #000;' class='hide_box_column'>STL</td><td style='border: 1px inset #000;' class='hide_box_column'>BLK</td><td style='border: 1px inset #000;' class='hide_box_column'>TO</td><td style='border: 1px inset #000;'>PF</td><td style='border: 1px inset #000;' class='hide_this'>STARTER</td></tr>
