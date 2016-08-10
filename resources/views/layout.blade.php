@@ -234,8 +234,313 @@ div.article-texterson2 p:first-letter{color:#E63C4D;font-size:1.7em;text-shadow:
     margin-left: 0;
 }
 
+#boxscore-fb-thoughts-blurb {
+    width: 89%;
+    margin-left: auto;
+    margin-right: auto
+}
 
-#boxscore-fb-thoughts-blurb{width:89%;margin-left:auto;margin-right:auto}#last_game_period_box th{background-color:#D73F3F;color:#F1F8FF;text-shadow:1px 1px 1px #000000}#last_game_period_box td{color:#ffffff;padding:.8em;text-shadow:1px 1px 1px #000;font-size:.8em}td.logo_box{background-color:#ffffff}.quarters_total{font-weight:800;color:#990000 !important;font-family:"Trebuchet MS", Verdana, Helvetica, Arial, sans-serif;text-shadow:1px 1px 1px #000;background-color:#ffffff}#hyperlink-style-button{background:none;border:0;color:#666;text-decoration:none;text-align:left;font-size:1em;box-shadow:none}#hyperlink-style-button:hover{background:none;border:0;color:#666;text-decoration:none;cursor:pointer;cursor:hand}.star_five{height:40px;width:40px}.box_start_date_h2{font-size:.5em;font-family:Tahoma, Arial, "Trebuchet MS";text-align:center}.box_arena_h2{color:#000000;font-size:.5em;font-family:Tahoma, Arial, "Trebuchet MS"}.box_total_h2{font-family:Tahoma, "Trebuchet MS", Arial;color:#bdbdbd;text-shadow:1px 1px #000000}.header_last_game{border:1px inset #000000;float:right;margin-right:5%;width:80%}.header_last_game th{text-align:center;font-size:.7em}.header_last_game td{border:1px inset #000000;text-align:center;line-height:.85em}.win_loss_box_show_win{background-color:#FFFFFF;font-size:1em;padding:.5%;color:green;text-shadow:2px 2px white;border:1px inset #777788;font-family:"Trebuchet MS", georgia, Verdana, Sans-serif;margin-bottom:.2%}.win_loss_box_show_loss{padding:.5%;font-size:1em;background-color:#FFFFFF;border:1px inset #000000;color:#D73F3F;text-shadow:1px 1px #777788;font-family:"Trebuchet MS", georgia, Verdana, Sans-serif;margin-bottom:.2%}.win_loss_box_show_win2{background-color:#FFFFFF;font-size:1em;padding:.5%;color:green;text-shadow:2px 2px white;font-family:"Trebuchet MS", georgia, Verdana, Sans-serif;margin-bottom:.2%}.win_loss_box_show_loss2{padding:.5%;font-size:1em;background-color:#FFFFFF;color:#D73F3F;text-shadow:1px 1px #777788;font-family:"Trebuchet MS", georgia, Verdana, Sans-serif;margin-bottom:.2%}table#boxscore_away{width:95%;margin-left:auto;margin-right:auto}table#boxscore_away th{background-color:#000000;color:#FFFFFF;font-family:Ripper;font-size:1.4em}table#boxscore_away td{background-color:#FFFFFF;font-size:.77em;text-align:center}table#boxscore_home{width:95%;margin-left:auto;margin-right:auto}table#box_team_total_percentages{margin-left:auto;margin-right:auto}table#box_team_total_percentages th{background-color:#000000;color:#FFFFFF;font-family:Ripper;font-size:1.4em}table#box_team_total_percentages td{background-color:#FFFFFF;font-size:.68em}table#boxscore_home th{background-color:#000000;color:#FFFFFF;font-family:Ripper;font-size:1.4em}.hide_this{display:none}table#boxscore_home td{background-color:#FFFFFF;font-size:.79em;text-align:center}#boxscore_writeup_container{margin-left:auto;margin-right:auto;width:88%}.fb_iframe_widget,.fb_iframe_widget span,.fb_iframe_widget span iframe[style]{min-width:100% !important;width:100% !important;background-color:#FFFFFF}.fb_iframe_widget,.fb_iframe_widget span,.fb_iframe_widget span iframe[style] a{color:#FFFFFF}.digit_box_total{font-family:Tahoma, "Trebuchet MS", Arial;color:#bdbdbd;text-shadow:1px 1px #000000}.starter{background-color:#D73F3F !important;border-top:inset #bdbdbd !important;color:#eef5f9}.starter2{background-color:#D73F3F !important;border-top:inset #bdbdbd !important;color:#eef5f9}table#boxscore_key{margin-left:auto;margin-right:auto;width:75%}table#boxscore_key th{background-color:#777777}table#boxscore_key td{text-align:center}a.boxscore_link{margin-left:23%;color:red}.bubble{float:right;position:relative;width:60px;height:20px;padding:0px;background:#000000;-webkit-border-radius:10px;-moz-border-radius:10px;border-radius:10px;text-align:center;color:#FFFFFF;margin-right:5%}.bubble:after{content:'';position:absolute;border-style:solid;border-width:15px 5px 0;border-color:#000000 transparent;display:block;width:0;z-index:1;margin-left:-5px;bottom:-15px;left:48%}.readmore2{width:100%;display:inline}.article-texterson{font-size:1.725em;line-height:1.7em;font-family:"Times New Roman", Georgia, Tahoma;display:block}.uk-accordion-title{font-size:1em !important}#boxscore_buttons{text-align:center}#boxscore_buttons a{margin-top:1em}iframe{width:90%;margin-left:5%;margin-right:5%}
+#last_game_period_box th {
+    background-color: #D73F3F;
+    color: #F1F8FF;
+    text-shadow: 1px 1px 1px #000000
+}
+
+#last_game_period_box td {
+    color: #ffffff;
+    padding: .8em;
+    text-shadow: 1px 1px 1px #000;
+    font-size: .8em
+}
+
+td.logo_box {
+    background-color: #ffffff
+}
+
+.quarters_total {
+    font-weight: 800;
+    color: #990000 !important;
+    font-family: "Trebuchet MS", Verdana, Helvetica, Arial, sans-serif;
+    text-shadow: 1px 1px 1px #000;
+    background-color: #ffffff
+}
+
+#hyperlink-style-button {
+    background: none;
+    border: 0;
+    color: #666;
+    text-decoration: none;
+    text-align: left;
+    font-size: 1em;
+    box-shadow: none
+}
+
+#hyperlink-style-button:hover {
+    background: none;
+    border: 0;
+    color: #666;
+    text-decoration: none;
+    cursor: pointer;
+    cursor: hand
+}
+
+.star_five {
+    height: 40px;
+    width: 40px
+}
+
+.box_start_date_h2 {
+    font-size: .5em;
+    font-family: Tahoma, Arial, "Trebuchet MS";
+    text-align: center
+}
+
+.box_arena_h2 {
+    color: #000000;
+    font-size: .5em;
+    font-family: Tahoma, Arial, "Trebuchet MS"
+}
+
+.box_total_h2 {
+    font-family: Tahoma, "Trebuchet MS", Arial;
+    color: #bdbdbd;
+    text-shadow: 1px 1px #000000
+}
+
+.header_last_game {
+    border: 1px inset #000000;
+    float: right;
+    margin-right: 5%;
+    width: 80%
+}
+
+.header_last_game th {
+    text-align: center;
+    font-size: .7em
+}
+
+.header_last_game td {
+    border: 1px inset #000000;
+    text-align: center;
+    line-height: .85em
+}
+
+.win_loss_box_show_win {
+    background-color: #FFFFFF;
+    font-size: 1em;
+    padding: .5%;
+    color: green;
+    text-shadow: 2px 2px white;
+    border: 1px inset #777788;
+    font-family: "Trebuchet MS", georgia, Verdana, Sans-serif;
+    margin-bottom: .2%
+}
+
+.win_loss_box_show_loss {
+    padding: .5%;
+    font-size: 1em;
+    background-color: #FFFFFF;
+    border: 1px inset #000000;
+    color: #D73F3F;
+    text-shadow: 1px 1px #777788;
+    font-family: "Trebuchet MS", georgia, Verdana, Sans-serif;
+    margin-bottom: .2%
+}
+
+.win_loss_box_show_win2 {
+    background-color: #FFFFFF;
+    font-size: 1em;
+    padding: .5%;
+    color: green;
+    text-shadow: 2px 2px white;
+    font-family: "Trebuchet MS", georgia, Verdana, Sans-serif;
+    margin-bottom: .2%
+}
+
+.win_loss_box_show_loss2 {
+    padding: .5%;
+    font-size: 1em;
+    background-color: #FFFFFF;
+    color: #D73F3F;
+    text-shadow: 1px 1px #777788;
+    font-family: "Trebuchet MS", georgia, Verdana, Sans-serif;
+    margin-bottom: .2%
+}
+
+table#boxscore_away {
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto
+}
+
+table#boxscore_away th {
+    background-color: #000000;
+    color: #FFFFFF;
+    font-family: Ripper;
+    font-size: 1.4em
+}
+
+table#boxscore_away td {
+    background-color: #FFFFFF;
+    font-size: .77em;
+    text-align: center
+}
+
+table#boxscore_home {
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto
+}
+
+table#box_team_total_percentages {
+    margin-left: auto;
+    margin-right: auto
+}
+
+table#box_team_total_percentages th {
+    background-color: #000000;
+    color: #FFFFFF;
+    font-family: Ripper;
+    font-size: 1.4em
+}
+
+table#box_team_total_percentages td {
+    background-color: #FFFFFF;
+    font-size: .68em
+}
+
+table#boxscore_home th {
+    background-color: #000000;
+    color: #FFFFFF;
+    font-family: Ripper;
+    font-size: 1.4em
+}
+
+.hide_this {
+    display: none
+}
+
+table#boxscore_home td {
+    background-color: #FFFFFF;
+    font-size: .79em;
+    text-align: center
+}
+
+#boxscore_writeup_container {
+    margin-left: auto;
+    margin-right: auto;
+    width: 88%
+}
+
+.fb_iframe_widget, .fb_iframe_widget span, .fb_iframe_widget span iframe[style] {
+    min-width: 100% !important;
+    width: 100% !important;
+    background-color: #FFFFFF
+}
+
+.fb_iframe_widget, .fb_iframe_widget span, .fb_iframe_widget span iframe[style] a {
+    color: #FFFFFF
+}
+
+.digit_box_total {
+    font-family: Tahoma, "Trebuchet MS", Arial;
+    color: #bdbdbd;
+    text-shadow: 1px 1px #000000
+}
+
+.starter {
+    background-color: #D73F3F !important;
+    border-top: inset #bdbdbd !important;
+    color: #eef5f9
+}
+
+.starter2 {
+    background-color: #D73F3F !important;
+    border-top: inset #bdbdbd !important;
+    color: #eef5f9
+}
+
+table#boxscore_key {
+    margin-left: auto;
+    margin-right: auto;
+    width: 75%
+}
+
+table#boxscore_key th {
+    background-color: #777777
+}
+
+table#boxscore_key td {
+    text-align: center
+}
+
+a.boxscore_link {
+    margin-left: 23%;
+    color: red
+}
+
+.bubble {
+    float: right;
+    position: relative;
+    width: 60px;
+    height: 20px;
+    padding: 0px;
+    background: #000000;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    text-align: center;
+    color: #FFFFFF;
+    margin-right: 5%
+}
+
+.bubble:after {
+    content: '';
+    position: absolute;
+    border-style: solid;
+    border-width: 15px 5px 0;
+    border-color: #000000 transparent;
+    display: block;
+    width: 0;
+    z-index: 1;
+    margin-left: -5px;
+    bottom: -15px;
+    left: 48%
+}
+
+.readmore2 {
+    width: 100%;
+    display: inline
+}
+
+.article-texterson {
+    font-size: 1.725em;
+    line-height: 1.7em;
+    font-family: "Times New Roman", Georgia, Tahoma;
+    display: block
+}
+
+.uk-accordion-title {
+    font-size: 1em !important
+}
+
+#boxscore_buttons {
+    text-align: center
+}
+
+#boxscore_buttons a {
+    margin-top: 1em
+}
+
+iframe {
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 5%
+}
+
+
+
+@media (max-width: 568px){td.hide_box_column{display:none}}
 /**
  * Print
  */
