@@ -57,7 +57,7 @@
         {{-- */ $start_class1=""; $start_class2=""; $start_class3=""; $start_class4=""; $start_class5=""; $start_class6=""; $start_class7=""; $start_class8=""; $start_class9=""; $start_class10=""; $start_class11=""; $start_class12=""; $start_class13="";  /* --}}
         {{-- */ $astart_class1=""; $astart_class2=""; $astart_class3=""; $astart_class4=""; $astart_class5=""; $astart_class6=""; $astart_class7=""; $astart_class8=""; $astart_class9=""; $astart_class10=""; $astart_class11=""; $astart_class12=""; $astart_class13="";  /* --}}
         
-        {{-- */ $a_starter1=""; $a_starter2=""; $a_starter3=""; $a_starter4=""; $a_starter5=""; $a_starter6=""; $a_starter7=""; $a_starter8=""; $a_starter9=""; $a_starter10=""; $a_starter11=""; $a_starter12=""; $a_starter13="";  /* --}}
+        {{-- */$a_starter0="";  $a_starter1=""; $a_starter2=""; $a_starter3=""; $a_starter4=""; $a_starter5=""; $a_starter6=""; $a_starter7=""; $a_starter8=""; $a_starter9=""; $a_starter10=""; $a_starter11=""; $a_starter12=""; $a_starter13="";  /* --}}
 
         {{-- */ $away_total_to =$boxscore->ap1_to.$boxscore->ap2_to.$boxscore->ap3_to.$boxscore->ap4_to.$boxscore->ap5_to.$boxscore->ap6_to.$boxscore->ap7_to.$boxscore->ap8_to.$boxscore->ap9_to.$boxscore->ap10_to.$boxscore->ap11_to.$boxscore->ap12_to.$boxscore->ap13_to /* --}}
         {{-- */ $home_total_to =$boxscore->hp1_to.$boxscore->hp2_to.$boxscore->hp3_to.$boxscore->hp4_to.$boxscore->hp5_to.$boxscore->hp6_to.$boxscore->hp7_to.$boxscore->hp8_to.$boxscore->hp9_to.$boxscore->hp10_to.$boxscore->hp11_to.$boxscore->hp12_to.$boxscore->hp13_to /* --}}
