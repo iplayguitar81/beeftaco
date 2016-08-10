@@ -22,7 +22,7 @@
         {{-- */ $game_date = strtotime($boxscore->datey); $game_date=date("F d Y", $game_date); /* --}}
         @php
         $game_date = new DateTime($boxscore->datey, new DateTimeZone('America/Los_Angeles'));
-        $game_date = $game_date->format('F dS Y G:i:a')
+        $game_date = $game_date->format('F dS Y G:i:s a')
 
         @endphp
 
