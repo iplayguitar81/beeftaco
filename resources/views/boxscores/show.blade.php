@@ -22,9 +22,10 @@
         {{-- */ $game_date = strtotime($boxscore->datey); $game_date=date("F d Y", $game_date); /* --}}
         @php
         $game_date = new DateTime($boxscore->datey, new DateTimeZone('America/Los_Angeles'));
+        $game_date = date_sub($game_date, date_interval_create_from_date_string('3 hour'));
         $game_date = $game_date->format('F dS Y g:i:s a');
 
-        date_sub($game_date, date_interval_create_from_date_string('3 hour'));
+
 
         @endphp
 
