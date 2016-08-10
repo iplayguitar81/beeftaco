@@ -149,7 +149,39 @@
             @endphp
         @endif
 
+        @if($boxscore->ap11_starter == '1')
 
+            @php
+                $astart_class11='starter';
+            @endphp
+        @else
+            @php
+                $astart_class11='not';
+            @endphp
+        @endif
+
+        @if($boxscore->ap12_starter == '1')
+
+            @php
+                $astart_class12='starter';
+            @endphp
+        @else
+            @php
+                $astart_class12='not';
+            @endphp
+        @endif
+
+
+        @if($boxscore->ap13_starter == '1')
+
+            @php
+                $astart_class13='starter';
+            @endphp
+        @else
+            @php
+                $astart_class13='not';
+            @endphp
+        @endif
 
 
     @if($boxscore->hp1_starter == '1')
