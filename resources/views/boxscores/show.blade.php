@@ -20,6 +20,12 @@
         {{--<h1 class="article-title-show" style="font-family: Pacifico, cursive;font-size:4em;line-height:1.2em;text-align:center;"></h1>--}}
 
         {{-- */ $game_date = strtotime($boxscore->datey); $game_date=date("F d Y", $game_date); /* --}}
+        @php
+        $game_date = new DateTime($boxscore->datey);
+        $game_date = $game_date->format('F d Y H:i:s')
+
+        @endphp
+
         <p class="subheader-main" style="text-align:center;font-family: Boogaloo, cursive; font-size:3em;">{{ $game_date}}</p>
 
         @if($boxscore->h_initials =='POR')
