@@ -154,6 +154,8 @@ Route::get('/posts/post_rating', ['as' => 'posts.post_rating','uses'=>'PostsCont
 
 Route::group(['middleware' => ['web']], function () {
     Route::resource('posts', 'PostsController');
+    Route::resource('boxscores', 'boxscoreController');
+
 
 
 
