@@ -107,51 +107,35 @@
 
         @if($boxscore->ap7_starter == '1')
 
-            {{-- */  $astart_class7='starter' /* --}}
+            @php
+                $astart_class7='starter';
+            @endphp
         @else
-
+            @php
+                $astart_class7='not';
+            @endphp
         @endif
-
         @if($boxscore->ap8_starter == '1')
 
-            {{-- */  $astart_class8='starter' /* --}}
+            @php
+                $astart_class8='starter';
+            @endphp
         @else
-
+            @php
+                $astart_class8='not';
+            @endphp
         @endif
 
         @if($boxscore->ap9_starter == '1')
 
-            {{-- */  $astart_class9='starter' /* --}}
+            @php
+                $astart_class9='starter';
+            @endphp
         @else
-
+            @php
+                $astart_class9='not';
+            @endphp
         @endif
-
-        @if($boxscore->ap10_starter == '1')
-
-            {{-- */  $astart_class10='starter' /* --}}
-        @else
-
-        @endif
-        @if($boxscore->ap11_starter == '1')
-
-            {{-- */  $astart_class11='starter' /* --}}
-        @else
-
-        @endif
-        @if($boxscore->ap12_starter == '1')
-
-            {{-- */  $astart_class12='starter' /* --}}
-        @else
-
-        @endif
-
-        @if($boxscore->ap13_starter == '1')
-
-            {{-- */  $astart_class13='starter' /* --}}
-        @else
-
-        @endif
-
 
         @if($boxscore->hp1_starter == '1')
 
