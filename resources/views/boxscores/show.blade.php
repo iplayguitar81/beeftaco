@@ -58,88 +58,88 @@
         {{--This is where I need to add Starter stuff and DRY logic.....--}}
 
 
-@if($boxscore->ap1_starter == '')
+@if($boxscore->ap1_starter == '1')
 
             {{-- */  $astart_class1='starter' /* --}}
     @else
 
     @endif
-        @if($boxscore->ap2_starter == '')
+        @if($boxscore->ap2_starter == '1')
 
             {{-- */  $astart_class2='starter' /* --}}
         @else
 
         @endif
 
-        @if($boxscore->ap3_starter == '')
+        @if($boxscore->ap3_starter == '1')
 
             {{-- */  $astart_class3='starter' /* --}}
         @else
 
         @endif
 
-        @if($boxscore->ap4_starter == '')
+        @if($boxscore->ap4_starter == '1')
 
             {{-- */  $astart_class4='starter' /* --}}
         @else
 
         @endif
 
-        @if($boxscore->ap5_starter == '')
+        @if($boxscore->ap5_starter == '1')
 
             {{-- */  $astart_class5='starter' /* --}}
         @else
 
         @endif
 
-        @if($boxscore->ap6_starter == '')
+        @if($boxscore->ap6_starter == '1')
 
             {{-- */  $astart_class6='starter' /* --}}
         @else
 
         @endif
 
-        @if($boxscore->ap7_starter == '')
+        @if($boxscore->ap7_starter == '1')
 
             {{-- */  $astart_class7='starter' /* --}}
         @else
 
         @endif
 
-        @if($boxscore->ap8_starter == '')
+        @if($boxscore->ap8_starter == '1')
 
             {{-- */  $astart_class8='starter' /* --}}
         @else
 
         @endif
 
-        @if($boxscore->ap9_starter == '')
+        @if($boxscore->ap9_starter == '1')
 
             {{-- */  $astart_class9='starter' /* --}}
         @else
 
         @endif
 
-        @if($boxscore->ap10_starter == '')
+        @if($boxscore->ap10_starter == '1')
 
             {{-- */  $astart_class10='starter' /* --}}
         @else
 
         @endif
-        @if($boxscore->ap11_starter == '')
+        @if($boxscore->ap11_starter == '1')
 
             {{-- */  $astart_class11='starter' /* --}}
         @else
 
         @endif
-        @if($boxscore->ap12_starter == '')
+        @if($boxscore->ap12_starter == '1')
 
             {{-- */  $astart_class12='starter' /* --}}
         @else
 
         @endif
 
-        @if($boxscore->ap13_starter == '')
+        @if($boxscore->ap13_starter == '1')
 
             {{-- */  $astart_class13='starter' /* --}}
         @else
