@@ -274,6 +274,23 @@
 
         @php
 
+        $ap1_to = (int)($boxscore->ap1_to);
+        $ap1_to = (int)($boxscore->ap1_to);
+        $ap1_to = (int)($boxscore->ap1_to);
+        $ap1_to = (int)($boxscore->ap1_to);
+        $ap1_to = (int)($boxscore->ap1_to);
+        $ap1_to = (int)($boxscore->ap1_to);
+        $ap1_to = (int)($boxscore->ap1_to);
+        $ap1_to = (int)($boxscore->ap1_to);
+        $ap1_to = (int)($boxscore->ap1_to);
+        $ap1_to = (int)($boxscore->ap1_to);
+        $ap1_to = (int)($boxscore->ap1_to);
+        $ap1_to = (int)($boxscore->ap1_to);
+        $ap1_to = (int)($boxscore->ap1_to);
+
+
+
+
             $away_total_to =(int)($boxscore->ap1_to)+(int)($boxscore->ap2_to)+(int)$boxscore->ap3_to.(int)$boxscore->ap4_to.(int)$boxscore->ap5_to.(int)$boxscore->ap6_to.(int)$boxscore->ap7_to.(int)$boxscore->ap8_to.(int)$boxscore->ap9_to.(int)$boxscore->ap10_to.(int)$boxscore->ap11_to.(int)$boxscore->ap12_to.(int)$boxscore->ap13_to;
             $home_total_to =$boxscore->hp1_to.$boxscore->hp2_to.$boxscore->hp3_to.$boxscore->hp4_to.$boxscore->hp5_to.$boxscore->hp6_to.$boxscore->hp7_to.$boxscore->hp8_to.$boxscore->hp9_to.$boxscore->hp10_to.$boxscore->hp11_to.$boxscore->hp12_to.$boxscore->hp13_to;
 
@@ -372,7 +389,21 @@
   <td  style='border: 1px inset #000;' colspan='2'>{{ $boxscore->a_nick }} <br/>Totals</td><td style='border: 1px inset #000;'>{{ $boxscore->atotal }}</td><td style='border: 1px inset #000;'>{{ $boxscore->awaytfgma }}</td><td style='border: 1px inset #000;' class='hide_box_column'>{{ $boxscore->awayt3fgma }}</td><td style='border: 1px inset #000;'>{{ $boxscore->awaytftma }}</td><td style='border: 1px inset #000;' class='hide_box_column'>{{ $boxscore->awaytoreb }}</td><td style='border: 1px inset #000;' class='hide_box_column'>{{ $boxscore->awaytdreb }}</td><td style='border: 1px inset #000;'>{{ $boxscore->arebt }}</td><td style='border: 1px inset #000;'>{{ $boxscore->aastt }}</td><td style='border: 1px inset #000;' class='hide_box_column'>{{ $boxscore->astlt }}</td><td style='border: 1px inset #000;' class='hide_box_column'>{{ $boxscore->ablkt }}</td><td style='border: 1px inset #000;' class='hide_box_column'>{{$away_total_to }}</td><td colspan='2' style='border: 1px inset #000;'>{{ $boxscore->awaytpf }}</td></tr>
 
 </table>
-<p>Put Key Here</p>
+        <br/>
+        <br/>
+
+
+
+        <table id="boxscore_key">
+            <tbody><tr>
+                <th>BOXSCORE KEY</th>
+            </tr>
+            <tr><td class="starter2">STARTER</td></tr>
+            </tbody></table>
+
+
+        <br/>
+        <br/>
 
 <br/>
         <table id='boxscore_home'>
