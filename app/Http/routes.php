@@ -161,6 +161,8 @@ Route::group(['middleware' => ['web']], function () {
 });
 
 Route::get('posts/{id}/{title}', ['as' => 'posts.show', 'uses' => 'PostsController@show']);
+Route::get('boxscores/{id}/{game_string}', ['as' => 'posts.show', 'uses' => 'PostsController@show']);
+
 
 Route::get('/test_code/{id}/', ['as' => 'posts.test_code', 'uses' => 'PostsController@test_code']);
 
