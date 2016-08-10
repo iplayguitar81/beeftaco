@@ -467,6 +467,28 @@ $test_to= $ap1_to .
                 <td  style='border: 1px inset #000;' colspan='2'>{{ $boxscore->h_nick }} <br/>Totals</td><td style='border: 1px inset #000;'>{{ $boxscore->htotal }}</td><td style='border: 1px inset #000;'>{{ $boxscore->hometfgma }}</td><td style='border: 1px inset #000;' class='hide_box_column'>{{ $boxscore->homet3fgma }}</td><td style='border: 1px inset #000;'>{{ $boxscore->hometftma }}</td><td style='border: 1px inset #000;' class='hide_box_column'>{{ $boxscore->hometoreb }}</td><td style='border: 1px inset #000;' class='hide_box_column'>{{ $boxscore->hometdreb }}</td><td style='border: 1px inset #000;'>{{ $boxscore->hrebt }}</td><td style='border: 1px inset #000;'>{{ $boxscore->hastt }}</td><td style='border: 1px inset #000;' class='hide_box_column'>{{ $boxscore->hstlt }}</td><td style='border: 1px inset #000;' class='hide_box_column'>{{ $boxscore->hblkt }}</td><td style='border: 1px inset #000;' class='hide_box_column'>{{$home_total_to }}</td><td colspan='2' style='border: 1px inset #000;'>{{ $boxscore->hometpf }}</td></tr>
 
         </table>
+
+
+        <br/>
+        <br/>
+        <table id="box_team_total_percentages">
+            <tbody><tr style="border: 1px inset #000;"><th colspan="11" style="border: 1px inset #000;">totals</th></tr>
+            <tr style="border: 1px inset #000;font-weight:800;"><td style="border: 1px inset #000;"> </td><td style="border: 1px inset #000;">PTS</td><td style="border: 1px inset #000;">FG%</td><td style="border: 1px inset #000;">FT%</td><td>3PT%</td><td style="border: 1px inset #000;">REB</td><td style="border: 1px inset #000;">AST</td><td style="border: 1px inset #000;">STL</td><td style="border: 1px inset #000;">BLK</td><td style="border: 1px inset #000;">TO</td><td style="border: 1px inset #000;">PF</td></tr>
+            <tr style="border: 1px inset #000;"><td style="border: 1px inset #000;font-weight:800;">{{ $boxscore->a_nick }}</td><td style="border: 1px inset #000;">{{ $boxscore->atotal }}</td><td style="border: 1px inset #000;">{{ $boxscore->afgp }}</td><td style="border: 1px inset #000;">{{ $boxscore->aftp }}</td><td style="border: 1px inset #000;">{{ $boxscore->a3ptp }}</td><td style="border: 1px inset #000;">{{ $boxscore->arebt }}</td><td style="border: 1px inset #000;">{{ $boxscore->aastt }}</td><td style="border: 1px inset #000;">{{ $boxscore->astlt }}</td><td style="border: 1px inset #000;">{{ $boxscore->ablkt }}</td><td style="border: 1px inset #000;">{{ away_total_to }}</td><td style="border: 1px inset #000;">{{ $boxscore->awaytpf }}</td></tr>
+            <tr style="border: 1px inset #000;"><td style="border: 1px inset #000;font-weight:800;">{{ $boxscore->h_nick }}</td><td style="border: 1px inset #000;">{{ $boxscore->htotal }}</td><td style="border: 1px inset #000;">{{ $boxscore->hfgp }}</td><td style="border: 1px inset #000;">{{ $boxscore->hftp }}</td><td style="border: 1px inset #000;">{{ $boxscore->h3ptp }}</td><td style="border: 1px inset #000;">{{ $boxscore->hrebt }}</td><td style="border: 1px inset #000;">{{ $boxscore->hastt }}</td><td style="border: 1px inset #000;">{{ $boxscore->hstlt }}</td><td style="border: 1px inset #000;">{{ $boxscore->hblkt }}</td><td style="border: 1px inset #000;">{{ home_total_to }}</td><td style="border: 1px inset #000;">{{ $boxscore->hometpf }}</td></tr>
+            </tbody></table>
+        <br/>
+
+        <div id="boxscore_writeup_container">
+            <h2 class="story_h2_summary">Box Score Summary</h2>
+            Game Recap Info Goes Here.....
+
+        </div>
+        <br/>
+        <br/>
+        <br/>
+
+
     <p class="uk-article-lead"></p>
     <br/>
     <div class="center-block text-center">
