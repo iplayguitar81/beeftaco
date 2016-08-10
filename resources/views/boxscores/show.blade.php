@@ -64,10 +64,12 @@
 
 
         </table>
-        {{-- */ $start_class1="not starting"; $start_class2="not starting"; $start_class3="not starting"; $start_class4="not starting"; $start_class5="not starting"; $start_class6="not starting"; $start_class7="not starting"; $start_class8="not starting"; $start_class9="not starting"; $start_class10="not starting"; $start_class11="not starting"; $start_class12="not starting"; $start_class13="not starting";  /* --}}
-        {{-- */ $astart_class1="not starting"; $astart_class2="not starting"; $astart_class3="not starting"; $astart_class4="not starting"; $astart_class5="not starting"; $astart_class6="not starting"; $astart_class7="not starting"; $astart_class8="not starting"; $astart_class9="not starting"; $astart_class10="not starting"; $astart_class11="not starting"; $astart_class12="not starting"; $astart_class13="not starting";  /* --}}
 
-        {{-- */$a_starter0="not starting";  $a_starter1="not starting"; $a_starter2="not starting"; $a_starter3="not starting"; $a_starter4="not starting"; $a_starter5="not starting"; $a_starter6="not starting"; $a_starter7="not starting"; $a_starter8="not starting"; $a_starter9="not starting"; $a_starter10="not starting"; $a_starter11="not starting"; $a_starter12="not starting"; $a_starter13="not starting";  /* --}}
+        {{-- */ $dummy="blah"; /* --}}
+        {{-- */ $start_class1=$dummy; $start_class2=$dummy; $start_class3=$dummy; $start_class4=$dummy; $start_class5=$dummy; $start_class6=$dummy; $start_class7=$dummy; $start_class8=$dummy; $start_class9=$dummy; $start_class10=$dummy; $start_class11=$dummy; $start_class12=$dummy; $start_class13=$dummy;  /* --}}
+        {{-- */ $astart_class1=$dummy; $astart_class2=$dummy; $astart_class3=$dummy; $astart_class4=$dummy; $astart_class5=$dummy; $astart_class6=$dummy; $astart_class7=$dummy; $astart_class8=$dummy; $astart_class9=$dummy; $astart_class10=$dummy; $astart_class11=$dummy; $astart_class12=$dummy; $astart_class13=$dummy;  /* --}}
+
+        {{-- */$a_starter0=$dummy;  $a_starter1=$dummy; $a_starter2=$dummy; $a_starter3=$dummy; $a_starter4=$dummy; $a_starter5=$dummy; $a_starter6=$dummy; $a_starter7=$dummy; $a_starter8=$dummy; $a_starter9=$dummy; $a_starter10=$dummy; $a_starter11=$dummy; $a_starter12=$dummy; $a_starter13=$dummy;  /* --}}
 
         {{-- */ $away_total_to =$boxscore->ap1_to.$boxscore->ap2_to.$boxscore->ap3_to.$boxscore->ap4_to.$boxscore->ap5_to.$boxscore->ap6_to.$boxscore->ap7_to.$boxscore->ap8_to.$boxscore->ap9_to.$boxscore->ap10_to.$boxscore->ap11_to.$boxscore->ap12_to.$boxscore->ap13_to /* --}}
         {{-- */ $home_total_to =$boxscore->hp1_to.$boxscore->hp2_to.$boxscore->hp3_to.$boxscore->hp4_to.$boxscore->hp5_to.$boxscore->hp6_to.$boxscore->hp7_to.$boxscore->hp8_to.$boxscore->hp9_to.$boxscore->hp10_to.$boxscore->hp11_to.$boxscore->hp12_to.$boxscore->hp13_to /* --}}
