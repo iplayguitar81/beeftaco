@@ -470,7 +470,9 @@ table#boxscore_key {
 }
 
 table#boxscore_key th {
-    background-color: #777777
+    background-color: #777777;
+    text-align: center;
+
 }
 
 table#boxscore_key td {
