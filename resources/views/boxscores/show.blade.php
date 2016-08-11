@@ -110,9 +110,7 @@
 
         @endif
 
-        @if($boxscore->ap6_starter == '1')
-
-                @php  $astart_class6='starter' @endphp
+        @if($boxscore->ap6_starter === '1')
 
             @php
                 $astart_class6='starter';
