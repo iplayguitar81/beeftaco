@@ -86,35 +86,101 @@
 
         @elseif ($boxscore->ap2_starter === '1')
             @php
+
                 $astart_class2='starter';
 
             @endphp
 
 
         @elseif ($boxscore->ap3_starter === '1')
+            @php
+
+                $astart_class3='starter';
+
+            @endphp
+
 
         @elseif ($boxscore->ap4_starter === '1')
 
+            @php
+
+                $astart_class4='starter';
+
+            @endphp
+
         @elseif ($boxscore->ap5_starter === '1')
+
+            @php
+
+                $astart_class5='starter';
+
+            @endphp
 
         @elseif ($boxscore->ap6_starter === '1')
 
+            @php
+
+                $astart_class6='starter';
+
+            @endphp
+
         @elseif ($boxscore->ap7_starter === '1')
 
+            @php
+
+                $astart_class7='starter';
+
+            @endphp
+
         @elseif ($boxscore->ap8_starter === '1')
+            @php
+
+                $astart_class8='starter';
+
+            @endphp
+
 
         @elseif ($boxscore->ap9_starter === '1')
 
+            @php
+
+                $astart_class9='starter';
+
+            @endphp
+
         @elseif ($boxscore->ap10_starter === '1')
+
+            @php
+
+                $astart_class10='starter';
+
+            @endphp
 
         @elseif ($boxscore->ap11_starter === '1')
 
+            @php
+
+                $astart_class11='starter';
+
+            @endphp
+
         @elseif ($boxscore->ap12_starter === '1')
+            @php
+
+                $astart_class12='starter';
+
+            @endphp
+
 
         @elseif ($boxscore->ap13_starter === '1')
 
+            @php
 
+                $astart_class13='starter';
 
+            @endphp
+
+        @else
 
     @endif
         {{--@if($boxscore->ap2_starter === '1')--}}
