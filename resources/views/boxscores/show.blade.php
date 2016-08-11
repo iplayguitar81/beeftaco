@@ -321,7 +321,7 @@ $test_to= $ap1_to .
         <div class='box_score'><h2 class='story_h2'><span class='article_title'>{!! $home_or_away !!}</span><br/><span class='box_arena_h2'>{{$boxscore->arena}} | </span><span class='box_start_date_h2'>{{$game_date." PST"}}</span><br/>{!! $win_or_loss !!}</h2></div>
 
         <table id='last_game_period_box'>
-            <tr><th>&nbsp;</th><th>1</th><th>2</th><th>3</th><th>4
+            <tr><th>1</th><th>2</th><th>3</th><th>4
                 </th>@if ($boxscore->aq5 == 0 || $boxscore->aq5 == '') @else <th>OT1</th>@endif
                 @if ($boxscore->aq6 == 0 ) @else <th>OT2</th>@endif
                 @if ($boxscore->aq7 == 0 ) @else <th>OT3</th>@endif
