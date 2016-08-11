@@ -77,127 +77,127 @@
 
         {{--This is where I need to add Starter stuff and DRY logic.....--}}
 
-        @if($boxscore->ap1_starter === '1')
+        {{--@if($boxscore->ap1_starter === '1')--}}
 
-            @php  $astart_class1='starter' @endphp
-        @else
+            {{--@php  $astart_class1='starter' @endphp--}}
+        {{--@else--}}
 
-        @if($boxscore->ap2_starter === '1')
+        {{--@if($boxscore->ap2_starter === '1')--}}
 
-                @php $astart_class2='starter' @endphp
-        @else
+                {{--@php $astart_class2='starter' @endphp--}}
+        {{--@else--}}
 
-        @endif
+        {{--@endif--}}
 
-        @if($boxscore->ap3_starter === '1')
+        {{--@if($boxscore->ap3_starter === '1')--}}
 
-                @php$astart_class3='starter'@endphp
-        @else
+                {{--@php$astart_class3='starter'@endphp--}}
+        {{--@else--}}
 
-        @endif
+        {{--@endif--}}
 
-        @if($boxscore->ap4_starter ==='1')
+        {{--@if($boxscore->ap4_starter ==='1')--}}
 
-                @php  $astart_class4='starter' @endphp
-        @else
+                {{--@php  $astart_class4='starter' @endphp--}}
+        {{--@else--}}
 
-        @endif
+        {{--@endif--}}
 
-        @if($boxscore->ap5_starter == '1')
+        {{--@if($boxscore->ap5_starter == '1')--}}
 
-                @php $astart_class5='starter' @endphp
-        @else
+                {{--@php $astart_class5='starter' @endphp--}}
+        {{--@else--}}
 
-        @endif
+        {{--@endif--}}
 
-        @if($boxscore->ap6_starter === '1')
+        {{--@if($boxscore->ap6_starter === '1')--}}
 
-            @php
-                $astart_class6='starter';
-            @endphp
-        @else
-            @php
-                $astart_class6='not';
-            @endphp
-        @endif
+            {{--@php--}}
+                {{--$astart_class6='starter';--}}
+            {{--@endphp--}}
+        {{--@else--}}
+            {{--@php--}}
+                {{--$astart_class6='not';--}}
+            {{--@endphp--}}
+        {{--@endif--}}
 
-        @if($boxscore->ap7_starter == '1')
+        {{--@if($boxscore->ap7_starter == '1')--}}
 
-            @php
-                $astart_class7='starter';
-            @endphp
-        @else
-            @php
-                $astart_class7='not';
-            @endphp
-        @endif
-        @if($boxscore->ap8_starter == '1')
+            {{--@php--}}
+                {{--$astart_class7='starter';--}}
+            {{--@endphp--}}
+        {{--@else--}}
+            {{--@php--}}
+                {{--$astart_class7='not';--}}
+            {{--@endphp--}}
+        {{--@endif--}}
+        {{--@if($boxscore->ap8_starter == '1')--}}
 
-            @php
-                $astart_class8='starter';
-            @endphp
-        @else
-            @php
-                $astart_class8='not';
-            @endphp
-        @endif
+            {{--@php--}}
+                {{--$astart_class8='starter';--}}
+            {{--@endphp--}}
+        {{--@else--}}
+            {{--@php--}}
+                {{--$astart_class8='not';--}}
+            {{--@endphp--}}
+        {{--@endif--}}
 
-        @if($boxscore->ap9_starter == '1')
+        {{--@if($boxscore->ap9_starter == '1')--}}
 
-            @php
-                $astart_class9='starter';
-            @endphp
-        @else
-            @php
-                $astart_class9='not';
-            @endphp
-        @endif
-
-
-        @if($boxscore->ap10_starter == '1')
-
-            @php
-                $astart_class10='starter';
-            @endphp
-        @else
-            @php
-                $astart_class10='not';
-            @endphp
-        @endif
-
-        @if($boxscore->ap11_starter == '1')
-
-            @php
-                $astart_class11='starter';
-            @endphp
-        @else
-            @php
-                $astart_class11='not';
-            @endphp
-        @endif
-
-        @if($boxscore->ap12_starter == '1')
-
-            @php
-                $astart_class12='starter';
-            @endphp
-        @else
-            @php
-                $astart_class12='not';
-            @endphp
-        @endif
+            {{--@php--}}
+                {{--$astart_class9='starter';--}}
+            {{--@endphp--}}
+        {{--@else--}}
+            {{--@php--}}
+                {{--$astart_class9='not';--}}
+            {{--@endphp--}}
+        {{--@endif--}}
 
 
-        @if($boxscore->ap13_starter == '1')
+        {{--@if($boxscore->ap10_starter == '1')--}}
 
-            @php
-                $astart_class13='starter';
-            @endphp
-        @else
-            @php
-                $astart_class13='not';
-            @endphp
-        @endif
+            {{--@php--}}
+                {{--$astart_class10='starter';--}}
+            {{--@endphp--}}
+        {{--@else--}}
+            {{--@php--}}
+                {{--$astart_class10='not';--}}
+            {{--@endphp--}}
+        {{--@endif--}}
+
+        {{--@if($boxscore->ap11_starter == '1')--}}
+
+            {{--@php--}}
+                {{--$astart_class11='starter';--}}
+            {{--@endphp--}}
+        {{--@else--}}
+            {{--@php--}}
+                {{--$astart_class11='not';--}}
+            {{--@endphp--}}
+        {{--@endif--}}
+
+        {{--@if($boxscore->ap12_starter == '1')--}}
+
+            {{--@php--}}
+                {{--$astart_class12='starter';--}}
+            {{--@endphp--}}
+        {{--@else--}}
+            {{--@php--}}
+                {{--$astart_class12='not';--}}
+            {{--@endphp--}}
+        {{--@endif--}}
+
+
+        {{--@if($boxscore->ap13_starter == '1')--}}
+
+            {{--@php--}}
+                {{--$astart_class13='starter';--}}
+            {{--@endphp--}}
+        {{--@else--}}
+            {{--@php--}}
+                {{--$astart_class13='not';--}}
+            {{--@endphp--}}
+        {{--@endif--}}
 
 
     @if($boxscore->hp1_starter == '1')
