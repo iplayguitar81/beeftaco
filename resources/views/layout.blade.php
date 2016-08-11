@@ -378,7 +378,8 @@ table#boxscore_away th {
     background-color: #000000;
     color: #FFFFFF;
     font-family: FabFelt;
-    font-size: 1.4em
+    font-size: 1.4em;
+    text-align: center;
 }
 
 table#boxscore_away td {
