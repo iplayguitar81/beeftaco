@@ -376,7 +376,7 @@ table#boxscore_away {
 table#boxscore_away th {
     background-color: #000000;
     color: #FFFFFF;
-    font-family: Ripper;
+    font-family: FabFelt;
     font-size: 1.4em
 }
 
@@ -400,7 +400,7 @@ table#box_team_total_percentages {
 table#box_team_total_percentages th {
     background-color: #000000;
     color: #FFFFFF;
-    font-family: Ripper;
+    font-family: FabFelt;
     font-size: 1.4em
 }
 
@@ -412,7 +412,7 @@ table#box_team_total_percentages td {
 table#boxscore_home th {
     background-color: #000000;
     color: #FFFFFF;
-    font-family: Ripper;
+    font-family: FabFelt;
     font-size: 1.4em
 }
 
