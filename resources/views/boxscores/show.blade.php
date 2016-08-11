@@ -493,7 +493,7 @@ $test_to= $ap1_to .
             @endif
 
 
-            @if( ($boxscore->hp9_name > 0) )
+            @if( ($boxscore->hp9_name !== '') )
 
                 <tr style='border: 1px inset #000;'><td class='{{$hstart_class9}}'>{{$boxscore->hp9_name}}</td><td class='{{$hstart_class9}}' style='border: 1px inset #000;'>{{$boxscore->hp9_min}}</td><td class='{{$hstart_class9}}' style='border: 1px inset #000;'>{{$boxscore->hp9_pts}}</td><td class='{{$hstart_class9}}' style='border: 1px inset #000;'>{{ $boxscore->hp9_fgma }}</td><td style='border: 1px inset #000;' class='{{$hstart_class9}} hide_box_column'>{{ $boxscore->hp9_3pma }}</td><td class='{{$hstart_class9}}' style='border: 1px inset #000;'>{{ $boxscore->hp9_ftma }}</td><td style='border: 1px inset #000;' class='{{$hstart_class9}} hide_box_column'>{{ $boxscore->hp9_oreb }}</td><td style='border: 1px inset #000;' class='{{$hstart_class9}} hide_box_column'>{{ $boxscore->hp9_dreb }}</td><td class='{{$hstart_class9}}' style='border: 1px inset #000;'>{{ $boxscore->hp9_reb }}</td><td class='{{$hstart_class9}}' style='border: 1px inset #000;'>{{ $boxscore->hp9_ast }}</td><td style='border: 1px inset #000;' class='{{$hstart_class9}} hide_box_column'>{{ $boxscore->hp9_stl }}</td><td style='border: 1px inset #000;' class='{{$hstart_class9}} hide_box_column'>{{ $boxscore->hp9_blk }}</td><td style='border: 1px inset #000;' class='{{$hstart_class9}} hide_box_column'>{{ $boxscore->hp9_to }}</td><td class='{{$hstart_class9}}' style='border: 1px inset #000;'>{{ $boxscore->hp9_pf }}</td></tr>
            
@@ -501,7 +501,7 @@ $test_to= $ap1_to .
 
             @endif
 
-            @if( ($boxscore->hp10_name > 0) )
+            @if( ($boxscore->hp10_name !== '') )
             
                 <tr style='border: 1px inset #000;'><td class='{{$hstart_class10}}'>{{$boxscore->hp10_name}}</td><td class='{{$hstart_class10}}' style='border: 1px inset #000;'>{{$boxscore->hp10_min}}</td><td class='{{$hstart_class10}}' style='border: 1px inset #000;'>{{$boxscore->hp10_pts}}</td><td class='{{$hstart_class10}}' style='border: 1px inset #000;'>{{ $boxscore->hp10_fgma }}</td><td style='border: 1px inset #000;' class='{{$hstart_class10}} hide_box_column'>{{ $boxscore->hp10_3pma }}</td><td class='{{$hstart_class10}}' style='border: 1px inset #000;'>{{ $boxscore->hp10_ftma }}</td><td style='border: 1px inset #000;' class='{{$hstart_class10}} hide_box_column'>{{ $boxscore->hp10_oreb }}</td><td style='border: 1px inset #000;' class='{{$hstart_class10}} hide_box_column'>{{ $boxscore->hp10_dreb }}</td><td class='{{$hstart_class10}}' style='border: 1px inset #000;'>{{ $boxscore->hp10_reb }}</td><td class='{{$hstart_class10}}' style='border: 1px inset #000;'>{{ $boxscore->hp10_ast }}</td><td style='border: 1px inset #000;' class='{{$hstart_class10}} hide_box_column'>{{ $boxscore->hp10_stl }}</td><td style='border: 1px inset #000;' class='{{$hstart_class10}} hide_box_column'>{{ $boxscore->hp10_blk }}</td><td style='border: 1px inset #000;' class='{{$hstart_class10}} hide_box_column'>{{ $boxscore->hp10_to }}</td><td class='{{$hstart_class10}}' style='border: 1px inset #000;'>{{ $boxscore->hp10_pf }}</td></tr>
             
@@ -510,7 +510,7 @@ $test_to= $ap1_to .
             @endif
 
 
-            @if( ($boxscore->hp11_name > 0)  )
+            @if( ($boxscore->hp11_name !== '')  )
 
                 <tr style='border: 1px inset #000;'><td class='{{$hstart_class11}}'>{{$boxscore->hp11_name}}</td><td class='{{$hstart_class11}}' style='border: 1px inset #000;'>{{$boxscore->hp11_min}}</td><td style='border: 1px inset #000;'>{{$boxscore->hp11_pts}}</td><td style='border: 1px inset #000;'>{{ $boxscore->hp11_fgma }}</td><td style='border: 1px inset #000;' class='{{$hstart_class11}} hide_box_column'>{{ $boxscore->hp11_3pma }}</td><td class='{{$hstart_class11}}' style='border: 1px inset #000;'>{{ $boxscore->hp11_ftma }}</td><td style='border: 1px inset #000;' class='{{$hstart_class11}} hide_box_column'>{{ $boxscore->hp11_oreb }}</td><td style='border: 1px inset #000;' class='{{$hstart_class11}} hide_box_column'>{{ $boxscore->hp11_dreb }}</td><td class='{{$hstart_class11}}' style='border: 1px inset #000;'>{{ $boxscore->hp11_reb }}</td><td class='{{$hstart_class11}}' style='border: 1px inset #000;'>{{ $boxscore->hp11_ast }}</td><td style='border: 1px inset #000;' class='{{$hstart_class11}} hide_box_column'>{{ $boxscore->hp11_stl }}</td><td style='border: 1px inset #000;' class='{{$hstart_class11}} hide_box_column'>{{ $boxscore->hp11_blk }}</td><td style='border: 1px inset #000;' class='{{$hstart_class11}} hide_box_column'>{{ $boxscore->hp11_to }}</td><td class='{{$hstart_class11}}' style='border: 1px inset #000;'>{{ $boxscore->hp11_pf }}</td></tr>
                 
@@ -518,7 +518,7 @@ $test_to= $ap1_to .
 
             @endif
 
-            @if( ($boxscore->hp12_name) > 0  )
+            @if( ($boxscore->hp12_name)  !== ''  )
 
                 <tr style='border: 1px inset #000;'><td class='{{$hstart_class12}}'>{{$boxscore->hp12_name}}</td><td class='{{$hstart_class12}}' style='border: 1px inset #000;'>{{$boxscore->hp12_min}}</td><td class='{{$hstart_class12}}' style='border: 1px inset #000;'>{{$boxscore->hp12_pts}}</td><td class='{{$hstart_class12}}' style='border: 1px inset #000;'>{{ $boxscore->hp12_fgma }}</td><td style='border: 1px inset #000;' class='{{$hstart_class12}} hide_box_column'>{{ $boxscore->hp12_3pma }}</td><td class='{{$hstart_class12}}' style='border: 1px inset #000;'>{{ $boxscore->hp12_ftma }}</td><td style='border: 1px inset #000;' class='{{$hstart_class12}} hide_box_column'>{{ $boxscore->hp12_oreb }}</td><td style='border: 1px inset #000;' class='{{$hstart_class12}} hide_box_column'>{{ $boxscore->hp12_dreb }}</td><td class='{{$hstart_class12}}' style='border: 1px inset #000;'>{{ $boxscore->hp12_reb }}</td><td class='{{$hstart_class12}}' style='border: 1px inset #000;'>{{ $boxscore->hp12_ast }}</td><td style='border: 1px inset #000;' class='{{$hstart_class12}} hide_box_column'>{{ $boxscore->hp12_stl }}</td><td style='border: 1px inset #000;' class='{{$hstart_class12}} hide_box_column'>{{ $boxscore->hp12_blk }}</td><td style='border: 1px inset #000;' class='{{$hstart_class12}} hide_box_column'>{{ $boxscore->hp12_to }}</td><td class='{{$hstart_class12}}' style='border: 1px inset #000;'>{{ $boxscore->hp12_pf }}</td></tr>
             
@@ -526,7 +526,7 @@ $test_to= $ap1_to .
 
             @endif
 
-            @if( ($boxscore->hp13_name > 0) )
+            @if( ($boxscore->hp13_name !== '') )
 
                 <tr style='border: 1px inset #000;'><td class='{{$hstart_class13}}'>{{$boxscore->hp13_name}}</td><td class='{{$hstart_class13}}' style='border: 1px inset #000;'>{{$boxscore->hp13_min}}</td><td class='{{$hstart_class13}}' style='border: 1px inset #000;'>{{$boxscore->hp13_pts}}</td><td class='{{$hstart_class13}}' style='border: 1px inset #000;'>{{ $boxscore->hp13_fgma }}</td><td style='border: 1px inset #000;' class='{{$hstart_class13}} hide_box_column'>{{ $boxscore->hp13_3pma }}</td><td class='{{$hstart_class13}}' style='border: 1px inset #000;'>{{ $boxscore->hp13_ftma }}</td><td style='border: 1px inset #000;' class='{{$hstart_class13}} hide_box_column'>{{ $boxscore->hp13_oreb }}</td><td style='border: 1px inset #000;' class='{{$hstart_class13}} hide_box_column'>{{ $boxscore->hp13_dreb }}</td><td class='{{$hstart_class13}}' style='border: 1px inset #000;' >{{ $boxscore->hp13_reb }}</td><td class='{{$hstart_class13}}' style='border: 1px inset #000;'>{{ $boxscore->hp13_ast }}</td><td style='border: 1px inset #000;' class='{{$hstart_class13}} hide_box_column'>{{ $boxscore->hp13_stl }}</td><td style='border: 1px inset #000;' class='{{$hstart_class13}} hide_box_column'>{{ $boxscore->hp13_blk }}</td><td style='border: 1px inset #000;' class='{{$hstart_class13}} hide_box_column'>{{ $boxscore->hp13_to }}</td><td class='{{$hstart_class13}}' style='border: 1px inset #000;'>{{ $boxscore->hp13_pf }}</td><td style='border: 1px inset #000;' class='{{$hstart_class13}} hide_this'></td></tr>
 
