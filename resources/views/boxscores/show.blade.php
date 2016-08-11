@@ -81,7 +81,7 @@
 @if($boxscore->ap1_starter === '1')
 
     @php
-        $astart_class1='starter'
+        $astart_class1='starter';
     @endphp
 
     @else
@@ -90,7 +90,7 @@
         @if($boxscore->ap2_starter === '1')
 
             @php
-                $astart_class2='starter'
+                $astart_class2='starter';
             @endphp
 
         @else
