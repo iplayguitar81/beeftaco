@@ -329,7 +329,7 @@ $test_to= $ap1_to .
                 @if ($boxscore->aq9 == 0 ) @else <th>OT5</th>@endif
                 @if ($boxscore->aq10 == 0 ) @else <th>OT6</th>@endif
                 <th colspan="2">T</th>
-            <tr><td class='logo_box' ></td><td>{{$boxscore->a_initials}}</td><td>{{$boxscore->aq1}}</td><td>{{$boxscore->aq2}}</td><td>{{$boxscore->aq3}}</td><td>{{$boxscore->aq4}}</td>
+            <tr><td>{{$boxscore->a_initials}}</td><td>{{$boxscore->aq1}}</td><td>{{$boxscore->aq2}}</td><td>{{$boxscore->aq3}}</td><td>{{$boxscore->aq4}}</td>
 
                 @if ($boxscore->hq5=== 0) || ($boxscore->hq5 === '')@else<td>{{($boxscore->hq5) }}</td>@endif
                 @if ($boxscore->hq6===0) || ($boxscore->hq6 === '')@else<td>{{($boxscore->hq6)}}</td>@endif
