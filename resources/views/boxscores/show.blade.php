@@ -77,7 +77,10 @@
 
         {{--This is where I need to add Starter stuff and DRY logic.....--}}
 
+        @if($boxscore->ap1_starter === '1')
 
+            */  $astart_class1='starter' /*
+        @else
 
         @if($boxscore->ap2_starter === '1')
 
