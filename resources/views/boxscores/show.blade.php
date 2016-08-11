@@ -11,8 +11,6 @@
 @section('content')
 
 
-
-
     <div class="row">
     <div class="col-md-12">
 
@@ -23,7 +21,7 @@
         @php
         $game_date = new DateTime($boxscore->datey, new DateTimeZone('America/Los_Angeles'));
         $game_date = date_sub($game_date, date_interval_create_from_date_string('3 hour'));
-        $game_date = $game_date->format('l F dS Y g:i:s a');
+        $game_date = $game_date->format('l F dS Y g:i a');
 
   $attendance_percentage=round((($boxscore->attendance/$boxscore->capacity)*100),2);
 
