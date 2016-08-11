@@ -410,7 +410,8 @@ table#box_team_total_percentages th {
     background-color: #000000;
     color: #FFFFFF;
     font-family: FabFelt;
-    font-size: 1.4em
+    font-size: 1.4em;
+    text-align:center;
 }
 
 table#box_team_total_percentages td {
