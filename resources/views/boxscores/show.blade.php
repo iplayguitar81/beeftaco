@@ -358,7 +358,7 @@ $test_to= $ap1_to .
         @endphp
 
 
-        <div class='box_score'><h2 class='story_h2'><span class='article_title'>{!! $home_or_away !!}</span><br/><span class='box_arena_h2'>{{$boxscore->arena}} | </span><span class='box_start_date_h2'>{{$game_date." PST"}}</span><br/>{!! $win_or_loss !!}</h2></div>
+        <div class='box_score'><h2 class='story_h2'><span class='article_title'>{!! $home_or_away !!}</span><br/><span class='box_arena_h2'>{{$boxscore->arena}} <br/></span><span class='box_start_date_h2'>{{$game_date." PST"}}</span><br/>{!! $win_or_loss !!}</h2></div>
 
         <table id='last_game_period_box'>
             <tr><th colspan="1"></th><th>1</th><th>2</th><th>3</th><th>4
