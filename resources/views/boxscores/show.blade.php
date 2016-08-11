@@ -341,7 +341,7 @@ $test_to= $ap1_to .
                 <td>{{$boxscore->atotal}}</td></tr>
             <tr><td>{{$boxscore->h_initials}}</td><td>{{$boxscore->hq1}}</td><td>{{$boxscore->hq2}}</td><td>{{$boxscore->hq3}}</td><td>{{$boxscore->hq4}}</td>
 
-                @if ($boxscore->aq5=== 0) || ($boxscore->aq5 === '')@else<td>{{($boxscore->aq5) }}</td>@endif
+                @if ($boxscore->aq5== 0) || ($boxscore->aq5 == '')@else<td>{{($boxscore->aq5) }}</td>@endif
                 @if ($boxscore->aq6=== 0) || ($boxscore->aq6 === '')@else<td>{{($boxscore->aq6)}}</td>@endif
                 @if ($boxscore->aq7=== 0) || ($boxscore->aq7 === '')@else<td>{{($boxscore->aq7) }}</td>@endif
                 @if ($boxscore->aq8=== 0) || ($boxscore->aq8 === '')@else<td>{{($boxscore->aq8) }}</td>@endif
