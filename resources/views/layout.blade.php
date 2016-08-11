@@ -546,6 +546,19 @@ h2.story_h2 {
     line-height: 1.4em;
     padding-bottom: .2em;
 }
+#last_game_period_box {
+    width: 30%;
+    color: #D73F3F;
+    text-shadow: 1px 2px #777777;
+    background-color: #777777;
+    width: 1.5em;
+    font-size: 1em;
+    border: 1px inset #000000;
+    margin-bottom: 2px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 @media (max-width: 568px){td.hide_box_column{display:none}}
 /**
  * Print
