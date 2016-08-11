@@ -81,7 +81,7 @@
 @if($boxscore->ap1_starter === '1')
 
     @php
-        $astart_class1='starter';
+        $astart_class1='starter'
     @endphp
 
     @else
@@ -89,30 +89,23 @@
     @endif
         @if($boxscore->ap2_starter === '1')
 
-            @php
-                $astart_class2='starter';
-            @endphp
-
+            {{-- */  $astart_class2='starter' /* --}}
         @else
 
         @endif
 
-        @if($boxscore->ap3_starter === '1')
+        @if($boxscore->ap3_starter == '1')
 
-            @php
-                $astart_class3='starter'
-            @endphp
-
+            {{-- */  $astart_class3='starter' /* --}}
         @else
+
         @endif
 
-        @if($boxscore->ap4_starter === '1')
+        @if($boxscore->ap4_starter == '1')
 
-            @php
-                $astart_class4='starter'
-            @endphp
-
+            {{-- */  $astart_class4='starter' /* --}}
         @else
+
         @endif
 
         @if($boxscore->ap5_starter == '1')
@@ -122,7 +115,7 @@
 
         @endif
 
-        @if($boxscore->ap6_starter === '1')
+        @if($boxscore->ap6_starter == '1')
 
             {{-- */  $astart_class6='starter' /* --}}
 
@@ -135,7 +128,7 @@
             @endphp
         @endif
 
-        @if($boxscore->ap7_starter === '1')
+        @if($boxscore->ap7_starter == '1')
 
             @php
                 $astart_class7='starter';
@@ -145,7 +138,7 @@
                 $astart_class7='not';
             @endphp
         @endif
-        @if($boxscore->ap8_starter === '1')
+        @if($boxscore->ap8_starter == '1')
 
             @php
                 $astart_class8='starter';
@@ -156,7 +149,7 @@
             @endphp
         @endif
 
-        @if($boxscore->ap9_starter === '1')
+        @if($boxscore->ap9_starter == '1')
 
             @php
                 $astart_class9='starter';
@@ -168,7 +161,7 @@
         @endif
 
 
-        @if($boxscore->ap10_starter === '1')
+        @if($boxscore->ap10_starter == '1')
 
             @php
                 $astart_class10='starter';
@@ -179,7 +172,7 @@
             @endphp
         @endif
 
-        @if($boxscore->ap11_starter === '1')
+        @if($boxscore->ap11_starter == '1')
 
             @php
                 $astart_class11='starter';
@@ -190,7 +183,7 @@
             @endphp
         @endif
 
-        @if($boxscore->ap12_starter === '1')
+        @if($boxscore->ap12_starter == '1')
 
             @php
                 $astart_class12='starter';
@@ -202,7 +195,7 @@
         @endif
 
 
-        @if($boxscore->ap13_starter === '1')
+        @if($boxscore->ap13_starter == '1')
 
             @php
                 $astart_class13='starter';
@@ -370,11 +363,11 @@ $test_to= $ap1_to .
             <tr style='border: 1px inset #000;font-weight:800;'><td style='border: 1px inset #000;'>PLAYER</td><td style='border: 1px inset #000;'>MIN</td><td style='border: 1px inset #000;'>PTS</td><td style='border: 1px inset #000;'>FGM-A</td><td style='border: 1px inset #000;' class='hide_box_column'>3PM-A</td><td style='border: 1px inset #000;'>FTM-A</td><td style='border: 1px inset #000;' class='hide_box_column'>O-REB</td><td style='border: 1px inset #000;' class='hide_box_column'>D-REB</td><td style='border: 1px inset #000;'>REB</td><td style='border: 1px inset #000;'>AST</td><td style='border: 1px inset #000;' class='hide_box_column'>STL</td><td style='border: 1px inset #000;' class='hide_box_column'>BLK</td><td style='border: 1px inset #000;' class='hide_box_column'>TO</td><td style='border: 1px inset #000;'>PF</td><td style='border: 1px inset #000;' class='hide_this'>STARTER</td></tr>
 
             <tr style='border: 1px inset #000;'><td class='{{$astart_class1}}'> {{$boxscore->ap1_name}}</td><td class='{{$astart_class1}}' style='border: 1px inset #000;'>{{$boxscore->ap1_min}}</td><td class='{{$astart_class1}}' style='border: 1px inset #000;'>{{$boxscore->ap1_pts}}</td><td class='{{$astart_class1}}' style='border: 1px inset #000;'>{{ $boxscore->ap1_fgma }}</td><td style='border: 1px inset #000;' class='{{$astart_class1}} hide_box_column'>{{ $boxscore->ap1_3pma }}</td><td class='{{$astart_class1}}' style='border: 1px inset #000;'>{{ $boxscore->ap1_ftma }}</td><td style='border: 1px inset #000;' class='{{$astart_class1}} hide_box_column'>{{ $boxscore->ap1_oreb }}</td><td style='border: 1px inset #000;' class='{{$astart_class1}} hide_box_column'>{{ $boxscore->ap1_dreb }}</td><td class='{{$astart_class1}}' style='border: 1px inset #000;'>{{ $boxscore->ap1_reb }}</td><td class='{{$astart_class1}}' style='border: 1px inset #000;'>{{ $boxscore->ap1_ast }}</td><td style='border: 1px inset #000;' class='{{$astart_class1}} hide_box_column'>{{ $boxscore->ap1_stl }}</td><td style='border: 1px inset #000;' class='{{$astart_class1}} hide_box_column'>{{ $boxscore->ap1_blk }}</td><td style='border: 1px inset #000;' class='{{$astart_class1}} hide_box_column'>{{ $boxscore->ap1_to }}</td><td class='{{$astart_class1}}' style='border: 1px inset #000;'>{{ $boxscore->ap1_pf }}</td></tr>
-            <tr style='border: 1px inset #000;'><td class='' >{{$boxscore->ap2_name}}</td><td class='' style='border: 1px inset #000;'>{{$boxscore->ap2_min}}</td><td class='' style='border: 1px inset #000;'>{{$boxscore->ap2_pts}}</td><td class='' style='border: 1px inset #000;'>{{ $boxscore->ap2_fgma }}</td><td style='border: 1px inset #000;' class=' hide_box_column'>{{ $boxscore->ap2_3pma }}</td><td class='' style='border: 1px inset #000;'>{{ $boxscore->ap2_ftma }}</td><td style='border: 1px inset #000;' class=' hide_box_column'>{{ $boxscore->ap2_oreb }}</td><td style='border: 1px inset #000;' class=' hide_box_column'>{{ $boxscore->ap2_dreb }}</td><td class='' style='border: 1px inset #000;'>{{ $boxscore->ap2_reb }}</td><td class='' style='border: 1px inset #000;'>{{ $boxscore->ap2_ast }}</td><td style='border: 1px inset #000;' class=' hide_box_column'>{{ $boxscore->ap2_stl }}</td><td style='border: 1px inset #000;' class=' hide_box_column'>{{ $boxscore->ap2_blk }}</td><td style='border: 1px inset #000;' class=' hide_box_column'>{{ $boxscore->ap2_to }}</td><td class='' style='border: 1px inset #000;'>{{ $boxscore->ap2_pf }}</td></tr>
-            <tr style='border: 1px inset #000;'><td class=''>{{$boxscore->ap3_name}}</td><td class='' style='border: 1px inset #000;'>{{$boxscore->ap3_min}}</td><td class='' style='border: 1px inset #000;'>{{$boxscore->ap3_pts}}</td><td class='' style='border: 1px inset #000;'>{{ $boxscore->ap3_fgma }}</td><td style='border: 1px inset #000;' class=' hide_box_column'>{{ $boxscore->ap3_3pma }}</td><td class='' style='border: 1px inset #000;'>{{ $boxscore->ap3_ftma }}</td><td style='border: 1px inset #000;' class=' hide_box_column'>{{ $boxscore->ap3_oreb }}</td><td style='border: 1px inset #000;' class=' hide_box_column'>{{ $boxscore->ap3_dreb }}</td><td class='' style='border: 1px inset #000;'>{{ $boxscore->ap3_reb }}</td><td class='' style='border: 1px inset #000;'>{{ $boxscore->ap3_ast }}</td><td style='border: 1px inset #000;' class=' hide_box_column'>{{ $boxscore->ap3_stl }}</td><td style='border: 1px inset #000;' class=' hide_box_column'>{{ $boxscore->ap3_blk }}</td><td style='border: 1px inset #000;' class=' hide_box_column'>{{ $boxscore->ap3_to }}</td><td class='' style='border: 1px inset #000;'>{{ $boxscore->ap3_pf }}</td></tr>
-            <tr style='border: 1px inset #000;'><td class=''>{{$boxscore->ap4_name}}</td><td class='' style='border: 1px inset #000;'>{{$boxscore->ap4_min}}</td><td class='' style='border: 1px inset #000;'>{{$boxscore->ap4_pts}}</td><td class='' style='border: 1px inset #000;'>{{ $boxscore->ap4_fgma }}</td><td style='border: 1px inset #000;' class=' hide_box_column'>{{ $boxscore->ap4_3pma }}</td><td class='' style='border: 1px inset #000;'>{{ $boxscore->ap4_ftma }}</td><td style='border: 1px inset #000;' class=' hide_box_column'>{{ $boxscore->ap4_oreb }}</td><td style='border: 1px inset #000;' class=' hide_box_column'>{{ $boxscore->ap4_dreb }}</td><td class='' style='border: 1px inset #000;'>{{ $boxscore->ap4_reb }}</td><td class='' style='border: 1px inset #000;'>{{ $boxscore->ap4_ast }}</td><td style='border: 1px inset #000;' class=' hide_box_column'>{{ $boxscore->ap4_stl }}</td><td style='border: 1px inset #000;' class=' hide_box_column'>{{ $boxscore->ap4_blk }}</td><td style='border: 1px inset #000;' class=' hide_box_column'>{{ $boxscore->ap4_to }}</td><td class='' style='border: 1px inset #000;'>{{ $boxscore->ap4_pf }}</td></tr>
-            <tr style='border: 1px inset #000;'><td class=''>{{$boxscore->ap5_name}}</td><td class='' style='border: 1px inset #000;'>{{$boxscore->ap5_min}}</td><td class='' style='border: 1px inset #000;'>{{$boxscore->ap5_pts}}</td><td class='' style='border: 1px inset #000;'>{{ $boxscore->ap5_fgma }}</td><td style='border: 1px inset #000;' class=' hide_box_column'>{{ $boxscore->ap5_3pma }}</td><td class='' style='border: 1px inset #000;'>{{ $boxscore->ap5_ftma }}</td><td style='border: 1px inset #000;' class=' hide_box_column'>{{ $boxscore->ap5_oreb }}</td><td style='border: 1px inset #000;' class=' hide_box_column'>{{ $boxscore->ap5_dreb }}</td><td class='' style='border: 1px inset #000;'>{{ $boxscore->ap5_reb }}</td><td class='' style='border: 1px inset #000;'>{{ $boxscore->ap5_ast }}</td><td style='border: 1px inset #000;' class=' hide_box_column'>{{ $boxscore->ap5_stl }}</td><td style='border: 1px inset #000;' class=' hide_box_column'>{{ $boxscore->ap5_blk }}</td><td style='border: 1px inset #000;' class=' hide_box_column'>{{ $boxscore->ap5_to }}</td><td class='' style='border: 1px inset #000;'>{{ $boxscore->ap5_pf }}</td></tr>
-            <tr style='border: 1px inset #000;'><td class=''>{{$boxscore->ap6_name}}</td><td class='' style='border: 1px inset #000;'>{{$boxscore->ap6_min}}</td><td class='' style='border: 1px inset #000;'>{{$boxscore->ap6_pts}}</td><td class='' style='border: 1px inset #000;'>{{ $boxscore->ap6_fgma }}</td><td style='border: 1px inset #000;' class=' hide_box_column'>{{ $boxscore->ap6_3pma }}</td><td class='' style='border: 1px inset #000;'>{{ $boxscore->ap6_ftma }}</td><td style='border: 1px inset #000;' class=' hide_box_column'>{{ $boxscore->ap6_oreb }}</td><td style='border: 1px inset #000;' class=' hide_box_column'>{{ $boxscore->ap6_dreb }}</td><td class='' style='border: 1px inset #000;'>{{ $boxscore->ap6_reb }}</td><td class='' style='border: 1px inset #000;'>{{ $boxscore->ap6_ast }}</td><td style='border: 1px inset #000;' class=' hide_box_column'>{{ $boxscore->ap6_stl }}</td><td style='border: 1px inset #000;' class=' hide_box_column'>{{ $boxscore->ap6_blk }}</td><td style='border: 1px inset #000;' class=' hide_box_column'>{{ $boxscore->ap6_to }}</td><td class='' style='border: 1px inset #000;'>{{ $boxscore->ap6_pf }}</td></tr>
+            <tr style='border: 1px inset #000;'><td class='{{$astart_class2}}' >{{$boxscore->ap2_name}}</td><td class='{{$astart_class2}}' style='border: 1px inset #000;'>{{$boxscore->ap2_min}}</td><td class='{{$astart_class2}}' style='border: 1px inset #000;'>{{$boxscore->ap2_pts}}</td><td class='{{$astart_class2}}' style='border: 1px inset #000;'>{{ $boxscore->ap2_fgma }}</td><td style='border: 1px inset #000;' class='{{$astart_class2}} hide_box_column'>{{ $boxscore->ap2_3pma }}</td><td class='{{$astart_class2}}' style='border: 1px inset #000;'>{{ $boxscore->ap2_ftma }}</td><td style='border: 1px inset #000;' class='{{$astart_class2}} hide_box_column'>{{ $boxscore->ap2_oreb }}</td><td style='border: 1px inset #000;' class='{{$astart_class2}} hide_box_column'>{{ $boxscore->ap2_dreb }}</td><td class='{{$astart_class2}}' style='border: 1px inset #000;'>{{ $boxscore->ap2_reb }}</td><td class='{{$astart_class2}}' style='border: 1px inset #000;'>{{ $boxscore->ap2_ast }}</td><td style='border: 1px inset #000;' class='{{$astart_class2}} hide_box_column'>{{ $boxscore->ap2_stl }}</td><td style='border: 1px inset #000;' class='{{$astart_class2}} hide_box_column'>{{ $boxscore->ap2_blk }}</td><td style='border: 1px inset #000;' class='{{$astart_class2}} hide_box_column'>{{ $boxscore->ap2_to }}</td><td class='{{$astart_class2}}' style='border: 1px inset #000;'>{{ $boxscore->ap2_pf }}</td></tr>
+            <tr style='border: 1px inset #000;'><td class='{{$astart_class3}}'>{{$boxscore->ap3_name}}</td><td class='{{$astart_class3}}' style='border: 1px inset #000;'>{{$boxscore->ap3_min}}</td><td class='{{$astart_class3}}' style='border: 1px inset #000;'>{{$boxscore->ap3_pts}}</td><td class='{{$astart_class3}}' style='border: 1px inset #000;'>{{ $boxscore->ap3_fgma }}</td><td style='border: 1px inset #000;' class='{{$astart_class3}} hide_box_column'>{{ $boxscore->ap3_3pma }}</td><td class='{{$astart_class3}}' style='border: 1px inset #000;'>{{ $boxscore->ap3_ftma }}</td><td style='border: 1px inset #000;' class='{{$astart_class3}} hide_box_column'>{{ $boxscore->ap3_oreb }}</td><td style='border: 1px inset #000;' class='{{$astart_class3}} hide_box_column'>{{ $boxscore->ap3_dreb }}</td><td class='{{$astart_class3}}' style='border: 1px inset #000;'>{{ $boxscore->ap3_reb }}</td><td class='{{$astart_class3}}' style='border: 1px inset #000;'>{{ $boxscore->ap3_ast }}</td><td style='border: 1px inset #000;' class='{{$astart_class3}} hide_box_column'>{{ $boxscore->ap3_stl }}</td><td style='border: 1px inset #000;' class='{{$astart_class3}} hide_box_column'>{{ $boxscore->ap3_blk }}</td><td style='border: 1px inset #000;' class='{{$astart_class3}} hide_box_column'>{{ $boxscore->ap3_to }}</td><td class='{{$astart_class3}}' style='border: 1px inset #000;'>{{ $boxscore->ap3_pf }}</td></tr>
+            <tr style='border: 1px inset #000;'><td class='{{$astart_class4}}'>{{$boxscore->ap4_name}}</td><td class='{{$astart_class4}}' style='border: 1px inset #000;'>{{$boxscore->ap4_min}}</td><td class='{{$astart_class4}}' style='border: 1px inset #000;'>{{$boxscore->ap4_pts}}</td><td class='{{$astart_class4}}' style='border: 1px inset #000;'>{{ $boxscore->ap4_fgma }}</td><td style='border: 1px inset #000;' class='{{$astart_class4}} hide_box_column'>{{ $boxscore->ap4_3pma }}</td><td class='{{$astart_class4}}' style='border: 1px inset #000;'>{{ $boxscore->ap4_ftma }}</td><td style='border: 1px inset #000;' class='{{$astart_class4}} hide_box_column'>{{ $boxscore->ap4_oreb }}</td><td style='border: 1px inset #000;' class='{{$astart_class4}} hide_box_column'>{{ $boxscore->ap4_dreb }}</td><td class='{{$astart_class4}}' style='border: 1px inset #000;'>{{ $boxscore->ap4_reb }}</td><td class='{{$astart_class4}}' style='border: 1px inset #000;'>{{ $boxscore->ap4_ast }}</td><td style='border: 1px inset #000;' class='{{$astart_class4}} hide_box_column'>{{ $boxscore->ap4_stl }}</td><td style='border: 1px inset #000;' class='{{$astart_class4}} hide_box_column'>{{ $boxscore->ap4_blk }}</td><td style='border: 1px inset #000;' class='{{$astart_class4}} hide_box_column'>{{ $boxscore->ap4_to }}</td><td class='{{$astart_class4}}' style='border: 1px inset #000;'>{{ $boxscore->ap4_pf }}</td></tr>
+            <tr style='border: 1px inset #000;'><td class='{{$astart_class5}}'>{{$boxscore->ap5_name}}</td><td class='{{$astart_class5}}' style='border: 1px inset #000;'>{{$boxscore->ap5_min}}</td><td class='{{$astart_class5}}' style='border: 1px inset #000;'>{{$boxscore->ap5_pts}}</td><td class='{{$astart_class5}}' style='border: 1px inset #000;'>{{ $boxscore->ap5_fgma }}</td><td style='border: 1px inset #000;' class='{{$astart_class5}} hide_box_column'>{{ $boxscore->ap5_3pma }}</td><td class='{{$astart_class5}}' style='border: 1px inset #000;'>{{ $boxscore->ap5_ftma }}</td><td style='border: 1px inset #000;' class='{{$astart_class5}} hide_box_column'>{{ $boxscore->ap5_oreb }}</td><td style='border: 1px inset #000;' class='{{$astart_class5}} hide_box_column'>{{ $boxscore->ap5_dreb }}</td><td class='{{$astart_class5}}' style='border: 1px inset #000;'>{{ $boxscore->ap5_reb }}</td><td class='{{$astart_class5}}' style='border: 1px inset #000;'>{{ $boxscore->ap5_ast }}</td><td style='border: 1px inset #000;' class='{{$astart_class5}} hide_box_column'>{{ $boxscore->ap5_stl }}</td><td style='border: 1px inset #000;' class='{{$astart_class5}} hide_box_column'>{{ $boxscore->ap5_blk }}</td><td style='border: 1px inset #000;' class='{{$astart_class5}} hide_box_column'>{{ $boxscore->ap5_to }}</td><td class='{{$astart_class5}}' style='border: 1px inset #000;'>{{ $boxscore->ap5_pf }}</td></tr>
+            <tr style='border: 1px inset #000;'><td class='{{$astart_class6}}'>{{$boxscore->ap6_name}}</td><td class='{{$astart_class6}}' style='border: 1px inset #000;'>{{$boxscore->ap6_min}}</td><td class='{{$astart_class6}}' style='border: 1px inset #000;'>{{$boxscore->ap6_pts}}</td><td class='{{$astart_class6}}' style='border: 1px inset #000;'>{{ $boxscore->ap6_fgma }}</td><td style='border: 1px inset #000;' class='{{$astart_class6}} hide_box_column'>{{ $boxscore->ap6_3pma }}</td><td class='{{$astart_class6}}' style='border: 1px inset #000;'>{{ $boxscore->ap6_ftma }}</td><td style='border: 1px inset #000;' class='{{$astart_class6}} hide_box_column'>{{ $boxscore->ap6_oreb }}</td><td style='border: 1px inset #000;' class='{{$astart_class6}} hide_box_column'>{{ $boxscore->ap6_dreb }}</td><td class='{{$astart_class6}}' style='border: 1px inset #000;'>{{ $boxscore->ap6_reb }}</td><td class='{{$astart_class6}}' style='border: 1px inset #000;'>{{ $boxscore->ap6_ast }}</td><td style='border: 1px inset #000;' class='{{$astart_class6}} hide_box_column'>{{ $boxscore->ap6_stl }}</td><td style='border: 1px inset #000;' class='{{$astart_class6}} hide_box_column'>{{ $boxscore->ap6_blk }}</td><td style='border: 1px inset #000;' class='{{$astart_class6}} hide_box_column'>{{ $boxscore->ap6_to }}</td><td class='{{$astart_class6}}' style='border: 1px inset #000;'>{{ $boxscore->ap6_pf }}</td></tr>
             <tr style='border: 1px inset #000;'><td class=''>{{$boxscore->ap7_name}}</td><td class='' style='border: 1px inset #000;'>{{$boxscore->ap7_min}}</td><td class='' style='border: 1px inset #000;'>{{$boxscore->ap7_pts}}</td><td class='' style='border: 1px inset #000;'>{{ $boxscore->ap7_fgma }}</td><td style='border: 1px inset #000;' class=' hide_box_column'>{{ $boxscore->ap7_3pma }}</td><td class='' style='border: 1px inset #000;'>{{ $boxscore->ap7_ftma }}</td><td style='border: 1px inset #000;' class=' hide_box_column'>{{ $boxscore->ap7_oreb }}</td><td style='border: 1px inset #000;' class=' hide_box_column'>{{ $boxscore->ap7_dreb }}</td><td class='' style='border: 1px inset #000;'>{{ $boxscore->ap7_reb }}</td><td class='' style='border: 1px inset #000;'>{{ $boxscore->ap7_ast }}</td><td style='border: 1px inset #000;' class=' hide_box_column'>{{ $boxscore->ap7_stl }}</td><td style='border: 1px inset #000;' class=' hide_box_column'>{{ $boxscore->ap7_blk }}</td><td style='border: 1px inset #000;' class=' hide_box_column'>{{ $boxscore->ap7_to }}</td><td class='' style='border: 1px inset #000;'>{{ $boxscore->ap7_pf }}</td></tr>
 
 
