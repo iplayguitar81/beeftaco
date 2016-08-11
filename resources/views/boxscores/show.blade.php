@@ -9,25 +9,18 @@
     }(document, 'script', 'facebook-jssdk'));</script>
 @section('title', $boxscore->game_string)
 @section('content')
-
-
     <div class="row">
     <div class="col-md-12">
-
     <article class="center-block">
         {{--<h1 class="article-title-show" style="font-family: Pacifico, cursive;font-size:4em;line-height:1.2em;text-align:center;"></h1>--}}
-
         {{-- */ $game_date = strtotime($boxscore->datey); $game_date=date("F d Y", $game_date); /* --}}
         @php
         $game_date = new DateTime($boxscore->datey, new DateTimeZone('America/Los_Angeles'));
         $game_date = date_sub($game_date, date_interval_create_from_date_string('3 hour'));
         $game_date = $game_date->format('l F dS Y g:i a');
-
-  $attendance_percentage=round((($boxscore->attendance/$boxscore->capacity)*100),2);
+        $attendance_percentage=round((($boxscore->attendance/$boxscore->capacity)*100),2);
 
         @endphp
-
-
 
         @if($boxscore->h_initials =='POR')
             {{-- */ $home_or_away = strtolower($boxscore->afname)."<span class='box_total_h2'> ".$boxscore->atotal."</span><br/>at<br/> portland trail blazers <span class='box_total_h2'>".$boxscore->htotal."</span>" /* --}}
