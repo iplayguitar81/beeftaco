@@ -244,6 +244,7 @@ div.article-texterson2 p:first-letter{color:#E63C4D;font-size:1.7em;text-shadow:
     background-color: #D73F3F;
     color: #F1F8FF;
     text-shadow: 1px 1px 1px #000000
+    text-align:center;
 }
 
 #last_game_period_box td {
