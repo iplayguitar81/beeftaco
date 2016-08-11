@@ -27,7 +27,7 @@ ul.pagination{display:inline-block;padding:0;margin:0;font-size:1.2em;color:#E63
 .article-title-show {
     color: #E63C4D;
     text-shadow: silver 2px 1px 2px;
-    font-size: 5em;
+    font-size: 3.8em;
     text-align: center;
 }
 hr {
