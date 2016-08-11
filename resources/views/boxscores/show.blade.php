@@ -598,7 +598,7 @@ $test_to= $ap1_to .
 
     <br/>
 
-    <h2 class="text-center Ripper">Leave a Facebook Comment!</h2>
+    <h2 class="text-center Ripper">leave a facebook comment!</h2>
     <div class="fb-comments center-block" data-href="https://www.bowtiesoft.com/boxscores/{{$boxscore->id}}/{{str_slug($boxscore->game_string)}}" data-numposts="10"></div>
 
     <br/>
