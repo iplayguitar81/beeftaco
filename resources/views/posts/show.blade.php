@@ -14,7 +14,7 @@
     <div class="col-md-12">
 
     <article class="center-block">
-        <h1 class="article-title-show Ripper" style="font-size:4em;line-height:1.2em;text-align:center;">{{ $post->title }}</h1>
+        <h1 class="article-title-show Ripper" style="">{{ $post->title }}</h1>
         <p class="subheader-main" style="text-align:center;font-family: Boogaloo, cursive; font-size:3em;">{{ $post->subHead}}</p>
         <p class="uk-article-meta" style="text-align:center;">
             Written by <?
