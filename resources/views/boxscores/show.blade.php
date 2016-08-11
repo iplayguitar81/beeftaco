@@ -207,13 +207,16 @@
         @endif
 
 
-    @if($boxscore->hp1_starter == '1')
+        @if($boxscore->hp1_starter === '1')
 
-            {{-- */  $hstart_class1='starter' /* --}}
+            @php
+                $hstart_class1='starter'
+            @endphp
+
         @else
 
         @endif
-        @if($boxscore->hp2_starter == '1')
+        @if($boxscore->hp2_starter === '1')
 
             {{-- */  $hstart_class2='starter' /* --}}
         @else
@@ -244,57 +247,93 @@
         @if($boxscore->hp6_starter == '1')
 
             {{-- */  $hstart_class6='starter' /* --}}
-        @else
 
+            @php
+                $hstart_class6='starter';
+            @endphp
+        @else
+            @php
+                $hstart_class6='not';
+            @endphp
         @endif
 
         @if($boxscore->hp7_starter == '1')
 
-            {{-- */  $hstart_class7='starter' /* --}}
+            @php
+                $hstart_class7='starter';
+            @endphp
         @else
-
+            @php
+                $hstart_class7='not';
+            @endphp
         @endif
-
         @if($boxscore->hp8_starter == '1')
 
-            {{-- */  $hstart_class8='starter' /* --}}
+            @php
+                $hstart_class8='starter';
+            @endphp
         @else
-
+            @php
+                $hstart_class8='not';
+            @endphp
         @endif
 
         @if($boxscore->hp9_starter == '1')
 
-            {{-- */  $hstart_class9='starter' /* --}}
+            @php
+                $hstart_class9='starter';
+            @endphp
         @else
-
+            @php
+                $hstart_class9='not';
+            @endphp
         @endif
+
 
         @if($boxscore->hp10_starter == '1')
 
-            {{-- */  $hstart_class10='starter' /* --}}
+            @php
+                $hstart_class10='starter';
+            @endphp
         @else
-
+            @php
+                $hstart_class10='not';
+            @endphp
         @endif
+
         @if($boxscore->hp11_starter == '1')
 
-            {{-- */  $hstart_class11='starter' /* --}}
+            @php
+                $hstart_class11='starter';
+            @endphp
         @else
-
+            @php
+                $hstart_class11='not';
+            @endphp
         @endif
+
         @if($boxscore->hp12_starter == '1')
 
-            {{-- */  $hstart_class12='starter' /* --}}
+            @php
+                $hstart_class12='starter';
+            @endphp
         @else
-
+            @php
+                $hstart_class12='not';
+            @endphp
         @endif
+
 
         @if($boxscore->hp13_starter == '1')
 
-            {{-- */  $hstart_class13='starter' /* --}}
+            @php
+                $hstart_class13='starter';
+            @endphp
         @else
-
+            @php
+                $hstart_class13='not';
+            @endphp
         @endif
-
         @php
 
         $ap1_to = (int)($boxscore->ap1_to);
