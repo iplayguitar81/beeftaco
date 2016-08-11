@@ -234,6 +234,11 @@ div.article-texterson2 p:first-letter{color:#E63C4D;font-size:1.7em;text-shadow:
     margin-left: 0;
 }
 
+
+.Ripper{
+    font-family: 'FabFelt' !important;
+}
+
 #boxscore-fb-thoughts-blurb {
     width: 89%;
     margin-left: auto;
