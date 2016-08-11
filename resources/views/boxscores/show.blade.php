@@ -89,23 +89,30 @@
     @endif
         @if($boxscore->ap2_starter === '1')
 
-            {{-- */  $astart_class2='starter' /* --}}
+            @php
+                $astart_class2='starter'
+            @endphp
+
         @else
 
         @endif
 
         @if($boxscore->ap3_starter == '1')
 
-            {{-- */  $astart_class3='starter' /* --}}
-        @else
+            @php
+                $astart_class3='starter'
+            @endphp
 
+        @else
         @endif
 
         @if($boxscore->ap4_starter == '1')
 
-            {{-- */  $astart_class4='starter' /* --}}
-        @else
+            @php
+                $astart_class4='starter'
+            @endphp
 
+        @else
         @endif
 
         @if($boxscore->ap5_starter == '1')
