@@ -510,7 +510,7 @@ $test_to= $ap1_to .
             @endif
 
 
-            @if( ($boxscore->hp11_name !== '')  )
+            @if( !empty($boxscore->hp11_name !== '')  )
 
                 <tr style='border: 1px inset #000;'><td class='{{$hstart_class11}}'>{{$boxscore->hp11_name}}</td><td class='{{$hstart_class11}}' style='border: 1px inset #000;'>{{$boxscore->hp11_min}}</td><td style='border: 1px inset #000;'>{{$boxscore->hp11_pts}}</td><td style='border: 1px inset #000;'>{{ $boxscore->hp11_fgma }}</td><td style='border: 1px inset #000;' class='{{$hstart_class11}} hide_box_column'>{{ $boxscore->hp11_3pma }}</td><td class='{{$hstart_class11}}' style='border: 1px inset #000;'>{{ $boxscore->hp11_ftma }}</td><td style='border: 1px inset #000;' class='{{$hstart_class11}} hide_box_column'>{{ $boxscore->hp11_oreb }}</td><td style='border: 1px inset #000;' class='{{$hstart_class11}} hide_box_column'>{{ $boxscore->hp11_dreb }}</td><td class='{{$hstart_class11}}' style='border: 1px inset #000;'>{{ $boxscore->hp11_reb }}</td><td class='{{$hstart_class11}}' style='border: 1px inset #000;'>{{ $boxscore->hp11_ast }}</td><td style='border: 1px inset #000;' class='{{$hstart_class11}} hide_box_column'>{{ $boxscore->hp11_stl }}</td><td style='border: 1px inset #000;' class='{{$hstart_class11}} hide_box_column'>{{ $boxscore->hp11_blk }}</td><td style='border: 1px inset #000;' class='{{$hstart_class11}} hide_box_column'>{{ $boxscore->hp11_to }}</td><td class='{{$hstart_class11}}' style='border: 1px inset #000;'>{{ $boxscore->hp11_pf }}</td></tr>
                 
