@@ -181,6 +181,24 @@
             @endphp
 
         @else
+@php
+
+                $astart_class1='';
+                $astart_class2='';
+                $astart_class3='';
+                $astart_class4='';
+                $astart_class5='';
+                $astart_class6='';
+                $astart_class7='';
+                $astart_class8='';
+                $astart_class9='';
+                $astart_class10='';
+                $astart_class11='';
+                $astart_class12='';
+                $astart_class13='';
+
+
+@endphp
 
     @endif
         {{--@if($boxscore->ap2_starter === '1')--}}
