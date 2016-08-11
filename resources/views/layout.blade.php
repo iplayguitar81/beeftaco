@@ -542,7 +542,10 @@ h2.story_h2{font-family:FabFelt;color:#FFFFFF}
 h2.story_h2{background-color:#D73F3F;text-align:center;border-top:2px solid #6d7173;border-bottom:2px solid #000000;padding-top:1.5%}
 .story_h2 a{text-decoration:none;color:#BBBBBB;text-shadow:2px 2px #000000}
 h2.story_h2 a:hover{color:#FFFFFF}
-
+h2.story_h2 {
+    line-height: 1.4em;
+    padding-bottom: .2em;
+}
 @media (max-width: 568px){td.hide_box_column{display:none}}
 /**
  * Print
