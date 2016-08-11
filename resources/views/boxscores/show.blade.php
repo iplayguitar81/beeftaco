@@ -526,7 +526,7 @@ $test_to= $ap1_to .
 
             @endif
 
-            @if( notNullValue($boxscore->hp13_name) )
+            @if( ($boxscore->hp13_name > 0) )
 
                 <tr style='border: 1px inset #000;'><td class='{{$hstart_class13}}'>{{$boxscore->hp13_name}}</td><td class='{{$hstart_class13}}' style='border: 1px inset #000;'>{{$boxscore->hp13_min}}</td><td class='{{$hstart_class13}}' style='border: 1px inset #000;'>{{$boxscore->hp13_pts}}</td><td class='{{$hstart_class13}}' style='border: 1px inset #000;'>{{ $boxscore->hp13_fgma }}</td><td style='border: 1px inset #000;' class='{{$hstart_class13}} hide_box_column'>{{ $boxscore->hp13_3pma }}</td><td class='{{$hstart_class13}}' style='border: 1px inset #000;'>{{ $boxscore->hp13_ftma }}</td><td style='border: 1px inset #000;' class='{{$hstart_class13}} hide_box_column'>{{ $boxscore->hp13_oreb }}</td><td style='border: 1px inset #000;' class='{{$hstart_class13}} hide_box_column'>{{ $boxscore->hp13_dreb }}</td><td class='{{$hstart_class13}}' style='border: 1px inset #000;' >{{ $boxscore->hp13_reb }}</td><td class='{{$hstart_class13}}' style='border: 1px inset #000;'>{{ $boxscore->hp13_ast }}</td><td style='border: 1px inset #000;' class='{{$hstart_class13}} hide_box_column'>{{ $boxscore->hp13_stl }}</td><td style='border: 1px inset #000;' class='{{$hstart_class13}} hide_box_column'>{{ $boxscore->hp13_blk }}</td><td style='border: 1px inset #000;' class='{{$hstart_class13}} hide_box_column'>{{ $boxscore->hp13_to }}</td><td class='{{$hstart_class13}}' style='border: 1px inset #000;'>{{ $boxscore->hp13_pf }}</td><td style='border: 1px inset #000;' class='{{$hstart_class13}} hide_this'></td></tr>
 
