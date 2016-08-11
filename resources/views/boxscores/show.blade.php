@@ -97,7 +97,7 @@
 
         @endif
 
-        @if($boxscore->ap3_starter == '1')
+        @if($boxscore->ap3_starter === '1')
 
             @php
                 $astart_class3='starter'
@@ -106,7 +106,7 @@
         @else
         @endif
 
-        @if($boxscore->ap4_starter == '1')
+        @if($boxscore->ap4_starter === '1')
 
             @php
                 $astart_class4='starter'
@@ -122,7 +122,7 @@
 
         @endif
 
-        @if($boxscore->ap6_starter == '1')
+        @if($boxscore->ap6_starter === '1')
 
             {{-- */  $astart_class6='starter' /* --}}
 
@@ -135,7 +135,7 @@
             @endphp
         @endif
 
-        @if($boxscore->ap7_starter == '1')
+        @if($boxscore->ap7_starter === '1')
 
             @php
                 $astart_class7='starter';
@@ -145,7 +145,7 @@
                 $astart_class7='not';
             @endphp
         @endif
-        @if($boxscore->ap8_starter == '1')
+        @if($boxscore->ap8_starter === '1')
 
             @php
                 $astart_class8='starter';
@@ -156,7 +156,7 @@
             @endphp
         @endif
 
-        @if($boxscore->ap9_starter == '1')
+        @if($boxscore->ap9_starter === '1')
 
             @php
                 $astart_class9='starter';
@@ -168,7 +168,7 @@
         @endif
 
 
-        @if($boxscore->ap10_starter == '1')
+        @if($boxscore->ap10_starter === '1')
 
             @php
                 $astart_class10='starter';
@@ -179,7 +179,7 @@
             @endphp
         @endif
 
-        @if($boxscore->ap11_starter == '1')
+        @if($boxscore->ap11_starter === '1')
 
             @php
                 $astart_class11='starter';
@@ -190,7 +190,7 @@
             @endphp
         @endif
 
-        @if($boxscore->ap12_starter == '1')
+        @if($boxscore->ap12_starter === '1')
 
             @php
                 $astart_class12='starter';
@@ -202,7 +202,7 @@
         @endif
 
 
-        @if($boxscore->ap13_starter == '1')
+        @if($boxscore->ap13_starter === '1')
 
             @php
                 $astart_class13='starter';
