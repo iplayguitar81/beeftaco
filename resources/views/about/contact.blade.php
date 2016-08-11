@@ -13,7 +13,7 @@
             </div>
         @endif
 
-        <h2 class="text-center Ripper">Contact Us Today!</h2>
+        <h2 class="text-center Ripper">contact us today!</h2>
         {{--<form class="uk-form uk-form-horizontal">--}}
 
         {{--<div class="uk-form-row">--}}
