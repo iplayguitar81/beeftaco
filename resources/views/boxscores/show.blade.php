@@ -78,11 +78,23 @@
         {{--This is where I need to add Starter stuff and DRY logic.....--}}
 
 
-@if($boxscore->ap1_starter === '1' || $boxscore->ap2_starter === '1')
+@if($boxscore->ap1_starter === '1' || $boxscore->ap2_starter === '1'|| $boxscore->ap3_starter === '1' || $boxscore->ap4_starter === '1' || $boxscore->ap5_starter === '1' || $boxscore->ap6_starter === '1' || $boxscore->ap7_starter === '1' || $boxscore->ap8_starter === '1' || $boxscore->ap9_starter === '1' || $boxscore->ap10_starter === '1' || $boxscore->ap11_starter === '1' || $boxscore->ap12_starter === '1' || $boxscore->ap13_starter === '1')
 
     @php
         $astart_class1='starter';
         $astart_class2='starter';
+        $astart_class3='starter';
+        $astart_class4='starter';
+        $astart_class5='starter';
+        $astart_class6='starter';
+        $astart_class7='starter';
+        $astart_class8='starter';
+        $astart_class9='starter';
+        $astart_class10='starter';
+        $astart_class11='starter';
+        $astart_class12='starter';
+        $astart_class13='starter';
+
 
     @endphp
 
