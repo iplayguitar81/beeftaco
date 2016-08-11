@@ -114,7 +114,7 @@
         @elseif ($boxscore->ap13_starter === '1')
 
 
-    @else
+
 
     @endif
         {{--@if($boxscore->ap2_starter === '1')--}}
