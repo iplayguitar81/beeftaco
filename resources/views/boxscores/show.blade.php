@@ -331,22 +331,22 @@ $test_to= $ap1_to .
                 <th colspan="2">T</th>
             <tr><td>{{$boxscore->a_initials}}</td><td>{{$boxscore->aq1}}</td><td>{{$boxscore->aq2}}</td><td>{{$boxscore->aq3}}</td><td>{{$boxscore->aq4}}</td>
 
-                @if $boxscore->hq5=== 0) || ($boxscore->hq5 === '' @else<td>{{($boxscore->hq5) }}</td>@endif
-                @if ($boxscore->hq6===0) || ($boxscore->hq6 === '')@else<td>{{($boxscore->hq6)}}</td>@endif
-                @if ($boxscore->hq7=== 0) || ($boxscore->hq7 === '')@else<td>{{($boxscore->hq7) }}</td>@endif
-                @if ($boxscore->hq8=== 0) || ($boxscore->hq8 === '')@else<td>{{($boxscore->hq8) }}</td>@endif
-                @if ($boxscore->hq9=== 0) || ($boxscore->hq9 === '')@else<td>{{($boxscore->hq9) }}</td>@endif
-                @if ($boxscore->hq10=== 0) || ($boxscore->hq10 === '')@else<td>{{($boxscore->hq10) }}</td>@endif
+                @if (($boxscore->hq5=== 0) || $boxscore->hq5 === '' )@else<td>{{($boxscore->hq5) }}</td>@endif
+                @if (($boxscore->hq6===0) || $boxscore->hq6 === '')@else<td>{{($boxscore->hq6)}}</td>@endif
+                @if (($boxscore->hq7=== 0) || $boxscore->hq7 === '')@else<td>{{($boxscore->hq7) }}</td>@endif
+                @if (($boxscore->hq8=== 0) || $boxscore->hq8 === '')@else<td>{{($boxscore->hq8) }}</td>@endif
+                @if (($boxscore->hq9=== 0) || $boxscore->hq9 === '')@else<td>{{($boxscore->hq9) }}</td>@endif
+                @if (($boxscore->hq10=== 0) || $boxscore->hq10 === '')@else<td>{{($boxscore->hq10) }}</td>@endif
 
                 <td>{{$boxscore->atotal}}</td></tr>
             <tr><td>{{$boxscore->h_initials}}</td><td>{{$boxscore->hq1}}</td><td>{{$boxscore->hq2}}</td><td>{{$boxscore->hq3}}</td><td>{{$boxscore->hq4}}</td>
 
-                @if ($boxscore->aq5=== 0) || ($boxscore->aq5 == '')@else<td>{{($boxscore->aq5) }}</td>@endif
-                @if ($boxscore->aq6=== 0) || ($boxscore->aq6 === '')@else<td>{{($boxscore->aq6)}}</td>@endif
-                @if ($boxscore->aq7=== 0) || ($boxscore->aq7 === '')@else<td>{{($boxscore->aq7) }}</td>@endif
-                @if ($boxscore->aq8=== 0) || ($boxscore->aq8 === '')@else<td>{{($boxscore->aq8) }}</td>@endif
-                @if ($boxscore->aq9=== 0) || ($boxscore->aq9 === '')@else<td>{{($boxscore->aq9) }}</td>@endif
-                @if ($boxscore->aq10=== 0) || ($boxscore->aq10 === '')@else<td>{{($boxscore->aq10) }}</td>@endif
+                @if (($boxscore->aq5=== 0) || $boxscore->aq5 == '')@else<td>{{($boxscore->aq5) }}</td>@endif
+                @if (($boxscore->aq6=== 0) || $boxscore->aq6 === '')@else<td>{{($boxscore->aq6)}}</td>@endif
+                @if (($boxscore->aq7=== 0) || $boxscore->aq7 === '')@else<td>{{($boxscore->aq7) }}</td>@endif
+                @if (($boxscore->aq8=== 0) || $boxscore->aq8 === '')@else<td>{{($boxscore->aq8) }}</td>@endif
+                @if (($boxscore->aq9=== 0) || $boxscore->aq9 === '')@else<td>{{($boxscore->aq9) }}</td>@endif
+                @if (($boxscore->aq10=== 0) ||$boxscore->aq10 === '')@else<td>{{($boxscore->aq10) }}</td>@endif
                 <td>{{$boxscore->htotal}}</td></tr>
 
         </table>
