@@ -79,40 +79,40 @@
 
         @if($boxscore->ap1_starter === '1')
 
-            */  $astart_class1='starter' /*
+            @php  $astart_class1='starter' @endphp
         @else
 
         @if($boxscore->ap2_starter === '1')
 
-             */  $astart_class2='starter' /*
+                @php $astart_class2='starter' @endphp
         @else
 
         @endif
 
         @if($boxscore->ap3_starter === '1')
 
-             */  $astart_class3='starter' /*
+                @php$astart_class3='starter'@endphp
         @else
 
         @endif
 
         @if($boxscore->ap4_starter ==='1')
 
-             */  $astart_class4='starter' /*
+                @php  $astart_class4='starter' @endphp
         @else
 
         @endif
 
         @if($boxscore->ap5_starter == '1')
 
-             */  $astart_class5='starter' /*
+                @php $astart_class5='starter' @endphp
         @else
 
         @endif
 
         @if($boxscore->ap6_starter == '1')
 
-             */  $astart_class6='starter' /*
+                @php  $astart_class6='starter' @endphp
 
             @php
                 $astart_class6='starter';
