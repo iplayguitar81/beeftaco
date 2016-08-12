@@ -37,7 +37,7 @@
        <div class="article-texterson2"> {!! ($post->body) !!} </div>
             @if(!empty($post->images))
             <div class="container">
-                <h2 class='Ripper'>Article Gallery</h2>
+                <h2 class='Ripper'>article gallery</h2>
                     <br/>
                 {{--<div class="customNavigation">--}}
                 {{--<a class="btn prev btn-danger">Previous</a>--}}
