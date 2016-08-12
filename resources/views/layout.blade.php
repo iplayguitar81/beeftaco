@@ -1012,7 +1012,7 @@ h2.story_h2 {
                 <span class="icon-bar"></span>
             </button>
             <a class="navbar-brand" href="{{url('/')}}">
-                <img src="{{url('images/new-logo-blazers-fans.png')}}"alt="">
+                <img src="{{url('images/blazers-fans-logo-draft.png')}}"alt="">
                 <!-- put text here if want/need be-->
 
             </a>
