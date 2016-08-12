@@ -11,7 +11,7 @@
     </div>
 
     <div id="menu1" class="tab-pane fade">
-        <h3>Twitter</h3>
+        <h3>Player Tweets</h3>
 
         {{--<a class="twitter-timeline" href="https://twitter.com/bowtiesoftware">Tweets by bowtiesoftware</a> <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>--}}
 
