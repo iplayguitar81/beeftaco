@@ -1023,7 +1023,7 @@ h2.story_h2 {
         <div class="collapse navbar-collapse" id="myNavbar">
             <ul class="nav navbar-nav">
                 <li class="active"><a href="{{url('/')}}">home</a></li>
-                <li class="active"><a href="{{url('/')}}">scores</a></li>
+                <li class="active"><a href="{{url('/boxscores')}}">scores</a></li>
                 <li><a href="{{url('/posts')}}">news</a></li>
                 <li><a href="{{url('/contact')}}">contact</a></li>
             </ul>
