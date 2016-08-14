@@ -970,12 +970,39 @@ h2.story_h2 {
     border-right: 6px solid transparent;
     border-bottom: 6px solid #be2626; }
 
+
+#owl-demo .item{
+    background: #3fbf79;
+    padding: 30px 0px;
+    margin: 10px;
+    color: #FFF;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    text-align: center;
+}
+.customNavigation{
+    text-align: center;
+}
+//use styles below to disable ugly selection
+  .customNavigation a{
+      -webkit-user-select: none;
+      -khtml-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
+      -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  }
+
+
 .owl_trick img.img-responsive2{
     /*margin: 0 auto !important;*/
     max-width: 100%;
     height: auto;
     display: inline-block;
 }
+
+
 
 
 ul{
