@@ -14,6 +14,29 @@
 
     {{--{{'My sources tell me your location is '.$location['city'].','.$location['state']}}--}}
 
+        <div id="myCarousel" class="carousel slide" style="width: 400px; margin: 0 auto">
+            <div class="carousel-inner">
+                <div class="item">
+                    <img src="http://jasny.github.com/bootstrap/2.3.1/assets/img/bootstrap-mdo-sfmoma-01.jpg"
+                         alt="">
+                    <div class="carousel-caption">
+                        <h4>First Thumbnail label</h4>
+
+                        <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id
+                            elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies
+                            vehicula ut id elit.</p>
+                    </div>
+                </div>
+
+            </div>
+        </div> <a class="left carousel-control" href="#myCarousel" data-slide="prev">‹</a>
+
+        <a
+                class="right carousel-control" href="#myCarousel" data-slide="next">›</a>
+</div>
+
+
+
 
     @foreach($posts as $item)
     <article class="text-center">
