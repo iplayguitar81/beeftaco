@@ -36,7 +36,9 @@ Route::get('/', function () {
     $posts = Post::orderBy('created_at', 'desc')->paginate(3);
     $users = User::all();
     $ratings =Rating::all();
-    return view('welcome', compact('posts', 'users','ratings'));
+    $scores =boxscore::all();
+
+    return view('welcome', compact('posts', 'users','ratings','scores'));
 });
 
 //social login package establish authorize route......
