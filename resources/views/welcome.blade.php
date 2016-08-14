@@ -178,4 +178,11 @@
 
 @endsection
 
+<script>
 
+    $(document).ready(function() {
+        $("#content-slider").lightSlider({
+            loop:true,
+            keyPress:true
+        })});
+</script>
