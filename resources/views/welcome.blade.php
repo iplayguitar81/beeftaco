@@ -33,7 +33,7 @@
 
         <a
                 class="right carousel-control" href="#myCarousel" data-slide="next">›</a>
-</div>
+
 <br/>
 
 
