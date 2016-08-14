@@ -16,7 +16,7 @@
 
         <div id="myCarousel" class="carousel slide" style="width: 400px; margin: 0 auto">
             <div class="carousel-inner">
-                <div class="item">
+                <div class="item active">
                     <img src="http://jasny.github.com/bootstrap/2.3.1/assets/img/bootstrap-mdo-sfmoma-01.jpg"
                          alt="">
                     <div class="carousel-caption">
