@@ -1337,11 +1337,7 @@ $(imageList).append('<li><a href=""><img src="'+imageSrc +'"></a><br/><span>Uplo
 
 
 
-    $(document).ready(function() {
-        $("#content-slider").lightSlider({
-            loop:true,
-            keyPress:true
-        })});
+
 
 </script>
 
