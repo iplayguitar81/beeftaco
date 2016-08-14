@@ -972,7 +972,7 @@ h2.story_h2 {
 
 
 #owl-demo .item{
-    background: #3fbf79;
+    background: #D73F3F;
     padding: 30px 0px;
     margin: 10px;
     color: #FFF;
@@ -984,7 +984,7 @@ h2.story_h2 {
 .customNavigation{
     text-align: center;
 }
-//use styles below to disable ugly selection
+
   .customNavigation a{
       -webkit-user-select: none;
       -khtml-user-select: none;
