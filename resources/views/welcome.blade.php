@@ -12,16 +12,49 @@
         </div>
     @endif
 
-    {{--{{'My sources tell me your location is '.$location['city'].','.$location['state']}}--}}
+        @foreach($scores as $item)
 
-        <div id="owl-demo" class="owl-carousel owl-theme">
-            <div class="item"><h1>1</h1></div>
-            <div class="item"><h1>2</h1></div>
-            <div class="item"><h1>3</h1></div>
-            <div class="item"><h1>4</h1></div>
-            <div class="item"><h1>5</h1></div>
+
+            @php
+                $versus_or_at="";
+                $away_nick_dash="$item->afname";
+                $home_nick_dash="";
+                $home_or_away="";
+
+
+
+            @endphp
+
+
+
+            @if ($item->h_initials=='POR')
+                @php
+                    versus_or_at="VS."
+
+                    $home_or_away = c.afname.downcase+'<span class="box_total_h2"> '+c.atotal+"</span><br/>at<br/> portland trail blazers <span class='box_total_h2'>"+c.htotal+"</span>";
+                @endphp
+
+
+            @endif
+
+
+
+            <div id="owl-demo" class="owl-carousel owl-theme">
+                <div class="item">
+
+                    <table class="header_last_game">
+                        <tr><th colspan="3">{{$item->datey}}</th></tr>
+                        <tr><td>img<br/> {{$item->h_initials}}<br/><span class='slider_score'>{{$item->htotal}}</span></td><td>{!!$versus_or_at!!}<br/><br/>{!!$win_or_loss.html_safe!!}></td><td>img<br/> {{$items->a_initials}}<br/><span class='slider_score'>{{c.atotal}}</span></td></tr>
+                        <tr><td colspan="3"><div data-uk-button-radio>Link to game  </div></td></tr>
+                  </table>
+
+
+			</div>
         </div>
 
+
+
+		@endforeach
 
 
 
@@ -126,25 +159,6 @@
     </article>
 
     @endforeach
-
-        {{--<h1>All Cards</h1>--}}
-
-
-
-        {{--<!-- Project One -->--}}
-        {{--<div class="row">--}}
-            {{--<div class="col-md-7">--}}
-                {{--<a href="#">--}}
-                    {{--<img class="img-responsive" src="http://placehold.it/700x300" alt="">--}}
-                {{--</a>--}}
-            {{--</div>--}}
-            {{--<div class="col-md-5">--}}
-                {{--<h3><a href="/cards/1">once upon a rhyme</a></h3>--}}
-                {{--<h4>2016-04-28 00:00:00</h4>--}}
-                {{--<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium veniam exercitationem expedita laborum at voluptate. Labore, voluptates totam at aut nemo deserunt rem magni pariatur quos perspiciatis atque eveniet unde.</p>--}}
-                {{--<a class="btn btn-primary" href="/cards/1">View Card <span class="glyphicon glyphicon-chevron-right"></span></a>--}}
-            {{--</div>--}}
-        {{--</div>--}}
 
 <br/>
         <br/>
