@@ -247,17 +247,7 @@
         })});
 
 
-    $(document).ready(function() {
 
-        var owl = $("#owl-demo");
-
-        owl.owlCarousel({
-
-            navigation : true
-
-        });
-
-    })
 
 
 
