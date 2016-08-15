@@ -245,6 +245,10 @@ div.article-texterson2 p:first-letter{color:#E63C4D;font-size:1.7em;text-shadow:
     font-family: 'Bebas' !important;
 }
 
+.subheader-main.Bebas{
+    font-size: 2em;
+}
+
 #boxscore-fb-thoughts-blurb {
     width: 89%;
     margin-left: auto;
