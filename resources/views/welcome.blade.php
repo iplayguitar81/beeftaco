@@ -12,6 +12,7 @@
         </div>
     @endif
 
+        <div id="owl-demo" class="owl-carousel owl-theme">
         @foreach($scores as $item)
 
 
@@ -41,23 +42,23 @@
 
 
 
-            <div id="owl-demo" class="owl-carousel owl-theme">
+
                 <div class="item">
 
 
                         <span>{{$item->datey}}</span>
-                        <div>img<br/> {{$item->h_initials}}<br/><span class='slider_score'>{{$item->htotal}}</span>{!!$versus_or_at!!}<br/><br/>{!!$win_or_loss!!} img<br/> {{$item->a_initials}}<br/><span class='slider_score'>{{$item->atotal}}</span></div>
+                        <div>{{$item->h_initials}}<br/><span class='slider_score'>{{$item->htotal}}</span>{!!$versus_or_at!!}<br/>{!!$win_or_loss!!}<br/> {{$item->a_initials}}<br/><span class='slider_score'>{{$item->atotal}}</span></div>
                         <div ><div data-uk-button-radio>Link to game  </div></div>
 
 
 
 			</div>
-        </div>
+
 
 
 
 		@endforeach
-
+        </div>
 
 
 
