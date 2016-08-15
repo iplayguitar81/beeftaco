@@ -1052,6 +1052,12 @@ ul{
     @font-face {
          font-family: 'FabFelt';
          src: url("https://dl.dropboxusercontent.com/s/k8npl4s74b7af0r/bauhaus93.ttf"); !important }
+   @font-face {
+         font-family: 'Bebas';
+         src: url("https://dl.dropboxusercontent.com/s/t7tunbwaclebaj5/bebasneueregular.otf"); !important }
+
+
+
  </style>
 </head>
 <body>
