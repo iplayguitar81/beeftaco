@@ -1073,11 +1073,11 @@ ul{
         fjs.parentNode.insertBefore(js, fjs);
     }(document, 'script', 'facebook-jssdk'));</script>
 
-<div class="container-fluid main-contain">
+
 <header id="top" role="banner">
     <img alt="trailblazersfans.com" src="/assets/new-logo-uikit.png">
 </header>
-    </div>
+
 
 <nav class="navbar navbar-default">
     <div class="container-fluid">
