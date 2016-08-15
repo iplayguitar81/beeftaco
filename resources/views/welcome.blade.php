@@ -20,6 +20,8 @@
                 $away_nick_dash="$item->afname";
                 $home_nick_dash="";
                 $home_or_away="";
+                $win_or_loss="";
+
 
 
 
