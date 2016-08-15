@@ -324,7 +324,7 @@ td.logo_box {
 }
 
 .header_last_game {
-    border: 1px inset #000000;
+
     float: right;
     margin-right: 5%;
     width: 80%
