@@ -1091,7 +1091,7 @@ ul{
                 <li><a href="{{url('/posts')}}">news</a></li>
                 <li><a href="{{url('/contact')}}">contact</a></li>
 
-                <li class="dropdown">
+                <li class="dropdown" style="width: 200px;">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">search<span class="caret"></span></a>
                     <ul class="dropdown-menu">
                         <li>
