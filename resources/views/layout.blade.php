@@ -972,7 +972,6 @@ h2.story_h2 {
 
 
 #owl-demo .item{
-    background: #777777;
     padding: 30px 0px;
     margin: 10px;
     color: #FFF;
