@@ -1093,7 +1093,7 @@ ul{
 
             {{--</a>--}}
             {{--<a class="navbar-brand" href="{{url('/')}}" style="font-family:Pacifico,cursive; font-size: 2em;color: #D71B32;text-shadow: #230D10 1px 1px 1px;">--}}
-                {{--Bowtie--}}
+
             {{--</a>--}}
         </div>
         <div class="collapse navbar-collapse" id="myNavbar">
