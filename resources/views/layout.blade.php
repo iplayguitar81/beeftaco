@@ -1075,7 +1075,7 @@ ul{
 
 
 <header id="top" role="banner">
-    <img alt="trailblazersfans.com" src="/assets/new-logo-uikit.png">
+    <img alt="trailblazersfans.com" src="{{url('images/old-logo-laravel-draft.png')}}">
 </header>
 
 
