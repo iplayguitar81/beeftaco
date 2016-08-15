@@ -35,6 +35,24 @@
             @if ($item->h_initials=='POR')
                 @php
                     $versus_or_at="VS.";
+                    @endphp
+
+                     @if($item->htotal > $item->atotal)
+      @php
+      $win_or_loss ="<span class='win_loss_box_show_win2'>W</span>";
+
+      @endphp
+              @else
+                  $win_or_loss ="";
+              @endif
+              @if($item->htotal < $item->atotal)
+                  @php
+				  $win_or_loss ="<span class='win_loss_box_show_loss2'>L</span>";
+
+                @endphp
+
+
+                @endif
 
                     $home_or_away = $item->afname.'<span class="box_total_h2"> '.$item->atotal+"</span><br/>at<br/> portland trail blazers <span class='box_total_h2'>".$item->htotal."</span>";
                 @endphp
