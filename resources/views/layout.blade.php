@@ -1111,7 +1111,7 @@ ul{
                 <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Dropdown Example
                     <span class="caret"></span></button>
                 <ul class="dropdown-menu">
-                    <li> <div class="search pull-right">
+                    <li>
 
                             <form class="navbar-form" role="search" action="/search" method="GET">
                                 <div class="input-group">
@@ -1124,7 +1124,7 @@ ul{
 
 
 
-                        </div></li>
+                      </li>
 
 
                 </ul>
