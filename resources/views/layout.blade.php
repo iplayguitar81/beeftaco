@@ -1087,11 +1087,11 @@ ul{
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="{{url('/')}}">
-                <img src="{{url('images/blazers-fans-logo-draft.png')}}"alt="">
-                <!-- put text here if want/need be-->
+            {{--<a class="navbar-brand" href="{{url('/')}}">--}}
+                {{--<img src="{{url('images/blazers-fans-logo-draft.png')}}"alt="">--}}
+                {{--<!-- put text here if want/need be-->--}}
 
-            </a>
+            {{--</a>--}}
             {{--<a class="navbar-brand" href="{{url('/')}}" style="font-family:Pacifico,cursive; font-size: 2em;color: #D71B32;text-shadow: #230D10 1px 1px 1px;">--}}
                 {{--Bowtie--}}
             {{--</a>--}}
