@@ -492,6 +492,17 @@ a.boxscore_link {
     color: red
 }
 
+
+
+#latest_games{
+    font-family: Ripper;
+    color: #D73F3F;
+    background-color: #000000;
+    text-align: center;
+    border-top: 2px solid #6d7173;
+    padding-top: 1.5%;
+}
+
 .bubble {
     float: right;
     position: relative;
