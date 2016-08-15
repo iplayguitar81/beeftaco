@@ -117,7 +117,7 @@
 		@endforeach
         </div>
 
-
+<hr/>
 
     @foreach($posts as $item)
     <article class="text-center">
