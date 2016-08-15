@@ -46,7 +46,7 @@
 
 
                         <span>{{$item->datey}}</span>
-                        <div>img<br/> {{$item->h_initials}}<br/><span class='slider_score'>{{$item->htotal}}</span></td><td>{!!$versus_or_at!!}<br/><br/>{!!$win_or_loss!!}></td><td>img<br/> {{$item->a_initials}}<br/><span class='slider_score'>{{$item->atotal}}</span></div>
+                        <div>img<br/> {{$item->h_initials}}<br/><span class='slider_score'>{{$item->htotal}}</span>{!!$versus_or_at!!}<br/><br/>{!!$win_or_loss!!} img<br/> {{$item->a_initials}}<br/><span class='slider_score'>{{$item->atotal}}</span></div>
                         <div ><div data-uk-button-radio>Link to game  </div></div>
 
 
