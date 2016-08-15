@@ -23,7 +23,9 @@
                 $home_or_away="";
                 $win_or_loss="";
 
-
+        $game_date = new DateTime($boxscore->datey, new DateTimeZone('America/Los_Angeles'));
+        $game_date = date_sub($game_date, date_interval_create_from_date_string('3 hour'));
+        $game_date = $game_date->format('l F dS Y g:i a');
 
 
             @endphp
@@ -46,7 +48,7 @@
                 <div class="item">
 
 
-                        <span>{{$item->datey->format('M dS Y')}}</span>
+                        <span>{{$game_date}}</span>
                         <div>{{$item->h_initials}}<br/><span class='slider_score'>{{$item->htotal}}</span>{!!$versus_or_at!!}<br/>{!!$win_or_loss!!}<br/> {{$item->a_initials}}<br/><span class='slider_score'>{{$item->atotal}}</span></div>
                         <div ><div data-uk-button-radio>Link to game  </div></div>
 
