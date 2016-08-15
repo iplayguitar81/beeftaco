@@ -1091,6 +1091,23 @@ ul{
                 <li><a href="{{url('/posts')}}">news</a></li>
                 <li><a href="{{url('/contact')}}">contact</a></li>
 
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li>
+                            <form class="navbar-form" role="search" action="/search" method="GET">
+                                <div class="input-group">
+                                    <input type="text" class="form-control" name="search" placeholder="Search" name="srch-term" id="srch-term">
+                                    <div class="input-group-btn">
+                                        <button class="btn btn-default" type="submit"><i class="glyphicon glyphicon-search"></i></button>
+                                    </div>
+                                </div>
+                            </form>
+                        </li>
+                    </ul>
+                </li>
+
+
             </ul>
 
 
