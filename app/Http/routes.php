@@ -36,7 +36,7 @@ Route::get('/', function () {
     $posts = Post::orderBy('created_at', 'desc')->paginate(3);
     $users = User::all();
     $ratings =Rating::all();
-    $scores =boxscore::orderBy('datey', 'desc')->limit(5);
+    $scores =boxscore::take(5)->orderBy('datey', 'desc')->limit(5);
 
     return view('welcome', compact('posts', 'users','ratings','scores'));
 });
