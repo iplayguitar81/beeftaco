@@ -1093,7 +1093,7 @@ ul{
 
                 <li class="dropdown">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">search<span class="caret"></span></a>
-                    <ul class="dropdown-menu" style="width: 200px;">
+                    <ul class="dropdown-menu" style="width: 300px;">
                         <li>
                             <form class="navbar-form" role="search" action="/search" method="GET">
                                 <div class="input-group">
