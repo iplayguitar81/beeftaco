@@ -1041,6 +1041,13 @@ ul{
 .demo{
     width: 800px;
 }
+
+#top{
+
+    background-color: #4d5465;
+    height: 65px;
+}
+
 /* <!-- Way to do it with fonts from dropbox if need be not satisfied with Google fonts.  be ware some fonts are persnickety....--> */
     @font-face {
          font-family: 'FabFelt';
