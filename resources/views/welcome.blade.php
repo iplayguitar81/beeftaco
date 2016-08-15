@@ -29,7 +29,7 @@
 
             @if ($item->h_initials=='POR')
                 @php
-                    versus_or_at="VS."
+                    $versus_or_at="VS.";
 
                     $home_or_away = c.afname.downcase+'<span class="box_total_h2"> '+c.atotal+"</span><br/>at<br/> portland trail blazers <span class='box_total_h2'>"+c.htotal+"</span>";
                 @endphp
