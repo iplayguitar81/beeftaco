@@ -1418,7 +1418,17 @@ $(imageList).append('<li><a href=""><img src="'+imageSrc +'"></a><br/><span>Uplo
 
     };
 
+    $(document).ready(function() {
 
+        var owl = $("#owl-demo");
+
+        owl.owlCarousel({
+
+            navigation : true
+
+        });
+
+    })
 
 
 
