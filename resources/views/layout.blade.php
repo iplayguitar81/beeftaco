@@ -1065,7 +1065,9 @@ ul{
         js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.5&appId=590306801102510";
         fjs.parentNode.insertBefore(js, fjs);
     }(document, 'script', 'facebook-jssdk'));</script>
-
+<header id="top" role="banner">
+    <img alt="trailblazersfans.com" src="/assets/new-logo-uikit.png">
+</header>
 
 <nav class="navbar navbar-default navbar-fixed-top">
     <div class="container-fluid">
