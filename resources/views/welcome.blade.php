@@ -44,11 +44,11 @@
             <div id="owl-demo" class="owl-carousel owl-theme">
                 <div class="item">
 
-                    <table class="header_last_game">
-                        <tr><th colspan="3">{{$item->datey}}</th></tr>
-                        <tr><td>img<br/> {{$item->h_initials}}<br/><span class='slider_score'>{{$item->htotal}}</span></td><td>{!!$versus_or_at!!}<br/><br/>{!!$win_or_loss!!}></td><td>img<br/> {{$item->a_initials}}<br/><span class='slider_score'>{{$item->atotal}}</span></td></tr>
-                        <tr><td colspan="3"><div data-uk-button-radio>Link to game  </div></td></tr>
-                  </table>
+
+                        <span>{{$item->datey}}</span>
+                        <div>img<br/> {{$item->h_initials}}<br/><span class='slider_score'>{{$item->htotal}}</span></td><td>{!!$versus_or_at!!}<br/><br/>{!!$win_or_loss!!}></td><td>img<br/> {{$item->a_initials}}<br/><span class='slider_score'>{{$item->atotal}}</span></div>
+                        <div ><div data-uk-button-radio>Link to game  </div></div>
+
 
 
 			</div>
