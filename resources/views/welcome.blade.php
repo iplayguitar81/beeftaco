@@ -104,7 +104,7 @@
                         <tr><th colspan="3">{{$game_time}}</th></tr>
                         <tr><td>{{$item->a_initials}}<br/><span class='slider_score'>{{$item->.atotal}}</span></td><td>{!! $versus_or_at !!}<br/><br/>{!! win_or_loss!!}</td><td>{{$item->h_initials}}<br/><span class='slider_score'>{{$item->htotal}}</span></td></tr>
                         <tr><td colspan="3"><div data-uk-button-radio><a href="{{ route('boxscores.show', [$item->id, str_slug($item->game_string)]) }}">Boxscore</a>  </div></td></tr>
-
+                        </table>
 
 
 			</div>
