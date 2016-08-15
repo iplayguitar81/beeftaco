@@ -50,7 +50,7 @@
 
                         <span>{{$game_date}}</span>
                         <div>{{$item->h_initials}}<br/><span class='slider_score'>{{$item->htotal}}</span>{!!$versus_or_at!!}<br/>{!!$win_or_loss!!}<br/> {{$item->a_initials}}<br/><span class='slider_score'>{{$item->atotal}}</span></div>
-                        <div ><div data-uk-button-radio>Link to game  </div></div>
+                        <div ><div data-uk-button-radio><a href="{{ route('boxscores.show', [$item->id, str_slug($item->game_string)]) }}">Boxscore</a> </div></div>
 
 
 
