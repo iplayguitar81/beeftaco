@@ -12,7 +12,7 @@
         </div>
     @endif
 
-    <h2>latest games</h2>
+    <h2 class="Ripper">latest games</h2>
 
         <div id="owl-demo" class="owl-carousel owl-theme">
         @foreach($scores as $item)
