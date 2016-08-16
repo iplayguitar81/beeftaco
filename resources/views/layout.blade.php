@@ -332,7 +332,7 @@ td.logo_box {
 
 .header_last_game th {
     text-align: center;
-    font-size: .7em
+    font-size: 1em;
 }
 
 .header_last_game td {
