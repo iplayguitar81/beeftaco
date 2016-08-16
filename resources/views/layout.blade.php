@@ -1099,7 +1099,7 @@ ul{
 
 
 <header id="top" role="banner">
-    <a href="{{url('/')}}">   <img alt="trailblazersfans.com" style="width:315px;" src="{{url('images/old-logo-laravel-draft.png')}}"></a>
+    <a href="{{url('/')}}">   <img alt="trailblazersfans.com" style="width:315px;" src="{{url('images/blazersfanslogo.png')}}"></a>
 </header>
 <br/>
 <nav class="navbar navbar-default">
