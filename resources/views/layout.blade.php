@@ -990,7 +990,8 @@ h2.story_h2 {
     border-bottom: 6px solid #be2626; }
 
 td.score-link{
-    border:none;
+    border: none !important;
+    padding-top: .3em;
 }
 
 .initials{
