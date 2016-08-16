@@ -1163,7 +1163,7 @@ ul{
 
     @endif
                     </a>
-                    <ul class="dropdown-menu">
+                    <ul class="dropdown-menu" style="width: 300px;">
                         <li>
 
                         @if (Auth::guest())
