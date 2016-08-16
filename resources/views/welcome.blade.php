@@ -12,7 +12,7 @@
         </div>
     @endif
 
-    {{ URL::current()}}
+
     <h2 id="latest_games" class="Ripper">latest games</h2>
 
         <div id="owl-demo" class="owl-carousel owl-theme">
