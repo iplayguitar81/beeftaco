@@ -24,7 +24,7 @@ use AdamWathan\EloquentOAuth\Facades\OAuth;
 
 //use Stevebauman\Location\Objects\Location;
 //use Stevebauman\Location\Facades\Location;
-
+use Illuminate\Support\Facades\Route;
 
 
 use willvincent\Rateable\Rating;
