@@ -1120,7 +1120,7 @@ ul{
         </div>
         <div class="collapse navbar-collapse" id="myNavbar">
             <ul class="nav navbar-nav">
-                <li @if(Request::url()==='/') class='active' @else  @endif><a href="{{url('/')}}">home</a></li>
+                <li @if(Request::url()==='https://trailblazersfans.com/') class='active' @else  @endif><a href="{{url('/')}}">home</a></li>
                 <li class="{{ (Request::is('/about') ? 'active' : '') }}"><a href="{{url('/about')}}">about</a></li>
                 <li><a href="{{url('https://hangout.trailblazersfans.com')}}">forum</a></li>
                 <li class="{{ (Request::is('/boxscores') ? 'active' : '') }}"><a href="{{url('/boxscores')}}">scores</a></li>
