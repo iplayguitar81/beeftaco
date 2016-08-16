@@ -1120,12 +1120,12 @@ ul{
         </div>
         <div class="collapse navbar-collapse" id="myNavbar">
             <ul class="nav navbar-nav">
-                <li {{ Request::is('/') ? 'class="active"' : null }}><a href="{{url('/')}}">home</a></li>
-                <li {{ Request::is('/about') ? ' class="active"' : null }}><a href="{{url('/')}}">about</a></li>
+                <li class="{{ (Request::is('/') ? 'active' : '') }}"><a href="{{url('/')}}">home</a></li>
+                <li class="{{ (Request::is('/about') ? 'active' : '') }}"><a href="{{url('/about')}}">about</a></li>
                 <li><a href="{{url('https://hangout.trailblazersfans.com')}}">forum</a></li>
-                <li {{ Request::is('/boxscores') ? ' class="active"' : null }}><a href="{{url('/boxscores')}}">scores</a></li>
-                <li><a href="{{url('/posts')}}">news</a></li>
-                <li><a href="{{url('/contact')}}">contact</a></li>
+                <li class="{{ (Request::is('/boxscores') ? 'active' : '') }}"><a href="{{url('/boxscores')}}">scores</a></li>
+                <li class="{{ (Request::is('/posts') ? 'active' : '') }}"><a href="{{url('/posts')}}">news</a></li>
+                <li class="{{ (Request::is('/contact') ? 'active' : '') }}"><a href="{{url('/contact')}}">contact</a></li>
 
                 <li class="dropdown">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class="fa fa-btn fa-search"></i></a>
