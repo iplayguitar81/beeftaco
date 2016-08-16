@@ -2,6 +2,10 @@
 @section('title', '2015-2016 Season')
 
 @section('content')
+
+    <div class="col-md-12">
+        <h1>2015-2016 Boxscores</h1>
+
     <table class="table">
         <thead>
         <tr>
@@ -50,6 +54,6 @@
         </tbody>
     </table>
     <div class="pagination"> {!! $season->render() !!} </div>
-
+</div>
 
 @endsection
