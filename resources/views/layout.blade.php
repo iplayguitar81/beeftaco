@@ -1126,7 +1126,7 @@ ul{
                 <li><a href="{{url('/contact')}}">contact</a></li>
 
                 <li class="dropdown">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class="fa fa-btn fa-sign-in"></i></a>
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class="fa fa-btn fa-search"></i></a>
                     <ul class="dropdown-menu" style="width: 300px;">
                         <li>
                             <form class="navbar-form" role="search" action="/search" method="GET">
