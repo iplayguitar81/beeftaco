@@ -35,6 +35,13 @@ class boxscoreController extends Controller
         return view('boxscores.index', compact('boxscores', 'user'));
     }
 
+
+public function season_15_16(){
+
+    $season = boxscore::orderBy('created_at', 'desc')->whereBetween('datey',array('2015-10-27','2016-07-01'))->paginate(10);
+
+    return view('boxscores.season2015_2016');
+}
     /**
      * Show the form for creating a new resource.
      *
