@@ -174,8 +174,9 @@
         @endcan
 
         <br/>
-
+<div class="col-md-12 text-center">
 <div id="disqus_thread"></div>
+    </div>
 <script>
 
     /**
