@@ -996,6 +996,7 @@ td.score-link{
 
 .initials{
     font-size: 1.9em;
+    line-height: 1em;
 }
 
 
