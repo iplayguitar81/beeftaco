@@ -15,6 +15,13 @@ class AboutController extends Controller
         return view('about.contact');
     }
 
+    public function about()
+    {
+        return view('about');
+    }
+
+
+
     public function store(ContactFormRequest $request)
     {
 
