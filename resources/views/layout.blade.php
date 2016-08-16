@@ -1157,7 +1157,7 @@ ul{
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class="fa fa-btn fa-gear"></i>
 @if(Auth::guest())
 
-    Welcome
+    Login
           @else
                         {{Auth::user()->name}}
 
