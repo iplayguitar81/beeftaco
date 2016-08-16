@@ -1121,6 +1121,8 @@ ul{
         <div class="collapse navbar-collapse" id="myNavbar">
             <ul class="nav navbar-nav">
                 <li class="active"><a href="{{url('/')}}">home</a></li>
+                <li class="active"><a href="{{url('/')}}">about</a></li>
+                <li class="active"><a href="{{url('https://hangout.trailblazersfans.com')}}">forum</a></li>
                 <li><a href="{{url('/boxscores')}}">scores</a></li>
                 <li><a href="{{url('/posts')}}">news</a></li>
                 <li><a href="{{url('/contact')}}">contact</a></li>
