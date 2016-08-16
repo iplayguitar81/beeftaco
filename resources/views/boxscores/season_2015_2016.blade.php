@@ -5,3 +5,4 @@
 {{$season}}
 
 
+@endsection
