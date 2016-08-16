@@ -989,6 +989,9 @@ h2.story_h2 {
     border-right: 6px solid transparent;
     border-bottom: 6px solid #be2626; }
 
+td.score-link{
+    border:none;
+}
 
 .initials{
     font-size: 1.9em;
