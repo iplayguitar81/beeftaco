@@ -124,7 +124,7 @@ Route::post('contact',
 
 Route::get('/posts/user_posts','PostsController@user_posts');
 
-Route::get('/boxscores/season_15_16','boxscoresController@season_15_16');
+Route::get('/boxscores/season_15_16','boxscoreController@season_15_16');
 
 
 
