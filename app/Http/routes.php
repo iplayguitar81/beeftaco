@@ -115,6 +115,10 @@ Route::get('google/login', function() {
 
 Route::get('contact',
     ['as' => 'contact', 'uses' => 'AboutController@create']);
+Route::get('about',
+    ['as' => 'about', 'uses' => 'AboutController@about']);
+
+
 Route::post('contact',
     ['as' => 'contact_store', 'uses' => 'AboutController@store']);
 
