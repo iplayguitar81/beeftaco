@@ -22,48 +22,12 @@
 
 </div>
 <br/>
-<br/>
-
-
-<div class="panel panel-primary">
-    <div class="panel-heading">
-        <h3 class="panel-title">Welcome
-            @if(Auth::user())
-
-                {{Auth::user()->name}}
-
-                @if(empty(Auth::user()->avatar))
-
-                @else
-
-
-        <img src="{{Auth::user()->avatar}}" alt="user avatar" class="img-rounded" width="25" size="25">
-                @endif
-
-            @else
-                to TrailBlazersFans.com!<br/>
-            @endif
-
-        </h3>
-    </div>
-    <br/>
-
-    <div class="list-group">
-        <a href="#"><button type="button" class="list-group-item"><i class="fa fa-lg fa-facebook"></i> &nbsp;Facebook</button></a>
-        <a href="#"><button type="button" class="list-group-item"><i class="fa fa-lg fa-twitter"></i> &nbsp;Twitter</button></a>
-        <a href="#"><button type="button" class="list-group-item"><i class="fa fa-lg fa-github"></i> &nbsp;Github</button></a>
-        <a href="#"><button type="button" class="list-group-item"><i class="fa fa-lg fa-youtube"></i> &nbsp;YouTube</button></a>
-
-    </div>
-
-</div>
-
 
 
 
 <div class="panel">
         <div class="panel-heading">
-        <h3 class="panel-title">Title</h3></div>
+        <h3 class="panel-title">Boxscores</h3></div>
         <ul class="list-group">
             <li class="list-group-item"><a href="#">List Item 1</a></li>
             <li class="list-group-item"><a href="#">List Item 2</a></li>
