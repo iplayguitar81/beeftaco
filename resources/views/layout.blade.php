@@ -1150,28 +1150,42 @@ ul{
 
 
             <ul class="nav navbar-nav navbar-right pull-right">
-                @if (Auth::guest())
-                <li><a href="{{url('/login')}}"><i class="fa fa-btn fa-sign-in"></i> Login</a></li>
-
-                @else
-
-                <li> <a href="{{url('/posts/user_posts')}}"><i class="fa fa-btn fa-sign-out"></i>  {{Auth::user()->name}}!</a></li>
-
-                <li><a style="position:relative; padding-left: 50px;" href="{{url('/logout')}}">
-
-                        @if(empty(Auth::user()->avatar))
 
 
-                            <img src="{{url('images/default-user-img.png')}}" alt="user avatar" class="img-rounded"style="width:32px; height:32px; position:absolute; top:10px; left: 10px;">
 
-                            @else
-                            <img src="{{Auth::user()->avatar}}" alt="user avatar" class="img-rounded"style="width:32px; height:32px; position:absolute; top:10px; left: 10px;">
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class="fa fa-btn fa-sign-in"></i></a>
+                    <ul class="dropdown-menu">
+                        <li>
 
-                        @endif
-                        <i class="fa fa-btn fa-sign-out"></i>Logout</a></li>
+                        @if (Auth::guest())
+                            <li><a href="{{url('/login')}}"><i class="fa fa-btn fa-sign-in"></i> Login</a></li>
+
+                        @else
+
+                            <li> <a href="{{url('/posts/user_posts')}}"><i class="fa fa-btn fa-sign-out"></i>  {{Auth::user()->name}}!</a></li>
+
+                            <li><a style="position:relative; padding-left: 50px;" href="{{url('/logout')}}">
+
+                                    @if(empty(Auth::user()->avatar))
 
 
-                @endif
+                                        <img src="{{url('images/default-user-img.png')}}" alt="user avatar" class="img-rounded"style="width:32px; height:32px; position:absolute; top:10px; left: 10px;">
+
+                                    @else
+                                        <img src="{{Auth::user()->avatar}}" alt="user avatar" class="img-rounded"style="width:32px; height:32px; position:absolute; top:10px; left: 10px;">
+
+                                    @endif
+                                    <i class="fa fa-btn fa-sign-out"></i>Logout</a></li>
+
+
+                            @endif
+
+
+                            </li>
+                    </ul>
+                </li>
+
             </ul>
 
 
