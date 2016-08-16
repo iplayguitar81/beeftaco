@@ -365,21 +365,21 @@ td.logo_box {
 
 .win_loss_box_show_win2 {
     background-color: #FFFFFF;
-    font-size: 1em;
+    font-size: 1.2em;
     padding: .5%;
     color: green;
     text-shadow: 2px 2px white;
-    font-family: "Trebuchet MS", georgia, Verdana, Sans-serif;
+    font-family: Bebas;
     margin-bottom: .2%
 }
 
 .win_loss_box_show_loss2 {
     padding: .5%;
-    font-size: 1em;
+    font-size: 1.2em;
     background-color: #FFFFFF;
     color: #D73F3F;
     text-shadow: 1px 1px #777788;
-    font-family: "Trebuchet MS", georgia, Verdana, Sans-serif;
+    font-family: Bebas;
     margin-bottom: .2%
 }
 
