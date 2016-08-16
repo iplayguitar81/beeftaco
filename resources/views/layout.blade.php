@@ -1120,10 +1120,10 @@ ul{
         </div>
         <div class="collapse navbar-collapse" id="myNavbar">
             <ul class="nav navbar-nav">
-                <li  {{ Request::is('/') ? ' class="active"' : null }}>><a href="{{url('/')}}">home</a></li>
-                <li  {{ Request::is('/about') ? ' class="active"' : null }}>><a href="{{url('/')}}">about</a></li>
+                <li  {{ Request::is('/') ? ' class="active"' : null }}><a href="{{url('/')}}">home</a></li>
+                <li  {{ Request::is('/about') ? ' class="active"' : null }}><a href="{{url('/')}}">about</a></li>
                 <li><a href="{{url('https://hangout.trailblazersfans.com')}}">forum</a></li>
-                <li  {{ Request::is('/boxscores') ? ' class="active"' : null }}>><a href="{{url('/boxscores')}}">scores</a></li>
+                <li  {{ Request::is('/boxscores') ? ' class="active"' : null }}><a href="{{url('/boxscores')}}">scores</a></li>
                 <li><a href="{{url('/posts')}}">news</a></li>
                 <li><a href="{{url('/contact')}}">contact</a></li>
 
