@@ -38,7 +38,7 @@ class boxscoreController extends Controller
 
 public function season_2015_2016(){
 
-    $season = boxscore::orderBy('created_at', 'desc')->whereBetween('datey',array('2015-10-27','2016-07-01'))->paginate(10);
+    $season = boxscore::orderBy('datey', 'desc')->whereBetween('datey',array('2015-10-27','2016-07-01'))->paginate(10);
 
     return view('boxscores.season_2015_2016', compact('season'));
 }
