@@ -1154,7 +1154,15 @@ ul{
 
 
                 <li class="dropdown">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class="fa fa-btn fa-gear"></i></a>
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class="fa fa-btn fa-gear"></i>
+@if(Auth::guest())
+
+    Welcome
+          @else
+                        {{Auth::user()->name}}
+
+    @endif
+                    </a>
                     <ul class="dropdown-menu">
                         <li>
 
