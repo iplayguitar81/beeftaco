@@ -1,3 +1,5 @@
+<div class="panel panel-success"> <div class="panel-heading"> <h3 class="panel-title">Welcome to Trail Blazers Fans.com</h3> </div> <div class="panel-body"> Panel content </div> </div>
+
 <br>
 <ul class="nav nav-tabs">
     <li class="active"><a data-toggle="tab" href="#home"><i class="fa fa-lg fa-facebook"></i>&nbsp;Facebook</a></li>
@@ -76,7 +78,6 @@
 
     </div>
 
-    <div class="panel panel-success"> <div class="panel-heading"> <h3 class="panel-title">Panel title</h3> </div> <div class="panel-body"> Panel content </div> </div>
 
 
 
