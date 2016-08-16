@@ -990,6 +990,11 @@ h2.story_h2 {
     border-bottom: 6px solid #be2626; }
 
 
+.initials{
+    font-size: 1.9em;
+}
+
+
 #owl-demo .item{
     padding: 30px 0px;
     margin: 10px;
