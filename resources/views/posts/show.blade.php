@@ -175,7 +175,7 @@
 
         <br/>
 <div class="col-md-12 text-center">
-    <h2 class="text-center Ripper" >leave a discqus comment!</h2>
+    <h2 class="text-center Ripper" >leave a disqus comment!</h2>
 <div style="width:85%;" id="disqus_thread"></div>
     </div>
 <script>
