@@ -119,12 +119,12 @@ Route::post('contact',
     ['as' => 'contact_store', 'uses' => 'AboutController@store']);
 
 
-
+Route::get('/boxscores/season_15_16',
+    ['as' => 'boxscores.season2015_2016', 'uses' => 'boxscoreController@season_15_16']);
 
 
 Route::get('/posts/user_posts','PostsController@user_posts');
 
-Route::get('/boxscores/season_15_16','boxscoreController@season_15_16');
 
 
 
