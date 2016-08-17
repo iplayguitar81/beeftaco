@@ -509,6 +509,7 @@ a.boxscore_link {
     text-align: center;
     border-top: 2px solid #6d7173;
     padding-top: 1.5%;
+    margin-top:0;
 }
 
 .bubble {
