@@ -5,6 +5,12 @@
     <h1>Boxscores</h1>
 
 
+    @php
+        $game_date = new DateTime($boxscore->datey, new DateTimeZone('America/Los_Angeles'));
+        $game_date = date_sub($game_date, date_interval_create_from_date_string('3 hour'));
+        $game_date = $game_date->format('l F dS Y g:i a');
+    @endphp
+
 
     @can('isAdmin')
         <div class="panel panel-success pull-right"> <div class="panel-heading">
@@ -36,7 +42,6 @@
                 <td><a href="{{ route('boxscores.show', [$item->id, str_slug($item->game_string)]) }}">{{ $item->game_string }}</a> <span class="pull-left"><br/>
                         {{--{{'SOMEDAY- -> Game images: '. $item->images()->count() }}--}}
 
-                        {{-- */ $game_date = strtotime($item->datey); $game_date=date("F d Y", $game_date); /* --}}
                     </span></td><td>{{ $game_date }}</td><td>
 
                     {{strip_tags(str_limit($item->body, 20))}}
