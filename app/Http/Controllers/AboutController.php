@@ -21,6 +21,11 @@ class AboutController extends Controller
     }
 
 
+    public function disclaimer()
+    {
+        return view('disclaimer');
+    }
+
 
     public function store(ContactFormRequest $request)
     {
