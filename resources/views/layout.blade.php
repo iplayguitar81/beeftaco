@@ -1179,7 +1179,7 @@ ul{
                                     @if(empty(Auth::user()->avatar))
 
 
-                                        <img src="{{url('images/default-user-img.png')}}" alt="user avatar" class="img-rounded"style="width:32px; height:32px; position:absolute; top:10px; left: 10px;">
+                                        <img src="{{url('images/default-user-img.png')}}" alt="user avatar" class="img-rounded"style="width:20px; height:20px;">
 
                                     @else
                                         <img src="{{Auth::user()->avatar}}" alt="user avatar" class="img-rounded"style="width:32px; height:32px; position:absolute; top:10px; left: 10px;">
