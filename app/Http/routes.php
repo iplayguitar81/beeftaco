@@ -117,7 +117,8 @@ Route::get('contact',
     ['as' => 'contact', 'uses' => 'AboutController@create']);
 Route::get('about',
     ['as' => 'about', 'uses' => 'AboutController@about']);
-
+Route::get('disclaimer',
+    ['as' => 'disclaimer', 'uses' => 'AboutController@disclaimer']);
 
 Route::post('contact',
     ['as' => 'contact_store', 'uses' => 'AboutController@store']);
