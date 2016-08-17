@@ -1001,7 +1001,7 @@ td.score-link{
 
 
 #owl-demo .item{
-    padding: 30px 0px;
+
     margin: 10px;
     color: #FFF;
     -webkit-border-radius: 3px;
