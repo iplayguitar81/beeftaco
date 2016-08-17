@@ -1,8 +1,8 @@
 <p>
-    <img src="{{url('images/bowtiebranded.png')}}" alt="bowtiesoft logo">
+    <img src="{{url('images/blazersfanslogo.png')}}" alt="trailblazersfans logo">
 </p>
 
-You received a message from Bowtiesoft.com:
+You received a message from Trail Blazers Fans dot com:
 
 <p>
     Name:  {{ $name }}
