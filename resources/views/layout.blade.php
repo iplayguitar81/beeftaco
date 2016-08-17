@@ -1102,7 +1102,6 @@ ul{
 <header id="top" role="banner">
     <a href="{{url('/')}}">   <img alt="trailblazersfans.com" style="width:315px;" src="{{url('images/blazersfanslogo.png')}}"></a>
 </header>
-<br/>
 <nav class="navbar navbar-default">
     <div class="container-fluid">
         <div class="navbar-header">
