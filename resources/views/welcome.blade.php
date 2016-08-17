@@ -14,7 +14,6 @@
 
 
 
-
     @foreach($posts as $item)
     <article class="text-center">
 
@@ -27,19 +26,14 @@
 
         {{--{{//$users::where('id','like',$item->user_id) -> name()}}--}}
         <p class="">Written by
-            <?
-            //below is one way to get the name of the author.....
-            ?>
+
 
             @if($item->user_id != null)
             <? $author = App\User::find($item->user_id)->name; ?>
 
             {{$author}}
             @endif
-            {{--@foreach($records as $record)--}}
 
-                {{--{{$record->name}}--}}
-                {{--@endforeach--}}
 
             on {{ $item->created_at->format('M dS Y') }}</p>
 
@@ -47,10 +41,7 @@
             <a href="{{ route('posts.show', [$item->id, str_slug($item->title)]) }}"><img class="img-responsive center-block" src="../images/{{ $item->imgPath}}"></a>
         </p>
 
-            {{--{{//# way to declare variables in view next line......}}--}}
         {{--*/ @ $rate_sum = 0; $rate_count=0; $rate_avg=0; $rate_pct=0;  /*--}}
-
-
 
 
         @foreach($ratings as $rating)
@@ -101,7 +92,7 @@
    <?
 
             $variable= strip_tags($item->body);
-            $variable =substr($variable,0, 50);
+            $variable =substr($variable,0, 150);
        // $variable = (str_limit($item->body, 100));
        // $variable= htmlentities($variable);
         ?>
