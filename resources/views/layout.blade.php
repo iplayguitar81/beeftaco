@@ -1472,7 +1472,8 @@ $(imageList).append('<li><a href=""><img src="'+imageSrc +'"></a><br/><span>Uplo
 
         owl.owlCarousel({
 
-            navigation : true
+            navigation : true,
+            singleItem: true
 
         });
 
