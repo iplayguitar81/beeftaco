@@ -13,7 +13,6 @@
     @endif
 
 
-
     @foreach($posts as $item)
     <article class="text-center">
 
@@ -111,12 +110,11 @@
         <br/>
         <div class="pagination"> {!! $posts->render() !!} </div>
 
-
         <div class="col-md-10 blogShort">
             <h1>Title 1</h1>
-            <img src="http://www.kaczmarek-photo.com/wp-content/uploads/2012/06/guinnes-150x150.jpg" alt="post img" class="pull-left img-responsive thumb margin10 img-thumbnail">
+            <img style="height:150px;width:150px;" src="" alt="post img" class="pull-left img-responsive thumb margin10 img-thumbnail">
 
-            <em>This snippet use <a href="http://bootsnipp.com/snippets/featured/sexy-sidebar-navigation" target="_blank">Sexy Sidebar Navigation</a></em>
+            <em>This snippet use <a href="#">Written By: </a></em>
             <article><p>
                     Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text
                     ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only
