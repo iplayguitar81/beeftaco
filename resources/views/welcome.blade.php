@@ -117,7 +117,7 @@
             <h1>Title 1</h1>
             </div>
 
-            <div class="col-md-2">
+            <div class="col-md-3">
 
                 <img style="height:150px;width:150px;margin-right: 1em;" src="" alt="post img" class="pull-left img-responsive thumb margin10 img-thumbnail">
 
