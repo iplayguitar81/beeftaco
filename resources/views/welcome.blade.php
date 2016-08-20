@@ -111,9 +111,15 @@
         <div class="pagination"> {!! $posts->render() !!} </div>
 
         <div class="col-md-12 blogShort">
-            <div class="col-md-2">
+            <div class="col-md-12">
+
+
             <h1>Title 1</h1>
-            <img style="height:150px;width:150px;margin-right: 1em;" src="" alt="post img" class="pull-left img-responsive thumb margin10 img-thumbnail">
+            </div>
+
+            <div class="col-md-2">
+
+                <img style="height:150px;width:150px;margin-right: 1em;" src="" alt="post img" class="pull-left img-responsive thumb margin10 img-thumbnail">
 
             </div>
 
