@@ -135,7 +135,7 @@
                 </p></article>
             <a class="btn btn-blog pull-right marginBottom10" href="#">READ MORE</a>
         </div>
-        </div>
+
 
 </div>
 
