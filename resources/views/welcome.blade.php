@@ -112,7 +112,7 @@
 
         <div class="col-md-10 blogShort">
             <h1>Title 1</h1>
-            <img style="height:150px;width:150px;" src="" alt="post img" class="pull-left img-responsive thumb margin10 img-thumbnail">
+            <img style="height:150px;width:150px;margin-right: 1em;" src="" alt="post img" class="pull-left img-responsive thumb margin10 img-thumbnail">
 
             <em>This snippet use <a href="#">Written By: </a></em>
             <article><p>
