@@ -119,7 +119,7 @@
 
             <div class="col-md-3">
 
-                <img style="width:100%;height:150px;width:150px;margin-right: 1em;" src="" alt="post img" class="pull-left img-responsive thumb margin10 img-thumbnail">
+                <img style="width:100%;height:130px;margin-right: 1em;" src="" alt="post img" class="pull-left img-responsive thumb margin10 img-thumbnail">
 
             </div>
 
