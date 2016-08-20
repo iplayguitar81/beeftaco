@@ -111,13 +111,11 @@
         <div class="pagination"> {!! $posts->render() !!} </div>
 
         <div class="col-md-12 blogShort">
-            <div class="col-md-12">
-            <h1 class="secondary-posts-title">Title 1</h1>
-            </div>
             <div class="col-md-3">
                 <img style="width:100%;height:130px;margin-right: 1em;" src="" alt="post img" class="pull-left img-responsive thumb margin10 img-thumbnail">
             </div>
             <div class="col-md-9">
+            <h1 class="secondary-posts-title">Title 1</h1>
             <em>Written By: <a href="#">Author Name </a></em>
             <article><p>
                     Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text
