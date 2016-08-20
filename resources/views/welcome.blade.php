@@ -120,6 +120,8 @@
         <div class="col-md-12 blogShort">
             <div class="col-md-4">
                 <img style="width:100%;height:220px;margin-right: 1em;" src="" alt="post img" class="pull-left img-responsive thumb margin10 img-thumbnail">
+                <em>SubHeading or Caption?</em>
+
             </div>
             <div class="col-md-8">
             <h1 class="secondary-posts-title">Title 1</h1>
