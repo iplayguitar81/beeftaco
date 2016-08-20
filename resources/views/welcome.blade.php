@@ -116,15 +116,15 @@
 
             <h1>Title 1</h1>
             </div>
-            <div class="col-md-12">
+
             <div class="col-md-3">
 
                 <img style="height:150px;width:150px;margin-right: 1em;" src="" alt="post img" class="pull-left img-responsive thumb margin10 img-thumbnail">
 
             </div>
-                </div>
-            <div class="col-md-12">
-            <div class="col-md-10">
+
+
+            <div class="col-md-9">
             <em>This snippet use <a href="#">Written By: </a></em>
             <article><p>
                     Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text
