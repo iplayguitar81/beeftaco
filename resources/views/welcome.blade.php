@@ -116,13 +116,14 @@
 
             <h1>Title 1</h1>
             </div>
-
+            <div class="col-md-12">
             <div class="col-md-3">
 
                 <img style="height:150px;width:150px;margin-right: 1em;" src="" alt="post img" class="pull-left img-responsive thumb margin10 img-thumbnail">
 
             </div>
-
+                </div>
+            <div class="col-md-12">
             <div class="col-md-10">
             <em>This snippet use <a href="#">Written By: </a></em>
             <article><p>
@@ -134,6 +135,8 @@
                 </p></article>
             <a class="btn btn-blog pull-right marginBottom10" href="#">READ MORE</a>
         </div>
+        </div>
+
 </div>
 
 </div>
