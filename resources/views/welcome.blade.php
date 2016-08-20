@@ -122,7 +122,7 @@
                     of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of
                     Lorem Ipsum.
                 </p></article>
-            <a class="btn btn-blog pull-right marginBottom10" href="http://bootsnipp.com/user/snippets/2RoQ">READ MORE</a>
+            <a class="btn btn-blog pull-right marginBottom10" href="#">READ MORE</a>
         </div>
 
 
