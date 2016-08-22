@@ -38,11 +38,11 @@
 <br/>
 
 
-    <div class="form-group {{ $errors->has('subHead') ? 'has-error' : ''}}">
+    <div class="form-group {{ $errors->has('main_article') ? 'has-error' : ''}}">
         {!! Form::label('subHead', trans('posts.subhead'), ['class' => '']) !!}
         <div class="">
-              {{ Form::checkbox('main_article',null,null, array('id'=>'asap')) }}
-            {!! $errors->first('subHead', '<p class="uk-alert-danger">:message</p>') !!}
+              {{ Form::checkbox('main_article',1,false, array('id'=>'main_article')) }}
+            {!! $errors->first('main_article', '<p class="uk-alert-danger">:message</p>') !!}
         </div>
     </div>
 <br/>
