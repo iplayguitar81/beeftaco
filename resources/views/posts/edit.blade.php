@@ -43,7 +43,7 @@
             <br/>
             <br/>
             <div class="form-group {{ $errors->has('mainImg_caption') ? 'has-error' : ''}}">
-                {!! Form::label('subHead', trans('posts.mainImg_caption'), ['class' => '']) !!}
+                {!! Form::label('mainImg_caption', trans('posts.mainImg_caption'), ['class' => '']) !!}
                 <div class="">
                     {!! Form::text('mainImg_caption', null, ['class' => 'form-control']) !!}
                     {!! $errors->first('mainImg_caption', '<p class="uk-alert-danger">:message</p>') !!}
@@ -56,7 +56,7 @@
             <div class="form-group {{ $errors->has('main_article') ? 'has-error' : ''}}">
                 {!! Form::label('main_article', trans('posts.main_article'), ['class' => '']) !!}
                 <div class="">
-                    {{ Form::checkbox('main_article',1,false, array('id'=>'main_article')) }}
+                    {{ Form::checkbox('main_article',1, array('id'=>'main_article')) }}
                     {!! $errors->first('main_article', '<p class="uk-alert-danger">:message</p>') !!}
                 </div>
             </div>
