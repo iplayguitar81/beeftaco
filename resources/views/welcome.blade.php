@@ -119,7 +119,7 @@
 
         <div class="col-md-12 blogShort">
             <div class="col-md-4">
-                <img style="width:100%;height:220px;margin-right: 1em;" src="" alt="post img" class="pull-left img-responsive thumb margin10 img-thumbnail">
+                <img class="secondary-article-img" src="" alt="post img" class="pull-left img-responsive thumb margin10 img-thumbnail">
                 <em>Image Caption</em>
 
             </div>
