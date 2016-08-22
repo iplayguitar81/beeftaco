@@ -1040,8 +1040,15 @@ td.score-link{
 .secondary-posts-title{
 
     font-family:Bebas;
-    margin-left: 2em;
     font-size: 3em;
+}
+
+.secondary-article-img{
+
+    width:97%;
+    height:220px;
+    margin-right: 1em;
+
 }
 
 
@@ -1084,13 +1091,7 @@ ul{
     height: 65px;
 }
 
-.secondary-article-img{
 
-    width:97%;
-    height:220px;
-    margin-right: 1em;
-
-}
 
 /* <!-- Way to do it with fonts from dropbox if need be not satisfied with Google fonts.  be ware some fonts are persnickety....--> */
     @font-face {
