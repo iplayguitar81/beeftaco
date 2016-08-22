@@ -119,7 +119,7 @@
         <br/>
         <div class="pagination"> {!! $posts->render() !!} </div>
 
-        <h2 id="latest_games" class="Ripper">More News</h2>
+        <h2 id="latest_games" class="Ripper">more news</h2>
 
         @foreach($posts as $item)
         <div class="col-md-12 blogShort">
