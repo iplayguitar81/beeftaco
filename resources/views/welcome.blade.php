@@ -37,7 +37,7 @@
 
 
             @if($item->user_id != null)
-            <? $author = App\User::find($item->user_id)->name; ?>
+            @php $author = App\User::find($item->user_id)->name; @endphp
 
             {{$author}}
             @endif
@@ -91,7 +91,7 @@
 
         <br/>
 
-<!--            --><?//$ratings= $ratings($item->id)?>
+<?//$ratings= $ratings($item->id)?>
 
         {{--<p>Average Rating: {{$ratings->averageRating}}</p>--}}
         {{--<p>Rating %: {{$ratings->ratingPercent}}</p>--}}
@@ -122,6 +122,13 @@
         <h2 id="latest_games" class="Ripper">more news</h2>
 
         @foreach($posts as $item)
+
+            @php
+                $game_date = new DateTime($item->created_at, new DateTimeZone('America/Los_Angeles'));
+                $game_date = date_sub($game_date, date_interval_create_from_date_string('3 hour'));
+                $game_date = $game_date->format('M jS Y');
+            @endphp
+
         <div class="col-md-12 blogShort">
             <div class="col-md-4">
                 <img class="secondary-article-img" src="" alt="post img" class="pull-left img-responsive thumb margin10 img-thumbnail">
@@ -131,7 +138,12 @@
             <div class="col-md-8">
             <h2 class="secondary-posts-title">Title 1</h2>
                 <h4>Subheading...</h4>
-            <em>Written By: <a href="#">Author Name </a></em>
+            <em>Written By: <a href="#">   @if($item->user_id != null)
+                        <? $author = App\User::find($item->user_id)->name; ?>
+
+                        {{$author}}
+                    @endif
+                </a> on {{$game_date}}</em>
             <article><p>
                     Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text
                     ever since the 1500s, when...
