@@ -262,7 +262,7 @@ class PostsController extends Controller
     public function edit($id)
     {
         $post = Post::findOrFail($id);
-        $checked = (bool)Post::get("main_article");
+        $checked = $post->main_article;
 
         return view('posts.edit', compact('post','checked'));
         $this->authorize('isAdmin');
