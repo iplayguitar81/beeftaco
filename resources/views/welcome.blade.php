@@ -140,6 +140,7 @@
 
 
 </div>
+            <hr/>
             @endforeach
 
 </div>
