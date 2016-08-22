@@ -88,7 +88,7 @@ class PostsController extends Controller
 
        #$posts=dd(\App\User::paginate(5));
 
-        return view('posts.index', compact('posts', 'user', 'results','main_article'));
+        return view('posts.index', compact('posts', 'user', 'results','main'));
 
         $this->authorize('isAdmin');
     }
