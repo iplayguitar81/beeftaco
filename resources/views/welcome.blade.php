@@ -151,8 +151,7 @@
                 @endphp
 
             <article><p>
-                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text
-                    ever since the 1500s, when...
+                    {{$variable}}...
                 </p></article>
             <a class="btn btn-blog pull-right marginBottom10" href="{{ route('posts.show', [$item->id, str_slug($item->title)]) }}">READ MORE</a>
         </div>
