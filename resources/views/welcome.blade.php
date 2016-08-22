@@ -12,6 +12,8 @@
         </div>
     @endif
 
+    {{$main}}
+
 
     @foreach($posts as $item)
 
