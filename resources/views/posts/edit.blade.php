@@ -56,8 +56,8 @@
             <div class="form-group {{ $errors->has('main_article') ? 'has-error' : ''}}">
                 {!! Form::label('main_article', trans('posts.main_article'), ['class' => '']) !!}
                 <div class="">
-                    <input type="hidden" name="main_article" value="0">
-                    {{ Form::checkbox('main_article',1,false, array('id'=>'main_article')) }}
+
+                    {{ Form::checkbox('main_article',1, array('id'=>'main_article')) }}
                     {!! $errors->first('main_article', '<p class="uk-alert-danger">:message</p>') !!}
                 </div>
             </div>
