@@ -36,6 +36,15 @@
     </div>
 <br/>
 <br/>
+    <div class="form-group {{ $errors->has('mainImg_caption') ? 'has-error' : ''}}">
+        {!! Form::label('subHead', trans('posts.mainImg_caption'), ['class' => '']) !!}
+        <div class="">
+            {!! Form::text('mainImg_caption', null, ['class' => 'form-control']) !!}
+            {!! $errors->first('mainImg_caption', '<p class="uk-alert-danger">:message</p>') !!}
+        </div>
+    </div>
+<br/>
+<br/>
 
 
     <div class="form-group {{ $errors->has('main_article') ? 'has-error' : ''}}">
