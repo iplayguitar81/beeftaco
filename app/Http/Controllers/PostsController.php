@@ -80,7 +80,7 @@ class PostsController extends Controller
         //$posts = Post::orderBy('created_at', 'desc')->whereBetween('created_at',array('2016-05-24','2016-05-25'))->paginate(3);
 
         $posts = Post::orderBy('created_at', 'desc')->paginate(3);
-        $main = Post::where('main_article','=', 1, 'desc')->take(1);
+
         
 
         #$posts=User::with(['posts'])->all();
@@ -88,7 +88,7 @@ class PostsController extends Controller
 
        #$posts=dd(\App\User::paginate(5));
 
-        return view('posts.index', compact('posts', 'user', 'results','main'));
+        return view('posts.index', compact('posts', 'user', 'results'));
 
         $this->authorize('isAdmin');
     }
