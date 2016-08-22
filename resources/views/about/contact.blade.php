@@ -27,15 +27,15 @@
         {!! Form::open(array('route' => 'contact_store', 'class' => 'uk-form uk-form-horizontal')) !!}
 
         <div class="form-group">
-            {!! Form::label('Your Name') !!}
+            {!! Form::label('Name') !!}
             {!! Form::text('name', null,
                 array(
                       'class'=>'form-control',
-                      'placeholder'=>'Your name')) !!}
+                      'placeholder'=>'name')) !!}
         </div>
         <br/>
         <div class="form-group">
-            {!! Form::label('Your E-mail Address') !!}
+            {!! Form::label('E-mail') !!}
             {!! Form::text('email', null,
                 array(
                       'class'=>'form-control',
@@ -43,11 +43,11 @@
         </div>
         <br/>
         <div class="form-group">
-            {!! Form::label('Your Message') !!}<br/>
+            {!! Form::label('Message') !!}<br/>
             {!! Form::textarea('message', null,
                 array(
                       'class'=>'form-control',
-                      'placeholder'=>'Your message')) !!}
+                      'placeholder'=>'message')) !!}
         </div>
         <br/>
         <div class="form-group">
