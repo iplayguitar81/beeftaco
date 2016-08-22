@@ -259,6 +259,12 @@ class PostsController extends Controller
      *
      * @return void
      */
+
+    public function getSomeCheckboxAttribute($value)
+    {
+        return ($value ? 1 : 0);
+    }
+
     public function edit($id)
     {
         $post = Post::findOrFail($id);
