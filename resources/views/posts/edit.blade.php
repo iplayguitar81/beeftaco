@@ -57,7 +57,7 @@
                 {!! Form::label('main_article', trans('posts.main_article'), ['class' => '']) !!}
                 <div class="">
 
-                    {{ Form::checkbox('main_article',1, array('id'=>'main_article')) }}
+                    {{ Form::checkbox('main_article',1,$checked, array('id'=>'main_article')) }}
                     {!! $errors->first('main_article', '<p class="uk-alert-danger">:message</p>') !!}
                 </div>
             </div>
