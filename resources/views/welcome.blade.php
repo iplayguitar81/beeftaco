@@ -144,6 +144,12 @@
                         {{$author}}
                     @endif
                 </a> on {{$game_date}}</em>
+
+                @php
+                $variable= strip_tags($item->body);
+                $variable =substr($variable,0, 150);
+                @endphp
+
             <article><p>
                     Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text
                     ever since the 1500s, when...
