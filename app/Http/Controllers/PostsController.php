@@ -263,7 +263,7 @@ class PostsController extends Controller
     {
         $post = Post::findOrFail($id);
         $checked = $post->main_article;
-        $checked = ($checked ? 'false' : 'true');
+        $checked = ($checked ? 'true' : 'false');
 
         return view('posts.edit', compact('post','checked'));
         $this->authorize('isAdmin');
