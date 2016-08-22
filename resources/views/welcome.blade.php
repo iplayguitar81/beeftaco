@@ -131,7 +131,7 @@
 
         <div class="col-md-12 blogShort">
             <div class="col-md-4">
-                <img class="secondary-article-img" src="" alt="post img" class="pull-left img-responsive thumb margin10 img-thumbnail">
+                <img class="secondary-article-img" src="../images/{{ $item->imgPath}}" alt="post img" class="pull-left img-responsive thumb margin10 img-thumbnail">
                 <em>Image Caption</em>
 
             </div>
