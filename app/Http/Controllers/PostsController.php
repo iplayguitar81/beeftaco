@@ -235,7 +235,7 @@ class PostsController extends Controller
     public function show($id)
     {
         $post = Post::findOrFail($id);
-        $checked = (bool)Post::get("main_article");
+
 
         $post_ratings =Rating::where('post_id','=', $id)->orderBy('created_at', 'desc')->paginate(3);
 
@@ -247,7 +247,7 @@ class PostsController extends Controller
        // $rating_avg = $rating_sum/$rating_count;
 
 
-        return view('posts.show', compact('post','post_ratings','rating_count','rating_avg','rating_pct', 'checked'));
+        return view('posts.show', compact('post','post_ratings','rating_count','rating_avg','rating_pct'));
     }
 
 
@@ -262,8 +262,9 @@ class PostsController extends Controller
     public function edit($id)
     {
         $post = Post::findOrFail($id);
+        $checked = (bool)Post::get("main_article");
 
-        return view('posts.edit', compact('post'));
+        return view('posts.edit', compact('post','checked'));
         $this->authorize('isAdmin');
     }
 
