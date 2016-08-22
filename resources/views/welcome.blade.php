@@ -136,7 +136,7 @@
 
             </div>
             <div class="col-md-8">
-            <h2 class="secondary-posts-title">Title 1</h2>
+            <h2 class="secondary-posts-title"><a href="{{ route('posts.show', [$item->id, str_slug($item->title)]) }}">{{$item->title}}</a></h2>
                 <h4>Subheading...</h4>
             <em>Written By: <a href="#">   @if($item->user_id != null)
                         <? $author = App\User::find($item->user_id)->name; ?>
