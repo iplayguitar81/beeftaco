@@ -1046,7 +1046,7 @@ td.score-link{
 .secondary-article-img{
 
     width:97%;
-    height:220px;
+    height:180px;
     margin-right: 1em;
 
 }
