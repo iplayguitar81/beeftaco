@@ -37,6 +37,17 @@
 <br/>
 <br/>
 
+
+    <div class="form-group {{ $errors->has('subHead') ? 'has-error' : ''}}">
+        {!! Form::label('subHead', trans('posts.subhead'), ['class' => '']) !!}
+        <div class="">
+              {{ Form::checkbox('main_article',null,null, array('id'=>'asap')) }}
+            {!! $errors->first('subHead', '<p class="uk-alert-danger">:message</p>') !!}
+        </div>
+    </div>
+<br/>
+<br/>
+
             <div class="form-group {{ $errors->has('body') ? 'has-error' : ''}}">
                 {!! Form::label('body', trans('posts.body'), ['class' => '']) !!}
                 <div class="">
