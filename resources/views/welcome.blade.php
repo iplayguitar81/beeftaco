@@ -106,7 +106,6 @@
         ?>
        <p class="article-texterson">{{$variable}} ...</p>
       {{--<p>  {{strip_tags((str_limit($item->body, 100)))}}...</p>--}}
-        <br/>
             <a class="btn btn-danger btn-md active" href="{{ route('posts.show', [$item->id, str_slug($item->title)]) }}">Continue Reading</a>
             <a style="margin-top:.2em;" class="btn btn-primary btn-md active" href="#">Comments</a>
         <hr>
@@ -159,7 +158,7 @@
                         {{$variable}}
 
                     </p>
-
+                    <a class="btn btn-blog pull-right marginBottom10" href="{{ route('posts.show', [$item->id, str_slug($item->title)]) }}">READ MORE</a>
                 </div>
             </div>
         </div>
