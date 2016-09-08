@@ -123,13 +123,36 @@
 
 
         <h2 id="latest_games" class="Ripper">more news</h2>
-
-        <div class="container" id="about">
-            <img class="img-thumbnail-sm img-circle img-responsive pull-right" src="http://placehold.it/500x500">
-            <h2 class="featurette-heading">This First Heading
-                <span class="text-muted">Will Catch Your Eye</span>
-            </h2>
-            <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+        <div class="col-md-7 col-lg-7">
+            <ul class="media-list main-list">
+                <li class="media">
+                    <a class="pull-left" href="#">
+                        <img class="media-object" src="http://placehold.it/150x90" alt="...">
+                    </a>
+                    <div class="media-body">
+                        <h4 class="media-heading">Lorem ipsum dolor asit amet</h4>
+                        <p class="by-author">By Jhon Doe</p>
+                    </div>
+                </li>
+                <li class="media">
+                    <a class="pull-left" href="#">
+                        <img class="media-object" src="http://placehold.it/150x90" alt="...">
+                    </a>
+                    <div class="media-body">
+                        <h4 class="media-heading">Lorem ipsum dolor asit amet</h4>
+                        <p class="by-author">By Jhon Doe</p>
+                    </div>
+                </li>
+                <li class="media">
+                    <a class="pull-left" href="#">
+                        <img class="media-object" src="http://placehold.it/150x90" alt="...">
+                    </a>
+                    <div class="media-body">
+                        <h4 class="media-heading">Lorem ipsum dolor asit amet</h4>
+                        <p class="by-author">By Jhon Doe</p>
+                    </div>
+                </li>
+            </ul>
         </div>
 
         <h2 id="latest_games" class="Ripper">more news</h2>
