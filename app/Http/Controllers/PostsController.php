@@ -221,7 +221,7 @@ class PostsController extends Controller
             $filename = uniqid(). $photo2->getClientOriginalName();
 
             $photo2->move('images/', $filename);
-            $thumb_string="thmb-".$filename;
+            $thumb_string="md-img-".$filename;
             Image::make( 'https://www.trailblazersfans.com/images/'.$filename)->resize(600, 270)->save('images/'.$thumb_string);
 
 
