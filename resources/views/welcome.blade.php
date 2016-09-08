@@ -141,8 +141,24 @@
                 <img src="../images/md-img-{{ $item->imgPath}}" alt="">
                 <div class="caption">
                     <h4 class="text-center">Article Title</h4>
+                    <em>{{$item->mainImg_caption}}</em>
+
+                    <em>Written By: <a href="#">   @if($item->user_id != null)
+                                <? $author = App\User::find($item->user_id)->name; ?>
+
+                                {{$author}}
+                            @endif
+                        </a> on {{$game_date}}</em>
+
+                    @php
+                        $variable= strip_tags($item->body);
+                        $variable =substr($variable,0, 150);
+                    @endphp
+
                     <p>
-                  Article text here.....
+
+                        {{$variable}}
+
                     </p>
                     <p class="text-center">
                         <i class="fa fa-thumbs-o-up votes"></i><i class="fa fa-thumbs-o-down votes"></i>
