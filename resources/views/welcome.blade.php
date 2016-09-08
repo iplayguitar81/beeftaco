@@ -124,8 +124,8 @@
 
         <h2 id="latest_games" class="Ripper">more news</h2>
 
-        <div class="featurette" id="about">
-            <img class="featurette-image img-circle img-responsive pull-right" src="http://placehold.it/500x500">
+        <div class="container" id="about">
+            <img class="img-thumbnail-sm img-circle img-responsive pull-right" src="http://placehold.it/500x500">
             <h2 class="featurette-heading">This First Heading
                 <span class="text-muted">Will Catch Your Eye</span>
             </h2>
