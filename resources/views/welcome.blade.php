@@ -140,6 +140,7 @@
             <div class="thumbnail">
                 <img src="../images/md-img-{{ $item->imgPath}}" alt="">
                 <div class="caption">
+                    <em>{{$item->mainImg_caption}}</em><br/>
                     <h2 class="secondary-posts-title text-center"><a href="{{ route('posts.show', [$item->id, str_slug($item->title)]) }}">{{$item->title}}</a></h2>
                     <em>Written By: <a href="#">   @if($item->user_id != null)
                                 <? $author = App\User::find($item->user_id)->name; ?>
@@ -149,7 +150,7 @@
                         </a> on {{$game_date}}</em>
                     <br/>
 
-                    <em>{{$item->mainImg_caption}}</em><br/>
+
 
 
                     @php
