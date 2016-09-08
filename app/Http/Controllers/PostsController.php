@@ -521,14 +521,17 @@ class PostsController extends Controller
         return view('posts.create');
     }
 
-    public function postUpload()
+    public function postUpload( Request $request)
     {
+
         $photo = Input::all();
-        $photo = $photo->file();
 
-        $filename = uniqid(). $photo->getClientOriginalName();
+        $photo2= $request->file('file');
 
-        $photo->move('images/', $photo);
+
+        $filename = uniqid(). $photo2->getClientOriginalName();
+
+        $photo2->move('images/', $filename);
         $thumb_string="thmb-".$filename;
         Image::make( 'https://www.trailblazersfans.com/images/'.$filename)->resize(600, 270)->save('images/'.$thumb_string);
 
