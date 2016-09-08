@@ -138,19 +138,11 @@
                     @endphp
         <div class="col-xs-12 col-sm-6 col-md-6">
             <div class="thumbnail">
-                <img src="http://placehold.it/600x270" alt="">
+                <img src="../images/md-img-{{ $item->imgPath}}" alt="">
                 <div class="caption">
-                    <h4 class="text-center">Article 3</h4>
+                    <h4 class="text-center">Article Title</h4>
                     <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                        Suspendisse aliquam, augue vitae pulvinar feugiat, magna ipsum varius tellus, quis lobortis est nulla nec ligula.
-                        Aenean cursus enim sit amet tortor rutrum lobortis.
-                        Vestibulum mattis mauris fringilla mauris volutpat, in euismod arcu ultricies.
-                        Nunc eget hendrerit lectus. Proin rutrum elit ut orci fringilla, sit amet ornare turpis molestie.
-                        Proin nec neque eget nulla scelerisque rhoncus sit amet vitae augue.
-                        Vivamus ipsum eros, sodales sed enim ac, malesuada iaculis mi.
-                        Morbi ut orci sit amet tellus posuere convallis.
-                        Cras rhoncus tincidunt ultrices.
+                  Article text here.....
                     </p>
                     <p class="text-center">
                         <i class="fa fa-thumbs-o-up votes"></i><i class="fa fa-thumbs-o-down votes"></i>
