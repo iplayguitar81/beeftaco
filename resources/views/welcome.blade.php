@@ -160,9 +160,7 @@
                         {{$variable}}
 
                     </p>
-                    <p class="text-center">
-                        <i class="fa fa-thumbs-o-up votes"></i><i class="fa fa-thumbs-o-down votes"></i>
-                    </p>
+
                 </div>
             </div>
         </div>
