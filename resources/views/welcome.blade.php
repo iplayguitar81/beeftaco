@@ -141,14 +141,15 @@
                 <img src="../images/md-img-{{ $item->imgPath}}" alt="">
                 <div class="caption">
                     <h4 class="text-center"><a href="{{ route('posts.show', [$item->id, str_slug($item->title)]) }}">{{$item->title}}</a></h4>
-                    <em>{{$item->mainImg_caption}}</em><br/>
-
                     <em>Written By: <a href="#">   @if($item->user_id != null)
                                 <? $author = App\User::find($item->user_id)->name; ?>
 
                                 {{$author}}
                             @endif
                         </a> on {{$game_date}}</em>
+
+                    <em>{{$item->mainImg_caption}}</em><br/>
+
 
                     @php
                         $variable= strip_tags($item->body);
