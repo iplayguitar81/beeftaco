@@ -210,6 +210,8 @@ class PostsController extends Controller
 
     ]);
 
+        $filename ="";
+
         if(Input::hasFile('file')){
 
 //            $file = Input::file('file');
@@ -227,10 +229,22 @@ class PostsController extends Controller
 
         }
 
-       // Post::create($request->all());
+        $post = new Post;
+
+        //gotta pass the post_id into this also.....hidden value.......
+
+        //store the actual user input for the rating.....
+
+        $post->user_id = \Auth::id();
+        $post->title = $request->input('title');
+        $post->body = $request->input('body');
+        $post->subHead = $request->input('subHead');
+        $post->imgPath = $filename;
+        $post->mainImg_caption = $request->input('mainImg_caption');
+        $post->main_article = $request->input('main_article');
+        $post->body = $request->input('body');
 
 
-        $post = new Post($request->all());
         \Auth::user()->posts()->save($post);
 
         Session::flash('flash_message', 'Post added!');
