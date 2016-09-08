@@ -148,10 +148,6 @@
                                 {{$author}}
                             @endif
                         </a> on {{$game_date}}</em>
-                    <br/>
-
-
-
 
                     @php
                         $variable= strip_tags($item->body);
