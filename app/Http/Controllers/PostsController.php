@@ -533,7 +533,7 @@ class PostsController extends Controller
 
         $photo2->move('images/', $filename);
         $thumb_string="thmb-".$filename;
-        Image::make( 'https://www.trailblazersfans.com/images/'.$filename)->resize(600, 270)->save('images/'.$thumb_string);
+        \Image::make( 'https://www.trailblazersfans.com/images/'.$filename)->resize(600, 270)->save('images/'.$thumb_string);
 
         $response = $this->image->post_image(1);
         return $response;
