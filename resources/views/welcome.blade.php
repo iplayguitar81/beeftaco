@@ -134,7 +134,7 @@
                         <p class="by-author">By Jhon Doe</p>
                     </div>
                 </li>
-                <li class="media">
+                <li class="media col-md-12">
                     <a class="pull-left" href="#">
                         <img class="media-object" src="http://placehold.it/150x90" alt="...">
                     </a>
