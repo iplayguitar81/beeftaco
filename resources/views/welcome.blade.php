@@ -135,7 +135,7 @@
                         $game_date = date_sub($game_date, date_interval_create_from_date_string('3 hour'));
                         $game_date = $game_date->format('M jS Y');
                     @endphp
-        <div class="col-xs-6 col-sm-4">
+        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
             <div class="thumbnail">
                 <img src="../images/md-img-{{ $item->imgPath}}" alt="">
                 <div class="caption">
