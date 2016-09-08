@@ -124,6 +124,17 @@
 
         <h2 id="latest_games" class="Ripper">more news</h2>
 
+
+        @foreach($posts as $item)
+
+            @unless($item->main_article == 1)
+
+                @php
+                    $game_date = new DateTime($item->created_at, new DateTimeZone('America/Los_Angeles'));
+                    $game_date = date_sub($game_date, date_interval_create_from_date_string('3 hour'));
+                    $game_date = $game_date->format('M jS Y');
+                @endphp
+
         <div class="row">
         <div class="col-xs-12 col-sm-6 col-md-6">
             <div class="thumbnail">
@@ -147,56 +158,11 @@
                 </div>
             </div>
         </div>
-
-
-            <div class="col-xs-12 col-sm-6 col-md-6">
-                <div class="thumbnail">
-                    <img src="http://placehold.it/600x270" alt="">
-                    <div class="caption">
-                        <h4 class="text-center">Article 3</h4>
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                            Suspendisse aliquam, augue vitae pulvinar feugiat, magna ipsum varius tellus, quis lobortis est nulla nec ligula.
-                            Aenean cursus enim sit amet tortor rutrum lobortis.
-                            Vestibulum mattis mauris fringilla mauris volutpat, in euismod arcu ultricies.
-                            Nunc eget hendrerit lectus. Proin rutrum elit ut orci fringilla, sit amet ornare turpis molestie.
-                            Proin nec neque eget nulla scelerisque rhoncus sit amet vitae augue.
-                            Vivamus ipsum eros, sodales sed enim ac, malesuada iaculis mi.
-                            Morbi ut orci sit amet tellus posuere convallis.
-                            Cras rhoncus tincidunt ultrices.
-                        </p>
-                        <p class="text-center">
-                            <i class="fa fa-thumbs-o-up votes"></i><i class="fa fa-thumbs-o-down votes"></i>
-                        </p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-xs-12 col-sm-6 col-md-6">
-                <div class="thumbnail">
-                    <img src="http://placehold.it/600x270" alt="">
-                    <div class="caption">
-                        <h4 class="text-center">Article 3</h4>
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                            Suspendisse aliquam, augue vitae pulvinar feugiat, magna ipsum varius tellus, quis lobortis est nulla nec ligula.
-                            Aenean cursus enim sit amet tortor rutrum lobortis.
-                            Vestibulum mattis mauris fringilla mauris volutpat, in euismod arcu ultricies.
-                            Nunc eget hendrerit lectus. Proin rutrum elit ut orci fringilla, sit amet ornare turpis molestie.
-                            Proin nec neque eget nulla scelerisque rhoncus sit amet vitae augue.
-                            Vivamus ipsum eros, sodales sed enim ac, malesuada iaculis mi.
-                            Morbi ut orci sit amet tellus posuere convallis.
-                            Cras rhoncus tincidunt ultrices.
-                        </p>
-                        <p class="text-center">
-                            <i class="fa fa-thumbs-o-up votes"></i><i class="fa fa-thumbs-o-down votes"></i>
-                        </p>
-                    </div>
-                </div>
-            </div>
-
+            @endforeach
 
         </div>
+
+
 
         <hr>
 
