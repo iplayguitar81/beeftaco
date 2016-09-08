@@ -158,7 +158,7 @@
                         {{$variable}}
 
                     </p>
-                    <a class="btn btn-blog pull-right" href="{{ route('posts.show', [$item->id, str_slug($item->title)]) }}">READ MORE</a>
+                    <a class="pull-right" href="{{ route('posts.show', [$item->id, str_slug($item->title)]) }}">READ MORE</a>
                 </div>
             </div>
         </div>
