@@ -243,12 +243,8 @@ class PostsController extends Controller
         $post->mainImg_caption = $request->input('mainImg_caption');
         $post->main_article = $request->input('main_article');
         $post->body = $request->input('body');
-
-
         \Auth::user()->posts()->save($post);
-
         Session::flash('flash_message', 'Post added!');
-
         return redirect('posts');
     }
 
