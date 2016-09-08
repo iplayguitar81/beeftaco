@@ -141,14 +141,7 @@
                 <div class="col-md-3 text-center">
                     <h2> 14240 <small> votes </small></h2>
                     <button type="button" class="btn btn-default btn-lg btn-block"> Vote Now! </button>
-                    <div class="stars">
-                        <span class="glyphicon glyphicon-star"></span>
-                        <span class="glyphicon glyphicon-star"></span>
-                        <span class="glyphicon glyphicon-star"></span>
-                        <span class="glyphicon glyphicon-star"></span>
-                        <span class="glyphicon glyphicon-star-empty"></span>
-                    </div>
-                    <p> Average 4.5 <small> / </small> 5 </p>
+
                 </div>
             </a>
             <a href="#" class="list-group-item">
@@ -166,14 +159,7 @@
                 <div class="col-md-3 text-center">
                     <h2> 12424 <small> votes </small></h2>
                     <button type="button" class="btn btn-primary btn-lg btn-block">Vote Now!</button>
-                    <div class="stars">
-                        <span class="glyphicon glyphicon-star"></span>
-                        <span class="glyphicon glyphicon-star"></span>
-                        <span class="glyphicon glyphicon-star"></span>
-                        <span class="glyphicon glyphicon-star"></span>
-                        <span class="glyphicon glyphicon-star-empty"></span>
-                    </div>
-                    <p> Average 3.9 <small> / </small> 5 </p>
+
                 </div>
             </a>
             <a href="#" class="list-group-item">
@@ -191,14 +177,7 @@
                 <div class="col-md-3 text-center">
                     <h2> 13540 <small> votes </small></h2>
                     <button type="button" class="btn btn-primary btn-lg btn-block">Vote Now!</button>
-                    <div class="stars">
-                        <span class="glyphicon glyphicon-star"></span>
-                        <span class="glyphicon glyphicon-star"></span>
-                        <span class="glyphicon glyphicon-star"></span>
-                        <span class="glyphicon glyphicon-star"></span>
-                        <span class="glyphicon glyphicon-star-empty"></span>
-                    </div>
-                    <p> Average 4.1 <small> / </small> 5 </p>
+
                 </div>
             </a>
         </div>
