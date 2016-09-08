@@ -124,6 +124,7 @@
 
         <h2 id="latest_games" class="Ripper">more news</h2>
 
+        <div class="row">
         <div class="col-xs-12 col-sm-6 col-md-6">
             <div class="thumbnail">
                 <img src="http://placehold.it/600x270" alt="">
@@ -146,7 +147,7 @@
                 </div>
             </div>
         </div>
-
+</div>
 
         <hr>
 
