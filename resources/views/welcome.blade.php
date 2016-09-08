@@ -147,6 +147,7 @@
                                 {{$author}}
                             @endif
                         </a> on {{$game_date}}</em>
+                    <br/>
 
                     <em>{{$item->mainImg_caption}}</em><br/>
 
