@@ -125,17 +125,19 @@
         <h2 id="latest_games" class="Ripper">more news</h2>
 
 
-        @foreach($posts as $item)
 
-            @unless($item->main_article == 1)
-
-                @php
-                    $game_date = new DateTime($item->created_at, new DateTimeZone('America/Los_Angeles'));
-                    $game_date = date_sub($game_date, date_interval_create_from_date_string('3 hour'));
-                    $game_date = $game_date->format('M jS Y');
-                @endphp
 
         <div class="row">
+
+            @foreach($posts as $item)
+
+                @unless($item->main_article == 1)
+
+                    @php
+                        $game_date = new DateTime($item->created_at, new DateTimeZone('America/Los_Angeles'));
+                        $game_date = date_sub($game_date, date_interval_create_from_date_string('3 hour'));
+                        $game_date = $game_date->format('M jS Y');
+                    @endphp
         <div class="col-xs-12 col-sm-6 col-md-6">
             <div class="thumbnail">
                 <img src="http://placehold.it/600x270" alt="">
