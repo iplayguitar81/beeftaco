@@ -329,7 +329,7 @@ class PostsController extends Controller
             $image = App\Post::findOrFail($id);
             //App\ImageGallery::destroy($id);
 //        $caption = $request->input('caption');
-            $image->imgPath = $request->input('imgPath');
+            $image->imgPath = $filename;
             //$image = $image->update->caption( $caption);
             $image->save();
 
