@@ -322,11 +322,14 @@ class PostsController extends Controller
                 $thumb_string="md-img-".$filename;
                 Image::make( 'https://www.trailblazersfans.com/images/'.$filename)->resize(600, 270)->save('images/'.$thumb_string);
 
+
+
         }
         
         $post = Post::findOrFail($id);
         $post->update($request->all());
-
+        $page->imgPath = 'imgPath';
+        $page->save();
         Session::flash('flash_message', 'Post updated!');
 
         return redirect('posts');
