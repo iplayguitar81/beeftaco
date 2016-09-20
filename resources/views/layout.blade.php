@@ -1096,11 +1096,7 @@ ul{
 }
 
 
-.fb-page,
-.fb-page span,
-.fb-page span iframe[style] {
-    width: 100% !important;
-}
+
 
 
 /* <!-- Way to do it with fonts from dropbox if need be not satisfied with Google fonts.  be ware some fonts are persnickety....--> */
