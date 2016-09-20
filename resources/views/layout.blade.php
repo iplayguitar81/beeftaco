@@ -1044,7 +1044,7 @@ td.score-link{
 }
 
 .secondary-posts-title{
-    font-size: .75em;
+    font-size: 1em;
 }
 
 .secondary-article-img{
