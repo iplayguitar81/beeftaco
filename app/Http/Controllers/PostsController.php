@@ -328,7 +328,7 @@ class PostsController extends Controller
         
         $post = Post::findOrFail($id);
         $post->update($request->all());
-        $page->imgPath = 'imgPath';
+        $page->imgPath = $filename;
         $page->save();
         Session::flash('flash_message', 'Post updated!');
 
