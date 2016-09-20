@@ -1096,7 +1096,7 @@ ul{
 }
 
 
-.caption-em{
+em.caption-em{
     text-align:center;
 }
 
