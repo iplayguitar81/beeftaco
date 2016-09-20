@@ -1043,7 +1043,7 @@ td.score-link{
     font-size: 3em;
 }
 
-.secondary-posts-title{
+.secondary-posts-title a{
     font-size: 1em;
 }
 
