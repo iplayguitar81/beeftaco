@@ -321,15 +321,6 @@ class PostsController extends Controller
                 $thumb_string="md-img-".$filename;
                 Image::make( 'https://www.trailblazersfans.com/images/'.$filename)->resize(600, 270)->save('images/'.$thumb_string);
 
-
-            $image = App\Post::findOrFail($id);
-            //App\ImageGallery::destroy($id);
-//        $caption = $request->input('caption');
-            $image->imgPath = $filename;
-            //$image = $image->update->caption( $caption);
-            $image->save();
-
-
         }
         
         $post = Post::findOrFail($id);
