@@ -177,50 +177,6 @@
 
         <br/>
 
-        <h2 id="latest_games" class="Ripper">more news</h2>
-
-        @foreach($posts as $item)
-
-            @unless($item->main_article == 1)
-
-            @php
-                $game_date = new DateTime($item->created_at, new DateTimeZone('America/Los_Angeles'));
-                $game_date = date_sub($game_date, date_interval_create_from_date_string('3 hour'));
-                $game_date = $game_date->format('M jS Y');
-            @endphp
-
-        <div class="col-md-12 blogShort">
-            <div class="col-md-4">
-                <img class="secondary-article-img" src="../images/md-img-{{ $item->imgPath}}" alt="post img" class="pull-left img-responsive thumb margin10 img-thumbnail">
-                <em>{{$item->mainImg_caption}}</em>
-
-            </div>
-            <div class="col-md-8">
-            <h2 class="secondary-posts-title"><a href="{{ route('posts.show', [$item->id, str_slug($item->title)]) }}">{{$item->title}}</a></h2>
-                <h4>{{ $item->subHead}}</h4>
-            <em>Written By: <a href="#">   @if($item->user_id != null)
-                        <? $author = App\User::find($item->user_id)->name; ?>
-
-                        {{$author}}
-                    @endif
-                </a> on {{$game_date}}</em>
-
-                @php
-                $variable= strip_tags($item->body);
-                $variable =substr($variable,0, 150);
-                @endphp
-
-            <article><p>
-                    {{$variable}}...
-                </p></article>
-            <a class="btn btn-blog pull-right marginBottom10" href="{{ route('posts.show', [$item->id, str_slug($item->title)]) }}">READ MORE</a>
-        </div>
-
-
-</div>
-            <hr/>
-            @endunless
-            @endforeach
 
 </div>
 <br/>
