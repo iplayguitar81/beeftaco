@@ -1098,6 +1098,8 @@ ul{
 
 em.caption-em{
     text-align:center;
+    display:block;
+    font-size: .95em;
 }
 
 
