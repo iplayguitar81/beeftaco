@@ -312,7 +312,7 @@ class PostsController extends Controller
             'title' => 'required',
             'body' => 'required',
         ]);
-
+        $filename ="";
         if(Input::hasFile('file')){
 
                 $photo2= Input::file('file');
