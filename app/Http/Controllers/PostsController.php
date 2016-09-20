@@ -316,7 +316,6 @@ class PostsController extends Controller
         if(Input::hasFile('file')){
 
 
-
 //            $file = Input::file('file');
 //            $file->move('images', $file->getClientOriginalName());
 
