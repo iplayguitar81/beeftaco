@@ -315,8 +315,16 @@ class PostsController extends Controller
 
         if(Input::hasFile('file')){
 
-            $file = Input::file('file');
-            $file->move('images', $file->getClientOriginalName());
+
+
+//            $file = Input::file('file');
+//            $file->move('images', $file->getClientOriginalName());
+
+                $photo2= Input::file('file');
+                $filename = uniqid(). $photo2->getClientOriginalName();
+                $photo2->move('images/', $filename);
+                $thumb_string="md-img-".$filename;
+                Image::make( 'https://www.trailblazersfans.com/images/'.$filename)->resize(600, 270)->save('images/'.$thumb_string);
 
         }
         
