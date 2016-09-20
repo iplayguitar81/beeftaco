@@ -328,8 +328,12 @@ class PostsController extends Controller
         
         $post = Post::findOrFail($id);
         $post->update($request->all());
+
+        if($filename > 0){
         $page->imgPath = $filename;
         $page->save();
+        }
+
         Session::flash('flash_message', 'Post updated!');
 
         return redirect('posts');
