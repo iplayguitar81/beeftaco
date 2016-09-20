@@ -98,7 +98,7 @@
 
 
         <div class="form-group {{ $errors->has('imgPath') ? 'has-error' : ''}}">
-            {{--{!! Form::label('imgPath', trans('posts.imgPath'), ['class' => 'col-sm-3 control-label img_string']) !!}--}}
+            {!! Form::label('imgPath', trans('posts.imgPath'), ['class' => 'col-sm-3 control-label img_string']) !!}
             <div class="">
                 {!! Form::text('imgPath', null, ['class' => 'form-control filename']) !!}
                 {!! $errors->first('imgPath', '<p class="help-block">:message</p>') !!}
