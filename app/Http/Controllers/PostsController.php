@@ -315,10 +315,6 @@ class PostsController extends Controller
 
         if(Input::hasFile('file')){
 
-
-//            $file = Input::file('file');
-//            $file->move('images', $file->getClientOriginalName());
-
                 $photo2= Input::file('file');
                 $filename = uniqid(). $photo2->getClientOriginalName();
                 $photo2->move('images/', $filename);
