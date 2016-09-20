@@ -1043,6 +1043,10 @@ td.score-link{
     font-size: 3em;
 }
 
+.secondary-posts-title{
+    font-size: .75em;
+}
+
 .secondary-article-img{
 
     width:97%;
