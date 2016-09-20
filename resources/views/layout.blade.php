@@ -1096,13 +1096,9 @@ ul{
 }
 
 
-/* This element holds injected scripts inside iframes that in some cases may stretch layouts. So, we're just hiding it. */
-#fb-root {
-    display: none;
-}
-
-/* To fill the container and nothing else */
-.fb_iframe_widget, .fb_iframe_widget span, .fb_iframe_widget span iframe[style] {
+.fb-page,
+.fb-page span,
+.fb-page span iframe[style] {
     width: 100% !important;
 }
 
