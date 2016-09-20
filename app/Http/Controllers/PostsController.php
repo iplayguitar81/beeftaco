@@ -322,9 +322,6 @@ class PostsController extends Controller
                 $thumb_string="md-img-".$filename;
                 Image::make( 'https://www.trailblazersfans.com/images/'.$filename)->resize(600, 270)->save('images/'.$thumb_string);
 
-            $page->imgPath = 'imgPath';
-            $page->save();
-
         }
         
         $post = Post::findOrFail($id);
