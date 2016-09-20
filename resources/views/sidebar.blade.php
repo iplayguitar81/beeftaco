@@ -115,7 +115,7 @@
     <div id="home" class="tab-pane fade in active">
     <div class="row">
 
-        <div class="col-xs-12">
+        <div class="col-xs-12 col-lg-12">
         <h3>Like Us On Facebook!</h3>
         <div class="fb-page" data-href="https://www.facebook.com/Trail-Blazers-Fans-com-1432222413694833" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true" data-show-posts="true"></div>
         </div>
