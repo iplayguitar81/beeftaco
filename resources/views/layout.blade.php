@@ -74,6 +74,10 @@ div.pagination {
 
 }
 
+p.second-art-snip{
+    font-size: 1em;
+}
+
 p.article-texterson:first-letter{color:#E63C4D;font-size:1.7em;text-shadow:1px 1px 1px #000;padding-right:.1em; font-family:Bebas;}
 div.article-texterson2 p:first-letter{color:#E63C4D;font-size:1.7em;text-shadow:1px 1px 1px #000;padding-right:.1em;}
 
