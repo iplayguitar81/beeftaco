@@ -153,7 +153,7 @@
                         $variable =substr($variable,0, 150);
                     @endphp
 
-                    <p>
+                    <p class="second-art-snip">
 
                         {{$variable}}
 
