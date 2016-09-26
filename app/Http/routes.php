@@ -33,7 +33,7 @@ use willvincent\Rateable\Rateable;
 Route::get('/', function () {
 
 
-    $posts = Post::orderBy('created_at', 'desc')->paginate(10);
+    $posts = Post::orderBy('created_at', 'desc')->paginate(7);
     $users = User::all();
     $ratings =Rating::all();
     //$scores =boxscore::take(5)->orderBy('datey', 'desc')->limit(5);
