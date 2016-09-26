@@ -487,25 +487,7 @@ class PostsController extends Controller
 }
 
 
-    public function file_export2()
-    {
 
-        //export user posts
-        $scores = boxscore::all()->orderBy('created_at', 'desc')->get();
-
-//export all posts for super user
-//        $posts = Post::select('user_id', 'title', 'subhead','body','imgpath', 'created_at')->get();
-
-        Excel::create('blog-posts', function($excel) use($scores) {
-            $excel->sheet('Blazers Boxscores', function($sheet) use($scores) {
-                $sheet->fromArray($scores);
-            });
-        })->export('xls');
-
-
-        return view('posts.file_export', compact('xls'));
-
-    }
 
     public function show_user($id)
     {
