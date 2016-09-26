@@ -168,7 +168,7 @@
 
                 @endunless
             @endforeach
-            <h2 class="Bebas"><a href="#">More Articles...</a></h2>
+            <h2 class="Bebas text-center"><a href="#">More Articles...</a></h2>
 
         </div>
 
