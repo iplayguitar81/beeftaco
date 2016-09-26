@@ -39,7 +39,7 @@ class boxscoreController extends Controller
     {
 
         //export user posts
-        $scores = boxscore::all()->orderBy('created_at', 'desc')->get();
+        $scores = boxscore::all()->get();
 
 //export all posts for super user
 //        $posts = Post::select('user_id', 'title', 'subhead','body','imgpath', 'created_at')->get();
