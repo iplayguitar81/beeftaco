@@ -41,7 +41,7 @@ class boxscoreController extends Controller
         //export user posts
         //$scores = boxscore::get();
 
-        $scores = Post::select('*')->get();
+        $scores = boxscore::select('*')->get();
         //$scores = boxscore::all();
 
 //export all posts for super user
