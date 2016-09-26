@@ -150,7 +150,7 @@
 
                     @php
                         $variable= strip_tags($item->body);
-                        $variable =substr($variable,0, 150);
+                        $variable =substr($variable,0, 75);
                     @endphp
 
                     <p class="second-art-snip">
