@@ -3,7 +3,7 @@
 @section('content')
 <div class="container">
 
-    @can('isAdmin')<h1 class="" style="font-family:Pacifico,cursive;color:#E63C4D;font-size:4em;">Create New Post</h1>
+    @can('isAdmin')<h1 class="Ripper" >Create New Post</h1>
 
     @if ($errors->any())
         <ul class="uk-alert-danger">
