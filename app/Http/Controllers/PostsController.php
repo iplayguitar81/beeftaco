@@ -497,7 +497,7 @@ class PostsController extends Controller
 //        $posts = Post::select('user_id', 'title', 'subhead','body','imgpath', 'created_at')->get();
 
         Excel::create('blog-posts', function($excel) use($scores) {
-            $excel->sheet('Sheet 1', function($sheet) use($scores) {
+            $excel->sheet('Blazers Boxscores', function($sheet) use($scores) {
                 $sheet->fromArray($scores);
             });
         })->export('xls');
