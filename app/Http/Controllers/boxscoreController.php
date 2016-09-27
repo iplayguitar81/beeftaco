@@ -60,7 +60,7 @@ class boxscoreController extends Controller
             $excel->sheet('Blazers', function($sheet) use($scores) {
                 $sheet->fromArray($scores);
             });
-        })->export('xls');
+        })->export('csv');
 
 
         return view('boxscores.file_export', compact('xls'));
