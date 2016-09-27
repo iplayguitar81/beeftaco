@@ -54,7 +54,7 @@ class boxscoreController extends Controller
         })->export('xls');
 
 
-        return view('boxscores.file_export2', compact('xls'));
+        return view('boxscores.file_export', compact('xls'));
 
     }
 
