@@ -48,7 +48,7 @@ class boxscoreController extends Controller
         //$scores = boxscore::all();
 
 //export all posts for super user
-        $scores = boxscore::select('game_string','datey','dashy_date','afname','hfname','atotal','htotal','arena','capacity','attendance','ref1','ref2','ref3')->get();
+        $scores = boxscore::select('game_string','datey','afname','hfname','atotal','htotal','arena','capacity','attendance','ref1','ref2','ref3')->get();
 
 
       //  $scores = App\boxscore::all();
