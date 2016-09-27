@@ -51,7 +51,7 @@ class boxscoreController extends Controller
         $scores = boxscore::select('game_string','datey','dashy_date','afname','hfname','atotal','htotal','arena','capacity','attendance','ref1','ref2','ref3')->get();
 
 
-        $scores = App\boxscore::all();
+      //  $scores = App\boxscore::all();
         set_time_limit(0);
         ini_set('memory_limit', '3G');
 
