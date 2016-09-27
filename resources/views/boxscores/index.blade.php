@@ -16,7 +16,7 @@
                 &nbsp;
                 <a href="{{ url('/boxscores/file_upload') }}" class="btn btn-success btn-sm">Import Game Stats CSV</a>
                 &nbsp;
-                <a href="{{ url('/boxscores/file_export') }}" class="btn btn-warning btn-sm">Export Excel All Game Stats</a>
+                <a href="{{ url('/boxscores/file_export') }}" class="btn btn-warning btn-sm">Export CSV ALL Games</a>
 
             </div>
         </div>
