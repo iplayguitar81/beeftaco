@@ -48,6 +48,8 @@ class boxscoreController extends Controller
 
 //export all posts for super user
 //        $posts = Post::select('user_id', 'title', 'subhead','body','imgpath', 'created_at')->get();
+        set_time_limit(0);
+        ini_set('memory_limit', '1G');
 
         Excel::create('blog-posts', function($excel) use($scores) {
             $excel->sheet('Blazers', function($sheet) use($scores) {
