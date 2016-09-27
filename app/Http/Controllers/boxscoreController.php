@@ -35,7 +35,7 @@ class boxscoreController extends Controller
         return view('boxscores.index', compact('boxscores', 'user'));
     }
 
-    public function file_export2()
+    public function file_export()
     {
 
         //export user posts
