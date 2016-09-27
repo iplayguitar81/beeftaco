@@ -54,7 +54,7 @@ class boxscoreController extends Controller
 
         Excel::create('blazers-box-scores', function($excel) use($scores) {
             $excel->sheet('Blazers', function($sheet) use($scores) {
-                $sheet->fromModel($scores, null, 'A1', true);
+                $sheet->fromArray($scores);
             });
         })->export('xls');
 
