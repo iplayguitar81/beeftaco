@@ -165,7 +165,7 @@ public function season_2015_2016(){
                         boxscore::firstOrCreate($row);
                     }
                 });
-                \Session::flash('success', 'Users uploaded successfully.');
+                \Session::flash('success', 'Boxscores uploaded successfully.');
                 return redirect(route('boxscores.index'));
             } catch (\Exception $e) {
                 \Session::flash('error', $e->getMessage());
