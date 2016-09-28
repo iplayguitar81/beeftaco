@@ -57,6 +57,7 @@
 <br/>
     <div class="form-group {{ $errors->has('main_article') ? 'has-error' : ''}}">
 
+
         <div class="">
             {{ Form::radio('main_article', 1, false ) }} Value1
             {{ Form::radio('name', 1, false ) }} Value2
