@@ -4,7 +4,7 @@
 
 {{$news}}
 <br/>
-<a href="{{url('news/general')}}">General News...<a/>
+<a href="{{url('news/general')}}">General News...</a>
 
 
 @endsection
