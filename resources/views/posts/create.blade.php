@@ -69,9 +69,12 @@
             {{--{{ Form::label('news', 'NBA News') }}--}}
             {{--{{ Form::radio('news', 1, array('id'=>'news') ) }}--}}
 
-            {{ Form::label('news', 'NBA News') }}
-            {{--{!! Form::radio('news', '1', false, array('id'=>'news')) !!}--}}
+            {{ Form::label('news', 'General News') }}
             {!! Form::radio('news',1,false, array('id'=>'news')) !!}
+            <br/>
+            {{ Form::label('nba', 'NBA News') }}
+            {!! Form::radio('nba',1,false, array('id'=>'nba')) !!}
+            <br/>
 
 
 
