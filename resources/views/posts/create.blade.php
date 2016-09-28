@@ -58,9 +58,9 @@
     <div class="form-group {{ $errors->has('main_article') ? 'has-error' : ''}}">
 
         <div class="">
-            {{ Form::radio('main_article', 'value1', ($var->option == 'value1')) }} Value1
-            {{ Form::radio('name', 'value2', ($var->option == 'value2')) }} Value2
-            {{ Form::radio('name', 'value3', ($var->option == 'value3')) }} Value3          {!! $errors->first('main_article', '<p class="uk-alert-danger">:message</p>') !!}
+            {{ Form::radio('main_article', 1, false ) }} Value1
+            {{ Form::radio('name', 1, false ) }} Value2
+            {{ Form::radio('name', 1, false) }} Value3          {!! $errors->first('main_article', '<p class="uk-alert-danger">:message</p>') !!}
         </div>
     </div>
 <br/>
