@@ -192,6 +192,11 @@ Route::get('/news/', ['as' => 'posts.news', 'uses'=>'PostsController@news']);
 
 Route::get('/news/general', ['as' => 'posts.general', 'uses'=>'PostsController@general']);
 
+Route::get('/news/retro', ['as' => 'posts.retro', 'uses'=>'PostsController@retro']);
+
+
+
+
 
 //Route::get('posts/test_code/{id}',['as' => 'posts.test_code', 'uses'=>'PostsController@test_code']);
 
