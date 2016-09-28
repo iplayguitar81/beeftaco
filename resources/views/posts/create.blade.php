@@ -57,33 +57,7 @@
 <br/>
 
 
-    <div class="form-group">
-        {!! Form::label('news','General News') !!}
-        {!! Form::radio('news', 1, null),'&nbsp', 'Yes' !!}
-        {!! Form::radio('news', 0, null),'&nbsp','No' !!}
-    </div>
-<br/>
 
-
-    <div class="form-group">
-        {!! Form::label('nba','NBA News') !!}
-        {!! Form::radio('nba', 1, null),'&nbsp', 'Yes' !!}
-        {!! Form::radio('nba', 0, null),'&nbsp','No' !!}
-    </div>
-    <br/>
-
-    <div class="form-group">
-        {!! Form::label('retro','Retro News') !!}
-        {!! Form::radio('retro', 1, null),'&nbsp', 'Yes' !!}
-        {!! Form::radio('retro', 0, null),'&nbsp','No' !!}
-    </div>
-    <br/>
-
-    <div class="form-group">
-        {!! Form::label('alum_news','Former Player News') !!}
-        {!! Form::radio('alum_news', 1, null),'&nbsp', 'Yes' !!}
-        {!! Form::radio('alum_news', 0, null),'&nbsp','No' !!}
-    </div>
     <br/>
 
 
