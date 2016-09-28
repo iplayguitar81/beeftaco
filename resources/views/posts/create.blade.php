@@ -70,7 +70,7 @@
             {{--{{ Form::radio('news', 1, array('id'=>'news') ) }}--}}
 
             {{ Form::label('news', 'NBA News') }}
-            {{ Form::radio('news', 'NBA News', false, array('id'=>'news')) }}
+            {{ Form::radio('news', true, false, array('id'=>'news')) }}
 
 
             {!! $errors->first('main_article', '<p class="uk-alert-danger">:message</p>') !!}
