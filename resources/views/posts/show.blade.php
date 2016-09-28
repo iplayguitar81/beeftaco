@@ -69,10 +69,7 @@
 
             </div>
 
-        </div>
 
-        </div>
-</div>
 <div class="row">
         <br/>
     <div class="col-md-12 text-center">
