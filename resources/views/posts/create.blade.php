@@ -61,7 +61,7 @@
 
 
         <div class="">
-            {{ Form::radio('news', 1, false ) }} General News
+            {{ Form::radio('news', 1, false, array('id'=>'news') ) }} General News
             {{ Form::radio('nba', 1, false ) }} NBA News
             {{ Form::radio('alum_news', 1, false) }} Former Player News
             {{ Form::radio('retro', 1, false) }} Retro News
