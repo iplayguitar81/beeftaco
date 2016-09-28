@@ -70,7 +70,10 @@
             {{--{{ Form::radio('news', 1, array('id'=>'news') ) }}--}}
 
             {{ Form::label('news', 'NBA News') }}
-            {!! Form::radio('news', '1', false, array('id'=>'news')) !!}
+            {{--{!! Form::radio('news', '1', false, array('id'=>'news')) !!}--}}
+            {!! Form::radio('news',1,false, array('id'=>'news')) !!}
+
+
 
 
 
