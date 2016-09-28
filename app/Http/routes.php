@@ -196,7 +196,7 @@ Route::get('/news/retro', ['as' => 'posts.retro', 'uses'=>'PostsController@retro
 
 Route::get('/news/nba', ['as' => 'posts.nba', 'uses'=>'PostsController@nba']);
 
-Route::get('/news/former-players', ['as' => 'posts.former-players', 'uses'=>'PostsController@former-players']);
+Route::get('/news/former-players', ['as' => 'posts.former-players', 'uses'=>'PostsController@former_players']);
 
 
 
