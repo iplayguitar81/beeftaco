@@ -10,6 +10,12 @@
 @section('title', $post->title)
 @section('content')
 
+
+    @php
+        $game_date = new DateTime($post->created_at, new DateTimeZone('America/Los_Angeles'));
+        $game_date = date_sub($game_date, date_interval_create_from_date_string('3 hour'));
+        $game_date = $game_date->format('M jS Y');
+    @endphp
 <div class="row">
     <div class="col-md-12">
 
@@ -29,7 +35,7 @@
             {{--@foreach($records as $record)--}}
             {{--{{$record->name}}--}}
             {{--@endforeach--}}
-            on {{ $post->created_at->format('M dS Y') }}
+            on {{ $game_date }}
         </p>
         <p class="uk-article-lead"><img class="img-responsive center-block" src='{{"../../images/". $post->imgPath}}'></p>
         <br/>
