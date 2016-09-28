@@ -194,6 +194,8 @@ Route::get('/news/general', ['as' => 'posts.general', 'uses'=>'PostsController@g
 
 Route::get('/news/retro', ['as' => 'posts.retro', 'uses'=>'PostsController@retro']);
 
+Route::get('/news/nba', ['as' => 'posts.nba', 'uses'=>'PostsController@nba']);
+
 
 
 
