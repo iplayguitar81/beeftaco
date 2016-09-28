@@ -530,6 +530,15 @@ class PostsController extends Controller
         return view('posts.nba', compact('news'));
     }
 
+
+    public function former_players()
+    {
+
+        $news ='former players news feed...';
+        return view('posts.former-players', compact('news'));
+    }
+
+
     public function map()
     {
 
