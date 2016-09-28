@@ -514,6 +514,15 @@ class PostsController extends Controller
         return view('posts.general', compact('news'));
     }
 
+
+    public function retro()
+    {
+
+        $news ='retro news feed...';
+        return view('posts.retro', compact('news'));
+    }
+
+
     public function map()
     {
 
