@@ -61,10 +61,13 @@
 
 
         <div class="">
-            {{ Form::radio('news', 1, false, array('id'=>'news') ) }} General News
-            {{ Form::radio('nba', 1, false ) }} NBA News
-            {{ Form::radio('alum_news', 1, false) }} Former Player News
-            {{ Form::radio('retro', 1, false) }} Retro News
+            {{--{{ Form::radio('news', 1, false, array('id'=>'news') ) }} General News--}}
+            {{--{{ Form::radio('nba', 1, false ) }} NBA News--}}
+            {{--{{ Form::radio('alum_news', 1, false) }} Former Player News--}}
+            {{--{{ Form::radio('retro', 1, false) }} Retro News--}}
+
+            {{ Form::label('news', 'NBA News') }}
+            {{ Form::radio('news', 1, array('id'=>'news')) }}
 
             {!! $errors->first('main_article', '<p class="uk-alert-danger">:message</p>') !!}
         </div>
