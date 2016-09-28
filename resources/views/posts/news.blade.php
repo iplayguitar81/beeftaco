@@ -4,6 +4,8 @@
 
 {{$news}}
 
+<a href="{{url('news/general')}}">General News...<a/>
+
 
 @endsection
 
