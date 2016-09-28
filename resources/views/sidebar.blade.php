@@ -140,7 +140,7 @@
         <div class="panel-heading">
         <h3 class="panel-title">Box Scores</h3></div>
         <ul class="list-group">
-            <li class="list-group-item"><a href="#">2015-2016 Season</a></li>
+            <li class="list-group-item"> <a href="{{url('boxscores/season_2015_2016')}}">2015-2016 Season</a></li>
             <li class="list-group-item"><a href="#">List Item 2</a></li>
             <li class="list-group-item"><a href="#">List Item 3</a></li>
         </ul>
