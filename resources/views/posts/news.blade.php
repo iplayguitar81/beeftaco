@@ -3,6 +3,7 @@
 @section('content')
 
 {{$news}}
+
 <br/>
 <a href="{{url('news/general')}}">General News...</a>
 
