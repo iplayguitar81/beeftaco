@@ -71,6 +71,9 @@
 
             {{ Form::label('news', 'NBA News') }}
             {{ Form::radio('news', true, false, array('id'=>'news')) }}
+            {!! Form::radio('sex', '1', false, array('id'=>'sex')) !!}
+            {!! Form::radio('sex', '2', false, array('id'=>'sex')) !!}
+
 
 
             {!! $errors->first('main_article', '<p class="uk-alert-danger">:message</p>') !!}
