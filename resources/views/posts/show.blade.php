@@ -70,107 +70,6 @@
             </div>
 
 
-<div class="row">
-        <br/>
-    <div class="col-md-12 text-center">
-        <input id="input-id" type="text" class="rating" name="starRate" data-size="md" readonly="true" value="{{$rating_avg}}" diabled="true" >
-        <span style="text-align:center;font-family: Boogaloo, cursive; font-size:2em;"> Overall Average Article Rating: {{round($rating_avg,2)}}/5 Stars</span>
-        {{--*/ @ $hide_rating_form = false; /*--}}
-        <p>Number of Ratings: {{$rating_count}}</p>
-
-        @can('loggedIn')
-            @if( $hide_rating_form == false)
-                {{--<div class="alert-warning"><p class="text-center">You have already rated this article!  :D We assure you your rating has been figured into the total score!</p></div>--}}
-
-            @endif
-        @endcan
-        </div>
-    </div>
-        <br/>
-<h2 class="text-center Ripper"  >trailblazers fans user ratings</h2>
-
-        <div class="row">
-            @foreach($post_ratings as $rating)
-                {{--*/ @ $rate_pct_reviewer = (($rating->rating/5)*100); /*--}}
-
-        @if(Auth::user())
-             @if($rating->user_id== Auth::user()->id || $post->user_id== Auth::user()->id)
-                {{--*/ @ $hide_rating_form = true; /*--}}
-                @endif
-        @endif
-            <? $author = App\User::find($rating->user_id)->name; ?>
-
-                    <div class="col-md-2 col-md-offset-1"><? $avatar = App\User::find($rating->user_id)->avatar; ?>
-
-                        @if(empty($avatar))
-                           <p> <img src="{{url('images/default-user-img.png')}}" class="img-circle avatar" alt="user profile image"></p>
-
-                        @else
-
-                            <p><img src="{{$avatar}}" class="img-circle avatar" alt="user profile image"></p>
-
-                        @endif
-                        <p>rated by <a href="{{ url('/show_user/' . $rating->user_id) }}"> <b>{{$author}}</b></a></p>
-
-
-                        <span class="text-muted time">{{$rating->created_at->format('M dS Y')}}</span>
-
-                    </div>
-
-                    <div class="col-md-6"><p>{{$rating->rate_message}}</p></div>
-                    <div class="col-md-2 offset-1">
-
-                            <p>{{round($rating->rating,2)}}/5 Stars</p>
-                            <div class="rating2"><div class="stars"></div><div class="back" style="width:{{$rate_pct_reviewer}}%;"></div></div>
-
-                    </div>
-                </div>
-<hr>
-    <br/>
-
-        @endforeach
-
-
-
-        @can('loggedIn')
-@if( $hide_rating_form == false)
-
-        <h2>Rate this article!!!</h2>
-        <hr>
-
-        {!! Form::open(array('url'=>'/posts/{id}/{title}')) !!}
-        {{--echo Form::open(array('url' => 'foo/bar', 'files' => true))--}}
-<div class="form-group center-block">
-        <div class="rate-width text-center">
-        <input id="input-id2" type="text" class="rating" name="starRate" data-size="md" >
-            </div>
-</div>
-        {{--{!! Form::open(['url' => '/posts', 'class' => '', 'files' =>true]) !!}--}}
-        {{--{{ Form::selectRange('userRate', 1, 5) }}--}}
-
-        <div class="form-group">
-            {!! Form::label('userRateMsg', 'Please Leave Comments With Your Rating', ['class' => '']) !!}
-
-            {!! Form::hidden('post_id', $post->id, ['class' => 'form-control']) !!}
-            <div class="">
-                {!! Form::textarea('', null, ['class' => 'form-control', 'name'=>'userRateMsg', 'id'=>'userRateMsg']) !!}
-                {!! $errors->first('userRateMsg', '<p class="uk-alert-danger">:message</p>') !!}
-            </div>
-        </div>
-        <br/>
-        <br/>
-
-        {!! Form::submit('Rate This Article', ['class' => 'btn btn-success form-control']) !!}
-
-        {!! Form::close() !!}
-
-        @else
-
-
-        @endif
-        @endcan
-
-
         <br/>
 
 
@@ -186,7 +85,7 @@
    &nbsp;
     <a href="{{url('/')}}">
 
-        <button type="submit" class="btn btn-success center-block btn-md">Back Home</button>
+        <button type="submit" class="btn btn-danger center-block btn-md">Back Home</button>
     </a>
 
     </div>
