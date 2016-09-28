@@ -242,10 +242,7 @@ class PostsController extends Controller
         $post->imgPath = $filename;
         $post->mainImg_caption = $request->input('mainImg_caption');
         $post->main_article = $request->input('main_article');
-        $post->news = $request->input('news');
-        $post->nba = $request->input('nba');
-        $post->retro = $request->input('retro');
-        $post->alum_news = $request->input('alum_news');
+        $post->category = $request->input('category');
 
 
 
