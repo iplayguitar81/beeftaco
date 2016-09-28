@@ -72,8 +72,15 @@
     </div>
     <br/>
 
+    <div class="form-group">
+        {!! Form::label('retro','Retro News') !!}
+        {!! Form::radio('retro', 1, null),'&nbsp', 'Yes' !!}
+        {!! Form::radio('retro', 0, null),'&nbsp','No' !!}
+    </div>
+    <br/>
 
-<br/>
+
+
 
             <div class="form-group {{ $errors->has('body') ? 'has-error' : ''}}">
                 {!! Form::label('body', trans('posts.body'), ['class' => '']) !!}
