@@ -504,7 +504,7 @@ class PostsController extends Controller
     {
 
        $news ='Future news feed...';
-        return view('news', compact('news'));
+        return view('posts.news', compact('news'));
     }
 
 
