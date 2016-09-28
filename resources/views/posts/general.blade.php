@@ -1,5 +1,5 @@
 @extends('layout')
-@section('title', 'News')
+@section('title', 'General News')
 @section('content')
 
     {{$news}}
