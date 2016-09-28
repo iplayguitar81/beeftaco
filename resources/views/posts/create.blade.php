@@ -79,7 +79,12 @@
     </div>
     <br/>
 
-
+    <div class="form-group">
+        {!! Form::label('alum_news','Former Player News') !!}
+        {!! Form::radio('alum_news', 1, null),'&nbsp', 'Yes' !!}
+        {!! Form::radio('alum_news', 0, null),'&nbsp','No' !!}
+    </div>
+    <br/>
 
 
             <div class="form-group {{ $errors->has('body') ? 'has-error' : ''}}">
