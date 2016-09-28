@@ -11,7 +11,7 @@
 <br/>
 <a href="{{url('news/nba')}}">NBA News...</a>
 <br/>
-<a href="{{url('news/former-players')}}">Former Player News...</a>
+<a href="{{url('news/former-players')}}">Former Players News...</a>
 
 
 
