@@ -523,6 +523,13 @@ class PostsController extends Controller
     }
 
 
+    public function nba()
+    {
+
+        $news ='nba news feed...';
+        return view('posts.nba', compact('news'));
+    }
+
     public function map()
     {
 
