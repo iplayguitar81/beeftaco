@@ -80,6 +80,12 @@
             {!! $errors->first('main_article', '<p class="uk-alert-danger">:message</p>') !!}
         </div>
     </div>
+
+    <div class="form-group">
+        {!! Form::label('is_kids_only','Kids Only:') !!}
+        {!! Form::radio('kidsonly', 'true', null),'&nbsp', 'Yes' !!}
+        {!! Form::radio('kidsonly', 'false', null),'&nbsp','No' !!}
+    </div>
 <br/>
 
 
