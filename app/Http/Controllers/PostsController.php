@@ -242,6 +242,8 @@ class PostsController extends Controller
         $post->imgPath = $filename;
         $post->mainImg_caption = $request->input('mainImg_caption');
         $post->main_article = $request->input('main_article');
+        $post->news = $request->input('news');
+
         $post->body = $request->input('body');
         \Auth::user()->posts()->save($post);
         Session::flash('flash_message', 'Post added!');
