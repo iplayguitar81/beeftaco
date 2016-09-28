@@ -507,6 +507,12 @@ class PostsController extends Controller
         return view('posts.news', compact('news'));
     }
 
+    public function general()
+    {
+
+        $news ='general news feed...';
+        return view('posts.general', compact('news'));
+    }
 
     public function map()
     {
