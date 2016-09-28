@@ -57,7 +57,19 @@
 <br/>
 
 
+<div class="form-group">
+    {!! Form::label('category', trans('posts.category'), ['class' => '']) !!}
 
+    {{ Form::select('category', [
+   'news' => 'General News',
+   'nba' => 'NBA League News',
+   'former_players' => 'Former Players News',
+   'retro' => 'Retro News'
+
+   ]
+) }}
+
+</div>
     <br/>
 
 
