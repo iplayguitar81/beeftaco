@@ -1,2 +1,9 @@
-Future News...
+@extends('layout')
+@section('title', 'News')
+@section('content')
+
+{{$news}}
+
+
+@endsection
 
