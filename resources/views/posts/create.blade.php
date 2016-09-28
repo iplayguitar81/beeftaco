@@ -55,34 +55,7 @@
         </div>
     </div>
 <br/>
-    <div class="form-group
-{{--{{ $errors->has('main_article') ? 'has-error' : ''}}--}}
-            ">
 
-
-        <div class="">
-            {{--{{ Form::radio('news', 1, false, array('id'=>'news') ) }} General News--}}
-            {{--{{ Form::radio('nba', 1, false ) }} NBA News--}}
-            {{--{{ Form::radio('alum_news', 1, false) }} Former Player News--}}
-            {{--{{ Form::radio('retro', 1, false) }} Retro News--}}
-
-            {{--{{ Form::label('news', 'NBA News') }}--}}
-            {{--{{ Form::radio('news', 1, array('id'=>'news') ) }}--}}
-
-            {{ Form::label('news', 'General News') }}
-            {!! Form::radio('news',1,false, array('id'=>'news')) !!}
-            <br/>
-            {{ Form::label('nba', 'NBA News') }}
-            {!! Form::radio('nba',1,false, array('id'=>'nba')) !!}
-            <br/>
-
-
-
-
-
-            {!! $errors->first('main_article', '<p class="uk-alert-danger">:message</p>') !!}
-        </div>
-    </div>
 
     <div class="form-group">
         {!! Form::label('news','General News') !!}
@@ -91,6 +64,13 @@
     </div>
 <br/>
 
+
+    <div class="form-group">
+        {!! Form::label('nba','NBA News') !!}
+        {!! Form::radio('nba', 1, null),'&nbsp', 'Yes' !!}
+        {!! Form::radio('nba', 0, null),'&nbsp','No' !!}
+    </div>
+    <br/>
 
 
 <br/>
