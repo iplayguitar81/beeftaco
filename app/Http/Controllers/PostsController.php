@@ -500,6 +500,14 @@ class PostsController extends Controller
 
     }
 
+    public function news()
+    {
+
+       $news ='Future news feed...';
+        return view('news', compact('news'));
+    }
+
+
     public function map()
     {
 
