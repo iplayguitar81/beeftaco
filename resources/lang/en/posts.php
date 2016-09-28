@@ -5,6 +5,8 @@ return [
     'subhead' => 'subhead',
 'body' => 'Body',
 'imgPath' => 'imgPath',
+'category' => 'Category',
+
 
 
 ];
