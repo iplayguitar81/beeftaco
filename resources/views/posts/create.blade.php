@@ -67,7 +67,7 @@
             {{--{{ Form::radio('retro', 1, false) }} Retro News--}}
 
             {{ Form::label('news', 'NBA News') }}
-            {{ Form::radio('news', 'news', 1 ) }}
+            {{ Form::radio('news', 1, array('id'=>'news') ) }}
 
             {!! $errors->first('main_article', '<p class="uk-alert-danger">:message</p>') !!}
         </div>
