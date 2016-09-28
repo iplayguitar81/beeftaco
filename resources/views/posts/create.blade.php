@@ -59,9 +59,10 @@
 
 
         <div class="">
-            {{ Form::radio('name', 1, false ) }} Value1
-            {{ Form::radio('name', 1, false ) }} Value2
-            {{ Form::radio('name', 1, false) }} Value3
+            {{ Form::radio('name', 1, false ) }} General News
+            {{ Form::radio('name', 1, false ) }} NBA News
+            {{ Form::radio('name', 1, false) }} Former Player News
+            {{ Form::radio('name', 1, false) }} Retro News
 
             {!! $errors->first('main_article', '<p class="uk-alert-danger">:message</p>') !!}
         </div>
