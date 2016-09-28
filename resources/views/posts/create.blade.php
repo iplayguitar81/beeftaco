@@ -55,7 +55,9 @@
         </div>
     </div>
 <br/>
-    <div class="form-group {{ $errors->has('main_article') ? 'has-error' : ''}}">
+    <div class="form-group
+{{--{{ $errors->has('main_article') ? 'has-error' : ''}}--}}
+            ">
 
 
         <div class="">
