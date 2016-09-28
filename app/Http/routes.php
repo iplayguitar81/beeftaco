@@ -187,7 +187,12 @@ Route::get('/test_code/{id}/', ['as' => 'posts.test_code', 'uses' => 'PostsContr
 Route::get('/show_user/{id}', ['as' => 'posts.show_user', 'uses'=>'PostsController@show_user']);
 
 
+
 Route::get('/news/', ['as' => 'posts.news', 'uses'=>'PostsController@news']);
+
+Route::get('/news/general', ['as' => 'posts.general', 'uses'=>'PostsController@general']);
+
+
 //Route::get('posts/test_code/{id}',['as' => 'posts.test_code', 'uses'=>'PostsController@test_code']);
 
 
