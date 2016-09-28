@@ -55,6 +55,18 @@
         </div>
     </div>
 <br/>
+    <div class="form-group {{ $errors->has('main_article') ? 'has-error' : ''}}">
+
+        <div class="">
+            {{ Form::radio('main_article', 'value1', ($var->option == 'value1')) }} Value1
+            {{ Form::radio('name', 'value2', ($var->option == 'value2')) }} Value2
+            {{ Form::radio('name', 'value3', ($var->option == 'value3')) }} Value3          {!! $errors->first('main_article', '<p class="uk-alert-danger">:message</p>') !!}
+        </div>
+    </div>
+<br/>
+
+
+
 <br/>
 
             <div class="form-group {{ $errors->has('body') ? 'has-error' : ''}}">
