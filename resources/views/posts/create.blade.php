@@ -82,9 +82,9 @@
     </div>
 
     <div class="form-group">
-        {!! Form::label('is_kids_only','Kids Only:') !!}
-        {!! Form::radio('kidsonly', 'true', null),'&nbsp', 'Yes' !!}
-        {!! Form::radio('kidsonly', 'false', null),'&nbsp','No' !!}
+        {!! Form::label('news','General News') !!}
+        {!! Form::radio('news', 'true', null),'&nbsp', 'Yes' !!}
+        {!! Form::radio('news', 'false', null),'&nbsp','No' !!}
     </div>
 <br/>
 
