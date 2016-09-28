@@ -7,7 +7,7 @@ return [
 'imgPath' => 'imgPath',
 'category' => 'Category',
 'main_article' => 'Main Article?',
-'mainimg_caption' => 'Main Image Caption',
+'mainimg_caption' => 'Feature Image Caption',
 
 
 
