@@ -157,7 +157,7 @@
 
                         {{$variable}}...<a class="pull-right" href="{{ route('posts.show', [$item->id, str_slug($item->title)]) }}">READ MORE</a>
                         <br/>
-                        <hr>
+
                         <a class="btn btn-danger btn-xs text-center" role="button" aria-pressed="true" href="#">#{{$item->category}}</a>
 
                     </p>
