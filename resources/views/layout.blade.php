@@ -21,7 +21,7 @@ ul.pagination{display:inline-block;padding:0;margin:0;font-size:1.2em;color:#E63
         text-shadow: silver 2px 1px 2px;
         text-decoration: none;
         font-family: Academic !important;
-        font-size: 2.6em;
+        font-size: 2.4em;
     }
 .main-article-titles a:hover {
     color: #000;
