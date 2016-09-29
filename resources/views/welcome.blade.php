@@ -155,9 +155,7 @@
 
                     <p class="second-art-snip">
 
-                        {{$variable}}...
-
-                        <a class="pull-right" href="{{ route('posts.show', [$item->id, str_slug($item->title)]) }}">READ MORE</a>
+                        {{$variable}}...<a class="pull-right" href="{{ route('posts.show', [$item->id, str_slug($item->title)]) }}">READ MORE</a>
 
                     </p>
                     <br/>
