@@ -532,17 +532,18 @@ class PostsController extends Controller
     public function nba()
     {
 
-        $news = Post::where('category','=', 'nba')->orderBy('created_at', 'desc')->paginate(3);
+        $category="nba";
+        $news = Post::where('category','=', $category)->orderBy('created_at', 'desc')->paginate(3);
 
-        //$news ='nba news feed...';
+        $news ='nba news feed...';
         return view('posts.nba', compact('news'));
     }
 
 
     public function former_players()
     {
-
-        $news = Post::where('category','=', 'former_players')->orderBy('created_at', 'desc')->paginate(3);
+        $category="former_players";
+        $news = Post::where('category','=', $category)->orderBy('created_at', 'desc')->paginate(3);
         return view('posts.former-players', compact('news'));
     }
 
