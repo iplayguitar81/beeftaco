@@ -516,7 +516,8 @@ class PostsController extends Controller
     public function general()
     {
 
-        $news ='general news feed...';
+        $category="news";
+        $news = Post::where('category', '=', $category)->orderBy('created_at', 'desc')->get();
         return view('posts.general', compact('news'));
     }
 
@@ -534,8 +535,7 @@ class PostsController extends Controller
     {
 
         $category="nba";
-        $news = Post::where('category', '=', $category)->orderBy('created_at', 'desc')->paginate(3);
-
+        $news = Post::where('category', '=', $category)->orderBy('created_at', 'desc')->get();
         //$news ='nba news feed...';
         return view('posts.nba', compact('news'));
     }
@@ -544,7 +544,7 @@ class PostsController extends Controller
     public function former_players()
     {
         $category="former_players";
-        $news = Post::where('category','=', $category)->orderBy('created_at', 'desc')->paginate(3);
+        $news = Post::where('category', '=', $category)->orderBy('created_at', 'desc')->get();
         return view('posts.former-players', compact('news'));
     }
 
