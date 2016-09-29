@@ -525,7 +525,7 @@ class PostsController extends Controller
     {
 
         $category="retro";
-        $news = DB::table('boxscores')->where('category', '=', $category)->get();
+        $news = DB::table('posts')->where('category', '=', $category)->get();
 
         return view('posts.retro', compact('news'));
     }
