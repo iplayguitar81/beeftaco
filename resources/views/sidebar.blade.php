@@ -128,8 +128,6 @@
 </ul>
 
 <div class="tab-content">
-
-
     <div id="home" class="tab-pane fade in active">
         <h3>Player Tweets</h3>
 
@@ -139,7 +137,6 @@
     </div>
     <div id="menu1" class="tab-pane">
     <div class="row">
-
         <div class="">
         <h3>Like Us On Facebook!</h3>
         <div class="fb-page" data-href="https://www.facebook.com/Trail-Blazers-Fans-com-1432222413694833" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true" data-show-posts="true"></div>
@@ -148,19 +145,7 @@
     </div>
     </div>
 
-
-
 </div>
-<br/>
-
-
-
-
-
-    <div class="well">
-
-
-    </div>
 
 
 
