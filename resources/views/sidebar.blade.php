@@ -106,8 +106,8 @@
 
 <br>
 <ul class="nav nav-tabs">
-    <li class="active"><a data-toggle="tab" href="#home"><i class="fa fa-lg fa-facebook"></i>&nbsp;Facebook</a></li>
-    <li><a data-toggle="tab" href="#menu1"><i class="fa fa-lg fa-twitter"></i>&nbspPlayer Tweets</a></li>
+    <li class="active"><a data-toggle="tab" href="#home"><i class="fa fa-lg fa-twitter"></i>&nbsp;Facebook</a></li>
+    <li><a data-toggle="tab" href="#menu1"><i class="fa fa-lg fa-facebook"></i>&nbspPlayer Tweets</a></li>
 </ul>
 
 <div class="tab-content">
