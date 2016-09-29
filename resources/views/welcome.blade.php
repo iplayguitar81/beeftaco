@@ -157,7 +157,9 @@
 
                         {{$variable}}...<a class="pull-right" href="{{ route('posts.show', [$item->id, str_slug($item->title)]) }}">READ MORE</a>
 
+                        <a class="btn btn-danger btn-xs" role="button" aria-pressed="true" href="https://trailblazersfans.com/boxscores/292/20160511-portland-trail-blazers-at-golden-state-warriors">{{$item->category}}</a>
                     </p>
+
                     <br/>
                 </div>
             </div>
