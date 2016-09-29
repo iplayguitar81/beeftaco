@@ -29,8 +29,9 @@ ul.pagination{display:inline-block;padding:0;margin:0;font-size:1.2em;color:#E63
 .article-title-show {
     color: #E63C4D;
     text-shadow: silver 2px 1px 2px;
-    font-size: 3.8em;
+    font-size: 1.69em;
     text-align: center;
+    font-family: Academic;
 }
 hr {
     height: 1px;
