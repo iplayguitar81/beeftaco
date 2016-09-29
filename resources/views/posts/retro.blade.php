@@ -4,10 +4,10 @@
 
     @php
 
-    $news = serialize($news);
+    //$news = serialize($news);
     @endphp
 
-    {!! $news !!}
+     {{$news}}
 
     <br/>
     <a href="{{url('/news')}}">Back To All News...</a>
