@@ -119,8 +119,9 @@
         </div>
 
 
-        <br>
+        <br/>
         <hr>
+        <br/>
         <ul class="nav nav-tabs">
             <li class="active"><a data-toggle="tab" href="#home"><i class="fa fa-lg fa-twitter"></i>&nbspPlayer &amp; Team Tweets</a></li>
             <li><a data-toggle="tab" href="#menu1"><i class="fa fa-lg fa-facebook"></i>&nbspLike us on Facebook</a></li>
