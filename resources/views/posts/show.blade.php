@@ -20,7 +20,7 @@
     <div class="col-md-12">
 
     <article class="center-block">
-        <h1 class="article-title-show Ripper" style="">{{ $post->title }}</h1>
+        <h1 class="article-title-show" style="">{{ $post->title }}</h1>
         <p class="subheader-main Bebas">{{ $post->subHead}}</p>
         <p class="uk-article-meta" style="text-align:center;">
             Written by <?
