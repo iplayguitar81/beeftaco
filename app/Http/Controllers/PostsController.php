@@ -524,7 +524,9 @@ class PostsController extends Controller
     public function retro()
     {
 
-        $news ='retro news feed...';
+        $category="retro";
+        $news = Post::where('category','=', $category)->orderBy('created_at', 'desc')->paginate(3);
+
         return view('posts.retro', compact('news'));
     }
 
