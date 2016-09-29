@@ -62,8 +62,21 @@
                 </div>
             </div>
             <br/>
-            <br/>
 
+            <div class="form-group">
+                {!! Form::label('category', trans('posts.category'), ['class' => '']) !!}
+
+                {{ Form::select('category', [
+               'news' => 'General News',
+               'nba' => 'NBA League News',
+               'former_players' => 'Former Players News',
+               'retro' => 'Retro News'
+
+               ]
+            ) }}
+
+            </div>
+            <br/>
             <div class="form-group {{ $errors->has('body') ? 'has-error' : ''}}">
                 {!! Form::label('body', trans('posts.body'), ['class' => '']) !!}
                 <div class="">
