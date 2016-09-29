@@ -155,7 +155,7 @@
 
                     <p class="second-art-snip">
 
-                        {{$variable}}...<a class="pull-right" href="{{ route('posts.show', [$item->id, str_slug($item->title)]) }}">READ MORE</a>
+                        {{$variable}}...<a class="clearfix" href="{{ route('posts.show', [$item->id, str_slug($item->title)]) }}">READ MORE</a>
                         <br/>
                         <a class="btn btn-danger btn-xs pull-right" role="button" aria-pressed="true" href="#">{{$item->category}}</a>
 
