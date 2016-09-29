@@ -532,7 +532,9 @@ class PostsController extends Controller
     public function nba()
     {
 
-        $news ='nba news feed...';
+        $news = Post::where('category','=', 'nba')->orderBy('created_at', 'desc')->paginate(3);
+
+        //$news ='nba news feed...';
         return view('posts.nba', compact('news'));
     }
 
@@ -540,7 +542,7 @@ class PostsController extends Controller
     public function former_players()
     {
 
-        $news ='former players news feed...';
+        $news = Post::where('category','=', 'former_players')->orderBy('created_at', 'desc')->paginate(3);
         return view('posts.former-players', compact('news'));
     }
 
