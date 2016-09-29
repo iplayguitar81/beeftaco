@@ -1,4 +1,5 @@
-<h2 id="latest_games" class="Ripper">latest games</h2>
+<div class="panel panel-danger"> <div class="panel-heading"> <h3 class="panel-title">Welcome to Trail Blazers Fans.com</h3> </div> <div class="panel-body">
+    <h2 id="latest_games" class="Ripper">latest games</h2>
 
 <div id="owl-demo" class="owl-carousel owl-theme">
     @foreach($scores as $item)
@@ -102,7 +103,14 @@
     @endforeach
 </div>
 <br/>
-<div class="panel panel-danger"> <div class="panel-heading"> <h3 class="panel-title">Welcome to Trail Blazers Fans.com</h3> </div> <div class="panel-body">  </div> </div>
+
+
+
+
+
+
+
+    </div> </div>
 
 <br>
 <ul class="nav nav-tabs">
