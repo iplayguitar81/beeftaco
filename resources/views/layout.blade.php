@@ -1115,6 +1115,10 @@ em.caption-em{
          font-family: 'Bebas';
          src: url("https://dl.dropboxusercontent.com/s/t7tunbwaclebaj5/bebasneueregular.otf"); !important }
 
+@font-face {
+         font-family: 'Academic';
+    src: url("https://dl.dropboxusercontent.com/s/tauhaxor6io1rrj/Academic.ttf"); !important }
+
 
 
  </style>
