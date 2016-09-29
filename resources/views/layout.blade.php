@@ -29,7 +29,7 @@ ul.pagination{display:inline-block;padding:0;margin:0;font-size:1.2em;color:#E63
 .article-title-show {
     color: #E63C4D;
     text-shadow: silver 2px 1px 2px;
-    font-size: 2.6em !important;
+    font-size: 3.6em !important;
     text-align: center;
     font-family: Academic;
 }
