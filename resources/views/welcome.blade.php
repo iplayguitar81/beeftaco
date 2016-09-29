@@ -140,7 +140,7 @@
                 <img src="../images/md-img-{{ $item->imgPath}}" alt="">
                 <div class="caption">
                     <em class="caption-em">{{$item->mainImg_caption}}</em>
-                    <h2 class="secondary-posts-title text-center"><a href="{{ route('posts.show', [$item->id, str_slug($item->title)]) }}">{{$item->title}}</a></h2>
+                    <h2 class="secondary-posts-title text-center"><a href="{{ route('posts.show', [$item->id, str_slug($item->title)]) }}">{{$item->title}}</a> <a class="btn btn-danger btn-xs pull-right" role="button" aria-pressed="true" href="#">{{$item->category}}</a></h2>
                     <em>Written By: <a href="#">   @if($item->user_id != null)
                                 <? $author = App\User::find($item->user_id)->name; ?>
 
@@ -155,7 +155,7 @@
 
                     <p class="second-art-snip">
 
-                        {{$variable}}...<a class="pull-right" href="{{ route('posts.show', [$item->id, str_slug($item->title)]) }}">READ MORE</a> <a class="btn btn-danger btn-xs pull-right" role="button" aria-pressed="true" href="#">{{$item->category}}</a>
+                        {{$variable}}...<a class="pull-right" href="{{ route('posts.show', [$item->id, str_slug($item->title)]) }}">READ MORE</a>
 
 
                     </p>
