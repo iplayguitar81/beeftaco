@@ -528,7 +528,7 @@ class PostsController extends Controller
         $news = DB::table('posts')->where('category', '=', $category)->get();
         $news = Post::where('category', '=', $category)->orderBy('created_at', 'desc')->paginate(3);
 
-
+$news = Post::where($category)->get();
         return view('posts.retro', compact('news'));
     }
 
