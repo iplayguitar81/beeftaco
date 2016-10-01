@@ -2,10 +2,12 @@
 @section('title', 'Retro News')
 @section('content')
 
-    @php
+    {{--@php--}}
 
-    //$news = serialize($news);
-    @endphp
+    {{--//$news = serialize($news);--}}
+    {{--@endphp--}}
+
+    <h1 class="article-title-show">retro news</h1>
 
      {{$news}}
 
