@@ -3,7 +3,7 @@
 @section('content')
 
 {{$news}}
-
+<h1 class="article-title-show">news categories</h1>
 <br/>
 <a href="{{url('news/general')}}">General News...</a>
 <br/>
