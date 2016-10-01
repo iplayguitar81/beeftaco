@@ -2,6 +2,7 @@
 @section('title', 'Former Players in the News')
 @section('content')
 
+    <h1 class="article-title-show">past blazers news</h1>
     {{$news}}
 
     <br/>
