@@ -4,7 +4,7 @@
 @section('content')
 
     <div class="col-md-12">
-        <h1>About</h1>
+        <h1 class="article-title-show">About</h1>
 
      <p>Coming soon........</p>
     </div>
