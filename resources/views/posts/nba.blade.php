@@ -2,6 +2,7 @@
 @section('title', 'NBA League News')
 @section('content')
 
+    <h1 class="article-title-show">nba news</h1>
     {{$news}}
 
     <br/>
