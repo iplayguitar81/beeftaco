@@ -13,7 +13,7 @@
             </div>
         @endif
 
-        <h2 class="text-center Ripper">contact us today!</h2>
+        <h2 class="text-center main-article-titles">contact us today!</h2>
 
 
         <ul>
