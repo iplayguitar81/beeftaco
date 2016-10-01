@@ -43,7 +43,7 @@
         <br/>
         <div class="center-block text-center">
        <div class="article-texterson2"> {!! ($post->body) !!} </div>
-            @if(!empty($post->images))
+            @if(($post->images > 0))
             <div class="container">
                 <h2 class='Ripper'>article gallery</h2>
                     <br/>
