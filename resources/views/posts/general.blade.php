@@ -2,7 +2,7 @@
 @section('title', 'General News')
 @section('content')
 
-    <h1 class="article-title-show">general trail blazers news</h1>
+    <h1 class="article-title-show">blazers news</h1>
 
     {{$news}}
 
