@@ -55,7 +55,7 @@
        <div class="article-texterson2"> {!! ($post->body) !!} </div>
             @if(($post->images->count() > 0 ))
             <div class="container">
-                <h2 class='Ripper'>article gallery</h2>
+                <h2 class='Bebas'>article gallery</h2>
                     <br/>
                 {{--<div class="customNavigation">--}}
                 {{--<a class="btn prev btn-danger">Previous</a>--}}
