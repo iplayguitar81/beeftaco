@@ -162,7 +162,7 @@
                     <p>
                         @if($item->category ==="news")
 
-                            <a href="{{url('news/general')}}">#{{$item->category}}</a>
+                            <a class="btn-danger" href="{{url('news/general')}}">#{{$item->category}}</a>
 
                             @elseif($item->category ==="retro")
                             <a href="{{url('news/retro')}}">#{{$item->category}}</a>
