@@ -165,13 +165,13 @@
                             <a class="btn-xs btn-danger" href="{{url('news/general')}}">#{{$item->category}}</a>
 
                             @elseif($item->category ==="retro")
-                            <a href="{{url('news/retro')}}">#{{$item->category}}</a>
+                            <a class="btn-xs btn-danger" href="{{url('news/retro')}}">#{{$item->category}}</a>
 
                             @elseif($item->category ==="former_players")
-                            <a href="{{url('news/former-players')}}">#{{$item->category}}</a>
+                            <a class="btn-xs btn-danger" href="{{url('news/former-players')}}">#{{$item->category}}</a>
 
                             @elseif($item->category ==="nba")
-                            <a href="{{url('news/nba')}}">#{{$item->category}}</a>
+                            <a class="btn-xs btn-danger" href="{{url('news/nba')}}">#{{$item->category}}</a>
 
                         @endif
                     </p>
