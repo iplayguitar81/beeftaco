@@ -160,8 +160,20 @@
                         </p>
 
                     <p>
-                        <a class="btn btn-danger btn-xs text-center" role="button" aria-pressed="true" href="#">#{{$item->category}}</a>
+                        @if($item->category ==="news")
 
+                            <a href="{{url('news/general')}}">#{{$item->category}}</a>
+
+                            @elseif($item->category ==="retro")
+                            <a href="{{url('news/retro')}}">#{{$item->category}}</a>
+
+                            @elseif($item->category ==="former_players")
+                            <a href="{{url('news/former-players')}}">#{{$item->category}}</a>
+
+                            @elseif($item->category ==="nba")
+                            <a href="{{url('news/nba')}}">#{{$item->category}}</a>
+
+                        @endif
                     </p>
 
                     <br/>
