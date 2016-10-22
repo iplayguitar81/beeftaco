@@ -9,7 +9,7 @@
 
     <h1 class="article-title-show">retro news</h1>
 
-     {{$news}}
+
 
 
     <hr><div class="row">
