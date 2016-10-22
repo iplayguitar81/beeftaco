@@ -31,13 +31,13 @@
         @endphp
 
     <div class="row">
-        <div class="col-sm-4"><a href="#" class=""><img src="../images/md-img-{{ $item->imgPath}}" class="img-responsive"></a>
+        <div class="col-sm-4"><a class="" href="{{ route('posts.show', [$item->id, str_slug($item->title)]) }}"><img src="../images/md-img-{{ $item->imgPath}}" class="img-responsive"></a>
             <span>{{$item->mainImg_caption}}</span>
         </div>
         <div class="col-sm-8">
 
 
-            <h3 class="title">{{ $item->title}}</h3>
+            <h3 class="title"><a class="" href="{{ route('posts.show', [$item->id, str_slug($item->title)]) }}">{{ $item->title}}</a></h3>
             <p class="text-muted">{{$item->subHead}}</p>
             <p class="text-muted">Written by <a href="#">{{$author}}</a> on {{$game_date}} </p>
             <p>{{$variable}}...<a class="" href="{{ route('posts.show', [$item->id, str_slug($item->title)]) }}">READ MORE</a></p>
