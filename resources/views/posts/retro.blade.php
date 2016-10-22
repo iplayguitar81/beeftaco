@@ -9,7 +9,7 @@
 
     <h1 class="article-title-show">retro news</h1>
 
-    <p>Here you can get the inside scoop on all of the latest retro trail blazers fans news!</p>
+    <p class="text-center">Here you can get the inside scoop on all of the latest retro trail blazers fans news!</p>
 
 
     @foreach($news as $item)
