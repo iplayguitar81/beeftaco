@@ -9,7 +9,7 @@
 
     <h1 class="article-title-show">retro news</h1>
 
-    {{$news}}
+    {{$news->imgPath}}
 
 
     <hr><div class="row">
