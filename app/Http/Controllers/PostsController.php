@@ -525,8 +525,11 @@ class PostsController extends Controller
     public function retro()
     {
         $category="retro";
-        $news = Post::where('category', '=', $category)->orderBy('created_at', 'desc')->get();
 
+      //  $news = Post::where('category', '=', $category)->orderBy('created_at', 'desc')->get();
+        $news = Post::all();
+
+        $news->where('category', 'retro');
         return view('posts.retro', compact('news'));
     }
 
