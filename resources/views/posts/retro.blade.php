@@ -22,6 +22,11 @@
 
         @endif
 
+        @php
+            $variable= strip_tags($item->body);
+            $variable =substr($variable,0, 50);
+        @endphp
+
 
     <div class="row">
         <div class="col-sm-4"><a href="#" class=""><img src="../images/md-img-{{ $item->imgPath}}" class="img-responsive"></a>
@@ -33,7 +38,7 @@
             <h3 class="title">{{ $item->title}}</h3>
             <p class="text-muted">{{$item->subHead}}</p>
             <p class="text-muted">Written by <a href="#">{{$author}}</a></p>
-            <p>{{$item->body}}</p>
+            <p>{{$variable}}</p>
 
 
 
