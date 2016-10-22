@@ -530,6 +530,7 @@ class PostsController extends Controller
 
         $news = Post::where('category', '=', $category)->get();
         $news = $news->flatten();
+        $news->values()->all();
 
 
 
