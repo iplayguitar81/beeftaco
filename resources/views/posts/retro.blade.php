@@ -11,8 +11,7 @@
 
 
 {{$news}}
-<hr>
-    {{$news->imgPath}}
+
 
 
     <hr><div class="row">
