@@ -13,7 +13,7 @@
 
 
     <hr><div class="row">
-        <div class="col-sm-4"><a href="#" class=""><img src="{{"../../images/".$news[]['imgPath']}}" class="img-responsive"></a>
+        <div class="col-sm-4"><a href="#" class=""><img src="{{"../../images/".$news->imgPath}}" class="img-responsive"></a>
         </div>
         <div class="col-sm-8">
             <h3 class="title">How to Fight Fraud with Artificial Intelligence and Intelligent Analytics</h3>
