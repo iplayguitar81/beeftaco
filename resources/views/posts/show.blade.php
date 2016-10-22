@@ -96,7 +96,7 @@
 
         <br/>
 
-    <a href="{{url('posts')}}">
+    <a href="{{url('posts.news')}}">
 
         <button type="submit" class="btn btn-primary center-block btn-md">Back to All Posts</button>
     </a>
