@@ -529,7 +529,7 @@ class PostsController extends Controller
         $category="retro";
 
         $news = Post::where('category', '=', $category)->get();
-        $news =collapse($news);
+        $news = array_collapse($news);
 
         return view('posts.retro', compact('news'));
     }
