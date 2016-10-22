@@ -531,12 +531,6 @@ class PostsController extends Controller
         $news = Post::where('category', '=', $category)->get();
 
 
-
-        $news = $news->flatten(1);
-        $news->values()->all();
-
-
-
         return view('posts.retro', compact('news'));
     }
 
