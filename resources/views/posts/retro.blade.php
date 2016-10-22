@@ -11,7 +11,6 @@
 
 
 {{$news}}
-{{$news->imgPath}}
 
 
 
