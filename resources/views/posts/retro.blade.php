@@ -40,7 +40,7 @@
             <h3 class="title">{{ $item->title}}</h3>
             <p class="text-muted">{{$item->subHead}}</p>
             <p class="text-muted">Written by <a href="#">{{$author}}</a> on {{$game_date}} </p>
-            <p>{{$variable}}</p>
+            <p>{{$variable}}...<a class="pull-right" href="{{ route('posts.show', [$item->id, str_slug($item->title)]) }}">READ MORE</a></p>
 
 
 
