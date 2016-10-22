@@ -25,8 +25,10 @@
         @php
             $variable= strip_tags($item->body);
             $variable =substr($variable,0, 50);
+        $game_date = new DateTime($item->created_at, new DateTimeZone('America/Los_Angeles'));
+            $game_date = date_sub($game_date, date_interval_create_from_date_string('3 hour'));
+            $game_date = $game_date->format('M jS Y');
         @endphp
-
 
     <div class="row">
         <div class="col-sm-4"><a href="#" class=""><img src="../images/md-img-{{ $item->imgPath}}" class="img-responsive"></a>
@@ -37,7 +39,7 @@
 
             <h3 class="title">{{ $item->title}}</h3>
             <p class="text-muted">{{$item->subHead}}</p>
-            <p class="text-muted">Written by <a href="#">{{$author}}</a></p>
+            <p class="text-muted">Written by <a href="#">{{$author}}</a> on {{$game_date}} </p>
             <p>{{$variable}}</p>
 
 
