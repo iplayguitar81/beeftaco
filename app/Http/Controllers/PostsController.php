@@ -529,6 +529,7 @@ class PostsController extends Controller
         $category="retro";
 
         $news = Post::where('category', '=', $category)->get();
+        $news = $news->flatten();
 
 
 
