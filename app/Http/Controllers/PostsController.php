@@ -518,6 +518,8 @@ class PostsController extends Controller
 
         $category="news";
         $news = Post::where('category', '=', $category)->orderBy('created_at', 'desc')->get();
+        $news =collect($news);
+
         return view('posts.general', compact('news'));
     }
 
