@@ -530,6 +530,8 @@ class PostsController extends Controller
 
         $news = Post::where('category', '=', $category)->get();
         $news = array_collapse($news);
+        $news = array_collapse($news);
+
 
         return view('posts.retro', compact('news'));
     }
