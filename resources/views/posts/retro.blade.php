@@ -15,7 +15,7 @@
 
 
     @foreach($news as $item)
-    <hr><div class="row">
+    <div class="row">
         <div class="col-sm-4"><a href="#" class=""><img src="../images/md-img-{{ $item->imgPath}}" class="img-responsive"></a>
             <span>{{$item->mainImg_caption}}</span>
         </div>
