@@ -11,6 +11,9 @@
 
 
 {{$news}}
+<hr>
+    {{$news->imgPath}}
+
 
     <hr><div class="row">
         <div class="col-sm-4"><a href="#" class=""><img src="" class="img-responsive"></a>
