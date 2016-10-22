@@ -528,7 +528,8 @@ class PostsController extends Controller
     {
         $category="retro";
 
-        $news = Post::where('category', '=', $category);
+        $news = Post::where('category', '=', $category)->get();
+        $news =combine($news);
 
         return view('posts.retro', compact('news'));
     }
