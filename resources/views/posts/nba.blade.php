@@ -6,7 +6,7 @@
     <h1 class="article-title-show">nba news</h1>
 
 
-    <p class="text-center">Here you can get the inside scoop on all of the latest retro trail blazers fans news!</p>
+    <p class="text-center">Here you can get the inside scoop on all of the latest news from around the league!</p>
     <br/>
     <hr>
 
