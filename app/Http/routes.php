@@ -40,7 +40,7 @@ Route::get('/', function () {
     $scores = boxscore::orderBy('datey', 'desc')->take(5)->get();
     $main = Post::where('main_article','=', '1')->orderBy('created_at','desc')->take(1)->get();
 
-    $posts = Post::where('main_article','!=', '1')->orderBy('created_at','desc')->take(5)->get();
+    $posts = Post::where('main_article','!=', '1')->orderBy('created_at','desc')->take(5);
     return view('welcome', compact('posts', 'users','ratings','scores', 'main'));
 });
 
