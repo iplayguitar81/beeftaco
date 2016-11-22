@@ -136,23 +136,24 @@
                         $game_date = $game_date->format('M jS Y');
                     @endphp
         <div class="col-xs-12 col-sm-6 col-lg-6">
-            <p>
-                @if($item->category ==="news")
 
-                    <a class="btn-xs btn-danger" href="{{url('news/general')}}">#{{$item->category}}</a>
-
-                @elseif($item->category ==="retro")
-                    <a class="btn-xs btn-danger" href="{{url('news/retro')}}">#{{$item->category}}</a>
-
-                @elseif($item->category ==="former_players")
-                    <a class="btn-xs btn-danger" href="{{url('news/former-players')}}">#{{$item->category}}</a>
-
-                @elseif($item->category ==="nba")
-                    <a class="btn-xs btn-danger" href="{{url('news/nba')}}">#{{$item->category}}</a>
-
-                @endif
-            </p>
             <div class="thumbnail">
+                <p>
+                    @if($item->category ==="news")
+
+                        <a class="btn-xs btn-danger" href="{{url('news/general')}}">#{{$item->category}}</a>
+
+                    @elseif($item->category ==="retro")
+                        <a class="btn-xs btn-danger" href="{{url('news/retro')}}">#{{$item->category}}</a>
+
+                    @elseif($item->category ==="former_players")
+                        <a class="btn-xs btn-danger" href="{{url('news/former-players')}}">#{{$item->category}}</a>
+
+                    @elseif($item->category ==="nba")
+                        <a class="btn-xs btn-danger" href="{{url('news/nba')}}">#{{$item->category}}</a>
+
+                    @endif
+                </p>
                 <img src="../images/md-img-{{ $item->imgPath}}" alt="">
                 <div class="caption">
                     <em class="caption-em">{{$item->mainImg_caption}}</em>
