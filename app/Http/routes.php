@@ -33,16 +33,16 @@ use willvincent\Rateable\Rateable;
 Route::get('/', function () {
 
 
-    $posts = Post::orderBy('created_at', 'desc')->paginate(6);
+    //$posts = Post::orderBy('created_at', 'desc')->paginate(6);
     $users = User::all();
     $ratings =Rating::all();
     //$scores =boxscore::take(5)->orderBy('datey', 'desc')->limit(5);
     $scores = boxscore::orderBy('datey', 'desc')->take(5)->get();
     $main = Post::where('main_article','=', '1')->orderBy('created_at','desc')->take(1)->get();
 
-    $posts = Post::where('main_article','!=', '1')->orderBy('created_at','asc')->take(5);
+  //  $posts = Post::where('main_article','!=', '1')->orderBy('created_at','asc')->take(5);
 
-    $posts = DB::table('posts')->where('main_article', '=', 0)->limit(6)->get();
+    $posts = DB::table('posts')->where('main_article', '=', 0)->limit(4)->get();
 
     return view('welcome', compact('posts', 'users','ratings','scores', 'main'));
 });
