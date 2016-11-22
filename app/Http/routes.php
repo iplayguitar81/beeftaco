@@ -42,7 +42,7 @@ Route::get('/', function () {
 
     $posts = Post::where('main_article','!=', '1')->orderBy('created_at','desc')->take(5);
 
-    $posts = DB::table('posts')->where('main_article', '=', '0')->limit(5)->get();
+   // $posts = DB::table('posts')->where('main_article', '=', '0')->limit(5)->get();
 
     return view('welcome', compact('posts', 'users','ratings','scores', 'main'));
 });
