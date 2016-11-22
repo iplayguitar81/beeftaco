@@ -138,7 +138,7 @@
         <div class="col-xs-12 col-sm-6 col-lg-6">
 
             <div class="thumbnail">
-                <p>
+                <span class="text-center">
                     @if($item->category ==="news")
 
                         <a class="btn-xs btn-danger" href="{{url('news/general')}}">#{{$item->category}}</a>
@@ -153,7 +153,7 @@
                         <a class="btn-xs btn-danger" href="{{url('news/nba')}}">#{{$item->category}}</a>
 
                     @endif
-                </p>
+                </span>
                 <img src="../images/md-img-{{ $item->imgPath}}" alt="">
                 <div class="caption">
                     <em class="caption-em">{{$item->mainImg_caption}}</em>
