@@ -38,7 +38,10 @@ Route::get('/', function () {
     $ratings =Rating::all();
     //$scores =boxscore::take(5)->orderBy('datey', 'desc')->limit(5);
     $scores = boxscore::orderBy('datey', 'desc')->take(5)->get();
-    $main = Post::where('main_article','=', '1')->orderBy('created_at','desc')->take(1)->get();
+
+    $published = Post::where('published','=', '1')->orderBy('created_at','desc')->take(1)->get();
+
+    $main =$published::where('main_article','=', '1')->orderBy('created_at','desc')->take(1)->get();
 
   //  $posts = Post::where('main_article','!=', '1')->orderBy('created_at','asc')->take(5);
 
