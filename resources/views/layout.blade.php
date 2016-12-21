@@ -488,6 +488,12 @@ table#boxscore_home td {
     color: #FFFFFF
 }
 
+twitterwidget{
+    margin-left:auto;
+    margin-right:auto;
+}
+
+
 .digit_box_total {
     font-family: Tahoma, "Trebuchet MS", Arial;
     color: #bdbdbd;
@@ -526,6 +532,7 @@ a.boxscore_link {
     margin-left: 23%;
     color: red
 }
+
 
 
 
