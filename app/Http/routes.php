@@ -41,7 +41,7 @@ Route::get('/', function () {
 
     $published = Post::where('published','=', '1')->orderBy('created_at','desc')->take(1)->get();
 
-    $main = Post::table('posts')->where([
+    $main = DB::table('posts')->where([
         ['main_article','1'],
         ['published','1'],
     ])->get();
