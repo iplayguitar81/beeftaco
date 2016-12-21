@@ -151,6 +151,9 @@ Route::get('/boxscores/season_2015_2016',
 Route::get('/boxscores/season_2014_2015',
     ['as' => 'boxscores.season2014_2015', 'uses' => 'boxscoreController@season_2014_2015']);
 
+Route::get('/boxscores/season_2013_2014',
+    ['as' => 'boxscores.season2013_2014', 'uses' => 'boxscoreController@season_2013_2014']);
+
 
 
 Route::get('/posts/user_posts','PostsController@user_posts');
