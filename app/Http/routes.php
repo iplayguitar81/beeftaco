@@ -55,6 +55,11 @@ Route::get('/', function () {
 
     $posts = DB::table('posts')->where('main_article', '=', 0)->orderBy('created_at','desc')->limit(4)->get();
 
+    $posts = DB::table('posts')->where([
+        ['main_article','0'],
+        ['published','1'],
+    ])->orderBy('created_at','desc')->limit(4)->get();
+
     return view('welcome', compact('posts', 'users','ratings','scores', 'main'));
 });
 
