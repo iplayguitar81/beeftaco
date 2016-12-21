@@ -63,6 +63,17 @@
             </div>
             <br/>
 
+
+            <div class="form-group {{ $errors->has('published') ? 'has-error' : ''}}">
+                {!! Form::label('published', trans('posts.published'), ['class' => '']) !!}
+                <div class="">
+                    {{Form::hidden('published', 0)}}
+                    {{Form::checkbox('published', 1, $post->published, ['class' => 'switch', 'data-on-text'=>"1", 'data-off-text'=>"0"])}}
+                    {!! $errors->first('published', '<p class="uk-alert-danger">:message</p>') !!}
+                </div>
+            </div>
+            <br/>
+
             <div class="form-group">
                 {!! Form::label('category', trans('posts.category'), ['class' => '']) !!}
 
