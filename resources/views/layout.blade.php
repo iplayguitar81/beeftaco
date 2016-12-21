@@ -90,10 +90,10 @@ ul.share-buttons .sr-only {
     overflow: hidden;
 }
 
-.fb_iframe_widget_fluid span, iframe.fb_ltr { width: 100% !important; }
+.fb_iframe_widget_fluid span, iframe.fb_ltr { width: 95% !important; }
 
 .fb_iframe_widget, .fb_iframe_widget span, .fb_iframe_widget span iframe[style] {
-    min-width: 90% !important;
+    min-width: 95% !important;
 
 }
 
@@ -479,8 +479,8 @@ table#boxscore_home td {
 }
 
 .fb_iframe_widget, .fb_iframe_widget span, .fb_iframe_widget span iframe[style] {
-    min-width: 100% !important;
-    width: 100% !important;
+    min-width: 95% !important;
+    width: 95% !important;
     background-color: #FFFFFF
 }
 
