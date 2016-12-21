@@ -57,11 +57,11 @@
 <br/>
 
 
-    <div class="form-group {{ $errors->has('main_article') ? 'has-error' : ''}}">
-        {!! Form::label('main_article', trans('posts.main_article'), ['class' => '']) !!}
+    <div class="form-group {{ $errors->has('published') ? 'has-error' : ''}}">
+        {!! Form::label('published', trans('posts.published'), ['class' => '']) !!}
         <div class="">
-            {{ Form::checkbox('main_article',1,false, array('id'=>'main_article')) }}
-            {!! $errors->first('main_article', '<p class="uk-alert-danger">:message</p>') !!}
+            {{ Form::checkbox('published',1,false, array('id'=>'published')) }}
+            {!! $errors->first('published', '<p class="uk-alert-danger">:message</p>') !!}
         </div>
     </div>
     <br/>
