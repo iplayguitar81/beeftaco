@@ -85,6 +85,17 @@ public function season_2015_2016(){
 
         return view('boxscores.season_2014_2015', compact('season', 'user'));
     }
+
+
+
+    public function season_2013_2014(){
+
+        $user=Auth::id();
+
+        $season = boxscore::orderBy('datey', 'desc')->whereBetween('datey',array('2013-10-20','2014-07-01'))->paginate(10);
+
+        return view('boxscores.season_2013_2014', compact('season', 'user'));
+    }
     /**
      * Show the form for creating a new resource.
      *
