@@ -148,6 +148,10 @@ Route::post('contact',
 Route::get('/boxscores/season_2015_2016',
     ['as' => 'boxscores.season2015_2016', 'uses' => 'boxscoreController@season_2015_2016']);
 
+Route::get('/boxscores/season_2014_2015',
+    ['as' => 'boxscores.season2014_2015', 'uses' => 'boxscoreController@season_2014_2015']);
+
+
 
 Route::get('/posts/user_posts','PostsController@user_posts');
 
