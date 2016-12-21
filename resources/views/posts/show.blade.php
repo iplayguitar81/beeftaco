@@ -83,9 +83,7 @@
                     </div>
 
     </article>
-                </div>
 
-            </div>
 
 
         <br/>
@@ -105,6 +103,9 @@
 
         <button type="submit" class="btn btn-danger center-block btn-md">Back Home</button>
     </a>
+
+
+</div>
 
     </div>
 
