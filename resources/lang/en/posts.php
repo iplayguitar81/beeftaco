@@ -7,6 +7,8 @@ return [
 'imgPath' => 'imgPath',
 'category' => 'Category',
 'main_article' => 'Main Article?',
+'published' => 'Published?',
+
 'mainImg_caption' => 'Feature Image Caption',
 
 
