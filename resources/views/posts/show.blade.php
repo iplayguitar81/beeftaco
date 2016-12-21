@@ -89,7 +89,7 @@
         <br/>
     </div>
 
-    <div class="col-md-8">
+    <div class="col-md-8 center-block">
 
         <h2 class="text-center Bebas" >leave a facebook comment!</h2>
         <div class="fb-comments center-block" data-href="https://www.trailblazersfans.com/posts/{{$post->id}}/{{str_slug($post->title)}}" data-numposts="10"></div>
