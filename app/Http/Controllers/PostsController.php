@@ -522,7 +522,7 @@ class PostsController extends Controller
 
        $news ='Future news feed...';
 
-        $news = boxscore::orderBy('datey', 'desc')->take(5)->get();
+       // $news = boxscore::orderBy('datey', 'desc')->take(5)->get();
         return view('posts.news', compact('news', 'retronews', 'nbanews'));
     }
 
