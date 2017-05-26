@@ -23,7 +23,7 @@
     <br>
     <div class="row">
 
-        @foreach($news as $item)
+        @foreach($retronews as $item)
 
 
             @php
