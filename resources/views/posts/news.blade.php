@@ -3,7 +3,7 @@
 @section('content')
 
 
-<h1 class="article-title-show">news categories</h1>
+<h1 class="article-title-show">latest news categories</h1>
 
 {{--{{$news}}--}}
 <br/>
