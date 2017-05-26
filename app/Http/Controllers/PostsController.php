@@ -517,7 +517,7 @@ class PostsController extends Controller
 
         $category2="nba";
 
-        $nbanews = Post::where('category', '=', $category2)->get();
+        $nbanews = Post::where('category', '=', $category2)->take(1)->get();
 
 
        $news ='Future news feed...';
