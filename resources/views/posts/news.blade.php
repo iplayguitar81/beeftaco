@@ -22,6 +22,8 @@
     <h3>Latest News & Categories</h3>
     <br>
     <div class="row">
+
+
         <div class="col-sm-3">
             <img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image">
             <p>Current Project</p>
@@ -40,9 +42,11 @@
         </div>
 
     <hr>
+
+
+    </div>
+
 </div>
-
-
 
 
 @endsection
