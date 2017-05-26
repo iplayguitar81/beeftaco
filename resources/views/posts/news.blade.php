@@ -23,6 +23,14 @@
     <br>
     <div class="row">
 
+        @foreach($news as $item)
+
+
+            @php
+                $game_date = new DateTime($item->datey, new DateTimeZone('America/Los_Angeles'));
+                $game_date = date_sub($game_date, date_interval_create_from_date_string('3 hour'));
+                $game_date = $game_date->format('l F dS Y g:i a');
+            @endphp
 
         <div class="col-sm-3">
             <img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image">
@@ -42,6 +50,9 @@
         </div>
 
     <hr>
+
+
+
 
 
     </div>
