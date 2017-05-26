@@ -58,7 +58,7 @@
 
         <div class="col-sm-3">
             <h1>Retro News</h1>
-            <img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image">
+            <img src="../images/md-img-{{ $item->imgPath}}" class="img-responsive" style="width:100%" alt="Retro News Image">
            <h4>{{$item->title}}<br/>{{$item->date}}</h4>
             @php
                 $variable= strip_tags($item->body);
@@ -82,7 +82,7 @@
 
                 <div class="col-sm-3">
                     <h1>Past Blazers</h1>
-                    <img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image">
+                    <img src="../images/md-img-{{ $item->imgPath}}" class="img-responsive" style="width:100%" alt="Past Blazers News Image">
                     <h4>{{$item->title}}<br/>{{$item->date}}</h4>
                     @php
                         $variable= strip_tags($item->body);
@@ -107,7 +107,7 @@
 
                 <div class="col-sm-3">
                     <h1>League News</h1>
-                    <img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image">
+                    <img src="../images/md-img-{{ $item->imgPath}}" class="img-responsive" style="width:100%" alt="NBA News Image">
                     <h4>{{$item->title}}<br/>{{$item->date}}</h4>
 
                     @php
