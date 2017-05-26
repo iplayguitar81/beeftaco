@@ -33,7 +33,9 @@
 
             <div class="col-sm-3">
                 <h1>Team News</h1>
-                <img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image">
+                {{--<img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image">--}}
+
+                <img src="../images/md-img-{{ $item->imgPath}}" class="img-responsive" style="width:100%" alt="Team News Image">
                 <h4>{{$item->title}}<br/>{{$item->date}}</h4>
                 @php
                     $variable= strip_tags($item->body);
