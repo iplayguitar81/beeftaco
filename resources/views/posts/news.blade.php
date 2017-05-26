@@ -104,7 +104,7 @@
                     <br/>
                     <br/>
 
-                    <a class="btn btn-outline-secondary btn-md active" href="{{url('news/former-players')}}">More Past Blazers News...</a>
+                    <a class="btn btn-outline-secondary btn-md active" href="{{url('news/former-players')}}">More Alum News...</a>
                     <br/>
                     <br/>
 
