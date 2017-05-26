@@ -35,7 +35,7 @@
                 <h1>Team News</h1>
                 <img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image">
                 <h4>{{$item->title}}<br/>{{$item->date}}</h4>
-                <p>{{$item->body}}</p>
+                <p>{!! $item->body !!}</p>
 
             </div>
         @endforeach
@@ -53,7 +53,7 @@
             <h1>Retro News</h1>
             <img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image">
            <h4>{{$item->title}}<br/>{{$item->date}}</h4>
-            <p>{{$item->body}}</p>
+            <p>{!! $item->body !!}</p>
 
         </div>
         @endforeach
@@ -72,7 +72,7 @@
                     <h1>Past Blazers</h1>
                     <img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image">
                     <h4>{{$item->title}}<br/>{{$item->date}}</h4>
-                    <p>{{$item->body}}</p>
+                    <p>{!! $item->body !!}</p>
 
                 </div>
             @endforeach
@@ -92,7 +92,7 @@
                     <h1>NBA News</h1>
                     <img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image">
                     <h4>{{$item->title}}<br/>{{$item->date}}</h4>
-                    <p>{{$item->body}}</p>
+                    <p>{!! $item->body !!}</p>
 
                 </div>
             @endforeach
@@ -100,8 +100,6 @@
 
 
     <hr>
-
-
 
 
 
