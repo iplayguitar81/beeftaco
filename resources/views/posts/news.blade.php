@@ -41,10 +41,23 @@
         </div>
         @endforeach
 
-        <div class="col-sm-3">
-            <img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image">
-            <p>Project 2</p>
-        </div>
+            @foreach($nbanews as $item)
+
+
+                @php
+                    $game_date = new DateTime($item->date, new DateTimeZone('America/Los_Angeles'));
+                    $game_date = date_sub($game_date, date_interval_create_from_date_string('3 hour'));
+                    $game_date = $game_date->format('l F dS Y g:i a');
+                @endphp
+
+                <div class="col-sm-3">
+                    <h1>NBA News</h1>
+                    <img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image">
+                    <h4>{{$item->title}}<br/>{{$item->date}}</h4>
+                    <p>{{$item->body}}</p>
+
+                </div>
+            @endforeach
         <div class="col-sm-3">
             <img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image">
             <p>Project 2</p>
