@@ -511,6 +511,11 @@ class PostsController extends Controller
     public function news()
     {
 
+        $category="news";
+
+        $news = Post::where('category', '=', $category)->take(1)->get();
+
+
         $category1="retro";
 
         $retronews = Post::where('category', '=', $category1)->take(1)->get();
@@ -523,7 +528,7 @@ class PostsController extends Controller
        $news ='Future news feed...';
 
        // $news = boxscore::orderBy('datey', 'desc')->take(5)->get();
-        return view('posts.news', compact('retronews', 'nbanews'));
+        return view('posts.news', compact('news','retronews', 'nbanews'));
     }
 
     public function general()
