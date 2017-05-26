@@ -5,7 +5,7 @@
 
 <h1 class="article-title-show">news categories</h1>
 
-{{$news}}
+{{--{{$news}}--}}
 <br/>
 
 <a href="{{url('news/general')}}">General News...</a>
