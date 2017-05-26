@@ -136,7 +136,7 @@
                     <br/>
                     <br/>
 
-                    <a class="btn btn-outline-secondary btn-md active" href="{{url('news/nba')}}">More League News...</a>
+                    <a class="btn btn-secondary btn-md active" href="{{url('news/nba')}}">More League News...</a>
                     <br/>
                     <br/>
                 </div>
