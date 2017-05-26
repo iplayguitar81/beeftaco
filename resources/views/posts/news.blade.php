@@ -19,7 +19,7 @@
 
 
 <div class="container text-center">
-    <h3>News Categories</h3>
+    <h3>Latest News & Categories</h3>
     <br>
     <div class="row">
         <div class="col-sm-3">
