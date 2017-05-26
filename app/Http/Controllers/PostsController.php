@@ -525,7 +525,7 @@ class PostsController extends Controller
         $nbanews = Post::where('category', '=', $category2)->take(1)->get();
 
 
-       $news ='Future news feed...';
+      // $news ='Future news feed...';
 
        // $news = boxscore::orderBy('datey', 'desc')->take(5)->get();
         return view('posts.news', compact('news','retronews', 'nbanews'));
