@@ -42,7 +42,13 @@
                     $variable =substr($variable,0, 50);
                 @endphp
                 <p>{!! $variable !!}...</p>
+                <a class="btn btn-danger btn-md active" href="{{ route('posts.show', [$item->id, str_slug($item->title)]) }}">Continue Reading</a>
+                <br/>
+                <br/>
 
+                <a class="btn btn-secondary btn-md active" href="{{url('news/general')}}">More Retro News...</a>
+                <br/>
+                <br/>
 
             </div>
         @endforeach
@@ -95,7 +101,13 @@
                         $variable =substr($variable,0, 50);
                     @endphp
                     <p>{!! $variable !!}...</p>
+                    <a class="btn btn-danger btn-md active" href="{{ route('posts.show', [$item->id, str_slug($item->title)]) }}">Continue Reading</a>
+                    <br/>
+                    <br/>
 
+                    <a class="btn btn-secondary btn-md active" href="{{url('news/former-players')}}">More Retro News...</a>
+                    <br/>
+                    <br/>
 
                 </div>
             @endforeach
@@ -121,7 +133,13 @@
                         $variable =substr($variable,0, 50);
                     @endphp
                     <p>{!! $variable !!}...</p>
+                    <a class="btn btn-danger btn-md active" href="{{ route('posts.show', [$item->id, str_slug($item->title)]) }}">Continue Reading</a>
+                    <br/>
+                    <br/>
 
+                    <a class="btn btn-secondary btn-md active" href="{{url('news/nba')}}">More Retro News...</a>
+                    <br/>
+                    <br/>
                 </div>
             @endforeach
 
