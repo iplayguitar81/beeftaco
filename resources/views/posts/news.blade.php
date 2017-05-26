@@ -19,8 +19,7 @@
 
 
 <div class="container text-center">
-    <h3>Latest News & Categories</h3>
-    <br>
+
     <div class="row">
 
         @foreach($news as $item)
