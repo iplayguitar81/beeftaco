@@ -105,7 +105,7 @@
                     <br/>
                     <br/>
 
-                    <a class="btn btn-secondary btn-md active" href="{{url('news/former-players')}}">More Retro News...</a>
+                    <a class="btn btn-secondary btn-md active" href="{{url('news/former-players')}}">More Former Player News...</a>
                     <br/>
                     <br/>
 
@@ -137,7 +137,7 @@
                     <br/>
                     <br/>
 
-                    <a class="btn btn-secondary btn-md active" href="{{url('news/nba')}}">More Retro News...</a>
+                    <a class="btn btn-secondary btn-md active" href="{{url('news/nba')}}">More League News...</a>
                     <br/>
                     <br/>
                 </div>
