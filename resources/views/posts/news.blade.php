@@ -65,7 +65,9 @@
                 $variable =substr($variable,0, 50);
             @endphp
             <p>{!! $variable !!}...</p>
-
+            <a class="btn btn-danger btn-md active" href="{{ route('posts.show', [$item->id, str_slug($item->title)]) }}">Continue Reading</a>
+            <br/>
+            <a class="btn btn-danger btn-md active" href="{{url('news/retro')}}">More Retro News...</a>
 
         </div>
         @endforeach
