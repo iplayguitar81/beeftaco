@@ -527,7 +527,7 @@ class PostsController extends Controller
 
         $category3="former_players";
 
-        $news = Post::where('category', '=', $category3)->take(1)->get();
+        $former_players = Post::where('category', '=', $category3)->take(1)->get();
         return view('posts.news', compact('news','retronews', 'nbanews', 'former_players'));
     }
 
