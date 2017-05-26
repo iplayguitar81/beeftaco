@@ -45,7 +45,7 @@
                 <br/>
                 <br/>
 
-                <a class="btn btn-secondary btn-md active" href="{{url('news/general')}}">More Team News...</a>
+                <a class="btn btn-outline-secondary btn-md active" href="{{url('news/general')}}">More Team News...</a>
                 <br/>
                 <br/>
 
@@ -74,7 +74,7 @@
             <br/>
             <br/>
 
-            <a class="btn btn-secondary btn-md active" href="{{url('news/retro')}}">More Retro News...</a>
+            <a class="btn btn-outline-secondary btn-md active" href="{{url('news/retro')}}">More Retro News...</a>
         <br/>
         <br/>
 
@@ -104,7 +104,7 @@
                     <br/>
                     <br/>
 
-                    <a class="btn btn-secondary btn-md active" href="{{url('news/former-players')}}">More Past Blazers News...</a>
+                    <a class="btn btn-outline-secondary btn-md active" href="{{url('news/former-players')}}">More Past Blazers News...</a>
                     <br/>
                     <br/>
 
@@ -136,7 +136,7 @@
                     <br/>
                     <br/>
 
-                    <a class="btn btn-secondary btn-md active" href="{{url('news/nba')}}">More League News...</a>
+                    <a class="btn btn-outline-secondary btn-md active" href="{{url('news/nba')}}">More League News...</a>
                     <br/>
                     <br/>
                 </div>
