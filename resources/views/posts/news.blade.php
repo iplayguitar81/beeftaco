@@ -89,7 +89,7 @@
                 @endphp
 
                 <div class="col-sm-3">
-                    <h1>NBA News</h1>
+                    <h1>League News</h1>
                     <img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image">
                     <h4>{{$item->title}}<br/>{{$item->date}}</h4>
                     <p>{!! $item->body !!}</p>
