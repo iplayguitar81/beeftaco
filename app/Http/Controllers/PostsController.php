@@ -513,7 +513,7 @@ class PostsController extends Controller
 
         $category1="retro";
 
-        $retronews = Post::where('category', '=', $category1)->get();
+        $retronews = Post::where('category', '=', $category1)->take(1)->get();
 
         $category2="nba";
 
