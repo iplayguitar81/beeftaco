@@ -70,6 +70,8 @@
             <br/>
 
             <a class="btn btn-secondary btn-md active" href="{{url('news/retro')}}">More Retro News...</a>
+        <br/>
+        <br/>
 
         </div>
         @endforeach
