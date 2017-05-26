@@ -511,8 +511,17 @@ class PostsController extends Controller
     public function news()
     {
 
+        $category="retro";
+
+        $retronews = Post::where('category', '=', $category)->get();
+
+
+
+
        $news ='Future news feed...';
-        return view('posts.news', compact('news'));
+
+        $news = boxscore::orderBy('datey', 'desc')->take(5)->get();
+        return view('posts.news', compact('news', 'retronews'));
     }
 
     public function general()
