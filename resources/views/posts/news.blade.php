@@ -31,22 +31,14 @@
             <p>Project 2</p>
         </div>
         <div class="col-sm-3">
-            <div class="well">
-                <p>Some text..</p>
-            </div>
-            <div class="well">
-                <p>Some text..</p>
-            </div>
+            <img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image">
+            <p>Project 2</p>
         </div>
         <div class="col-sm-3">
-            <div class="well">
-                <p>Some text..</p>
-            </div>
-            <div class="well">
-                <p>Some text..</p>
-            </div>
+            <img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image">
+            <p>Project 2</p>
         </div>
-    </div>
+
     <hr>
 </div>
 
