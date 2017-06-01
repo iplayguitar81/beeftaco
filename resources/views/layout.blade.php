@@ -1102,6 +1102,10 @@ table.header_last_game{font-family: Bebas; float:right;margin-right:5%;width: 95
     font-weight: 500;
 }
 
+.buttons-show {
+text-align:center;
+}
+
 ul{
     list-style: none outside none;
     padding-left: 0;
