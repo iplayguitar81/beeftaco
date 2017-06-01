@@ -4,6 +4,7 @@
 @section('title', 'Home')
 
 @section('content')
+    <div class="col-md-8">
 
     <h2 id="latest_games" class="Ripper">latest games</h2>
 
@@ -108,7 +109,10 @@
 
         @endforeach
     </div>
+    </div>
     <br/>
+
+
 <div class="col-md-8">
     @if(Session::has('message'))
         <div class="alert alert-info" style="color:red;">
