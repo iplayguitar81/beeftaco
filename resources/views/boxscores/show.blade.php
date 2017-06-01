@@ -600,12 +600,12 @@ $test_to= $ap1_to .
     <div class="buttons-show">
 <a href="{{url('boxscores')}}">
 
-    <button type="submit" class="btn btn-primary center-block btn-md">Back to All Boxscores</button>
+    <button type="submit" class="btn center-block btn-md">Back to All Boxscores</button>
 </a>
 &nbsp;
 <a href="{{url('/')}}">
 
-    <button type="submit" class="btn btn-success center-block btn-md">Back Home</button>
+    <button type="submit" class="btn btn-danger center-block btn-md">Back Home</button>
 </a>
 
     </div>
