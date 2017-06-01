@@ -97,7 +97,7 @@
         <br/>
 
     <a href="{{url('/news')}}">
-
+<div class="buttons-show">
         <button type="submit" class="btn btn-primary center-block btn-md">Back to All Posts</button>
     </a>
    &nbsp;
@@ -106,7 +106,7 @@
         <button type="submit" class="btn btn-danger center-block btn-md">Back Home</button>
     </a>
 
-
+    </div>
 </div>
 
     </div>
