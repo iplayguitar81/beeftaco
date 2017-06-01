@@ -123,7 +123,7 @@
                 @endphp
 
                 <div class="col-sm-3">
-                    <h1 class="Ripper"><a class="" href="{{url('news/nba')}}">League News</a></h1>
+                    <h1 class="Ripper"><a class="" href="{{url('news/nba')}}">league news</a></h1>
                     <img src="../images/md-img-{{ $item->imgPath}}" class="img-responsive" style="width:100%" alt="NBA News Image">
                     <h4><a class="secondary-posts-title" href="{{ route('posts.show', [$item->id, str_slug($item->title)]) }}">{{$item->title}}</a><br/>{{$item->date}}</h4>
 
