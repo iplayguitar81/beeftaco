@@ -365,7 +365,8 @@ td.logo_box {
 .header_last_game td {
     border: 1px inset #000000;
     text-align: center;
-    line-height: .85em
+    line-height: .85em;
+    padding: .5em;
 }
 
 .win_loss_box_show_win {
