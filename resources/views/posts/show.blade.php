@@ -99,7 +99,7 @@
         <div class="buttons-show">
 
 
-        <button type="submit" class="btn center-block btn-md" onclick="window.location='{{url('/news')}}';" >Back to All Posts</button>
+        <button type="submit" class="btn center-block btn-md" onclick="window.location='{{url('/news')}}';" >Back to All News</button>
 
    &nbsp;
     <a href="{{url('/')}}">
