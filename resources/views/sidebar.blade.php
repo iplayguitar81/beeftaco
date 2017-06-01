@@ -100,7 +100,8 @@
 
     @endforeach
 </div>
-
+<br/>
+<hr>
 
 {{--<h3 class="Bebas">Welcome to Trail Blazers Fans.com</h3>--}}
     {{--<h2 id="latest_games" class="Ripper">latest games</h2>--}}
