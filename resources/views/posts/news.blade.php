@@ -45,7 +45,8 @@
                 <br/>
                 <br/>
 
-                <a class="btn center-block btn-md" href="{{url('news/general')}}">More Team News...</a>
+                <button type="submit" class="btn center-block btn-md" onclick="window.location='{{url('news/general')}}';" >Back to All News</button>
+
                 <br/>
                 <br/>
 
@@ -73,8 +74,9 @@
             <a class="btn btn-danger btn-md active" href="{{ route('posts.show', [$item->id, str_slug($item->title)]) }}">Continue Reading</a>
             <br/>
             <br/>
+            <button type="submit" class="btn center-block btn-md" onclick="window.location='{{url('news/retro')}}';" >More Retro News...</button>
 
-            <a class="btn center-block btn-md" href="{{url('news/retro')}}">More Retro News...</a>
+
         <br/>
         <br/>
 
@@ -104,7 +106,9 @@
                     <br/>
                     <br/>
 
-                    <a class="btn center-block btn-md" href="{{url('news/former-players')}}">More Alum News...</a>
+                    <button type="submit" class="btn center-block btn-md" onclick="window.location='{{url('news/former-players')}}';" >More Alum News...</button>
+
+
                     <br/>
                     <br/>
 
@@ -136,7 +140,10 @@
                     <br/>
                     <br/>
 
-                    <a class="btn center-block btn-md" href="{{url('news/nba')}}">More League News...</a>
+
+
+                    <button type="submit" class="btn center-block btn-md" onclick="window.location='{{url('news/nba')}}';" >More League News...</button>
+
                     <br/>
                     <br/>
                 </div>
