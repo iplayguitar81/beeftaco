@@ -113,7 +113,7 @@
     <br/>
 
 
-<div class="col-md-8">
+<div class="col-md-2">
     @if(Session::has('message'))
         <div class="alert alert-info" style="color:red;">
             {{Session::get('message')}}
