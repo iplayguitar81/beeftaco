@@ -16,7 +16,9 @@
 
         @endphp
 
+@if($item->h_intials=='POR' || $item->a_initials=='POR')
 
+    @endif
 
         @if ($item->h_initials=='POR')
             @php
