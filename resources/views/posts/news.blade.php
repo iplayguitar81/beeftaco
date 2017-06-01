@@ -125,7 +125,7 @@
                 <div class="col-sm-3">
                     <h1 class="secondary-posts-title"><a class="" href="{{url('news/nba')}}">League News</a></h1>
                     <img src="../images/md-img-{{ $item->imgPath}}" class="img-responsive" style="width:100%" alt="NBA News Image">
-                    <h4>{{$item->title}}<br/>{{$item->date}}</h4>
+                    <h4><a href="{{ route('posts.show', [$item->id, str_slug($item->title)]) }}">{{$item->title}}</a><br/>{{$item->date}}</h4>
 
                     @php
                         $variable= strip_tags($item->body);
