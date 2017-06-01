@@ -18,6 +18,12 @@
 
 @if($item->h_intials=='POR' || $item->a_initials=='POR')
 
+
+    @php
+    $team_color= "portland"
+
+    @endphp
+
     @endif
 
         @if ($item->h_initials=='POR')
@@ -90,7 +96,7 @@
 
             <table class="header_last_game">
                 <tr><th colspan="3">{{$game_date}}</th></tr>
-                <tr><td><span class="initials">{{$item->a_initials}}</span><br/><span class='slider_score'>{{$item->atotal}}</span></td><td>{!! $versus_or_at !!}<br/>{!! $win_or_loss!!}</td><td><span class="initials">{{$item->h_initials}}</span><br/><span class='slider_score'>{{$item->htotal}}</span></td></tr>
+                <tr><td><span class="initials {{$team_color}}">{{$item->a_initials}}</span><br/><span class='slider_score'>{{$item->atotal}}</span></td><td>{!! $versus_or_at !!}<br/>{!! $win_or_loss!!}</td><td><span class="initials">{{$item->h_initials}}</span><br/><span class='slider_score'>{{$item->htotal}}</span></td></tr>
                 <tr><td colspan="3" class="score-link"><a class="btn btn-danger btn-xs" role="button" aria-pressed="true" href="{{ route('boxscores.show', [$item->id, str_slug($item->game_string)]) }}">Box score</a></td></tr>
             </table>
 
