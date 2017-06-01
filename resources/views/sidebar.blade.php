@@ -17,7 +17,7 @@
 
         @endphp
 
-@if($item->h_intials==='POR' || $item->a_initials==='POR')
+@if($item->h_intials=='POR' || $item->a_initials=='POR')
 
 
     @php
