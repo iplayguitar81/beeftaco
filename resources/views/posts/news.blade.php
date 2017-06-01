@@ -92,9 +92,9 @@
                 @endphp
 
                 <div class="col-sm-3">
-                    <h1 class="secondary-posts-title"> <a class="" href="{{url('news/former-players')}}">Past Blazers</a></h1>
+                    <h1 class="Ripper" > <a  href="{{url('news/former-players')}}">past blazers</a></h1>
                     <img src="../images/md-img-{{ $item->imgPath}}" class="img-responsive" style="width:100%" alt="Past Blazers News Image">
-                    <h4>{{$item->title}}<br/>{{$item->date}}</h4>
+                    <h4 class="secondary-posts-title">{{$item->title}}<br/>{{$item->date}}</h4>
                     @php
                         $variable= strip_tags($item->body);
                         $variable =substr($variable,0, 50);
@@ -125,7 +125,7 @@
                 <div class="col-sm-3">
                     <h1 class="Ripper"><a class="" href="{{url('news/nba')}}">league news</a></h1>
                     <img src="../images/md-img-{{ $item->imgPath}}" class="img-responsive" style="width:100%" alt="NBA News Image">
-                    <h4><a class="secondary-posts-title" href="{{ route('posts.show', [$item->id, str_slug($item->title)]) }}">{{$item->title}}</a><br/>{{$item->date}}</h4>
+                    <h4 class="secondary-posts-title"><a  href="{{ route('posts.show', [$item->id, str_slug($item->title)]) }}">{{$item->title}}</a><br/>{{$item->date}}</h4>
 
                     @php
                         $variable= strip_tags($item->body);
