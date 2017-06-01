@@ -352,9 +352,9 @@ td.logo_box {
 
 .header_last_game {
 
-    float: right;
-    margin-right: 5%;
-    width: 80%
+    /*float: right;*/
+    /*margin-right: 5%;*/
+    /*width: 80%*/
 }
 
 .header_last_game th {
@@ -1095,7 +1095,8 @@ td.score-link{
     min-width: 90% !important;
 }
 table.header_last_game{font-family: Bebas;
-    /*float:right;margin-right:5%;width: 95%;*/
+    margin-left: auto;
+    margin-right: auto;
     font-size: 1.5em;}.header_last_game td{border:1px inset #000000;text-align:center;line-height:1.5em}.win_loss_box_show_win{background-color:#FFFFFF;font-size:1em;padding:.5%;color:green;text-shadow:2px 2px white;border:1px inset #777788;font-family:"Trebuchet MS", georgia, Verdana, Sans-serif;margin-bottom:.2%}.win_loss_box_show_loss{padding:.5%;font-size:1em;background-color:#FFFFFF;border:1px inset #000000;color:#D73F3F;text-shadow:1px 1px #777788;font-family:"Trebuchet MS", georgia, Verdana, Sans-serif;margin-bottom:.2%}.win_loss_box_show_win2{background-color:#FFFFFF;font-size:1em;padding:.5%;color:green;text-shadow:2px 2px white;font-family:"Trebuchet MS", georgia, Verdana, Sans-serif;margin-bottom:.2%}.win_loss_box_show_loss2{padding:.5%;font-size:1.2em;background-color:#FFFFFF;color:#D73F3F;text-shadow:1px 1px #777788;font-family:Bebas;margin-bottom:.2%}
 
 .slider_score {
