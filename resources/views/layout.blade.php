@@ -350,6 +350,14 @@ td.logo_box {
     text-shadow: 1px 1px #000000
 }
 
+/* team colors for recent games! */
+
+.portland{
+    color: darkred;
+}
+
+
+
 .header_last_game {
 
     /*float: right;*/
