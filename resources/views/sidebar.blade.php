@@ -25,6 +25,12 @@
 
     @endphp
 
+    @else
+            @php
+                $team_color= ""
+
+            @endphp
+
     @endif
 
         @if ($item->h_initials=='POR')
