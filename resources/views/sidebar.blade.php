@@ -8,7 +8,10 @@
             $home_nick_dash="";
             $home_or_away="";
             $win_or_loss="";
-            $team_color= "";
+            $ateam_color= "";
+            $hteam_color= "";
+
+
 
     $game_date = new DateTime($item->datey, new DateTimeZone('America/Los_Angeles'));
     $game_date = date_sub($game_date, date_interval_create_from_date_string('3 hour'));
@@ -84,12 +87,32 @@
 
 
 
+    @if( $item->a_initials =='POR'   )
+
+            @php
+                $team_color= "portland"
+
+            @endphp
+
+
+        @elseif($item->h_initials =='POR')
+
+            @php
+                $team_color= "portland"
+
+            @endphp
+
+
+
+        @endif
+
+
 
         <div class="item">
 
             <table class="header_last_game">
                 <tr><th colspan="3">{{$game_date}}</th></tr>
-                <tr><td><span class="initials {{$team_color}}">{{$item->a_initials}}</span><br/><span class='slider_score'>{{$item->atotal}}</span></td><td>{!! $versus_or_at !!}<br/>{!! $win_or_loss!!}</td><td><span class="initials {{$team_color}}">{{$item->h_initials}}</span><br/><span class='slider_score'>{{$item->htotal}}</span></td></tr>
+                <tr><td><span class="initials {{$ateam_color}}">{{$item->a_initials}}</span><br/><span class='slider_score'>{{$item->atotal}}</span></td><td>{!! $versus_or_at !!}<br/>{!! $win_or_loss!!}</td><td><span class="initials {{$hteam_color}}">{{$item->h_initials}}</span><br/><span class='slider_score'>{{$item->htotal}}</span></td></tr>
                 <tr><td colspan="3" class="score-link"><a class="btn btn-danger btn-xs" role="button" aria-pressed="true" href="{{ route('boxscores.show', [$item->id, str_slug($item->game_string)]) }}">Box score</a></td></tr>
             </table>
 
