@@ -363,6 +363,13 @@ td.logo_box {
 
 }
 
+.new-orleans {
+
+    color: #E31937;
+    text-shadow: 1px 1px #002B5C;
+
+}
+
 
 
 
