@@ -104,6 +104,22 @@
 
         @endif
 
+
+        @if(($item->a_initials =='ATL'))
+
+            @php
+                $ateam_color= "atlanta"
+
+            @endphp
+
+        @elseif($item->h_initials =='ATL')
+            @php
+                $hteam_color= "atlanta"
+
+            @endphp
+
+        @endif
+
 @if(($item->a_initials =='GS'))
 
             @php
