@@ -352,6 +352,12 @@ td.logo_box {
 
 /* team colors for recent games! */
 
+
+.atlanta{
+    color: #E03A3E;
+    text-shadow: 1px 1px #C3D600;
+}
+
 .portland{
     color: #B6BFBF;
     text-shadow: 1px 1px #F0163A;
