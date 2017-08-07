@@ -358,6 +358,12 @@ td.logo_box {
     text-shadow: 1px 1px #C3D600;
 }
 
+
+.boston{
+    color: #FFFFFF;
+    text-shadow: 1px 1px #008348;
+}
+
 .portland{
     color: #B6BFBF;
     text-shadow: 1px 1px #F0163A;
