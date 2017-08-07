@@ -102,6 +102,18 @@
 
             @endphp
 
+        @elseif($item->a_initials =='GS')
+
+            @php
+                $ateam_color= "golden-state"
+
+            @endphp
+
+        @elseif($item->h_initials =='GS')
+            @php
+                $hteam_color= "golden-state"
+
+            @endphp
 
 
         @endif
