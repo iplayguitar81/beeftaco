@@ -120,6 +120,24 @@
 
         @endif
 
+
+        @if(($item->a_initials =='BOS'))
+
+            @php
+                $ateam_color= "boston"
+
+            @endphp
+
+        @elseif($item->h_initials =='BOS')
+            @php
+                $hteam_color= "boston"
+
+            @endphp
+
+        @endif
+
+
+
 @if(($item->a_initials =='GS'))
 
             @php
