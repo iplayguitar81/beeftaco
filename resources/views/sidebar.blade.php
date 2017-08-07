@@ -17,21 +17,7 @@
 
         @endphp
 
-@if($item->h_initials=='POR' || $item->a_initials=='POR')
 
-
-    @php
-    $team_color= "portland"
-
-    @endphp
-
-    @else
-            @php
-                $team_color= ""
-
-            @endphp
-
-    @endif
 
         @if ($item->h_initials=='POR')
             @php
