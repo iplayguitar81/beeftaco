@@ -359,7 +359,7 @@ td.logo_box {
 .golden-state{
 
     color: #006BB6;
-    text-shadow: 1px solid #FFC72D;
+    text-shadow: 1px 1px #FFC72D;
 
 }
 
