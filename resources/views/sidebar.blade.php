@@ -120,6 +120,24 @@
     @endif
 
 
+
+        @if(($item->a_initials =='NO'))
+
+            @php
+                $ateam_color= "new-orleans"
+
+            @endphp
+
+        @elseif($item->h_initials =='NO')
+            @php
+                $hteam_color= "new-orleans"
+
+            @endphp
+
+        @endif
+        {{--new-orleans--}}
+
+
         <div class="item">
 
             <table class="header_last_game">
