@@ -356,6 +356,12 @@ td.logo_box {
     color: darkred;
 }
 
+.golden-state{
+
+    color: #006BB6;
+
+}
+
 
 
 .header_last_game {
