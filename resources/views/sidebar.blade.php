@@ -102,7 +102,9 @@
 
             @endphp
 
-        @elseif($item->a_initials =='GS')
+        @endif
+
+@if(($item->a_initials =='GS'))
 
             @php
                 $ateam_color= "golden-state"
@@ -115,10 +117,7 @@
 
             @endphp
 
-
-
-        @endif
-
+    @endif
 
 
         <div class="item">
