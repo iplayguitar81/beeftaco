@@ -364,6 +364,7 @@ td.logo_box {
 
 
 
+
 .header_last_game {
 
     /*float: right;*/
