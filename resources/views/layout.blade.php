@@ -353,7 +353,8 @@ td.logo_box {
 /* team colors for recent games! */
 
 .portland{
-    color: darkred;
+    color: #B6BFBF;
+    text-shadow: 1px 1px #F0163A;
 }
 
 .golden-state{
