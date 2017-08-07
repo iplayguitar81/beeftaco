@@ -361,7 +361,7 @@ td.logo_box {
 
 .boston{
     color: #008348;
-    text-shadow: 1px 1px #000000;
+    text-shadow: 1px 1px #FFD700;
 }
 
 .portland{
