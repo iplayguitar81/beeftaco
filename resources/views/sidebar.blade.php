@@ -137,6 +137,21 @@
         @endif
 
 
+        @if(($item->a_initials =='BKN'))
+
+            @php
+                $ateam_color= "brooklyn"
+
+            @endphp
+
+        @elseif($item->h_initials =='BKN')
+            @php
+                $hteam_color= "brooklyn"
+
+            @endphp
+
+        @endif
+
 
 @if(($item->a_initials =='GS'))
 
