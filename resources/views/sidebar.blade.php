@@ -90,7 +90,7 @@
     @if( $item->a_initials =='POR'   )
 
             @php
-                $team_color= "portland"
+                $ateam_color= "portland"
 
             @endphp
 
@@ -98,7 +98,7 @@
         @elseif($item->h_initials =='POR')
 
             @php
-                $team_color= "portland"
+                $hteam_color= "portland"
 
             @endphp
 
