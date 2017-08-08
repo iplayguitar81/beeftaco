@@ -375,8 +375,8 @@ td.logo_box {
 }
 
 .phoenix{
-    color: #554473;
-    text-shadow: 1px 1px #f8a245;
+    color: #f8a245;
+    text-shadow: 1px 2px #554473;
 }
 
 
