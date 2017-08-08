@@ -369,6 +369,11 @@ td.logo_box {
     text-shadow: 2px 1px #f5f3f4;
 }
 
+.houston {
+    color: #bd3c4b;
+    text-shadow: 1px 1px #b0b3b3;
+}
+
 .minnesota {
     color: #325680;
     text-shadow: 1px 1px #1f954b;
