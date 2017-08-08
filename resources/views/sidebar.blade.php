@@ -184,7 +184,23 @@
             @endphp
 
         @endif
-        {{--new-orleans--}}
+        {{--san-antonio--}}
+
+        @if(($item->a_initials =='SA'))
+
+            @php
+                $ateam_color= "san-antonio"
+
+            @endphp
+
+        @elseif($item->h_initials =='SA')
+            @php
+                $hteam_color= "san-antonio"
+
+            @endphp
+
+        @endif
+
 
 
         <div class="item">
