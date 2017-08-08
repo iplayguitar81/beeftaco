@@ -401,7 +401,7 @@ td.logo_box {
 
 .utah {
 
-    color: #00285b;
+    color: #367741;
     text-shadow: 1px 1px #f8a245;
 
 
