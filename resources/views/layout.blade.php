@@ -374,6 +374,12 @@ td.logo_box {
     text-shadow: 1px 1px #1f954b;
 }
 
+.phoenix{
+    color: #554473;
+    text-shadow: 1px 1px #f8a245;
+}
+
+
 .portland{
     color: #B6BFBF;
     text-shadow: 1px 1px #F0163A;
