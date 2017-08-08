@@ -372,7 +372,7 @@ td.logo_box {
 .denver {
 
     color: #5184bf;
-    text-shadow:  1px 1px
+    text-shadow:  1px 1px #ffc938;
 }
 
 
