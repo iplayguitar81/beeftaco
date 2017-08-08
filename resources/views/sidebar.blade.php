@@ -168,6 +168,24 @@
 
         @endif
 
+        {{--los-angeles_lakers--}}
+
+
+        @if(($item->a_initials =='LAL'))
+
+            @php
+                $ateam_color= "los-angeles_lakers"
+
+            @endphp
+
+        @elseif($item->h_initials =='LAL')
+            @php
+                $hteam_color= "los-angeles_lakers"
+
+            @endphp
+
+        @endif
+
 
 
 @if(($item->a_initials =='GS'))
