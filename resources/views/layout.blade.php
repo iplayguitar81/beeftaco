@@ -387,6 +387,12 @@ td.logo_box {
     text-shadow: 1px 1px #522582;
 }
 
+.los-angeles_clippers {
+    color: #3863a1;
+    text-shadow: 1px 1px #bd3c4b;
+}
+
+
 .minnesota {
     color: #325680;
     text-shadow: 1px 1px #1f954b;
