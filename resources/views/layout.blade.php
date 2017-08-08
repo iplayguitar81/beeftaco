@@ -369,6 +369,11 @@ td.logo_box {
     text-shadow: 2px 1px #f5f3f4;
 }
 
+.minnesota {
+    color: #325680;
+    text-shadow: 1px 1px #1f954b;
+}
+
 .portland{
     color: #B6BFBF;
     text-shadow: 1px 1px #F0163A;
