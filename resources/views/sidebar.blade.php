@@ -271,6 +271,22 @@
         @endif
 
 
+        @if(($item->a_initials =='NY'))
+
+            @php
+                $ateam_color= "new-york"
+
+            @endphp
+
+        @elseif($item->h_initials =='NY')
+            @php
+                $hteam_color= "new-york"
+
+            @endphp
+
+        @endif
+
+
         @if(($item->a_initials =='PHO'))
 
             @php
