@@ -201,6 +201,23 @@
             @endphp
 
         @endif
+
+
+        @if(($item->a_initials =='PHO'))
+
+            @php
+                $ateam_color= "phoenix"
+
+            @endphp
+
+        @elseif($item->h_initials =='PHO')
+            @php
+                $hteam_color= "phoenix"
+
+            @endphp
+
+        @endif
+
         {{--san-antonio--}}
 
         @if(($item->a_initials =='SA'))
