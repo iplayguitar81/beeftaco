@@ -202,6 +202,21 @@
         @endif
 
 
+        @if(($item->a_initials =='UTA'))
+
+            @php
+                $ateam_color= "utah"
+
+            @endphp
+
+        @elseif($item->h_initials =='UTA')
+            @php
+                $hteam_color= "utah"
+
+            @endphp
+
+        @endif
+
 
         <div class="item">
 
