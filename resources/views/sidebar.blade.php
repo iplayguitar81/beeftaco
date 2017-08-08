@@ -237,6 +237,22 @@
         @endif
 
 
+        @if(($item->a_initials =='MIA'))
+
+            @php
+                $ateam_color= "miami"
+
+            @endphp
+
+        @elseif($item->h_initials =='MIA')
+            @php
+                $hteam_color= "miami"
+
+            @endphp
+
+        @endif
+
+
         @if(($item->a_initials =='MIL'))
 
             @php
