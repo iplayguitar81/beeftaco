@@ -169,6 +169,22 @@
     @endif
 
 
+        @if(($item->a_initials =='HOU'))
+
+            @php
+                $ateam_color= "houston"
+
+            @endphp
+
+        @elseif($item->h_initials =='HOU')
+            @php
+                $hteam_color= "houston"
+
+            @endphp
+
+        @endif
+
+
 
         @if(($item->a_initials =='MIN'))
 
