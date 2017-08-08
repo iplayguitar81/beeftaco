@@ -237,6 +237,21 @@
         @endif
 
 
+        @if(($item->a_initials =='MIL'))
+
+            @php
+                $ateam_color= "milwaukee"
+
+            @endphp
+
+        @elseif($item->h_initials =='MIL')
+            @php
+                $hteam_color= "milwaukee"
+
+            @endphp
+
+        @endif
+
 
         @if(($item->a_initials =='MIN'))
 
