@@ -382,6 +382,11 @@ td.logo_box {
     text-shadow: 1px 1px #b0b3b3;
 }
 
+.los-angeles_lakers {
+    color: #fbb925;
+    text-shadow: 1px 1px #522582;
+}
+
 .minnesota {
     color: #325680;
     text-shadow: 1px 1px #1f954b;
