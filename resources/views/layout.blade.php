@@ -393,6 +393,11 @@ td.logo_box {
 }
 
 
+.miami {
+    color: #713838;
+    text-shadow: 1px 1px #3c3b3c;
+}
+
 
 .milwaukee {
     color: #30533a;
