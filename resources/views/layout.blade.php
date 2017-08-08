@@ -366,7 +366,7 @@ td.logo_box {
 
 .brooklyn{
     color: #000000;
-    text-shadow: 2px 1px #ffc938;
+    text-shadow: 2px 1px #a2a9ab;
 }
 
 .denver {
