@@ -399,6 +399,15 @@ td.logo_box {
 
 
 
+.utah {
+
+    color: #00285b;
+    text-shadow: 1px 1px #f8a245;
+
+
+}
+
+
 .header_last_game {
 
     /*float: right;*/
