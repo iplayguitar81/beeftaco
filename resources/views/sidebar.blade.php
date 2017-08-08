@@ -170,6 +170,23 @@
 
 
 
+        @if(($item->a_initials =='MIN'))
+
+            @php
+                $ateam_color= "minnesota"
+
+            @endphp
+
+        @elseif($item->h_initials =='MIN')
+            @php
+                $hteam_color= "minnesota"
+
+            @endphp
+
+        @endif
+
+
+
         @if(($item->a_initials =='NO'))
 
             @php
