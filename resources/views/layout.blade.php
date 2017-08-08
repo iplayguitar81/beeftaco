@@ -398,6 +398,13 @@ td.logo_box {
     text-shadow: 1px 1px #1f954b;
 }
 
+.new-york {
+
+    color: #4374b2;
+    text-shadow:  1px 1px #d1551f;
+
+}
+
 .phoenix{
     color: #f8a245;
     text-shadow: 1px 2px #554473;
