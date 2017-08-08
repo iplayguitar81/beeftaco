@@ -393,6 +393,14 @@ td.logo_box {
 }
 
 
+
+.milwaukee {
+    color: #30533a;
+    text-shadow: 1px 1px #dec7a1;
+}
+
+
+
 .minnesota {
     color: #325680;
     text-shadow: 1px 1px #1f954b;
