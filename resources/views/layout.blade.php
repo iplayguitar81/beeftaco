@@ -388,6 +388,14 @@ td.logo_box {
 
 }
 
+.san-antonio {
+
+    color: #b0b3b3;
+    text-shadow: 1px 1px #3c3b3c;
+
+
+}
+
 
 
 
