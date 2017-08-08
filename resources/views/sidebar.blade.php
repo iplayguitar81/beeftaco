@@ -188,6 +188,23 @@
 
 
 
+
+        @if(($item->a_initials =='LAC'))
+
+            @php
+                $ateam_color= "los-angeles_clippers"
+
+            @endphp
+
+        @elseif($item->h_initials =='LAC')
+            @php
+                $hteam_color= "los-angeles_clippers"
+
+            @endphp
+
+        @endif
+
+
 @if(($item->a_initials =='GS'))
 
             @php
