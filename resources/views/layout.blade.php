@@ -436,6 +436,16 @@ td.logo_box {
 
 }
 
+
+.oklahoma-city {
+
+    color: #1a69b3;
+    text-shadow: 1px 1px #e32622;
+
+}
+
+
+
 .philadelphia{
     color: #023ca7;
     text-shadow: 1px 1px #dc0330;
