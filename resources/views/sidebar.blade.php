@@ -488,6 +488,22 @@
 
 
 
+        @if(($item->a_initials =='SAC'))
+
+            @php
+                $ateam_color= "sacramento"
+
+            @endphp
+
+        @elseif($item->h_initials =='SAC')
+            @php
+                $hteam_color= "sacramento"
+
+            @endphp
+
+        @endif
+
+
 
         @if(($item->a_initials =='TOR'))
 
