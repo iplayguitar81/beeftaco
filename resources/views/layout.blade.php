@@ -473,7 +473,11 @@ td.logo_box {
 
 }
 
+.toronto {
 
+    color: #c92946;
+    text-shadow: 1px 1px #393939;
+}
 
 
 .utah {
