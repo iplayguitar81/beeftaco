@@ -450,6 +450,13 @@ td.logo_box {
 }
 
 
+.orlando {
+
+    color: #224e98;
+    text-shadow: 1px 1px #8b8e95;
+
+}
+
 
 .philadelphia{
     color: #023ca7;
