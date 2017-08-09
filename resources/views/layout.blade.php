@@ -369,6 +369,13 @@ td.logo_box {
     text-shadow: 2px 1px #a2a9ab;
 }
 
+.charlotte{
+    color: #50457f;
+    text-shadow: 1px 1px #05c2da;
+}
+
+
+
 
 
 .dallas {
