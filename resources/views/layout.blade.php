@@ -463,6 +463,14 @@ td.logo_box {
 }
 
 
+.washington {
+
+    color: #d2202f;
+    text-shadow: 1px 1px #0d223f;
+
+
+}
+
 .header_last_game {
 
     /*float: right;*/
