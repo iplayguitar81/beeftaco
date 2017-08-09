@@ -366,6 +366,22 @@
 
         @endif
 
+        @if(($item->a_initials =='WAS'))
+
+            @php
+                $ateam_color= "washington"
+
+            @endphp
+
+        @elseif($item->h_initials =='WAS')
+            @php
+                $hteam_color= "washington"
+
+            @endphp
+
+        @endif
+
+
 
         <div class="item">
 
