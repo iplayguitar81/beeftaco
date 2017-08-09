@@ -375,6 +375,13 @@ td.logo_box {
 }
 
 
+.chicago{
+    color: #cb1244;
+    text-shadow: 1px 1px #040204;
+}
+
+
+
 .cleveland{
     color: #8f2049;
     text-shadow: 1px 1px #f4b748;
