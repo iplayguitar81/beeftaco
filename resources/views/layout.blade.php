@@ -394,8 +394,8 @@ td.logo_box {
 
 
 .miami {
-    color: #3c3b3c;
-    text-shadow: 1px 1px #713838;
+    color: #ea4e4e;
+    text-shadow: 1px 2px #713838;
 }
 
 
