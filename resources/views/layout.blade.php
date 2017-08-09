@@ -409,6 +409,13 @@ td.logo_box {
     text-shadow: 1px 1px #b0b3b3;
 }
 
+.indiana {
+    color: #20234b;
+    text-shadow: 1px 1px #f2cd53;
+}
+
+
+
 .los-angeles_lakers {
     color: #fbb925;
     text-shadow: 1px 1px #522582;
