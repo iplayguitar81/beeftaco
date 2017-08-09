@@ -375,6 +375,11 @@ td.logo_box {
     text-shadow:  1px 1px #ffc938;
 }
 
+.detroit {
+
+    color: #3863a1;
+    text-shadow: 1px 1px #bd3c4b;
+}
 
 
 .houston {
