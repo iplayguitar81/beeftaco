@@ -374,7 +374,7 @@ td.logo_box {
 .dallas {
 
     color: #0061ae;
-    text-shadow:  1px 1px #007332;
+    text-shadow:  1px 2px #007332;
 }
 
 
