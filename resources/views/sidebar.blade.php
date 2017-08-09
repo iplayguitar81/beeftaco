@@ -153,6 +153,22 @@
         @endif
 
 
+        @if(($item->a_initials =='DAL'))
+
+            @php
+                $ateam_color= "dallas"
+
+            @endphp
+
+        @elseif($item->h_initials =='DAL')
+            @php
+                $hteam_color= "dallas"
+
+            @endphp
+
+        @endif
+
+
         @if(($item->a_initials =='DEN'))
 
             @php
