@@ -405,6 +405,24 @@
         @endif
 
 
+
+
+        @if(($item->a_initials =='TOR'))
+
+            @php
+                $ateam_color= "toronto"
+
+            @endphp
+
+        @elseif($item->h_initials =='TOR')
+            @php
+                $hteam_color= "toronto"
+
+            @endphp
+
+        @endif
+
+
         @if(($item->a_initials =='UTA'))
 
             @php
