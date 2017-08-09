@@ -317,6 +317,21 @@
 
         @endif
 
+        @if(($item->a_initials =='PHI'))
+
+            @php
+                $ateam_color= "philadelphia"
+
+            @endphp
+
+        @elseif($item->h_initials =='PHI')
+            @php
+                $hteam_color= "philadelphia"
+
+            @endphp
+
+        @endif
+
 
         @if(($item->a_initials =='PHO'))
 
