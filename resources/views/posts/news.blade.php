@@ -42,8 +42,8 @@
                         $game_date = $game_date->format('l F dS Y g:i a');
                     @endphp
 
-                    <div class="col-sm-3">
-                        <h1 class="Ripper"><a class="" href="{{url('news/general')}}">team news</a></h1>
+
+
                         {{--<img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image">--}}
 
                         <img src="../images/md-img-{{ $item->imgPath}}" class="img-responsive" style="width:100%" alt="Team News Image">
@@ -62,7 +62,6 @@
                         <br/>
                         <br/>
 
-                    </div>
                 @endforeach
 
 
