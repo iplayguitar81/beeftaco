@@ -356,6 +356,23 @@
 
 
 
+        @if(($item->a_initials =='ORL'))
+
+            @php
+                $ateam_color= "orlando"
+
+            @endphp
+
+        @elseif($item->h_initials =='ORL')
+            @php
+                $hteam_color= "orlando"
+
+            @endphp
+
+        @endif
+
+
+
         @if(($item->a_initials =='PHI'))
 
             @php
