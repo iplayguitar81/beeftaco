@@ -168,6 +168,58 @@
 
         @endif
 
+
+        @if(($item->a_initials =='DET'))
+
+            @php
+                $ateam_color= "detroit"
+
+            @endphp
+
+        @elseif($item->h_initials =='DET')
+            @php
+                $hteam_color= "detroit"
+
+            @endphp
+
+        @endif
+
+
+
+
+@if(($item->a_initials =='GS'))
+
+            @php
+                $ateam_color= "golden-state"
+
+            @endphp
+
+        @elseif($item->h_initials =='GS')
+            @php
+                $hteam_color= "golden-state"
+
+            @endphp
+
+    @endif
+
+
+        @if(($item->a_initials =='HOU'))
+
+            @php
+                $ateam_color= "houston"
+
+            @endphp
+
+        @elseif($item->h_initials =='HOU')
+            @php
+                $hteam_color= "houston"
+
+            @endphp
+
+        @endif
+
+
+
         {{--los-angeles_lakers--}}
 
 
@@ -199,38 +251,6 @@
         @elseif($item->h_initials =='LAC')
             @php
                 $hteam_color= "los-angeles_clippers"
-
-            @endphp
-
-        @endif
-
-
-@if(($item->a_initials =='GS'))
-
-            @php
-                $ateam_color= "golden-state"
-
-            @endphp
-
-        @elseif($item->h_initials =='GS')
-            @php
-                $hteam_color= "golden-state"
-
-            @endphp
-
-    @endif
-
-
-        @if(($item->a_initials =='HOU'))
-
-            @php
-                $ateam_color= "houston"
-
-            @endphp
-
-        @elseif($item->h_initials =='HOU')
-            @php
-                $hteam_color= "houston"
 
             @endphp
 
