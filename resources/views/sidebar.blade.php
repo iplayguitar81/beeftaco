@@ -289,6 +289,22 @@
         @endif
 
 
+        @if(($item->a_initials =='MEM'))
+
+            @php
+                $ateam_color= "memphis"
+
+            @endphp
+
+        @elseif($item->h_initials =='MEM')
+            @php
+                $hteam_color= "memphis"
+
+            @endphp
+
+        @endif
+
+
         @if(($item->a_initials =='MIA'))
 
             @php
