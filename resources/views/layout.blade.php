@@ -497,6 +497,16 @@ color: #5d86b4;
 
 }
 
+
+.sacramento {
+
+    color: #5b2a83;
+    text-shadow: 1px 1px #586073;
+
+
+}
+
+
 .san-antonio {
 
     color: #b0b3b3;
