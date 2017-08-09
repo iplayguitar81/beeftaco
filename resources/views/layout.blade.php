@@ -375,6 +375,12 @@ td.logo_box {
 }
 
 
+.cleveland{
+    color: #8f2049;
+    text-shadow: 1px 1px #f4b748;
+}
+
+
 
 
 
