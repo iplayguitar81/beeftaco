@@ -268,6 +268,23 @@
         @endif
 
 
+        @if(($item->a_initials =='IND'))
+
+            @php
+                $ateam_color= "indiana"
+
+            @endphp
+
+        @elseif($item->h_initials =='IND')
+            @php
+                $hteam_color= "indiana"
+
+            @endphp
+
+        @endif
+
+
+
 
         {{--los-angeles_lakers--}}
 
