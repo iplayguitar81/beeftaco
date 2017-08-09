@@ -378,7 +378,7 @@ td.logo_box {
 .detroit {
 
     color: #3863a1;
-    text-shadow: 1px 1px #bd3c4b;
+    text-shadow: 1px 2.5px #bd3c4b;
 }
 
 
