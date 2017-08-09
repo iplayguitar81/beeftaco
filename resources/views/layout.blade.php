@@ -436,6 +436,13 @@ td.logo_box {
 
 }
 
+.philadelphia{
+    color: #023ca7;
+    text-shadow: 1px 1px #dc0330;
+}
+
+
+
 .new-orleans {
 
     color: #E31937;
