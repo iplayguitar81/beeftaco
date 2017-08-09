@@ -317,6 +317,25 @@
 
         @endif
 
+
+
+        @if(($item->a_initials =='OKC'))
+
+            @php
+                $ateam_color= "oklahoma-city"
+
+            @endphp
+
+        @elseif($item->h_initials =='OKC')
+            @php
+                $hteam_color= "oklahoma-city"
+
+            @endphp
+
+        @endif
+
+
+
         @if(($item->a_initials =='PHI'))
 
             @php
