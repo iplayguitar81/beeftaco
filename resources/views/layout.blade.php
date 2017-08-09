@@ -369,6 +369,15 @@ td.logo_box {
     text-shadow: 2px 1px #a2a9ab;
 }
 
+
+
+.dallas {
+
+    color: #0061ae;
+    text-shadow:  1px 1px #007332;
+}
+
+
 .denver {
 
     color: #5184bf;
