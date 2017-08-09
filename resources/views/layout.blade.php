@@ -413,7 +413,10 @@ td.logo_box {
     text-shadow: 1px 1px #bd3c4b;
 }
 
-
+.memphis {
+color: #5d86b4;
+    text-shadow: 1px 2px #011e48;
+}
 .miami {
     color: #ea4e4e;
     text-shadow: 1px 2px #713838;
