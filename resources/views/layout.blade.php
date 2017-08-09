@@ -400,7 +400,7 @@ td.logo_box {
 
 
 .milwaukee {
-    color: #30533a;
+    color: #5c9e6f;
     text-shadow: 1px 1px #dec7a1;
 }
 
