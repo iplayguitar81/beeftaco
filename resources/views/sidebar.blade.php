@@ -169,6 +169,23 @@
         @endif
 
 
+        @if(($item->a_initials =='CLE'))
+
+            @php
+                $ateam_color= "cleveland"
+
+            @endphp
+
+        @elseif($item->h_initials =='CLE')
+            @php
+                $hteam_color= "cleveland"
+
+            @endphp
+
+        @endif
+
+
+
         @if(($item->a_initials =='DAL'))
 
             @php
