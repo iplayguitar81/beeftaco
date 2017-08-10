@@ -36,12 +36,28 @@
                 @foreach($news as $item)
 
 
+                    @if($item->user_id != null)
+                        <? $author = App\User::find($item->user_id)->name; ?>
+
+
+                    @endif
+
+
                     @php
                         $game_date = new DateTime($item->date, new DateTimeZone('America/Los_Angeles'));
                         $game_date = date_sub($game_date, date_interval_create_from_date_string('3 hour'));
                         $game_date = $game_date->format('l F dS Y g:i a');
                     @endphp
 
+
+
+                    @php
+                        $variable= strip_tags($item->body);
+                        $variable =substr($variable,0, 50);
+                    $game_date = new DateTime($item->created_at, new DateTimeZone('America/Los_Angeles'));
+                        $game_date = date_sub($game_date, date_interval_create_from_date_string('3 hour'));
+                        $game_date = $game_date->format('M jS Y');
+                    @endphp
 
 
                     <div class="row">
