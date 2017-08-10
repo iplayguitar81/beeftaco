@@ -62,7 +62,7 @@
 
                     <div class="row">
                         <div class="col-sm-4"><a class="" href="{{ route('posts.show', [$item->id, str_slug($item->title)]) }}"><img src="../images/md-img-{{ $item->imgPath}}" class="img-responsive"></a>
-                            <span>{{$item->mainImg_caption}}</span>
+                           <br/> <span>{{$item->mainImg_caption}}</span>
                         </div>
                         <div class="col-sm-8">
 
