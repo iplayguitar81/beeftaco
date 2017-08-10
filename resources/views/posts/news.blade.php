@@ -45,20 +45,20 @@
 
 
                     <div class="row">
-                        <div class="col-sm-4" style="background-color:lavender;"><h4 class="secondary-posts-title"><a  href="{{ route('posts.show', [$item->id, str_slug($item->title)]) }}">{{$item->title}}</a><br/>{{$item->date}}</h4> <img src="../images/md-img-{{ $item->imgPath}}" class="img-responsive" style="width:100%" alt="Team News Image"></div>
-                        <div class="col-sm-6" style="background-color:lavenderblush;">
-                            @php
-                                $variable= strip_tags($item->body);
-                                $variable =substr($variable,0, 50);
-                            @endphp
-                            <p>{!! $variable !!}...</p>
-                            <a class="btn btn-danger btn-md active" href="{{ route('posts.show', [$item->id, str_slug($item->title)]) }}">Continue Reading</a>
-                            <br/>
-                            <br/>
-
-                            <button type="submit" class="btn center-block btn-md" onclick="window.location='{{url('news/general')}}';" >More Team News...</button>
+                        <div class="col-sm-4"><a class="" href="{{ route('posts.show', [$item->id, str_slug($item->title)]) }}"><img src="../images/md-img-{{ $item->imgPath}}" class="img-responsive"></a>
+                            <span>{{$item->mainImg_caption}}</span>
                         </div>
+                        <div class="col-sm-8">
 
+
+                            <h3 class="title"><a class="" href="{{ route('posts.show', [$item->id, str_slug($item->title)]) }}">{{ $item->title}}</a></h3>
+                            <p class="text-muted">{{$item->subHead}}</p>
+                            <p class="text-muted">Written by <a href="#">{{$author}}</a> on {{$game_date}} </p>
+                            <p>{{$variable}}...<a class="" href="{{ route('posts.show', [$item->id, str_slug($item->title)]) }}">READ MORE</a></p>
+
+
+
+                        </div>
                     </div>
 
 
