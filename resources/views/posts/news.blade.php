@@ -45,8 +45,8 @@
 
 
                     <div class="row">
-                        <div class="col-sm-4" style="background-color:lavender;"> <img src="../images/md-img-{{ $item->imgPath}}" class="img-responsive" style="width:100%" alt="Team News Image"></div>
-                        <div class="col-sm-6" style="background-color:lavenderblush;">    <h4 class="secondary-posts-title"><a  href="{{ route('posts.show', [$item->id, str_slug($item->title)]) }}">{{$item->title}}</a><br/>{{$item->date}}</h4>
+                        <div class="col-sm-4" style="background-color:lavender;"><h4 class="secondary-posts-title"><a  href="{{ route('posts.show', [$item->id, str_slug($item->title)]) }}">{{$item->title}}</a><br/>{{$item->date}}</h4> <img src="../images/md-img-{{ $item->imgPath}}" class="img-responsive" style="width:100%" alt="Team News Image"></div>
+                        <div class="col-sm-6" style="background-color:lavenderblush;">
                             @php
                                 $variable= strip_tags($item->body);
                                 $variable =substr($variable,0, 50);
