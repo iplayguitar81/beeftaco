@@ -73,9 +73,12 @@
 
                             <p>{{$variable}}...<a class="" href="{{ route('posts.show', [$item->id, str_slug($item->title)]) }}">READ MORE</a></p>
 
-                            <hr/>
 
                         </div>
+
+                        <hr/>
+
+
                     </div>
 
 
