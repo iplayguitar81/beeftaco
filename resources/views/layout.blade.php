@@ -1378,7 +1378,7 @@ em.caption-em{
     ga('send', 'pageview');
 
 </script>
-<script>(function(d, s, id) {
+<script async>(function(d, s, id) {
         var js, fjs = d.getElementsByTagName(s)[0];
         if (d.getElementById(id)) return;
         js = d.createElement(s); js.id = id;
@@ -1386,7 +1386,7 @@ em.caption-em{
         fjs.parentNode.insertBefore(js, fjs);
     }(document, 'script', 'facebook-jssdk'));</script>
 
-<script>window.twttr = (function(d, s, id) {
+<script async>window.twttr = (function(d, s, id) {
         var js, fjs = d.getElementsByTagName(s)[0],
             t = window.twttr || {};
         if (d.getElementById(id)) return t;
