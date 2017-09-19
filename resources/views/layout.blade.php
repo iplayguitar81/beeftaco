@@ -1583,15 +1583,15 @@ em.caption-em{
     </div>
 
 
-<script  src="{{url('/js/jquery.js')}}" defer></script>
+<script  src="{{url('/js/jquery.js')}}" ></script>
 <script  src="{{url('https://cdnjs.cloudflare.com/ajax/libs/dropzone/4.3.0/min/dropzone.min.js')}}" ></script>
 
-<script  src="{{url('/js/bootstrap.min.js')}}" defer></script>
+<script  src="{{url('/js/bootstrap.min.js')}}" ></script>
 {{--<script src="{{url('/js/jquery.cycle.all.js')}}"></script>--}}
 {{--<script src="{{url('/js/index.js')}}"></script>--}}
-<script  src="{{url('/js/photoswipe.min.js')}}" defer></script>
-<script  src="{{url('/js/photoswipe-ui-default.min.js')}}" defer></script>
-<script  src="{{url('/js/lightslider.js')}}" defer></script>
+<script  src="{{url('/js/photoswipe.min.js')}}" ></script>
+<script  src="{{url('/js/photoswipe-ui-default.min.js')}}" ></script>
+<script  src="{{url('/js/lightslider.js')}}" ></script>
 
 
 {{--figuring out right gallery sitch:--}}
