@@ -165,7 +165,7 @@
             <div id="past" class="tab-pane fade in active">
                 <h3>past blazers</h3>
 
-                @foreach($category3 as $item)
+                @foreach($former_players as $item)
 
 
                     @if($item->user_id != null)
