@@ -11,8 +11,6 @@
     <div class="row">
 
 
-
-
         <ul class="nav nav-tabs">
             <li class="active"><a data-toggle="tab" href="#home">team news</a></li>
             <li><a data-toggle="tab" href="#menu1">league news</a></li>
@@ -77,7 +75,7 @@
 
                 <br/>
 
-                <button type="submit" class="btn center-block btn-md" onclick="window.location='{{url('news/general')}}';" >More Team News...</button>
+                <button type="submit" class="btn center-block btn-md" onclick="window.location='{{url('news/general')}}';" >All Team News...</button>
 
             </div>
             <div id="menu1" class="tab-pane fade">
@@ -141,7 +139,7 @@
 
                 <br/>
 
-                <button type="submit" class="btn center-block btn-md" onclick="window.location='{{url('news/nba')}}';" >More League News...</button>
+                <button type="submit" class="btn center-block btn-md" onclick="window.location='{{url('news/nba')}}';" >All League News...</button>
 
 
             </div>
@@ -217,7 +215,7 @@
 
                 <br/>
 
-                <button type="submit" class="btn center-block btn-md" onclick="window.location='{{url('news/former-players')}}';" >More Alum News...</button>
+                <button type="submit" class="btn center-block btn-md" onclick="window.location='{{url('news/former-players')}}';" >All Alum News...</button>
 
 
             </div>
@@ -280,7 +278,7 @@
 
 
                 <br/>
-                <button type="submit" class="btn center-block btn-md" onclick="window.location='{{url('news/retro')}}';" >More Retro News...</button>
+                <button type="submit" class="btn center-block btn-md" onclick="window.location='{{url('news/retro')}}';" >All Retro News...</button>
 
             </div>
 
