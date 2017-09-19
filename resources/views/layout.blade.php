@@ -563,6 +563,7 @@ color: #5d86b4;
 .header_last_game th {
     text-align: center;
     font-size: 1em;
+    color: #000000;
 }
 
 .header_last_game td {
