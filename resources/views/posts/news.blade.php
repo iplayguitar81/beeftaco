@@ -148,6 +148,9 @@
 
 
 
+                <br/>
+
+                <button type="submit" class="btn center-block btn-md" onclick="window.location='{{url('news/nba')}}';" >More League News...</button>
 
 
             </div>
@@ -219,6 +222,9 @@
                 @endforeach
 
 
+                <br/>
+
+                <button type="submit" class="btn center-block btn-md" onclick="window.location='{{url('news/former-players')}}';" >More Alum News...</button>
 
 
             </div>
@@ -280,7 +286,8 @@
                 @endforeach
 
 
-
+                <br/>
+                <button type="submit" class="btn center-block btn-md" onclick="window.location='{{url('news/retro')}}';" >More Retro News...</button>
 
             </div>
 
@@ -291,27 +298,6 @@
 
 
 
-
-
-
-
-
-            <button type="submit" class="btn center-block btn-md" onclick="window.location='{{url('news/retro')}}';" >More Retro News...</button>
-
-
-
-
-        <br/>
-
-
-                    <button type="submit" class="btn center-block btn-md" onclick="window.location='{{url('news/former-players')}}';" >More Alum News...</button>
-
-
-
-
-         <br/>
-
-                    <button type="submit" class="btn center-block btn-md" onclick="window.location='{{url('news/nba')}}';" >More League News...</button>
 
 
 
