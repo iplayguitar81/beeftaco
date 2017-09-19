@@ -1584,7 +1584,7 @@ em.caption-em{
 
 
 <script  src="{{url('/js/jquery.js')}}" defer></script>
-<script  src="{{url('https://cdnjs.cloudflare.com/ajax/libs/dropzone/4.3.0/min/dropzone.min.js')}}" defer></script>
+<script  src="{{url('https://cdnjs.cloudflare.com/ajax/libs/dropzone/4.3.0/min/dropzone.min.js')}}" ></script>
 
 <script  src="{{url('/js/bootstrap.min.js')}}" defer></script>
 {{--<script src="{{url('/js/jquery.cycle.all.js')}}"></script>--}}
