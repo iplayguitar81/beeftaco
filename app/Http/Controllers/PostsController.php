@@ -513,7 +513,7 @@ class PostsController extends Controller
 
         $category="news";
 
-        $news = Post::where('category', '=', $category)->orderBy('date', 'desc')->take(3)->get();
+        $news = Post::where('category', '=', $category)->orderBy('created_at', 'desc')->take(3)->get();
 
 
         $category1="retro";
