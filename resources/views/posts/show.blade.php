@@ -122,11 +122,11 @@
 {{--<script src="{{url('/js/jquery.js')}}"></script>--}}
 
 
-<script async src="{{url('/js/jquery-1.11.3.min.js')}}"></script>
-<script async src="{{url('/js/star-rating.js')}}"></script>
-<script  src="{{url('/js/owl.carousel.js')}}"></script>
-<script  src="{{url('/js/photoswipe.min.js')}}"></script>
-<script  src="{{url('/js/photoswipe-ui-default.min.js')}}"></script>
+<script src="{{url('/js/jquery-1.11.3.min.js')}}"></script>
+<script src="{{url('/js/star-rating.js')}}"></script>
+<script src="{{url('/js/owl.carousel.js')}}"></script>
+<script src="{{url('/js/photoswipe.min.js')}}"></script>
+<script src="{{url('/js/photoswipe-ui-default.min.js')}}"></script>
 <script>
 
     $(function(){
