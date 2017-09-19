@@ -86,7 +86,9 @@
 
                 @endforeach
 
+                <br/>
 
+                <button type="submit" class="btn center-block btn-md" onclick="window.location='{{url('news/general')}}';" >More Team News...</button>
 
             </div>
             <div id="menu1" class="tab-pane fade">
