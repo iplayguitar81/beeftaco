@@ -570,6 +570,7 @@ color: #5d86b4;
     text-align: center;
     line-height: .85em;
     padding: .5em;
+    color: #000000;
 }
 
 .win_loss_box_show_win {
@@ -1307,6 +1308,7 @@ table.header_last_game{font-family: Bebas;
     line-height: 1em;
     font-size: 1.5em;
     font-weight: 500;
+    color: #000000;
 }
 
 .buttons-show {
