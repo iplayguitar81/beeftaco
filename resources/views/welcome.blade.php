@@ -204,19 +204,19 @@
 
         <br/>
 
-<?//$ratings= $ratings($item->id)?>
+@php//$ratings= $ratings($item->id)@endphp
 
         {{--<p>Average Rating: {{$ratings->averageRating}}</p>--}}
         {{--<p>Rating %: {{$ratings->ratingPercent}}</p>--}}
 
 {{--{{$variable = str_limit($item->body, 100)}}--}}
-   <?
+        @php
 
             $variable= strip_tags($item->body);
             $variable =substr($variable,0, 150);
        // $variable = (str_limit($item->body, 100));
        // $variable= htmlentities($variable);
-        ?>
+        @endphp
        <p class="article-texterson">{{$variable}} ...</p>
       {{--<p>  {{strip_tags((str_limit($item->body, 100)))}}...</p>--}}
             <a class="btn btn-danger btn-md active" href="{{ route('posts.show', [$item->id, str_slug($item->title)]) }}">Continue Reading</a>
@@ -280,7 +280,7 @@
                     <em class="caption-em">{{$item->mainImg_caption}}</em>
                     <h2 class="secondary-posts-title text-center"><a href="{{ route('posts.show', [$item->id, str_slug($item->title)]) }}">{{$item->title}}</a></h2>
                     <em>Written By: <a href="#">   @if($item->user_id != null)
-                                <? $author = App\User::find($item->user_id)->name; ?>
+                                @php $author = App\User::find($item->user_id)->name; @endphp
 
                                 {{$author}}
                             @endif
