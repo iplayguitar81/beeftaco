@@ -1354,7 +1354,7 @@ em.caption-em{
 /* <!-- Way to do it with fonts from dropbox if need be not satisfied with Google fonts.  be ware some fonts are persnickety....--> */
     @font-face {
          font-family: 'FabFelt';
-         src: url("https://dl.dropboxusercontent.com/s/k8npl4s74b7af0r/bauhaus93.ttf"); !important }
+         src: url("font/bauhaus93.ttf"); !important }
    @font-face {
          font-family: 'Bebas';
          src: url("https://dl.dropboxusercontent.com/s/t7tunbwaclebaj5/bebasneueregular.otf"); !important }
