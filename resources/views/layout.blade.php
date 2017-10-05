@@ -1357,7 +1357,7 @@ em.caption-em{
          src: url("/fonts/bauhaus93.ttf"); !important }
    @font-face {
          font-family: 'Bebas';
-         src: url("/fonts/bebasneueregular.otf"); !important }
+         src: url("../fonts/bebasneueregular.otf"); !important }
 
 @font-face {
          font-family: 'Academic';
