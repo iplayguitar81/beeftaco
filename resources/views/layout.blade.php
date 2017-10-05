@@ -1404,7 +1404,7 @@ em.caption-em{
     }(document, "script", "twitter-wjs"));</script>
 
 <header id="top" role="banner">
-    <a href="{{url('/')}}">   <img alt="trailblazersfans.com" style="width:315px;" src="{{url('images/blazersfanslogo.png')}}"></a>
+    <a href="{{url('/')}}">   <img alt="trailblazersfans.com" style="width:315px;" src="{{url('images/blazersfanslogo-opt.png')}}"></a>
 
 
 </header>
