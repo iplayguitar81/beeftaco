@@ -1442,7 +1442,7 @@ em.caption-em{
                                 <div class="input-group">
                                     <input type="text" class="form-control" name="search" placeholder="Search" name="srch-term" id="srch-term">
                                     <div class="input-group-btn">
-                                        <button class="btn btn-alert" type="submit">Enter</button>
+                                        <button class="btn btn-danger" type="submit">Enter</button>
                                     </div>
                                 </div>
                             </form>
