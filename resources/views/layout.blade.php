@@ -1357,11 +1357,11 @@ em.caption-em{
          src: url("/fonts/bauhaus93.ttf"); !important }
    @font-face {
          font-family: 'Bebas';
-         src: url("https://dl.dropboxusercontent.com/s/t7tunbwaclebaj5/bebasneueregular.otf"); !important }
+         src: url("/fonts/bebasneueregular.otf"); !important }
 
 @font-face {
          font-family: 'Academic';
-    src: url("https://dl.dropboxusercontent.com/s/tauhaxor6io1rrj/Academic.ttf"); !important }
+    src: url("/fonts/Academic.ttf"); !important }
 
 
 
