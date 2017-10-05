@@ -12,6 +12,8 @@
     {{--<p>{{$tubular->imgpath}}</p>--}}
     {{--@endforeach--}}
 
+
+
     @can('isAdmin')
         <div class="panel panel-success pull-right"> <div class="panel-heading">
                 <h3 class="panel-title">Welcome {{Auth::user()->name}}</h3> </div>
@@ -34,10 +36,17 @@
             <tbody>
             {{-- */$x=0;/* --}}
             @foreach($posts as $item)
+
+                @php
+                    $game_date = new DateTime($post->created_at, new DateTimeZone('America/Los_Angeles'));
+                    $game_date = date_sub($game_date, date_interval_create_from_date_string('3 hour'));
+                    $game_date = $game_date->format('M jS Y');
+                @endphp
+
                 {{-- */$x++;/* --}}
                 <tr>
                     {{--<td>{{ $x }}</td>--}}
-                    <td><a href="{{ route('posts.show', [$item->id, str_slug($item->title)]) }}">{{ $item->title }}</a> <span class="pull-left"><br/>{{'Post images: '. $item->images()->count() }}</span></td><td>{{ $item->subHead }}</td><td>{{ $item->created_at->format('M dS Y') }}</td><td>
+                    <td><a href="{{ route('posts.show', [$item->id, str_slug($item->title)]) }}">{{ $item->title }}</a> <span class="pull-left"><br/>{{'Post images: '. $item->images()->count() }}</span></td><td>{{ $item->subHead }}</td><td>{{ $game_date }}</td><td>
 
                         {{strip_tags(str_limit($item->body, 20))}}
 
