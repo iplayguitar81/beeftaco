@@ -255,11 +255,7 @@
                 <div class="caption">
                     <em class="caption-em">{{$item->mainImg_caption}}</em>
                     <h2 class="secondary-posts-title text-center"><a href="{{ route('posts.show', [$item->id, str_slug($item->title)]) }}">{{$item->title}}</a></h2>
-                    <em>Written By: <a href="#">   @if($item->user_id != null)
-                                @php $author = App\User::find($item->user_id)->name; @endphp
-
-                                {{$author}}
-                            @endif
+                    <em>Written By: <a href="#">  {{written_by($item->user_id)}}
                         </a> on {{gameDate($item->created_at)}}</em>
 
 
