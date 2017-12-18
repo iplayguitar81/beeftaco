@@ -599,18 +599,41 @@ class PostsController extends Controller
     public function getIndex(Request $request)
     {
 
+        //this is where the magic happens to prevent cruddy input into site search form...
+        $validator = Validator::make($request->all(), [
+            'search' => ['required',
+                'regex:/^[\w]/'
+            ]
+
+
+        ]);
+
+
+        //redirect with customizable error message below...
+        if ($validator->fails()) {
+            return redirect('/')
+                ->with('message', 'Try your search again with valid input!');
+        }
+
+
+
         $search = $request->get('search');
+
+
 
         $results2 = Post::where('title', 'like', "%$search%")
             ->orWhere('body', 'like', "%$search%")
             ->orWhere('subhead', 'like', "%$search%")
             ->paginate(3)
-            ->appends(['search' => $search])
-        ;
+            ->appends(['search' => $search]);
 
-       $results_empty= $results2->isEmpty();
 
-        return view('posts.search', compact('results2','search','results_empty'));
+        $results_empty = $results2->isEmpty();
+
+
+
+
+        return view('posts.search', compact('results2','search', 'results_empty'));
     }
 
 
