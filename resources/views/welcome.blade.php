@@ -244,11 +244,7 @@
 
                 @unless($item->main_article == 1)
 
-                    @php
-                        $game_date = new DateTime($item->created_at, new DateTimeZone('America/Los_Angeles'));
-                        $game_date = date_sub($game_date, date_interval_create_from_date_string('3 hour'));
-                        $game_date = $game_date->format('M jS Y');
-                    @endphp
+
         <div class="col-xs-12 col-sm-6 col-lg-6">
 
             <div class="thumbnail">
@@ -279,7 +275,7 @@
 
                                 {{$author}}
                             @endif
-                        </a> on {{$game_date}}</em>
+                        </a> on {{gameDate($item->created_at)}}</em>
 
                     @php
                         $variable= strip_tags($item->body);
