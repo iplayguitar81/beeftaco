@@ -269,7 +269,7 @@
 
                     <p class="second-art-snip">
 
-                        {{snippety($item->body)}}...<a class="pull-right" href="{{ route('posts.show', [$item->id, str_slug($item->title)]) }}">READ MORE</a>
+                        {{snippet($item->body)}}...<a class="pull-right" href="{{ route('posts.show', [$item->id, str_slug($item->title)]) }}">READ MORE</a>
                         <br/>
                         </p>
 
