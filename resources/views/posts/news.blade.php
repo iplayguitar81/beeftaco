@@ -23,13 +23,6 @@
                 @foreach($news as $item)
 
 
-                    @php
-                        $variable= strip_tags($item->body);
-                        $variable =substr($variable,0, 50);
-
-                    @endphp
-
-
                     <div class="row">
                         <div class="col-sm-4"><a class="" href="{{ route('posts.show', [$item->id, str_slug($item->title)]) }}"><img src="../images/md-img-{{ $item->imgPath}}" class="img-responsive"></a>
                            <br/> <span>{{$item->mainImg_caption}}</span>
@@ -41,7 +34,7 @@
                             <p class="text-muted">Written by <a href="#">{{written_by($item->user_id)}}</a> on {{gameDate($item->created_at)}} </p>
                             <p class="text-muted">{{$item->subHead}}</p>
 
-                            <p>{{$variable}}...<a class="" href="{{ route('posts.show', [$item->id, str_slug($item->title)]) }}">READ MORE</a></p>
+                            <p>{{snippet($item->body)}}...<a class="" href="{{ route('posts.show', [$item->id, str_slug($item->title)]) }}">READ MORE</a></p>
 
 
                         </div>
@@ -68,19 +61,6 @@
                 @foreach($nbanews as $item)
 
 
-
-
-
-
-
-
-                    @php
-                        $variable= strip_tags($item->body);
-                        $variable =substr($variable,0, 50);
-
-                    @endphp
-
-
                     <div class="row">
                         <div class="col-sm-4"><a class="" href="{{ route('posts.show', [$item->id, str_slug($item->title)]) }}"><img src="../images/md-img-{{ $item->imgPath}}" class="img-responsive"></a>
                             <br/> <span>{{$item->mainImg_caption}}</span>
@@ -92,7 +72,7 @@
                             <p class="text-muted">Written by <a href="#">{{written_by($item->user_id)}}</a> on {{gameDate($item->created_at)}} </p>
                             <p class="text-muted">{{$item->subHead}}</p>
 
-                            <p>{{$variable}}...<a class="" href="{{ route('posts.show', [$item->id, str_slug($item->title)]) }}">READ MORE</a></p>
+                            <p>{{snippet($item->body)}}...<a class="" href="{{ route('posts.show', [$item->id, str_slug($item->title)]) }}">READ MORE</a></p>
 
 
                         </div>
@@ -134,14 +114,6 @@
                 @foreach($former_players as $item)
 
 
-
-                    @php
-                        $variable= strip_tags($item->body);
-                        $variable =substr($variable,0, 50);
-
-                    @endphp
-
-
                     <div class="row">
                         <div class="col-sm-4"><a class="" href="{{ route('posts.show', [$item->id, str_slug($item->title)]) }}"><img src="../images/md-img-{{ $item->imgPath}}" class="img-responsive"></a>
                             <br/> <span>{{$item->mainImg_caption}}</span>
@@ -153,7 +125,7 @@
                             <p class="text-muted">Written by <a href="#">{{written_by($item->user_id)}}</a> on {{gameDate($item->created_at)}} </p>
                             <p class="text-muted">{{$item->subHead}}</p>
 
-                            <p>{{$variable}}...<a class="" href="{{ route('posts.show', [$item->id, str_slug($item->title)]) }}">READ MORE</a></p>
+                            <p>{{snippet($item->body)}}...<a class="" href="{{ route('posts.show', [$item->id, str_slug($item->title)]) }}">READ MORE</a></p>
 
 
                         </div>
@@ -182,13 +154,6 @@
                 @foreach($retronews as $item)
 
 
-
-                    @php
-                        $variable= strip_tags($item->body);
-                        $variable =substr($variable,0, 50);
-                    @endphp
-
-
                     <div class="row">
                         <div class="col-sm-4"><a class="" href="{{ route('posts.show', [$item->id, str_slug($item->title)]) }}"><img src="../images/md-img-{{ $item->imgPath}}" class="img-responsive"></a>
                             <br/> <span>{{$item->mainImg_caption}}</span>
@@ -200,7 +165,7 @@
                             <p class="text-muted">Written by <a href="#">{{written_by($item->user_id)}}</a> on {{gameDate($item->created_at)}} </p>
                             <p class="text-muted">{{$item->subHead}}</p>
 
-                            <p>{{$variable}}...<a class="" href="{{ route('posts.show', [$item->id, str_slug($item->title)]) }}">READ MORE</a></p>
+                            <p>{{snippet($item->body)}}...<a class="" href="{{ route('posts.show', [$item->id, str_slug($item->title)]) }}">READ MORE</a></p>
 
 
                         </div>
