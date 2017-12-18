@@ -27,7 +27,7 @@
 
         <p class="uk-article-meta" style="text-align:center;">
             Written by
-            written_by($post->user_id)
+            {{written_by($post->user_id)}}
             {{--@foreach($records as $record)--}}
             {{--{{$record->name}}--}}
             {{--@endforeach--}}
