@@ -23,27 +23,10 @@
                 @foreach($news as $item)
 
 
-                    @if($item->user_id != null)
-                        <? $author = App\User::find($item->user_id)->name; ?>
-
-
-                    @endif
-
-
-                    @php
-                        $game_date = new DateTime($item->date, new DateTimeZone('America/Los_Angeles'));
-                        $game_date = date_sub($game_date, date_interval_create_from_date_string('3 hour'));
-                        $game_date = $game_date->format('l F dS Y g:i a');
-                    @endphp
-
-
-
                     @php
                         $variable= strip_tags($item->body);
                         $variable =substr($variable,0, 50);
-                    $game_date = new DateTime($item->created_at, new DateTimeZone('America/Los_Angeles'));
-                        $game_date = date_sub($game_date, date_interval_create_from_date_string('3 hour'));
-                        $game_date = $game_date->format('M jS Y');
+
                     @endphp
 
 
@@ -55,7 +38,7 @@
 
 
                             <h2 class="secondary-posts-title"><a class="" href="{{ route('posts.show', [$item->id, str_slug($item->title)]) }}">{{ $item->title}}</a></h2>
-                            <p class="text-muted">Written by <a href="#">{{$author}}</a> on {{$game_date}} </p>
+                            <p class="text-muted">Written by <a href="#">{{written_by($item->user_id)}}</a> on {{gameDate($item->created_at)}} </p>
                             <p class="text-muted">{{$item->subHead}}</p>
 
                             <p>{{$variable}}...<a class="" href="{{ route('posts.show', [$item->id, str_slug($item->title)]) }}">READ MORE</a></p>
@@ -85,27 +68,16 @@
                 @foreach($nbanews as $item)
 
 
-                    @if($item->user_id != null)
-                        <? $author = App\User::find($item->user_id)->name; ?>
 
 
-                    @endif
 
-
-                    @php
-                        $game_date = new DateTime($item->date, new DateTimeZone('America/Los_Angeles'));
-                        $game_date = date_sub($game_date, date_interval_create_from_date_string('3 hour'));
-                        $game_date = $game_date->format('l F dS Y g:i a');
-                    @endphp
 
 
 
                     @php
                         $variable= strip_tags($item->body);
                         $variable =substr($variable,0, 50);
-                    $game_date = new DateTime($item->created_at, new DateTimeZone('America/Los_Angeles'));
-                        $game_date = date_sub($game_date, date_interval_create_from_date_string('3 hour'));
-                        $game_date = $game_date->format('M jS Y');
+
                     @endphp
 
 
@@ -117,7 +89,7 @@
 
 
                             <h2 class="secondary-posts-title"><a class="" href="{{ route('posts.show', [$item->id, str_slug($item->title)]) }}">{{ $item->title}}</a></h2>
-                            <p class="text-muted">Written by <a href="#">{{$author}}</a> on {{$game_date}} </p>
+                            <p class="text-muted">Written by <a href="#">{{written_by($item->user_id)}}</a> on {{gameDate($item->created_at)}} </p>
                             <p class="text-muted">{{$item->subHead}}</p>
 
                             <p>{{$variable}}...<a class="" href="{{ route('posts.show', [$item->id, str_slug($item->title)]) }}">READ MORE</a></p>
@@ -162,27 +134,11 @@
                 @foreach($former_players as $item)
 
 
-                    @if($item->user_id != null)
-                        <? $author = App\User::find($item->user_id)->name; ?>
-
-
-                    @endif
-
-
-                    @php
-                        $game_date = new DateTime($item->date, new DateTimeZone('America/Los_Angeles'));
-                        $game_date = date_sub($game_date, date_interval_create_from_date_string('3 hour'));
-                        $game_date = $game_date->format('l F dS Y g:i a');
-                    @endphp
-
-
 
                     @php
                         $variable= strip_tags($item->body);
                         $variable =substr($variable,0, 50);
-                    $game_date = new DateTime($item->created_at, new DateTimeZone('America/Los_Angeles'));
-                        $game_date = date_sub($game_date, date_interval_create_from_date_string('3 hour'));
-                        $game_date = $game_date->format('M jS Y');
+
                     @endphp
 
 
@@ -194,7 +150,7 @@
 
 
                             <h2 class="secondary-posts-title"><a class="" href="{{ route('posts.show', [$item->id, str_slug($item->title)]) }}">{{ $item->title}}</a></h2>
-                            <p class="text-muted">Written by <a href="#">{{$author}}</a> on {{$game_date}} </p>
+                            <p class="text-muted">Written by <a href="#">{{written_by($item->user_id)}}</a> on {{gameDate($item->created_at)}} </p>
                             <p class="text-muted">{{$item->subHead}}</p>
 
                             <p>{{$variable}}...<a class="" href="{{ route('posts.show', [$item->id, str_slug($item->title)]) }}">READ MORE</a></p>
@@ -226,27 +182,10 @@
                 @foreach($retronews as $item)
 
 
-                    @if($item->user_id != null)
-                        <? $author = App\User::find($item->user_id)->name; ?>
-
-
-                    @endif
-
-
-                    @php
-                        $game_date = new DateTime($item->date, new DateTimeZone('America/Los_Angeles'));
-                        $game_date = date_sub($game_date, date_interval_create_from_date_string('3 hour'));
-                        $game_date = $game_date->format('l F dS Y g:i a');
-                    @endphp
-
-
 
                     @php
                         $variable= strip_tags($item->body);
                         $variable =substr($variable,0, 50);
-                    $game_date = new DateTime($item->created_at, new DateTimeZone('America/Los_Angeles'));
-                        $game_date = date_sub($game_date, date_interval_create_from_date_string('3 hour'));
-                        $game_date = $game_date->format('M jS Y');
                     @endphp
 
 
@@ -258,7 +197,7 @@
 
 
                             <h2 class="secondary-posts-title"><a class="" href="{{ route('posts.show', [$item->id, str_slug($item->title)]) }}">{{ $item->title}}</a></h2>
-                            <p class="text-muted">Written by <a href="#">{{$author}}</a> on {{$game_date}} </p>
+                            <p class="text-muted">Written by <a href="#">{{written_by($item->user_id)}}</a> on {{gameDate($item->created_at)}} </p>
                             <p class="text-muted">{{$item->subHead}}</p>
 
                             <p>{{$variable}}...<a class="" href="{{ route('posts.show', [$item->id, str_slug($item->title)]) }}">READ MORE</a></p>
