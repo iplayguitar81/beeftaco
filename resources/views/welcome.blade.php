@@ -130,11 +130,6 @@
 
     @foreach($main as $item)
 
-        @php
-        $game_date = new DateTime($item->created_at, new DateTimeZone('America/Los_Angeles'));
-        $game_date = date_sub($game_date, date_interval_create_from_date_string('3 hour'));
-        $game_date = $game_date->format('M jS Y');
-        @endphp
 
     <article class="text-center">
 
@@ -204,20 +199,14 @@
 
         <br/>
 
-@php//$ratings= $ratings($item->id)@endphp
+{{--@php//$ratings= $ratings($item->id)@endphp--}}
 
         {{--<p>Average Rating: {{$ratings->averageRating}}</p>--}}
         {{--<p>Rating %: {{$ratings->ratingPercent}}</p>--}}
 
 {{--{{$variable = str_limit($item->body, 100)}}--}}
-        @php
 
-            $variable= strip_tags($item->body);
-            $variable =substr($variable,0, 150);
-       // $variable = (str_limit($item->body, 100));
-       // $variable= htmlentities($variable);
-        @endphp
-       <p class="article-texterson">{{$variable}} ...</p>
+       <p class="article-texterson">{{snippety($item->body)}} ...</p>
       {{--<p>  {{strip_tags((str_limit($item->body, 100)))}}...</p>--}}
             <a class="btn btn-danger btn-md active" href="{{ route('posts.show', [$item->id, str_slug($item->title)]) }}">Continue Reading</a>
 
