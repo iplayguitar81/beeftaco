@@ -26,15 +26,8 @@
         <p class="subheader-main Bebas">{{ $post->subHead}}</p>
 
         <p class="uk-article-meta" style="text-align:center;">
-            Written by @php
-            //below is one way to get the name of the author.....
-           @endphp
-
-           @if($post->user_id != null)
-            @php $author = App\User::find($post->user_id)->name; @endphp
-
-            {{$author}}
-            @endif
+            Written by
+            written_by($post->user_id)
             {{--@foreach($records as $record)--}}
             {{--{{$record->name}}--}}
             {{--@endforeach--}}
