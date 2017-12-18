@@ -156,7 +156,7 @@
             @endif
 
 
-            on {{ $game_date }}</p>
+            on {{ gameDate($item->created_at) }}</p>
 
         <p>
             <a href="{{ route('posts.show', [$item->id, str_slug($item->title)]) }}"><img class="img-responsive center-block" src="../images/{{ $item->imgPath}}"></a>
