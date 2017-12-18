@@ -13,11 +13,6 @@
 @section('content')
 
 
-    @php
-        $game_date = new DateTime($post->created_at, new DateTimeZone('America/Los_Angeles'));
-        $game_date = date_sub($game_date, date_interval_create_from_date_string('3 hour'));
-        $game_date = $game_date->format('M jS Y');
-    @endphp
 <div class="row">
     <div class="col-md-12">
 
@@ -31,7 +26,7 @@
             {{--@foreach($records as $record)--}}
             {{--{{$record->name}}--}}
             {{--@endforeach--}}
-            on {{ $game_date }}
+            on {{ gameDate($post->created_at) }}
         </p>
         <ul class="share-buttons">
             <li><a href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Ftrailblazersfans.com&t=" title="Share on Facebook" target="_blank" onclick="window.open('https://www.facebook.com/sharer/sharer.php?u=' + encodeURIComponent(document.URL) + '&t=' + encodeURIComponent(document.URL)); return false;"><img alt="Share on Facebook" src="{{url('images/Facebook.png')}}"></a></li>
