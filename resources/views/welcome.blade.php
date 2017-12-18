@@ -266,14 +266,10 @@
                             @endif
                         </a> on {{gameDate($item->created_at)}}</em>
 
-                    @php
-                        $variable= strip_tags($item->body);
-                        $variable =substr($variable,0, 50);
-                    @endphp
 
                     <p class="second-art-snip">
 
-                        {{$variable}}...<a class="pull-right" href="{{ route('posts.show', [$item->id, str_slug($item->title)]) }}">READ MORE</a>
+                        {{snippety($item->body)}}...<a class="pull-right" href="{{ route('posts.show', [$item->id, str_slug($item->title)]) }}">READ MORE</a>
                         <br/>
                         </p>
 
