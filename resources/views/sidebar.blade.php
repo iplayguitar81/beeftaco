@@ -47,7 +47,7 @@
             @endif
 
             @php
-                $home_or_away = $item->afname.'<span class="box_total_h2"> '.$item->atotal"</span><br/>at<br/> portland trail blazers <span class='box_total_h2'>".$item->htotal."</span>";
+                $home_or_away = $item->afname.'<span class="box_total_h2"> '.$item->atotal.'</span><br/>at<br/> portland trail blazers <span class="box_total_h2">'.$item->htotal.'</span>';
             @endphp
 
 
