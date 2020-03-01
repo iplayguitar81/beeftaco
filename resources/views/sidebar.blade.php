@@ -79,7 +79,7 @@
             @endif
 
             @php
-                $home_or_away = 'portland trailblazers'.'<span class="box_total_h2"> '.$item->atotal+"</span><br/>at<br/>'.$item->hfname.'<span class='box_total_h2'>".$item->htotal."</span>";
+                $home_or_away = 'portland trailblazers'.'<span class="box_total_h2"> '.$item->atotal.'</span><br/>at<br/>'.$item->hfname.'<span class="box_total_h2">'.$item->htotal.'</span>';
             @endphp
 
 
